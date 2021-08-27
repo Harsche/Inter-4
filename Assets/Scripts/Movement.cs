@@ -82,7 +82,7 @@ public class Movement : MonoBehaviour
                 rb2d.velocity = new Vector2(0f, Mathf.Sign(finalPos.y - _transform.position.y) * velocity);
             }
 
-            yield return (new WaitForSeconds(5f));
+            yield return (new WaitForSeconds(Random.Range(5f, 10f)));
         }
         
     }
