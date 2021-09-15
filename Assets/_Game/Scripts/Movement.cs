@@ -1,104 +1,75 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Lean.Touch;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private float velocity;
-    [SerializeField] private bool player;
-    [SerializeField] private bool moveNpc;
-    [SerializeField] private Vector2 distNpc;
-    private Vector2 startPos;
-    private Vector2 finalPos;
-    private float hor, ver;
-    private Transform _transform;
-    private Rigidbody2D rb2d;
-    private Animator anim;
 
-    void Start()
+    [SerializeField] private float speed;
+    [SerializeField] private float deadzone;
+    [SerializeField] private float joystickSize;
+    [SerializeField] private GameObject circle;
+
+    [SerializeField] private GameObject canvasJoystick;
+    private Animator anim;
+    private GameObject circleCenter;
+    private GameObject circleDirection;
+    private Rigidbody2D myRb2d;
+
+    private void Start()
     {
-        _transform = GetComponent<Transform>();
-        rb2d = GetComponent<Rigidbody2D>();
+        myRb2d = GetComponent<Rigidbody2D>();
+        circleCenter = Instantiate(circle);
+        circleCenter.name = "Center";
+        circleDirection = Instantiate(circle);
+        circleDirection.name = "Direction";
+        circleCenter.transform.SetParent(canvasJoystick.transform.GetChild(0));
+        circleDirection.transform.SetParent(canvasJoystick.transform.GetChild(0));
+        canvasJoystick.SetActive(false);
         anim = GetComponent<Animator>();
 
-        if(moveNpc)
-        {
-            startPos = _transform.position;
-            StartCoroutine(WalkNpc());
-        }
-    }
+        circleCenter.GetComponent<Image>().color *= new Color(1.0f, 1.0f, 1.0f, 0.25f);
 
-    void Update()
-    {
-        hor = Input.GetAxis("Horizontal");
-        ver = Input.GetAxis("Vertical");
-        anim.SetFloat("Velocity", rb2d.velocity.magnitude);
-        
     }
 
     private void FixedUpdate()
     {
-        if(player)
-        {
-            if (ver == 0)
-            {
-                rb2d.velocity = new Vector2(hor * velocity, 0f);
-            }
-            else if (hor == 0)
-            {
-                rb2d.velocity = new Vector2(0f, ver * velocity);
-            }
-        }
+        anim.SetFloat("Velocity", myRb2d.velocity.magnitude);
 
-        if (rb2d.velocity.magnitude != 0)
+        if (myRb2d.velocity.magnitude != 0)
         {
-            anim.SetFloat("Vel_X", rb2d.velocity.x);
-            anim.SetFloat("Vel_Y", rb2d.velocity.y);
+            anim.SetFloat("Vel_X", myRb2d.velocity.x);
+            anim.SetFloat("Vel_Y", myRb2d.velocity.y);
         }
-
-        if (moveNpc && Vector2.Distance(finalPos, _transform.position) <= 0.1f)
-        {
-            rb2d.velocity = Vector2.zero;
-        }
-
     }
 
-    private IEnumerator WalkNpc()
+    public void Move(LeanFinger finger)
     {
-        while(true)
-        {
-            if ((int)Random.Range(0f, 1.9999f) == 0)
-            {
-                //Move o npc em x
+        Vector2 direction = finger.ScreenPosition - finger.StartScreenPosition;
 
-                finalPos = new Vector2(GetPosition('x'), _transform.position.y);
-                rb2d.velocity = new Vector2(Mathf.Sign( finalPos.x - _transform.position.x) * velocity, 0f);
+        if (!finger.Up)
+        {
+            if (finger.Down)
+            {
+                circleCenter.transform.position = finger.StartScreenPosition;
+            }
+
+            circleDirection.transform.position = finger.StartScreenPosition + Vector2.ClampMagnitude(direction, joystickSize);
+            canvasJoystick.SetActive(true);
+
+            if (direction.magnitude > deadzone)
+            {
+                myRb2d.velocity = Vector2.ClampMagnitude(direction, 1) * speed;
             }
             else
             {
-                //Move o npc em y
-
-                finalPos = new Vector2(_transform.position.x, GetPosition('y'));
-                rb2d.velocity = new Vector2(0f, Mathf.Sign(finalPos.y - _transform.position.y) * velocity);
+                myRb2d.velocity = Vector2.zero;
             }
-
-            yield return (new WaitForSeconds(Random.Range(5f, 10f)));
         }
-        
-    }
-
-    private float GetPosition(char axis)
-    {
-        float random = Random.Range(0f, 1f);
-
-        switch (axis)
+        else
         {
-            case 'x':
-                return ((startPos.x + distNpc.x) - (startPos.x - distNpc.x)) * random + (startPos.x - distNpc.x);
-            case 'y':
-                return ((startPos.y + distNpc.y) - (startPos.y - distNpc.y)) * random + (startPos.y - distNpc.y);
-            default:
-                return 0f;
+            myRb2d.velocity = Vector2.zero;
+            canvasJoystick.SetActive(false);
         }
     }
 }

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 943119440016135394}
   - component: {fileID: 943119440016135395}
   - component: {fileID: 943119440016135396}
-  - component: {fileID: 943119440016135397}
   - component: {fileID: 943119440016135392}
+  - component: {fileID: 5576678592368221074}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -126,22 +126,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &943119440016135397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943119440016135398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcfda028c6bd53d42a5a83f0d298eea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 2
-  player: 0
-  moveNpc: 1
-  distNpc: {x: 3, y: 3}
 --- !u!61 &943119440016135392
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -168,3 +152,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.79976046, y: 0.4263414}
   m_EdgeRadius: 0
+--- !u!114 &5576678592368221074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943119440016135398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef003a53e0e5180469183735c5bde5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: 3
+  distNpc: {x: 4, y: 4}
