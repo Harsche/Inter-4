@@ -33,7 +33,7 @@ public class NPC_Movement : MonoBehaviour
             anim.SetFloat("Vel_Y", myRb2d.velocity.y);
         }
 
-        if (Vector2.Distance(finalPos, _transform.position) <= 0.1f)
+        if (Vector2.Distance(finalPos, _transform.position) <= 0.1f || Vector2.Distance(Globals.Player.transform.position, _transform.position) <= 1.0f)
         {
             myRb2d.velocity = Vector2.zero;
         }

@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e9f12e9fad6764f89f2b5dc1815884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   deadzone: 120
   joystickSize: 200
   circle: {fileID: 6627615427066352383, guid: 1307b8af9145c5440898ce505d4e6d0f, type: 3}
