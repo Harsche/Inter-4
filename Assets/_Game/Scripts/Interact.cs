@@ -5,9 +5,15 @@ using UnityEngine;
 public class Interact : MonoBehaviour
 {
     [SerializeField] private GameObject dialogCanvas;
+    private Character character;
 
-    public void StartDialog()
+    private void Start()
     {
-        dialogCanvas.SetActive(true);
+        character = GetComponent<Character>();
+    }
+
+    public void Interaction(TextAsset story)
+    {
+        
     }
 }

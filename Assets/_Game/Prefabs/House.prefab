@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7324914747010144339}
   - component: {fileID: 5915048507506329761}
-  - component: {fileID: 6989544904049904514}
   m_Layer: 0
   m_Name: SceneChange
   m_TagString: Untagged
@@ -58,19 +57,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5331936, y: 2.6345463}
   m_EdgeRadius: 0
---- !u!114 &6989544904049904514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257289047067614890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c9c1b1639188fd419a04ae94a339b71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Casa_1
 --- !u!1 &7630425525108079874
 GameObject:
   m_ObjectHideFlags: 0

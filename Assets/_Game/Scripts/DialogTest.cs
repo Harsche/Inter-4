@@ -12,23 +12,36 @@ public class DialogTest : MonoBehaviour
     private StringBuilder charLine = new StringBuilder();
     private Story story;
 
-    void Awake()
+    public void SetStory(TextAsset storyJson)
     {
-        story = new Story(dialogJson.text);
+        story = new Story(storyJson.text);
     }
 
-    public void LoadStory()
+    public void SaveStoryState()
     {
+
+    }
+
+    public void LoadStoryState()
+    {
+
+    }
+
+    public void ContinueStory(bool next)
+    {
+        string[] separator = { ": " };
+        charLine.Clear();
+        charName.Clear();
+
         if (story.canContinue)
         {
-            string[] separator = { ": " };
-            charLine.Clear();
-            charName.Clear();
+            story.Continue();
 
-            string[] newLine = story.Continue().Split(separator, 2, System.StringSplitOptions.None);
+            string[] newLine = story.currentText.Split(separator, 2, System.StringSplitOptions.None);
             charName.Append(newLine[0]);
             charLine.Append("    ");
             charLine.Append(newLine[1]);
+
 
             nameText.text = charName.ToString();
             dialogText.text = charLine.ToString();
@@ -37,6 +50,11 @@ public class DialogTest : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+    }
+
+    public void JumpTo(string storyScene)
+    {
+        story.ChoosePathString(storyScene);
     }
 
 }

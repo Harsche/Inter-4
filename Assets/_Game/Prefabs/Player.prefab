@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  deadzone: 120
-  joystickSize: 200
+  deadzone: 100
+  joystickSize: 180
   circle: {fileID: 6627615427066352383, guid: 1307b8af9145c5440898ce505d4e6d0f, type: 3}
   canvasJoystick: {fileID: 0}
