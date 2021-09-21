@@ -45,31 +45,34 @@ public class Movement : MonoBehaviour
 
     public void Move(LeanFinger finger)
     {
-        Vector2 direction = finger.ScreenPosition - finger.StartScreenPosition;
-
-        if (!finger.Up)
+        if (enabled)
         {
-            if (finger.Down)
-            {
-                circleCenter.transform.position = finger.StartScreenPosition;
-            }
+            Vector2 direction = finger.ScreenPosition - finger.StartScreenPosition;
 
-            circleDirection.transform.position = finger.StartScreenPosition + Vector2.ClampMagnitude(direction, joystickSize);
-            canvasJoystick.SetActive(true);
-
-            if (direction.magnitude > deadzone)
+            if (!finger.Up)
             {
-                myRb2d.velocity = Vector2.ClampMagnitude(direction, 1) * speed;
+                if (finger.Down)
+                {
+                    circleCenter.transform.position = finger.StartScreenPosition;
+                }
+
+                circleDirection.transform.position = finger.StartScreenPosition + Vector2.ClampMagnitude(direction, joystickSize);
+                canvasJoystick.SetActive(true);
+
+                if (direction.magnitude > deadzone)
+                {
+                    myRb2d.velocity = Vector2.ClampMagnitude(direction, 1) * speed;
+                }
+                else
+                {
+                    myRb2d.velocity = Vector2.zero;
+                }
             }
             else
             {
                 myRb2d.velocity = Vector2.zero;
+                canvasJoystick.SetActive(false);
             }
-        }
-        else
-        {
-            myRb2d.velocity = Vector2.zero;
-            canvasJoystick.SetActive(false);
         }
     }
 }

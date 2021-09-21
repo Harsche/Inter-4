@@ -1,6 +1,6 @@
 EXTERNAL newQuest()
 
-//->Day_01_Scene_01
+->Day_01_Scene_01
 
 == Day_01_Scene_01 ==
 Dona Maria: Acorda, Luiz. A gente precisa ir busca água na lagoa, se é que ainda tem água lá...

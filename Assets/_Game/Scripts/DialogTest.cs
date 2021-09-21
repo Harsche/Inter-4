@@ -2,15 +2,35 @@ using System.Text;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.UI;
+using UnityEngine.Playables;
 
 public class DialogTest : MonoBehaviour
 {
     [SerializeField] TextAsset dialogJson;
     [SerializeField] Text dialogText;
     [SerializeField] Text nameText;
+    private PlayableDirector playableDirector;
     private StringBuilder charName = new StringBuilder();
     private StringBuilder charLine = new StringBuilder();
     private Story story;
+
+    private void Awake()
+    {
+        playableDirector = Globals.CutsceneManager.director;
+        SetStory(dialogJson);
+        ContinueStory();
+        BindMethods();
+    }
+
+    private void OnEnable()
+    {
+        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+    }
+
+    private void OnDisable()
+    {
+        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
+    }
 
     public void SetStory(TextAsset storyJson)
     {
@@ -27,7 +47,7 @@ public class DialogTest : MonoBehaviour
 
     }
 
-    public void ContinueStory(bool next)
+    public void ContinueStory()
     {
         string[] separator = { ": " };
         charLine.Clear();
@@ -55,6 +75,11 @@ public class DialogTest : MonoBehaviour
     public void JumpTo(string storyScene)
     {
         story.ChoosePathString(storyScene);
+    }
+
+    public void BindMethods()
+    {
+        story.BindExternalFunction("playCutscene", () => { playableDirector.Stop(); });
     }
 
 }

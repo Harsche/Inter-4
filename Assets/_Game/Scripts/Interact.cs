@@ -12,8 +12,18 @@ public class Interact : MonoBehaviour
         character = GetComponent<Character>();
     }
 
-    public void Interaction(TextAsset story)
+    public void Interaction()
     {
-        
+        /*
+        foreach(Quest quest in Globals.Player.GetComponent<QuestSystem>().quests)
+        {
+            switch(quest.step)
+            {
+                case QuestStep.Speak:
+                if()
+                break;
+            }
+        }
+        */
     }
 }
