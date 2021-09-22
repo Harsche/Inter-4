@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private GameObject circle;
 
     [SerializeField] private GameObject canvasJoystick;
+    private SpriteRenderer spriteRenderer;
     private Animator anim;
     private GameObject circleCenter;
     private GameObject circleDirection;
@@ -18,6 +19,7 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         myRb2d = GetComponent<Rigidbody2D>();
         circleCenter = Instantiate(circle);
         circleCenter.name = "Center";
@@ -40,6 +42,7 @@ public class Movement : MonoBehaviour
         {
             anim.SetFloat("Vel_X", myRb2d.velocity.x);
             anim.SetFloat("Vel_Y", myRb2d.velocity.y);
+            spriteRenderer.flipX = myRb2d.velocity.x >= 0 ? false : true;
         }
     }
 

@@ -14,6 +14,8 @@ public class Interact : MonoBehaviour
 
     public void Interaction()
     {
+        
+
         /*
         foreach(Quest quest in Globals.Player.GetComponent<QuestSystem>().quests)
         {

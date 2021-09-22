@@ -77,4 +77,9 @@ public class NPC_Movement : MonoBehaviour
                 return 0f;
         }
     }
+
+    public void SetAnimationParams()
+    {
+        
+    }
 }
