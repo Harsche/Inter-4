@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 548200838}
   - component: {fileID: 548200837}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Voltar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 86d0c98c11c98634c9681a14dfb82e23, type: 2}
+      - m_Target: {fileID: 11400000, guid: 90ed8130e5354f64994a09246cdd53e0, type: 2}
         m_TargetAssemblyTypeName: GlobalMethods, Assembly-CSharp
         m_MethodName: SceneLoad
         m_Mode: 5

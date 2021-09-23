@@ -1,4 +1,5 @@
-EXTERNAL newQuest()
+EXTERNAL newQuest(questName)
+//EXTERNAL playCutscene()
 
 ->Day_01_Scene_01
 
@@ -6,7 +7,8 @@ EXTERNAL newQuest()
 Dona Maria: Acorda, Luiz. A gente precisa ir busca água na lagoa, se é que ainda tem água lá...
 Luiz: Ontem tinha só lama, praticamente. Mas eu tenho esperança, mainha.
 Dona Maria: Vamo, meu fi.
-->DONE
+~ newQuest("Siga a mamãe")
+->DONE 
 
 
 == Day_01_Scene_02 ==
@@ -15,3 +17,6 @@ Dona Maria: Se apresse, Luiz. A gente precisa pega água logo, antes que o poco 
 
 == Day_01_Scene_03 ==
 ->DONE
+
+== function newQuest(questName)
+~ return

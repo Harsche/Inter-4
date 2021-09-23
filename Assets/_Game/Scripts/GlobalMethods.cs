@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[CreateAssetMenu(menuName = "ScriptabelObjects/GlobalMethods")]
+[CreateAssetMenu(menuName = "ScriptableObjects/GlobalMethods")]
 public class GlobalMethods : ScriptableObject
 {
     public void SceneLoad(string sceneName)

@@ -354,6 +354,8 @@ GameObject:
   - component: {fileID: 1199041640}
   - component: {fileID: 1951046481}
   - component: {fileID: 1951046480}
+  - component: {fileID: 1210636927}
+  - component: {fileID: 1210636921}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -417,7 +419,7 @@ SpriteRenderer:
   m_SortingLayerID: 1966699993
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 3427114271967980436, guid: 11939acee89f81946bdd28f8ad45199e, type: 3}
+  m_Sprite: {fileID: 2636318978181890035, guid: b1b6f11a5fe490e44bc06a4ffc04ef2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -481,18 +483,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02507995, y: 0.23188071}
+  m_Offset: {x: 0.013197511, y: 0.044745892}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.9375, y: 1.375}
+    pivot: {x: 0.5, y: 0.07}
+    oldSize: {x: 1, y: 1.75}
     newSize: {x: 0.9375, y: 1.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8204602, y: 0.46376142}
+  m_Size: {x: 0.74390525, y: 0.36168796}
   m_EdgeRadius: 0
 --- !u!114 &1951046481
 MonoBehaviour:
@@ -525,3 +527,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Luiz
   dialogs: {fileID: 4900000, guid: 6db38b8569df66745b01f6f1b299c28b, type: 3}
+--- !u!114 &1210636927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6136857868080333812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4028887ef433974189ae9f605748c29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1210636921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6136857868080333812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf9564c98bec4964f9f016754f2e48f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

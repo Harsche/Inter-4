@@ -2,24 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Quest 
+[CreateAssetMenu(menuName = "ScriptableObjects/Quest", fileName = "Quest_New Quest")]
+public class Quest : ScriptableObject
 {
-    public string questName { get; private set; }
-    public string goal { get; private set; }
+    [SerializeField] private string questName;
+    public int currentStep;
+    [TextArea(3, 5)]
+    [SerializeField] private string[] steps;
+    public QuestSate QuestState;
 
-    public Quest(string questName, string goal)
+    public void NextStep()
     {
-        this.questName = questName;
-        this.goal = goal;
+        currentStep++;
     }
 
-    public void SetQuestGoal(string newGoal)
+    public string QuestName
     {
-        goal = newGoal;
-    }
-
-    public void CompleteQuest()
-    {
-        
+        get => questName;
     }
 }
+
+public enum QuestSate
+    {
+        Inactive,
+        Active,
+        Completed
+    }

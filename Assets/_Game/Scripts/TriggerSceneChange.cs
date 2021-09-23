@@ -11,6 +11,7 @@ public class TriggerSceneChange : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene(sceneName);
+            other.transform.position = newPosition;
         }
     }
 }

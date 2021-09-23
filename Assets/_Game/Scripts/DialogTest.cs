@@ -18,8 +18,8 @@ public class DialogTest : MonoBehaviour
     {
         playableDirector = Globals.CutsceneManager.director;
         SetStory(dialogJson);
-        ContinueStory();
         BindMethods();
+        ContinueStory();
     }
 
     private void OnEnable()
@@ -52,10 +52,16 @@ public class DialogTest : MonoBehaviour
         string[] separator = { ": " };
         charLine.Clear();
         charName.Clear();
+        
 
         if (story.canContinue)
         {
             story.Continue();
+            if(story.currentText == "" || story.currentText == null)
+            {
+                gameObject.SetActive(false);
+                return;
+            }
 
             string[] newLine = story.currentText.Split(separator, 2, System.StringSplitOptions.None);
             charName.Append(newLine[0]);
@@ -68,6 +74,7 @@ public class DialogTest : MonoBehaviour
         }
         else
         {
+
             gameObject.SetActive(false);
         }
     }
@@ -79,6 +86,7 @@ public class DialogTest : MonoBehaviour
 
     public void BindMethods()
     {
+        story.BindExternalFunction("newQuest", (string questName) => { Globals.QuestManager.StartNewQuest(questName); });
         story.BindExternalFunction("playCutscene", () => { playableDirector.Stop(); });
     }
 
