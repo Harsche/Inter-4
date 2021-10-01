@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 227b87b65cce95a4ca566cc95e3394a8
+guid: b413b289fa6f47044a7beeebd02be861
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1911592816244896481
-    second: D Cida Idle_0
+      213: -450166571642915809
+    second: Luiz Idle Side_0
   - first:
-      213: 8931465570726582860
-    second: D Cida Idle_1
+      213: -3424356662938574962
+    second: Luiz Idle Side_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: D Cida Idle_0
+      name: Luiz Idle Side_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 40
-        height: 84
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1dc8803678a875e0800000000000000
-      internalID: -1911592816244896481
+      spriteID: f14f77f53efa0c9f0800000000000000
+      internalID: -450166571642915809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D Cida Idle_1
+      name: Luiz Idle Side_1
       rect:
         serializedVersion: 2
         x: 40
         y: 0
         width: 40
-        height: 84
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4a1aca9d90f2fb70800000000000000
-      internalID: 8931465570726582860
+      spriteID: e8fdd4112cd3a70d0800000000000000
+      internalID: -3424356662938574962
       vertices: []
       indices: 
       edges: []

@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: b9fa0f08a7659d14cbea3a9eb0059b73
+guid: 2191387d651d1bd42af639b04f2ec0cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5718573680405862911
-    second: Alcione Idle_0
+      213: 5439233501650718309
+    second: Luiz Idle Back_0
   - first:
-      213: 6342958086424284791
-    second: Alcione Idle_1
+      213: 3740213214659814251
+    second: Luiz Idle Back_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,43 +121,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Alcione Idle_0
+      name: Luiz Idle Back_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 40
-        height: 84
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 106a285398b83a0b0800000000000000
-      internalID: -5718573680405862911
+      spriteID: 56e8b4c2d0a0c7b40800000000000000
+      internalID: 5439233501650718309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Alcione Idle_1
+      name: Luiz Idle Back_1
       rect:
         serializedVersion: 2
         x: 40
         y: 0
         width: 40
-        height: 84
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77ec28ee5c6b60850800000000000000
-      internalID: 6342958086424284791
+      spriteID: b63250c2a18e7e330800000000000000
+      internalID: 3740213214659814251
       vertices: []
       indices: 
       edges: []
