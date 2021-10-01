@@ -5301,7 +5301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284e108a6eb81b04dab6c009a39ec560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Test
+  sceneName: Village
   newPosition: {x: 6.58, y: 1.16}
 --- !u!1 &2092411502
 GameObject:

@@ -9,4 +9,14 @@ public class QuestList : ScriptableObject
     {
         get => mainQuests;
     }
+
+    [ContextMenu("Reset quests")]
+    public void ResetQuests()
+    {
+        foreach(Quest q in mainQuests)
+        {
+            q.QuestState = QuestSate.Inactive;
+            q.currentStep = 0;
+        }
+    }
 }
