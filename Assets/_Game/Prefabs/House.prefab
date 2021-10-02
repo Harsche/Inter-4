@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7324914747010144339}
   - component: {fileID: 5915048507506329761}
+  - component: {fileID: 1208511893}
   m_Layer: 0
   m_Name: SceneChange
   m_TagString: Untagged
@@ -44,7 +45,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0043706894, y: -0.81727314}
+  m_Offset: {x: 0.0043706894, y: 0.1827269}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57,6 +58,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5331936, y: 2.6345463}
   m_EdgeRadius: 0
+--- !u!114 &1208511893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257289047067614890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284e108a6eb81b04dab6c009a39ec560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: House_1
+  newPosition: {x: 4.04, y: -4.92}
 --- !u!1 &7630425525108079874
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +157,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!61 &7630425525108079896
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,10 +171,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009569168, y: -0.70835054}
+  m_Offset: {x: 0.009569168, y: 0.2916495}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5022074, y: 0.30358046}
     oldSize: {x: 5, y: 5}
     newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
@@ -182,10 +197,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.513921, y: -1.5495169}
+  m_Offset: {x: -1.513921, y: -0.549517}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5022074, y: 0.30358046}
     oldSize: {x: 5, y: 5}
     newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
@@ -208,10 +223,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.5296166, y: -1.5512385}
+  m_Offset: {x: 1.5296166, y: -0.551239}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5022074, y: 0.30358046}
     oldSize: {x: 5, y: 5}
     newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
