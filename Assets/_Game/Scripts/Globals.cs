@@ -7,14 +7,18 @@ public class Globals : MonoBehaviour
     [SerializeField] private GameObject newQuestCanvas;
     [SerializeField] private CutsceneManager cutsceneManager;
     [SerializeField] private QuestManager questManager;
+    [SerializeField] private SceneChanger sceneChanger;
     [SerializeField] private GameObject[] dontDestroy;
+    
 
     public static GameObject Player;
     public static GameObject DialogCanvas;
     public static GameObject NewQuestCanvas;
     public static CutsceneManager CutsceneManager;
+    public static SceneChanger SceneChanger;
 
     public static QuestManager QuestManager;
+    
 
     private void Awake()
     {
@@ -26,6 +30,7 @@ public class Globals : MonoBehaviour
         CutsceneManager = cutsceneManager;
         NewQuestCanvas = newQuestCanvas;
         QuestManager = questManager;
+        SceneChanger = sceneChanger;
 
         //Dont destroy objects on load
 
