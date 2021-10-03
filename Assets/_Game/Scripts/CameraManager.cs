@@ -3,10 +3,9 @@ using Cinemachine;
 
 public class CameraManager : MonoBehaviour
 {
-    [SerializeField] private CinemachineVirtualCamera virtualCamera;
     public static GameObject PlayerCamera;
 
-    private void Start()
+    private void Awake()
     {
         if(PlayerCamera == null)
         {
@@ -16,15 +15,5 @@ public class CameraManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    public void CameraFollowPlayer()
-    {
-        virtualCamera.m_Follow = Globals.Player.transform;
-    }
-
-    public void CameraFollowNull()
-    {
-        virtualCamera.m_Follow = null;
     }
 }
