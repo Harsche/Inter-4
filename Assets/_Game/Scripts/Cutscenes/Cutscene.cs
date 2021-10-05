@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
-using System;
+using Cinemachine;
 
 public class Cutscene : MonoBehaviour
 {
@@ -40,7 +40,7 @@ public class Cutscene : MonoBehaviour
     {
         if (bindPlayer)
         {
-            BindOrUnbindPlayer(1);
+            BindOrUnbindPlayer(true);
         }
 
         if (bindDialogCanvas)
@@ -56,15 +56,13 @@ public class Cutscene : MonoBehaviour
         }
     }
 
-    public void BindOrUnbindPlayer(int bind)
+    public void BindOrUnbindPlayer(bool bind)
     {
-        bool doBind = Convert.ToBoolean(bind);
-
         foreach (TrackAsset track in cutscene.GetOutputTracks())
         {
             if (track.name == PlayerReference)
             {
-                if (doBind)
+                if (bind)
                 {
                     playableDirector.SetGenericBinding(track, Globals.Player.GetComponent<Animator>());
                 }
@@ -76,12 +74,37 @@ public class Cutscene : MonoBehaviour
         }
     }
 
+    public void PlayerVCamOnOrOff(bool set)
+    {
+        Globals.PlayerVirtualCamera.SetActive(set);
+    }
+
+
     public void StartDialog(string inkKnot)
     {
         Globals.DialogManager.JumpTo(inkKnot);
         Globals.DialogCanvas.SetActive(true);
     }
 
+    public void SetStory(TextAsset storyJson)
+    {
+        Globals.DialogManager.SetStory(storyJson);
+    }
+
+    public void TurnObjectOn(GameObject obj)
+    {
+        obj.SetActive(true);
+    }
+
+    public void TurnObjectOff(GameObject obj)
+    {
+        obj.SetActive(false);
+    }
+
+    public void SetCameraPriority(int priority)
+    {
+        Globals.PlayerVirtualCamera.GetComponent<CinemachineVirtualCamera>().Priority = priority;
+    }
 
     public void PauseTimeline()
     {

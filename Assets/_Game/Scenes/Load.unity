@@ -1005,6 +1005,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6069989306516445655, guid: 4b6733c9c25e40b4aa61830a7ad9c8df, type: 3}
   m_PrefabInstance: {fileID: 6069989307653663360}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1279832920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279832919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConfineMode: 0
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 0}
+  m_ConfineScreenEdges: 1
+  m_Damping: 0
 --- !u!1 &1482156369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,6 +1816,10 @@ PrefabInstance:
     - target: {fileID: 6069989306516445655, guid: 4b6733c9c25e40b4aa61830a7ad9c8df, type: 3}
       propertyPath: m_Name
       value: Virtual Camera Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069989306516445655, guid: 4b6733c9c25e40b4aa61830a7ad9c8df, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6069989306516445656, guid: 4b6733c9c25e40b4aa61830a7ad9c8df, type: 3}
       propertyPath: m_Follow

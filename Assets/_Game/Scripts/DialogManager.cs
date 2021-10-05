@@ -22,8 +22,8 @@ public class DialogManager : MonoBehaviour
     private void Awake()
     {
         playerMovement = Globals.Player.GetComponent<Movement>();
-        SetStory(dialogJson);
-        ContinueStory();
+        //SetStory(dialogJson);
+        //ContinueStory();
     }
 
     private void OnEnable()

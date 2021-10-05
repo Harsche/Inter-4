@@ -2,7 +2,7 @@ EXTERNAL newQuest(questName)
 EXTERNAL pauseTimeline()
 EXTERNAL resumeTimeline()
 
-->Day_01_Scene_01
+//->Day_01_Scene_01
 
 == Day_01_Scene_01 ==
 ~ pauseTimeline()

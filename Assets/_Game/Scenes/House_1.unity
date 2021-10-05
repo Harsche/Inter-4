@@ -1748,7 +1748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4657380282524528384, guid: 1970767938c9229489c0bb5fb8232c94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.87
+      value: -6.58
       objectReference: {fileID: 0}
     - target: {fileID: 4657380282524528384, guid: 1970767938c9229489c0bb5fb8232c94, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4774,6 +4774,7 @@ GameObject:
   - component: {fileID: 1711063825}
   - component: {fileID: 1711063827}
   - component: {fileID: 1711063828}
+  - component: {fileID: 1711063829}
   m_Layer: 0
   m_Name: Cutscene_00
   m_TagString: Untagged
@@ -4800,8 +4801,6 @@ PlayableDirector:
     value: {fileID: 543570240}
   - key: {fileID: 7585647855316901846, guid: 9483fda234b25d04aabd82a834e2d0d8, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 3552878033762339370, guid: 9483fda234b25d04aabd82a834e2d0d8, type: 2}
-    value: {fileID: 0}
   - key: {fileID: -8730910107658576858, guid: 1812bed3cc8c2fb4e93bd6bb33ad2192, type: 2}
     value: {fileID: 0}
   - key: {fileID: -347944816998293463, guid: 9483fda234b25d04aabd82a834e2d0d8, type: 2}
@@ -4812,6 +4811,8 @@ PlayableDirector:
     value: {fileID: 1712688981}
   - key: {fileID: 4423470702219638030, guid: 9483fda234b25d04aabd82a834e2d0d8, type: 2}
     value: {fileID: 1711063827}
+  - key: {fileID: 6749696556115986473, guid: 9483fda234b25d04aabd82a834e2d0d8, type: 2}
+    value: {fileID: 1711063824}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1711063826
@@ -4863,6 +4864,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bindPlayer: 1
   bindDialogCanvas: 1
+--- !u!114 &1711063829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711063824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: c543ba32c05fee64499450fe5565973d, type: 2}
+    - {fileID: 11400000, guid: b95a922e82df4f447855250738013bd3, type: 2}
+    - {fileID: 11400000, guid: 9b90cd8bef677e04dbcc822878a3dd9e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1711063828}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: SetStory
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4900000, guid: f7d5036718ac23d4298974eb677ddfcc, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.TextAsset, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1711063828}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: StartDialog
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Day_01_Scene_01
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1711063828}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: PlayerVCamOnOrOff
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1711063828}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: PlayerVCamOnOrOff
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &1712688978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6286867434010981117, guid: c20273f5728eff14cb4ffce04394c231, type: 3}

@@ -1346,11 +1346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
@@ -1363,7 +1363,7 @@ PrefabInstance:
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 230128950}
+      objectReference: {fileID: 4954474015135132347}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -1386,7 +1386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetStory
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1398,7 +1398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Interact, Assembly-CSharp
+      value: UnityEngine.Playables.PlayableDirector, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -1411,7 +1411,7 @@ PrefabInstance:
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 4900000, guid: f7d5036718ac23d4298974eb677ddfcc, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
@@ -1426,7 +1426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.TextAsset, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1443,17 +1443,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
   m_PrefabInstance: {fileID: 230128948}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &230128950 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6134396638313162235, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
-  m_PrefabInstance: {fileID: 230128948}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f0c6f611807414a994607e22de68d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &236948019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,7 +3636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6286867434010981115, guid: c20273f5728eff14cb4ffce04394c231, type: 3}
       propertyPath: m_Priority
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6286867434010981115, guid: c20273f5728eff14cb4ffce04394c231, type: 3}
       propertyPath: m_ComponentOwner
@@ -3663,11 +3652,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6286867434010981116, guid: c20273f5728eff14cb4ffce04394c231, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.08
+      value: 15.11
       objectReference: {fileID: 0}
     - target: {fileID: 6286867434010981116, guid: c20273f5728eff14cb4ffce04394c231, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.45
+      value: -12.78
       objectReference: {fileID: 0}
     - target: {fileID: 6286867434010981116, guid: c20273f5728eff14cb4ffce04394c231, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3919,6 +3908,10 @@ PrefabInstance:
     - target: {fileID: 4657380282524528387, guid: 1970767938c9229489c0bb5fb8232c94, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657380282524528397, guid: 1970767938c9229489c0bb5fb8232c94, type: 3}
+      propertyPath: m_DefaultBlend.m_Style
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1970767938c9229489c0bb5fb8232c94, type: 3}
@@ -38748,7 +38741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6286867434010981115, guid: c20273f5728eff14cb4ffce04394c231, type: 3}
       propertyPath: m_Priority
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6286867434010981115, guid: c20273f5728eff14cb4ffce04394c231, type: 3}
       propertyPath: m_ComponentOwner
@@ -39015,6 +39008,7 @@ GameObject:
   - component: {fileID: 4954474014940161752}
   - component: {fileID: 4954474014940161755}
   - component: {fileID: 4954474014940161754}
+  - component: {fileID: 4954474014940161733}
   m_Layer: 0
   m_Name: Cutscene_01
   m_TagString: Untagged
@@ -39022,6 +39016,126 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4954474014940161733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954474014940161732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: ef573a38fd778b0459c9d67742ed2657, type: 2}
+    - {fileID: 11400000, guid: 12d14d49b55311c4dab9ec6978e86aad, type: 2}
+    - {fileID: 11400000, guid: dd254cfd8a3d0704bb27a2fe465e3de1, type: 2}
+    - {fileID: 11400000, guid: 8d58fbba797d00c43bca5d230f6990b0, type: 2}
+    - {fileID: 11400000, guid: b95a922e82df4f447855250738013bd3, type: 2}
+    - {fileID: 11400000, guid: 09797d061c6ac6c4ba2d058d5b5bffb5, type: 2}
+    - {fileID: 11400000, guid: f6a0b2f6cf28f4f49899b8986414a641, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474014940161754}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: PauseTimeline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474014940161754}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: BindOrUnbindPlayer
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474014940161754}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: BindOrUnbindPlayer
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474014940161754}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: SetCutscenePlayed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474014940161754}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: PlayerVCamOnOrOff
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474014940161754}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: TurnObjectOn
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4954474015135132327}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474014940161754}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: SetCameraPriority
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!320 &4954474014940161752
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -39043,8 +39157,6 @@ PlayableDirector:
     value: {fileID: 6679637198351940345}
   - key: {fileID: 7008973618153134545, guid: 96b39225472fc444d905e7f85f520932, type: 2}
     value: {fileID: 4620916364183236113}
-  - key: {fileID: 3402378753234169592, guid: 96b39225472fc444d905e7f85f520932, type: 2}
-    value: {fileID: 4954474014940161755}
   - key: {fileID: 6252275569277272618, guid: 96b39225472fc444d905e7f85f520932, type: 2}
     value: {fileID: 0}
   - key: {fileID: 8631900884754807525, guid: 96b39225472fc444d905e7f85f520932, type: 2}
@@ -39053,10 +39165,10 @@ PlayableDirector:
     value: {fileID: 1264620742}
   - key: {fileID: -4409092181960645251, guid: 96b39225472fc444d905e7f85f520932, type: 2}
     value: {fileID: 1544521970}
-  - key: {fileID: 2190050124397228799, guid: 96b39225472fc444d905e7f85f520932, type: 2}
-    value: {fileID: 4954474015135132327}
-  - key: {fileID: 7836157972381759826, guid: 96b39225472fc444d905e7f85f520932, type: 2}
+  - key: {fileID: 6871539434260759923, guid: 96b39225472fc444d905e7f85f520932, type: 2}
     value: {fileID: 4954474014940161732}
+  - key: {fileID: 5840863699426304190, guid: 96b39225472fc444d905e7f85f520932, type: 2}
+    value: {fileID: 326373102}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &4954474014940161753
@@ -39122,6 +39234,7 @@ GameObject:
   - component: {fileID: 4954474015135132347}
   - component: {fileID: 4954474015135132344}
   - component: {fileID: 4954474015135132345}
+  - component: {fileID: 4954474015135132328}
   m_Layer: 0
   m_Name: Cutscene_02
   m_TagString: Untagged
@@ -39129,6 +39242,108 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &4954474015135132328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4954474015135132327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: dd254cfd8a3d0704bb27a2fe465e3de1, type: 2}
+    - {fileID: 11400000, guid: 12d14d49b55311c4dab9ec6978e86aad, type: 2}
+    - {fileID: 11400000, guid: c543ba32c05fee64499450fe5565973d, type: 2}
+    - {fileID: 11400000, guid: 8d58fbba797d00c43bca5d230f6990b0, type: 2}
+    - {fileID: 11400000, guid: 9b90cd8bef677e04dbcc822878a3dd9e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474015135132345}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: BindOrUnbindPlayer
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474015135132345}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: BindOrUnbindPlayer
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474015135132345}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: SetStory
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4900000, guid: f7d5036718ac23d4298974eb677ddfcc, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.TextAsset, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4954474015135132345}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: StartDialog
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Day_01_Scene_04.Cow
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474015135132345}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: SetCutscenePlayed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474015135132345}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: PlayerVCamOnOrOff
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!95 &4954474015135132344
 Animator:
   serializedVersion: 3
@@ -39200,16 +39415,12 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: -7573310286605832003, guid: ef4078f9266ded848aea2ceea2e159eb, type: 2}
     value: {fileID: 0}
-  - key: {fileID: -3750504709840005244, guid: ef4078f9266ded848aea2ceea2e159eb, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 8739299680043112029, guid: ef4078f9266ded848aea2ceea2e159eb, type: 2}
-    value: {fileID: 4954474015135132344}
   - key: {fileID: 5359423500742877988, guid: ef4078f9266ded848aea2ceea2e159eb, type: 2}
     value: {fileID: 624601735}
-  - key: {fileID: -3184222242573217294, guid: ef4078f9266ded848aea2ceea2e159eb, type: 2}
-    value: {fileID: 1129384424}
   - key: {fileID: 7546806989469666995, guid: ef4078f9266ded848aea2ceea2e159eb, type: 2}
     value: {fileID: 788295824}
+  - key: {fileID: -3977828562919030437, guid: ef4078f9266ded848aea2ceea2e159eb, type: 2}
+    value: {fileID: 4954474015135132327}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &6679637198351940344
