@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 227b87b65cce95a4ca566cc95e3394a8
+guid: 7c20a53c4f8b30c469d5c05d469b8b9b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1911592816244896481
-    second: D Cida Idle_0
+      213: 3216266080006613414
+    second: D Cida Idle Back_0
   - first:
-      213: 8931465570726582860
-    second: D Cida Idle_1
+      213: 8887948569870938677
+    second: D Cida Idle Back_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: D Cida Idle_0
+      name: D Cida Idle Back_0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,14 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1dc8803678a875e0800000000000000
-      internalID: -1911592816244896481
+      spriteID: 6a9aee195f872ac20800000000000000
+      internalID: 3216266080006613414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D Cida Idle_1
+      name: D Cida Idle Back_1
       rect:
         serializedVersion: 2
         x: 40
@@ -156,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4a1aca9d90f2fb70800000000000000
-      internalID: 8931465570726582860
+      spriteID: 53239194226585b70800000000000000
+      internalID: 8887948569870938677
       vertices: []
       indices: 
       edges: []

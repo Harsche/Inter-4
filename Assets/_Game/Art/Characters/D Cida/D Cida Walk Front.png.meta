@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 227b87b65cce95a4ca566cc95e3394a8
+guid: 38d56cf0a89d5794d9b34025b44675d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1911592816244896481
-    second: D Cida Idle_0
+      213: -8918108223771699845
+    second: D Cida Walk Front_0
   - first:
-      213: 8931465570726582860
-    second: D Cida Idle_1
+      213: -1951673260272993315
+    second: D Cida Walk Front_1
+  - first:
+      213: 8076999037010624633
+    second: D Cida Walk Front_2
+  - first:
+      213: 5414258727571846350
+    second: D Cida Walk Front_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,7 +127,70 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: D Cida Idle_0
+      name: D Cida Walk Front_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 40
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75199512d38c3480800000000000000
+      internalID: -8918108223771699845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D Cida Walk Front_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 84
+        width: 40
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbbccb92834ae4e0800000000000000
+      internalID: -1951673260272993315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D Cida Walk Front_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 84
+        width: 40
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970c03494d3471070800000000000000
+      internalID: 8076999037010624633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D Cida Walk Front_3
       rect:
         serializedVersion: 2
         x: 0
@@ -135,29 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1dc8803678a875e0800000000000000
-      internalID: -1911592816244896481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: D Cida Idle_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 0
-        width: 40
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4a1aca9d90f2fb70800000000000000
-      internalID: 8931465570726582860
+      spriteID: ec47af270af432b40800000000000000
+      internalID: 5414258727571846350
       vertices: []
       indices: 
       edges: []
