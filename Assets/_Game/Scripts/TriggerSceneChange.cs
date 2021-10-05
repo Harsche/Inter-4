@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class TriggerSceneChange : MonoBehaviour
 {
@@ -10,8 +11,7 @@ public class TriggerSceneChange : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(sceneName);
-            other.transform.position = newPosition;
+            Globals.SceneChanger.ChangeScene(sceneName, newPosition);
         }
     }
 }

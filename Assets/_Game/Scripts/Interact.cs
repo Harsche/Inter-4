@@ -4,28 +4,28 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    [SerializeField] private GameObject dialogCanvas;
+    private GameObject dialogCanvas;
     private Character character;
 
     private void Start()
     {
+        dialogCanvas = Globals.DialogCanvas;
         character = GetComponent<Character>();
     }
 
-    public void Interaction()
+    public void SetStory(TextAsset storyJson)
     {
-        
+        Globals.DialogManager.SetStory(storyJson);
+    }
 
-        /*
-        foreach(Quest quest in Globals.Player.GetComponent<QuestSystem>().quests)
-        {
-            switch(quest.step)
-            {
-                case QuestStep.Speak:
-                if()
-                break;
-            }
-        }
-        */
+    public void StartDialog(string inkKnot)
+    {
+        Globals.DialogManager.JumpTo(inkKnot);
+        Globals.DialogCanvas.SetActive(true);
+    }
+
+    public void SetObjectActive(GameObject obj)
+    {
+        obj.SetActive(true);
     }
 }

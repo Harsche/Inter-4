@@ -29,16 +29,6 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    [ContextMenu("Reset quests")]
-    public void ResetQuests()
-    {
-        foreach(Quest q in questList.MainQuests)
-        {
-            q.QuestState = QuestSate.Inactive;
-            q.currentStep = 0;
-        }
-    }
-
     IEnumerator NewQuestCanvas()
     {
         yield return (new WaitForSeconds(3.0f));

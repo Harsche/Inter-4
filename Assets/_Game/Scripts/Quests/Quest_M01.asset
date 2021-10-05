@@ -16,4 +16,4 @@ MonoBehaviour:
   currentStep: 0
   steps:
   - "Sua m\xE3e precisa de ajuda para buscar \xE1gua, v\xE1 com ela at\xE9 a lagoa."
-  QuestState: 1
+  QuestState: 0

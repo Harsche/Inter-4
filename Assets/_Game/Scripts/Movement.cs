@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private GameObject circle;
 
     [SerializeField] private GameObject canvasJoystick;
+    public bool canMove = true;
     private SpriteRenderer spriteRenderer;
     private Animator anim;
     private GameObject circleCenter;
@@ -52,7 +53,7 @@ public class Movement : MonoBehaviour
         {
             Vector2 direction = finger.ScreenPosition - finger.StartScreenPosition;
 
-            if (!finger.Up)
+            if (!finger.Up && canMove)
             {
                 if (finger.Down)
                 {
