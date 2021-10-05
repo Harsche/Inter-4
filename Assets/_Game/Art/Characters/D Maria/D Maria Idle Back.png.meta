@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: c0bcc10f394ac69488326f562aa0cceb
+guid: 03a1fc3caa8a3ad4d828a431ecbc9eb1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2525359577073764467
-    second: Luisa Idle 3_0
+      213: -7380741624180153117
+    second: D Maria Idle Back_0
   - first:
-      213: 2137026860083008642
-    second: Luisa Idle 3_1
+      213: -206290983951638763
+    second: D Maria Idle Back_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Luisa Idle 3_0
+      name: D Maria Idle Back_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 40
-        height: 45
+        height: 85
       alignment: 9
       pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 378cc99c721eb0320800000000000000
-      internalID: 2525359577073764467
+      spriteID: 3e46dcff896529990800000000000000
+      internalID: -7380741624180153117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Luisa Idle 3_1
+      name: D Maria Idle Back_1
       rect:
         serializedVersion: 2
         x: 40
         y: 0
         width: 40
-        height: 45
+        height: 85
       alignment: 9
       pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28457b65b9e38ad10800000000000000
-      internalID: 2137026860083008642
+      spriteID: 51f523d617b132df0800000000000000
+      internalID: -206290983951638763
       vertices: []
       indices: 
       edges: []

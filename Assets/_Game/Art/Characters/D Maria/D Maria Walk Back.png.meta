@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: c0bcc10f394ac69488326f562aa0cceb
+guid: c7cc4352ec3014b43a5fc9702d92d473
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2525359577073764467
-    second: Luisa Idle 3_0
+      213: -806953437993457023
+    second: D Maria Walk Back_0
   - first:
-      213: 2137026860083008642
-    second: Luisa Idle 3_1
+      213: -6265789829670972115
+    second: D Maria Walk Back_1
+  - first:
+      213: 3465462789322578826
+    second: D Maria Walk Back_2
+  - first:
+      213: -7820185041909422767
+    second: D Maria Walk Back_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Luisa Idle 3_0
+      name: D Maria Walk Back_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 85
         width: 40
-        height: 45
+        height: 85
       alignment: 9
       pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 378cc99c721eb0320800000000000000
-      internalID: 2525359577073764467
+      spriteID: 18aae12af102dc4f0800000000000000
+      internalID: -806953437993457023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Luisa Idle 3_1
+      name: D Maria Walk Back_1
       rect:
         serializedVersion: 2
         x: 40
-        y: 0
+        y: 85
         width: 40
-        height: 45
+        height: 85
       alignment: 9
       pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +162,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28457b65b9e38ad10800000000000000
-      internalID: 2137026860083008642
+      spriteID: d25d435f8517b09a0800000000000000
+      internalID: -6265789829670972115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D Maria Walk Back_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 85
+        width: 40
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b18ebcb0cc71030800000000000000
+      internalID: 3465462789322578826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D Maria Walk Back_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1556a23332f197390800000000000000
+      internalID: -7820185041909422767
       vertices: []
       indices: 
       edges: []
