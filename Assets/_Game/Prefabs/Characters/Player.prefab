@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc98219a83dff145947365dc914d06e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tapThreshold: 0.2
+  tapThreshold: 1000
   swipeThreshold: 100
   referenceDpi: 200
   guiLayers:
@@ -355,7 +355,6 @@ GameObject:
   - component: {fileID: 1951046481}
   - component: {fileID: 1951046480}
   - component: {fileID: 1210636927}
-  - component: {fileID: 1210636921}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -503,7 +502,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6136857868080333812}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4e9f12e9fad6764f89f2b5dc1815884, type: 3}
   m_Name: 
@@ -513,6 +512,7 @@ MonoBehaviour:
   joystickSize: 180
   circle: {fileID: 6627615427066352383, guid: 1307b8af9145c5440898ce505d4e6d0f, type: 3}
   canvasJoystick: {fileID: 1212048453}
+  canMove: 1
 --- !u!114 &1951046480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,17 +537,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4028887ef433974189ae9f605748c29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1210636921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6136857868080333812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf9564c98bec4964f9f016754f2e48f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

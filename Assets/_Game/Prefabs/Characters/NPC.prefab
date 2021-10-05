@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 943119440016135392}
   - component: {fileID: 5576678592368221074}
   - component: {fileID: 1222290690}
+  - component: {fileID: 3511848917319959976}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -182,6 +183,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: NPC
   dialogs: {fileID: 4900000, guid: 598b79c59adfde941a3a10fe9ccd8074, type: 3}
+--- !u!114 &3511848917319959976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943119440016135398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4028887ef433974189ae9f605748c29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1865713332
 MonoBehaviour:
   m_ObjectHideFlags: 0
