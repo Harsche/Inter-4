@@ -31,14 +31,9 @@ public class Chicken : MonoBehaviour
             Vector2 distance = transform.position - other.transform.position;
             mySpriteRenderer.flipX = distance.x < 0 ? true : false;
             distance = myPosition + Vector2.ClampMagnitude(distance, 1.0f) * runDistance;
-            run = myRigibody2d.DOMove(distance, runTime);
+            run = myRigibody2d.DOMove(distance, runTime).OnComplete(() => { myAnimator.SetFloat("Velocity", 0.0f); });
 
             myAnimator.SetFloat("Velocity", 1.0f);
         }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        myAnimator.SetFloat("Velocity", 0.0f);
     }
 }
