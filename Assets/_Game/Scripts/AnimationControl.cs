@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class AnimationControl : MonoBehaviour
 {
+    [SerializeField] bool isNPC;
+    private SpriteRenderer spriteRenderer;
     private Animator anim;
 
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
 
@@ -16,6 +19,11 @@ public class AnimationControl : MonoBehaviour
         anim.SetFloat("Velocity", 0);
         anim.SetFloat("Vel_Y", 0);
         anim.SetFloat("Vel_X", -1);
+
+        if(isNPC)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 
     public void Idle_Right()
@@ -23,6 +31,11 @@ public class AnimationControl : MonoBehaviour
         anim.SetFloat("Velocity", 0);
         anim.SetFloat("Vel_Y", 0);
         anim.SetFloat("Vel_X", 1);
+
+        if(isNPC)
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 
     public void Idle_Up()
@@ -44,6 +57,11 @@ public class AnimationControl : MonoBehaviour
         anim.SetFloat("Velocity", 1);
         anim.SetFloat("Vel_Y", 0);
         anim.SetFloat("Vel_X", -1);
+
+        if(isNPC)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 
     public void Walk_Right()
@@ -51,6 +69,11 @@ public class AnimationControl : MonoBehaviour
         anim.SetFloat("Velocity", 1);
         anim.SetFloat("Vel_Y", 0);
         anim.SetFloat("Vel_X", 1);
+
+        if(isNPC)
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 
     public void Walk_Up()

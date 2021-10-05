@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122217916569923407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.51, z: 0}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6602225191455946131}
@@ -140,8 +140,8 @@ SpriteRenderer:
   m_SortingLayerID: 1966699993
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2757298984738394219, guid: 0a59ffdca338b854b83b092789fb2a08, type: 3}
-  m_Color: {r: 1, g: 0.95179474, b: 0, a: 1}
+  m_Sprite: {fileID: 8544429106801237871, guid: 21576f7858b94ab4684fa3350f05c974, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -161,7 +161,7 @@ Animator:
   m_GameObject: {fileID: 4644690052340019217}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5d0ad635b23d0224d9d528536ddbd394, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9f781888cfed72e46887e17a607cc400, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -204,18 +204,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0041801333, y: 0.2131707}
+  m_Offset: {x: 0.005283892, y: -0.037632465}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.875, y: 1.3125}
+    pivot: {x: 0.5, y: 0.07}
+    oldSize: {x: 1, y: 2.125}
     newSize: {x: 0.875, y: 1.3125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.79976046, y: 0.4263414}
+  m_Size: {x: 0.7808324, y: 0.34116268}
   m_EdgeRadius: 0
 --- !u!114 &2169878342221669
 MonoBehaviour:
@@ -257,6 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4028887ef433974189ae9f605748c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNPC: 1
 --- !u!1 &4663844894579093084
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,7 +482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f0c6f611807414a994607e22de68d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogCanvas: {fileID: 0}
 --- !u!114 &5576550199618019904
 MonoBehaviour:
   m_ObjectHideFlags: 0

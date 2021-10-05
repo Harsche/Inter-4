@@ -15,12 +15,15 @@ public class CheckDistance : MonoBehaviour
 
     void Start()
     {
+        //Obtém os componentes e começa a coroutine de checar distância
+
         distance = StartCoroutine(CheckDistanceFromPlayer());
         animationControl = GetComponent<AnimationControl>();
     }
-
     private IEnumerator CheckDistanceFromPlayer()
     {
+        //Checa a ditância do jogador até este objeto
+
         while (true)
         {
             yield return new WaitForSeconds(checkFrequency);
@@ -47,6 +50,8 @@ public class CheckDistance : MonoBehaviour
 
     public void StopCheckingDistance()
     {
+        //Para a coroutine de checagem
+
         StopCoroutine(distance);
     }
 

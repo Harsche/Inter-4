@@ -6,6 +6,7 @@ public class NPC_Movement : MonoBehaviour
 {
     [SerializeField] private float velocity;
     [SerializeField] private Vector2 distNpc;
+    private SpriteRenderer mySpriteRenderer;
     private Vector2 startPos;
     private Vector2 finalPos;
     private Transform _transform;
@@ -14,6 +15,7 @@ public class NPC_Movement : MonoBehaviour
 
     void Start()
     {
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
         _transform = GetComponent<Transform>();
         myRb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -29,6 +31,7 @@ public class NPC_Movement : MonoBehaviour
 
         if (myRb2d.velocity.magnitude != 0)
         {
+            mySpriteRenderer.flipX = myRb2d.velocity.x < 0 ? true : false;
             anim.SetFloat("Vel_X", myRb2d.velocity.x);
             anim.SetFloat("Vel_Y", myRb2d.velocity.y);
         }
@@ -76,10 +79,5 @@ public class NPC_Movement : MonoBehaviour
             default:
                 return 0f;
         }
-    }
-
-    public void SetAnimationParams()
-    {
-        
     }
 }

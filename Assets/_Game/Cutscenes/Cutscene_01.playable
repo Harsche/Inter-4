@@ -504,7 +504,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 15.266666
+    m_StopTime: 15.283334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -538,15 +538,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
-  - time: 15.266666
-    functionName: BindOrUnbindPlayer
+  - time: 15.283334
+    functionName: SetCutscenePlayed
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 15.266666
-    functionName: SetCutscenePlayed
+  - time: 15.283334
+    functionName: BindOrUnbindPlayer
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
