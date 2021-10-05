@@ -14,7 +14,7 @@ public class Cutscene : MonoBehaviour
 
     private void Awake()
     {
-        if (Globals.CutsceneManager.WasPlayedOrCantPlay(gameObject.name))
+        if (Globals.CutsceneManager.WasPlayed(gameObject.name))
         {
             Destroy(gameObject);
         }
@@ -38,8 +38,6 @@ public class Cutscene : MonoBehaviour
 
     public void BindTimelineTracks()
     {
-        Debug.Log("TEst");
-
         if (bindPlayer)
         {
             BindOrUnbindPlayer(1);
@@ -78,6 +76,11 @@ public class Cutscene : MonoBehaviour
         }
     }
 
+    public void StartDialog(string inkKnot)
+    {
+        Globals.DialogManager.JumpTo(inkKnot);
+        Globals.DialogCanvas.SetActive(true);
+    }
 
 
     public void PauseTimeline()

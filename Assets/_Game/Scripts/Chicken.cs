@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class Chicken : MonoBehaviour
 {
@@ -17,5 +18,10 @@ public class Chicken : MonoBehaviour
     {
         mySpriteRenderer.flipX = myRigibody2d.velocity.x < 0 ? true : false;
         myAnimator.SetFloat("Velocity", myRigibody2d.velocity.magnitude);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+
     }
 }

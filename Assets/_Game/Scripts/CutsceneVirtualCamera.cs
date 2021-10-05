@@ -7,7 +7,7 @@ public class CutsceneVirtualCamera : MonoBehaviour
 {
     [SerializeField] private bool followPlayer;
 
-    void Start()
+    void Awake()
     {
         if (followPlayer)
         {

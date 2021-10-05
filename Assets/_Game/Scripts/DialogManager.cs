@@ -3,6 +3,7 @@ using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.UI;
 using Lean.Touch;
+using System.IO;
 
 public class DialogManager : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class DialogManager : MonoBehaviour
     private StringBuilder charName = new StringBuilder();
     private StringBuilder charLine = new StringBuilder();
     private Story story;
+
+
+    string savedStory;
 
     private void Awake()
     {
@@ -35,18 +39,28 @@ public class DialogManager : MonoBehaviour
 
     public void SetStory(TextAsset storyJson)
     {
+        if(story != null && story.state != null)
+        {
+            SaveStoryState();
+        }
+
         story = new Story(storyJson.text);
         BindMethods();
+
+        if(story != null && (savedStory != null && savedStory != ""))
+        {
+            LoadStoryState();
+        }
     }
 
     public void SaveStoryState()
     {
-
+        savedStory = story.state.ToJson();
     }
 
     public void LoadStoryState()
     {
-
+        story.state.LoadJson(savedStory);
     }
 
     public void ContinueStory()

@@ -14,6 +14,9 @@ public class AnimationControl : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    //Métodos para serem usados para mudar a animação de personagens durante cutscenes
+    //Devem ser usados como eventos em um animation clip ou chamados por código
+
     public void Idle_Left()
     {
         anim.SetFloat("Velocity", 0);

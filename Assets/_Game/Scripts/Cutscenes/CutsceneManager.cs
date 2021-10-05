@@ -6,11 +6,11 @@ public class CutsceneManager : MonoBehaviour
     [SerializeField] private CutsceneData cutsceneData;
     public PlayableDirector director { get; private set; }
 
-    public bool WasPlayedOrCantPlay(string cutsceneName)
+    public bool WasPlayed(string cutsceneName)
     {
         
         int cutsceneNum = int.Parse(cutsceneName.Split('_')[1]);
-        if(cutsceneData.states[cutsceneNum] == CutsceneState.Played || cutsceneData.states[cutsceneNum] == CutsceneState.CanNotPlay)
+        if(cutsceneData.states[cutsceneNum] == CutsceneState.Played)
         {
             return true;
         }

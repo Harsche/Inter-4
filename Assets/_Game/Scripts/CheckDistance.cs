@@ -57,6 +57,8 @@ public class CheckDistance : MonoBehaviour
 
     public void SetWaiting()
     {
+        //Diz que o objeto chegou na posição final
+        
         isWaiting = true;
     }
 }

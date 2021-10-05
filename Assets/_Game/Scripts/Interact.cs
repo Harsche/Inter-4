@@ -18,6 +18,11 @@ public class Interact : MonoBehaviour
         Globals.DialogManager.SetStory(storyJson);
     }
 
+    public void SetDialog(string inkKnot)
+    {
+        Globals.DialogManager.JumpTo(inkKnot);
+    }
+
     public void StartDialog(string inkKnot)
     {
         Globals.DialogManager.JumpTo(inkKnot);
