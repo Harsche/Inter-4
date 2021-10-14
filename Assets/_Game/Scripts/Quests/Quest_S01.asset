@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f85078579ead64a4aa07602ec4f65840, type: 3}
-  m_Name: Quest_M01
+  m_Name: Quest_S01
   m_EditorClassIdentifier: 
-  questName: "Siga a mam\xE3e"
+  questName: Ajuda a uma velha amiga
   currentStep: 0
   questState: 0
   questSteps:
   - goal: 
     questType: 0
-    goalName: Dona Maria
+    goalName: 
     currentNum: 0
     goalNum: 0
   - goal: 
     questType: 0
-    goalName: Dona Maria
+    goalName: 
     currentNum: 0
     goalNum: 0
   p:

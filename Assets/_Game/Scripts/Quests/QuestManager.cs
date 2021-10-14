@@ -19,10 +19,10 @@ public class QuestManager : MonoBehaviour
     {
         foreach(Quest q in questList.MainQuests)
         {
-            if(q.QuestName == questName && q.QuestState == QuestSate.Inactive)
+            if(q.questName == questName && q.questState == QuestSate.Inactive)
             {
-                newQuestText.text = "Nova missão: " + q.QuestName;
-                q.QuestState = QuestSate.Active;
+                newQuestText.text = "Nova missão: " + q.questName;
+                q.questState = QuestSate.Active;
                 newQuestCanvas.SetActive(true);
                 StartCoroutine(NewQuestCanvas());
             }

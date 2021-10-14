@@ -15,7 +15,7 @@ public class QuestList : ScriptableObject
     {
         foreach(Quest q in mainQuests)
         {
-            q.QuestState = QuestSate.Inactive;
+            q.questState = QuestSate.Inactive;
             q.currentStep = 0;
         }
     }
