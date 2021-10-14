@@ -353,7 +353,6 @@ GameObject:
   - component: {fileID: 1325066357}
   - component: {fileID: 1199041640}
   - component: {fileID: 1951046481}
-  - component: {fileID: 1951046480}
   - component: {fileID: 1210636927}
   m_Layer: 0
   m_Name: Player
@@ -513,20 +512,6 @@ MonoBehaviour:
   circle: {fileID: 6627615427066352383, guid: 1307b8af9145c5440898ce505d4e6d0f, type: 3}
   canvasJoystick: {fileID: 1212048453}
   canMove: 1
---- !u!114 &1951046480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6136857868080333812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14586ee9f6064d442a6f5c19431954a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Luiz
-  dialogs: {fileID: 4900000, guid: 6db38b8569df66745b01f6f1b299c28b, type: 3}
 --- !u!114 &1210636927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,3 +524,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4028887ef433974189ae9f605748c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isNPC: 0
