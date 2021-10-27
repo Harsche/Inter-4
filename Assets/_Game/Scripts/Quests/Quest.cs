@@ -10,7 +10,6 @@ public class Quest : ScriptableObject
     public int currentStep;
     public QuestSate questState;
     public QuestStep[] questSteps;
-    public QuestStep p;
 
     public void NextStep()
     {

@@ -26,9 +26,3 @@ MonoBehaviour:
     goalName: 
     currentNum: 0
     goalNum: 0
-  p:
-    goal: 
-    questType: 0
-    goalName: 
-    currentNum: 0
-    goalNum: 0

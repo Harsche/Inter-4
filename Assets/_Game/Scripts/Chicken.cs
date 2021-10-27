@@ -1,10 +1,10 @@
+using System.Collections;
 using UnityEngine;
 using DG.Tweening;
 
 public class Chicken : MonoBehaviour
 {
-    [SerializeField] float runDistance;
-    [SerializeField] float runTime;
+    [SerializeField] float speed;
     private Animator myAnimator;
     private Rigidbody2D myRigibody2d;
     private SpriteRenderer mySpriteRenderer;
@@ -28,12 +28,28 @@ public class Chicken : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Vector2 myPosition = transform.position;
-            Vector2 distance = transform.position - other.transform.position;
-            mySpriteRenderer.flipX = distance.x < 0 ? true : false;
-            distance = myPosition + Vector2.ClampMagnitude(distance, 1.0f) * runDistance;
-            run = myRigibody2d.DOMove(distance, runTime).OnComplete(() => { myAnimator.SetFloat("Velocity", 0.0f); });
+            Vector2 direction = transform.position - other.transform.position;
+            mySpriteRenderer.flipX = direction.x < 0 ? true : false;
+            direction = Vector2.ClampMagnitude(direction, 1.0f) * speed;
+            myRigibody2d.velocity = direction;
 
             myAnimator.SetFloat("Velocity", 1.0f);
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Coroutine stopCoroutine = StartCoroutine(StopRunning());
+        }
+
+    }
+
+    IEnumerator StopRunning()
+    {
+        yield return new WaitForSeconds(0.5f);
+        myRigibody2d.velocity = Vector2.zero;
+        myAnimator.SetFloat("Velocity", 0.0f);
     }
 }

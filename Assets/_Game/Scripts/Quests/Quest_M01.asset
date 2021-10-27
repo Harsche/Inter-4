@@ -14,21 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questName: "Siga a mam\xE3e"
   currentStep: 0
-  questState: 0
+  questState: 1
   questSteps:
   - goal: 
-    questType: 0
-    goalName: Dona Maria
+    questType: 1
+    goalName: 
     currentNum: 0
     goalNum: 0
   - goal: 
-    questType: 0
-    goalName: Dona Maria
-    currentNum: 0
-    goalNum: 0
-  p:
-    goal: 
-    questType: 0
-    goalName: 
+    questType: 1
+    goalName: AAaaa
     currentNum: 0
     goalNum: 0

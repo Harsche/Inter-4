@@ -212,5 +212,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cac72e00caa7b945b5603de80817243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runDistance: 3.5
-  runTime: 2
+  speed: 3
