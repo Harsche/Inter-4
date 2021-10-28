@@ -43,7 +43,6 @@ public class Chicken : MonoBehaviour
         {
             Coroutine stopCoroutine = StartCoroutine(StopRunning());
         }
-
     }
 
     IEnumerator StopRunning()

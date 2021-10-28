@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 943119440016135394}
   - component: {fileID: 943119440016135395}
   - component: {fileID: 943119440016135396}
-  - component: {fileID: 943119440016135392}
+  - component: {fileID: 8590372140694751009}
   - component: {fileID: 5576678592368221074}
   - component: {fileID: 3511848917319959976}
   m_Layer: 0
@@ -32,7 +32,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.73, y: 2.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2992870821523448999}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -127,8 +128,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &943119440016135392
-BoxCollider2D:
+--- !u!70 &8590372140694751009
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -140,19 +141,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0041801333, y: 0.2131707}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.875, y: 1.3125}
-    newSize: {x: 0.875, y: 1.3125}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.79976046, y: 0.4263414}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.00000003149053, y: 0.2}
+  m_Size: {x: 1.03, y: 0.47167757}
+  m_Direction: 1
 --- !u!114 &5576678592368221074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,3 +171,77 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isNPC: 1
+--- !u!1001 &3977409348453874296
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 943119440016135393}
+    m_Modifications:
+    - target: {fileID: 1542309526447554819, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_Name
+      value: Interaction Canvas Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713526477061938143, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713526477061938143, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223630361903441876, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+--- !u!4 &2992870821523448999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+  m_PrefabInstance: {fileID: 3977409348453874296}
+  m_PrefabAsset: {fileID: 0}
