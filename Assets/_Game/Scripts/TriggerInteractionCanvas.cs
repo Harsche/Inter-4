@@ -13,17 +13,14 @@ public class TriggerInteractionCanvas : MonoBehaviour
         interactionTransform = transform.GetChild(0).GetChild(0);
         interactionTransform.localScale = Vector3.zero;
         interactionCanvas = transform.GetChild(0).gameObject.GetComponent<Canvas>();
-        StartCoroutine(DisableCanvas());
+        StartCoroutine(DisableCanvasOnStart());
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            interactionCanvas.enabled = true;
-            interactionTransform.gameObject.SetActive(true);
-            interactionTransform.localScale = Vector3.zero;
-            interactionTransform.DOScale(1.0f, scaleDuration);
+            EnableInteraction();
         }
     }
 
@@ -31,15 +28,28 @@ public class TriggerInteractionCanvas : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            interactionTransform.DOScale(0.0f, scaleDuration).OnComplete(() =>  
+            DisableInteraction();
+        }
+    }
+
+    public void EnableInteraction()
+    {
+        interactionCanvas.enabled = true;
+        interactionTransform.gameObject.SetActive(true);
+        interactionTransform.localScale = Vector3.zero;
+        interactionTransform.DOScale(1.0f, scaleDuration);
+    }
+
+    public void DisableInteraction()
+    {
+        interactionTransform.DOScale(0.0f, scaleDuration).OnComplete(() =>
             {
                 interactionCanvas.enabled = false;
                 interactionTransform.gameObject.SetActive(false);
             });
-        }
     }
 
-    IEnumerator DisableCanvas()
+    IEnumerator DisableCanvasOnStart()
     {
         yield return new WaitForEndOfFrame();
         interactionCanvas.enabled = false;

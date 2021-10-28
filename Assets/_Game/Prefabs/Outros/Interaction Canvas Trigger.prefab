@@ -320,7 +320,6 @@ GameObject:
   - component: {fileID: 1512859063068346609}
   - component: {fileID: 8403262662713635996}
   - component: {fileID: 3793397301480850540}
-  - component: {fileID: 6464552260374400015}
   - component: {fileID: 6464552260374400012}
   m_Layer: 5
   m_Name: Interaction Button
@@ -387,18 +386,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6464552260374400015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9112758916431362542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f0c6f611807414a994607e22de68d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6464552260374400012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,10 +430,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7223630361903441876}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 5899389880434833734}
+        m_TargetAssemblyTypeName: TriggerInteractionCanvas, Assembly-CSharp
+        m_MethodName: DisableInteraction
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
