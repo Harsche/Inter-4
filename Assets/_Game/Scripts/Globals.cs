@@ -1,4 +1,7 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEditor.SceneManagement;
+using System.Linq;
 
 public class Globals : MonoBehaviour
 {
@@ -44,6 +47,28 @@ public class Globals : MonoBehaviour
         {
             DontDestroyOnLoad(go);
         }
+    }
+
+    [ContextMenu("Setup Scene")]
+    public void SetupScene()
+    {
+        Scene activeScene = EditorSceneManager.GetActiveScene();
+        GameObject[] allGameObjects = activeScene.GetRootGameObjects();
+
+        newQuestCanvas = allGameObjects.First(go => go.name == "Canvas_NewQuest");
+        dialogCanvas = allGameObjects.First(go => go.name == "Canvas_Dialog");
+
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerVirtualCamera = GameObject.Find("Virtual Camera Player");
+        dialogManager = dialogCanvas.GetComponent<DialogManager>();
+
+        dontDestroy = new GameObject[6];
+        dontDestroy[0] = player;
+        dontDestroy[1] = gameObject;
+        dontDestroy[2] = playerVirtualCamera;
+        dontDestroy[3] = dialogCanvas;
+        dontDestroy[4] = newQuestCanvas;
+        dontDestroy[5] = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
 }
