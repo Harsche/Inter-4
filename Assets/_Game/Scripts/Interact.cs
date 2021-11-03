@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    private GameObject dialogCanvas;
-
-    private void Start()
-    {
-        dialogCanvas = Globals.DialogCanvas;
-    }
+    [SerializeField] string myName;
+    [SerializeField] TextAsset myStory;
+    [SerializeField] bool isNPC;
 
     public void SetStory(TextAsset storyJson)
     {
@@ -24,11 +21,25 @@ public class Interact : MonoBehaviour
     public void StartDialog(string inkKnot)
     {
         Globals.DialogManager.JumpTo(inkKnot);
-        Globals.DialogCanvas.SetActive(true);
+        Globals.DialogManager.OpenDialog();
     }
 
     public void SetObjectActive(GameObject obj)
     {
         obj.SetActive(true);
+    }
+
+    public void DoInteraction()
+    {
+        string storyKnot = Globals.QuestManager.GetQuestDialog(myName);
+        //Globals.DialogManager.SetStory(myStory);
+        Globals.DialogManager.JumpTo(storyKnot);
+        Globals.DialogManager.OpenDialog();
+
+        if(isNPC)
+        {
+            DialogManager.TalkingNPC = transform.parent.gameObject;
+            transform.parent.gameObject.GetComponent<NPC_Movement>().enabled = false;
+        }
     }
 }

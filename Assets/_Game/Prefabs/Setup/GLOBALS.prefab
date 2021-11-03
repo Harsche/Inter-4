@@ -375,6 +375,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questList: {fileID: 11400000, guid: df665dbecce674a43954257f179e5b33, type: 2}
+  currentQuests:
+  - {fileID: 11400000, guid: ce49ec238b1f0f848b36a7182aa2d30d, type: 2}
 --- !u!1 &3661951768646721801
 GameObject:
   m_ObjectHideFlags: 0

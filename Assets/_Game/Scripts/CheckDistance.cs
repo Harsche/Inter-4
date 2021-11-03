@@ -33,7 +33,7 @@ public class CheckDistance : MonoBehaviour
                 animationControl.Idle_Left();
                 Globals.DialogCanvas.GetComponent<DialogManager>().JumpTo("Day_01_Scene_02");
                 Globals.DialogCanvas.GetComponent<DialogManager>().ContinueStory();
-                Globals.DialogCanvas.SetActive(true);
+                Globals.DialogManager.OpenDialog();
             }
             else if(!isWithinDistance && Vector2.Distance(transform.position, Globals.Player.transform.position) < minDistance)
             {

@@ -23,8 +23,6 @@ public class Cutscene : MonoBehaviour
         cutscene = playableDirector.playableAsset as TimelineAsset;
     }
 
-
-
     void Start()
     {
         Globals.CutsceneManager.SetDirector(playableDirector);
@@ -83,7 +81,7 @@ public class Cutscene : MonoBehaviour
     public void StartDialog(string inkKnot)
     {
         Globals.DialogManager.JumpTo(inkKnot);
-        Globals.DialogCanvas.SetActive(true);
+        Globals.DialogManager.OpenDialog();
     }
 
     public void SetStory(TextAsset storyJson)

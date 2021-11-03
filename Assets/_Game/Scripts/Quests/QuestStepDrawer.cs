@@ -35,7 +35,7 @@ public class QuestStepDrawer : PropertyDrawer
         if (property.isExpanded)
         {
             goalRect = new Rect(position.x, position.y + EditorGUIUtility.singleLineHeight * 1, position.width, EditorGUIUtility.singleLineHeight * 2);
-            EditorGUI.TextField(goalRect, new GUIContent("Goal"), goal.stringValue);
+            goal.stringValue = EditorGUI.TextField(goalRect, new GUIContent("Goal"), goal.stringValue);
             questTypeRect = new Rect(position.x, NextRectPosition(goalRect), position.width, EditorGUIUtility.singleLineHeight);
             EditorGUI.PropertyField(questTypeRect, questType, new GUIContent("Quest Type"));
 

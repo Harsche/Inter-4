@@ -37,13 +37,21 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        anim.SetFloat("Velocity", myRb2d.velocity.magnitude);
+        UpdateAnimation();
+    }
 
-        if (myRb2d.velocity.magnitude != 0)
+    private void UpdateAnimation()
+    {
+        if (canMove)
         {
-            anim.SetFloat("Vel_X", myRb2d.velocity.x);
-            anim.SetFloat("Vel_Y", myRb2d.velocity.y);
-            spriteRenderer.flipX = myRb2d.velocity.x >= 0 ? false : true;
+            anim.SetFloat("Velocity", myRb2d.velocity.magnitude);
+
+            if (myRb2d.velocity.magnitude != 0)
+            {
+                anim.SetFloat("Vel_X", myRb2d.velocity.x);
+                anim.SetFloat("Vel_Y", myRb2d.velocity.y);
+                spriteRenderer.flipX = myRb2d.velocity.x >= 0 ? false : true;
+            }
         }
     }
 

@@ -11,8 +11,9 @@ public class NPC_Movement : MonoBehaviour
     private Transform _transform;
     private Rigidbody2D myRb2d;
     private Animator anim;
+    private Coroutine walkNpc;
 
-    void Start()
+    void Awake()
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         _transform = GetComponent<Transform>();
@@ -20,8 +21,19 @@ public class NPC_Movement : MonoBehaviour
         anim = GetComponent<Animator>();
 
         startPos = _transform.position;
-        StartCoroutine(WalkNpc());
+    }
 
+    private void OnEnable()
+    {
+        walkNpc = StartCoroutine(WalkNpc());
+    }
+
+    private void OnDisable()
+    {
+        if(walkNpc != null)
+        {
+            StopCoroutine(walkNpc);
+        }
     }
 
     void FixedUpdate()
@@ -41,16 +53,16 @@ public class NPC_Movement : MonoBehaviour
         }
     }
 
-     private IEnumerator WalkNpc()
+    private IEnumerator WalkNpc()
     {
-        while(true)
+        while (true)
         {
             if ((int)Random.Range(0f, 1.9999f) == 0)
             {
                 //Move o npc em x
 
                 finalPos = new Vector2(GetPosition('x'), _transform.position.y);
-                myRb2d.velocity = new Vector2(Mathf.Sign( finalPos.x - _transform.position.x) * velocity, 0f);
+                myRb2d.velocity = new Vector2(Mathf.Sign(finalPos.x - _transform.position.x) * velocity, 0f);
             }
             else
             {
@@ -62,7 +74,7 @@ public class NPC_Movement : MonoBehaviour
 
             yield return (new WaitForSeconds(Random.Range(5f, 10f)));
         }
-        
+
     }
 
     private float GetPosition(char axis)
