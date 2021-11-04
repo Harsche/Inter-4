@@ -1,7 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor.SceneManagement;
 using System.Linq;
+
+#if UNITY_EDITOR
+using UnityEditor.SceneManagement;
+#endif
 
 public class Globals : MonoBehaviour
 {
@@ -49,6 +52,7 @@ public class Globals : MonoBehaviour
         }
     }
 
+    #if UNITY_EDITOR
     [ContextMenu("Setup Scene")]
     public void SetupScene()
     {
@@ -70,5 +74,6 @@ public class Globals : MonoBehaviour
         dontDestroy[4] = newQuestCanvas;
         dontDestroy[5] = GameObject.FindGameObjectWithTag("MainCamera");
     }
+    #endif
 
 }
