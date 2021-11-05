@@ -74,7 +74,7 @@ public class DialogManager : MonoBehaviour
                 story.Continue();
             }
 
-            if (!HasContent(story.currentText))
+            if (HasContent(story.currentText))
             {
                 string[] newLine = story.currentText.Split(separator, 2, System.StringSplitOptions.None);
                 charName.Append(newLine[0]);

@@ -105,11 +105,13 @@ public class Cutscene : MonoBehaviour
 
     public void PauseTimeline()
     {
-        Globals.CutsceneManager.PauseTimeline();
+        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+        //Globals.CutsceneManager.PauseTimeline();
     }
 
     public void ResumeTimeline()
     {
-        Globals.CutsceneManager.ResumeTimeline();
+        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
+        //Globals.CutsceneManager.ResumeTimeline();
     }
 }

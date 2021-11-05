@@ -26,7 +26,7 @@ public class CheckDistance : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(checkFrequency);
-            if(isWithinDistance && Vector2.Distance(transform.position, Globals.Player.transform.position) > maxDistance)
+            if (isWithinDistance && Vector2.Distance(transform.position, Globals.Player.transform.position) > maxDistance)
             {
                 isWithinDistance = false;
                 Globals.CutsceneManager.PauseTimeline();
@@ -35,11 +35,11 @@ public class CheckDistance : MonoBehaviour
                 Globals.DialogCanvas.GetComponent<DialogManager>().ContinueStory();
                 Globals.DialogManager.OpenDialog();
             }
-            else if(!isWithinDistance && Vector2.Distance(transform.position, Globals.Player.transform.position) < minDistance)
+            else if (!isWithinDistance && Vector2.Distance(transform.position, Globals.Player.transform.position) < minDistance)
             {
                 isWithinDistance = true;
                 Globals.CutsceneManager.ResumeTimeline();
-                if(!isWaiting)
+                if (!isWaiting)
                 {
                     animationControl.Walk_Right();
                 }
@@ -49,15 +49,12 @@ public class CheckDistance : MonoBehaviour
 
     public void StopCheckingDistance()
     {
-        //Para a coroutine de checagem
-
-        StopCoroutine(distance);
+        if (distance != null) StopCoroutine(distance);
     }
 
     public void SetWaiting()
     {
         //Diz que o objeto chegou na posição final
-        
         isWaiting = true;
     }
 }

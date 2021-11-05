@@ -3850,11 +3850,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4657380282524528384, guid: 1970767938c9229489c0bb5fb8232c94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.978773
+      value: -3.9688528
       objectReference: {fileID: 0}
     - target: {fileID: 4657380282524528384, guid: 1970767938c9229489c0bb5fb8232c94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.238023
+      value: -9.262304
       objectReference: {fileID: 0}
     - target: {fileID: 4657380282524528384, guid: 1970767938c9229489c0bb5fb8232c94, type: 3}
       propertyPath: m_LocalPosition.z
@@ -55451,7 +55451,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 8f397810d7575954489ed96e7d5fcbbc, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -55595,6 +55595,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6478342505068996574, guid: 8f12ffb750e7d39439ae9f505d94499b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7600560155659729489, guid: 8f12ffb750e7d39439ae9f505d94499b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7630425525108079874, guid: 8f12ffb750e7d39439ae9f505d94499b, type: 3}
       propertyPath: m_Name
       value: House
