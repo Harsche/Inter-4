@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
@@ -7,6 +8,7 @@ public class Cutscene : MonoBehaviour
 {
     [SerializeField] private bool bindPlayer;
     [SerializeField] private bool bindDialogCanvas;
+    private List<PlayableDirector> possibleCutscenes = new List<PlayableDirector>();
     private PlayableDirector playableDirector;
     private TimelineAsset cutscene;
     static string PlayerReference = "Player";
@@ -14,13 +16,17 @@ public class Cutscene : MonoBehaviour
 
     private void Awake()
     {
-        if (Globals.CutsceneManager.WasPlayed(gameObject.name))
-        {
-            Destroy(gameObject);
-        }
+        if (Globals.CutsceneManager.WasPlayed(gameObject.name)) Destroy(gameObject);
 
         playableDirector = GetComponent<PlayableDirector>();
         cutscene = playableDirector.playableAsset as TimelineAsset;
+
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (!(transform.GetChild(i).name.Contains("Cutscene_"))) continue;
+            PlayableDirector childDirector = transform.GetChild(i).GetComponent<PlayableDirector>();
+            possibleCutscenes.Add(childDirector);
+        }
     }
 
     void Start()
@@ -36,21 +42,13 @@ public class Cutscene : MonoBehaviour
 
     public void BindTimelineTracks()
     {
-        if (bindPlayer)
+        if (bindPlayer) BindOrUnbindPlayer(true);
+        if (!bindDialogCanvas) return;
+        foreach (TrackAsset track in cutscene.GetOutputTracks())
         {
-            BindOrUnbindPlayer(true);
-        }
-
-        if (bindDialogCanvas)
-        {
-            foreach (TrackAsset track in cutscene.GetOutputTracks())
-            {
-                if (track.name == DialogCanvasReference)
-                {
-                    playableDirector.SetGenericBinding(track, Globals.DialogCanvas);
-                    break;
-                }
-            }
+            if (!(track.name == DialogCanvasReference)) continue;
+            playableDirector.SetGenericBinding(track, Globals.DialogCanvas);
+            break;
         }
     }
 
@@ -58,18 +56,19 @@ public class Cutscene : MonoBehaviour
     {
         foreach (TrackAsset track in cutscene.GetOutputTracks())
         {
-            if (track.name == PlayerReference)
-            {
-                if (bind)
-                {
-                    playableDirector.SetGenericBinding(track, Globals.Player.GetComponent<Animator>());
-                }
-                else
-                {
-                    playableDirector.SetGenericBinding(track, null);
-                }
-            }
+            CheckIfTrackIsPlayer(track, bind);
         }
+    }
+
+    public void CheckIfTrackIsPlayer(TrackAsset track, bool bind)
+    {
+        if (!(track.name == PlayerReference)) return;
+        if (!bind)
+        {
+            playableDirector.SetGenericBinding(track, null);
+            return;
+        }
+        playableDirector.SetGenericBinding(track, Globals.Player.GetComponent<Animator>());
     }
 
     public void PlayerVCamOnOrOff(bool set)

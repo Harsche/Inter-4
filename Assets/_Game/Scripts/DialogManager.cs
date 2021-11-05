@@ -60,10 +60,7 @@ public class DialogManager : MonoBehaviour
 
     public void ContinueStory()
     {
-        if(displayingChoices)
-        {
-            return;
-        }
+        if(displayingChoices) return;
 
         string[] separator = { ": " };
         charLine.Clear();
@@ -77,7 +74,7 @@ public class DialogManager : MonoBehaviour
                 story.Continue();
             }
 
-            if (HasContent(story.currentText))
+            if (!HasContent(story.currentText))
             {
                 string[] newLine = story.currentText.Split(separator, 2, System.StringSplitOptions.None);
                 charName.Append(newLine[0]);
@@ -138,10 +135,11 @@ public class DialogManager : MonoBehaviour
 
     private void BindMethods()
     {
-        story.BindExternalFunction("pauseTimeline", () => { Globals.CutsceneManager.PauseTimeline(); });
-        story.BindExternalFunction("resumeTimeline", () => { Globals.CutsceneManager.ResumeTimeline(); });
+        story.BindExternalFunction("PauseTimeline", () => { Globals.CutsceneManager.PauseTimeline(); });
+        story.BindExternalFunction("ResumeTimeline", () => { Globals.CutsceneManager.ResumeTimeline(); });
         story.BindExternalFunction("newQuest", (string questName) => { Globals.QuestManager.StartNewQuest(questName); });
         story.BindExternalFunction("Debug", (string value) => { Debug.Log(value); });
+        story.BindExternalFunction("PlayCutscene", (string cutsceneName) => { CutscenePlayer.Instance.PlayCutscene(cutsceneName); });
     }
 
     public void OpenDialog()

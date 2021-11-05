@@ -11,6 +11,7 @@
 }
 
 = D01
+~ PauseTimeline()
 Dona Cida: Bom dia, meu fi.
 Luiz: Bom dia, dona Cida! O Junior ta? Queria chama ele pra joga bola, se a senhora deixa!
 Dona Cida: Oh fi, num ta não. Junior saiu agora de pouco com o pai dele pra irem vende uns ovos das nossas galinha num vilarejo aqui de perto, eles vão passar uns dias lá. Ocê quer entrar?

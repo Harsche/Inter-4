@@ -75,7 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f0c6f611807414a994607e22de68d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myName: 
   myStory: {fileID: 0}
+  isNPC: 0
 --- !u!1 &6083264561436868624
 GameObject:
   m_ObjectHideFlags: 0
