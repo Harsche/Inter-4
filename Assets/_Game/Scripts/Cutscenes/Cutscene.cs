@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
@@ -8,8 +7,9 @@ public class Cutscene : MonoBehaviour
 {
     [SerializeField] private bool bindPlayer;
     [SerializeField] private bool bindDialogCanvas;
-    private List<PlayableDirector> possibleCutscenes = new List<PlayableDirector>();
-    private PlayableDirector playableDirector;
+    [SerializeField] private TimelineAsset[] possibleCutscenes;
+    public PlayableDirector playableDirector { get; private set; }
+    private TrackAsset[] cutsceneTracks;
     private TimelineAsset cutscene;
     static string PlayerReference = "Player";
     static string DialogCanvasReference = "DialogCanvas";
@@ -20,19 +20,17 @@ public class Cutscene : MonoBehaviour
 
         playableDirector = GetComponent<PlayableDirector>();
         cutscene = playableDirector.playableAsset as TimelineAsset;
-
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            if (!(transform.GetChild(i).name.Contains("Cutscene_"))) continue;
-            PlayableDirector childDirector = transform.GetChild(i).GetComponent<PlayableDirector>();
-            possibleCutscenes.Add(childDirector);
-        }
+        cutsceneTracks = (TrackAsset[])cutscene.GetOutputTracks();
     }
 
-    void Start()
+    private void Start()
     {
-        Globals.CutsceneManager.SetDirector(playableDirector);
         BindTimelineTracks();
+    }
+
+    public void SetCurrentCutscene()
+    {
+        Globals.CutsceneManager.SetCutscene(this);
     }
 
     public void SetCutscenePlayed()
@@ -44,7 +42,7 @@ public class Cutscene : MonoBehaviour
     {
         if (bindPlayer) BindOrUnbindPlayer(true);
         if (!bindDialogCanvas) return;
-        foreach (TrackAsset track in cutscene.GetOutputTracks())
+        foreach (TrackAsset track in cutsceneTracks)
         {
             if (!(track.name == DialogCanvasReference)) continue;
             playableDirector.SetGenericBinding(track, Globals.DialogCanvas);
@@ -54,13 +52,13 @@ public class Cutscene : MonoBehaviour
 
     public void BindOrUnbindPlayer(bool bind)
     {
-        foreach (TrackAsset track in cutscene.GetOutputTracks())
+        foreach (TrackAsset track in cutsceneTracks)
         {
-            CheckIfTrackIsPlayer(track, bind);
+            BindIfIsPlayer(track, bind);
         }
     }
 
-    public void CheckIfTrackIsPlayer(TrackAsset track, bool bind)
+    public void BindIfIsPlayer(TrackAsset track, bool bind)
     {
         if (!(track.name == PlayerReference)) return;
         if (!bind)
@@ -74,6 +72,12 @@ public class Cutscene : MonoBehaviour
     public void PlayerVCamOnOrOff(bool set)
     {
         Globals.PlayerVirtualCamera.SetActive(set);
+    }
+
+    public void PlayPossibleCutscene(int index)
+    {
+        playableDirector.playableAsset = possibleCutscenes[index];
+        playableDirector.Play();
     }
 
 
@@ -105,13 +109,11 @@ public class Cutscene : MonoBehaviour
 
     public void PauseTimeline()
     {
-        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
-        //Globals.CutsceneManager.PauseTimeline();
+        Globals.CutsceneManager.PauseTimeline();
     }
 
     public void ResumeTimeline()
     {
-        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
-        //Globals.CutsceneManager.ResumeTimeline();
+        Globals.CutsceneManager.ResumeTimeline();
     }
 }

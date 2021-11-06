@@ -1086,7 +1086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4657380282524528384, guid: 1970767938c9229489c0bb5fb8232c94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.87
+      value: -6.58
       objectReference: {fileID: 0}
     - target: {fileID: 4657380282524528384, guid: 1970767938c9229489c0bb5fb8232c94, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3229,6 +3229,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c543ba32c05fee64499450fe5565973d, type: 2}
     - {fileID: 11400000, guid: b95a922e82df4f447855250738013bd3, type: 2}
     - {fileID: 11400000, guid: 9b90cd8bef677e04dbcc822878a3dd9e, type: 2}
+    - {fileID: 11400000, guid: f2300e38005e8564c904ea5a4a47bc76, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -3283,6 +3284,20 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1711063828}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: SetCurrentCutscene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
 --- !u!1001 &1712118820
 PrefabInstance:

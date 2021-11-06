@@ -3,7 +3,7 @@ VAR GameDay = 1
 EXTERNAL newQuest(questName)
 EXTERNAL PauseTimeline()
 EXTERNAL ResumeTimeline()
-EXTERNAL PlayCutscene(cutsceneName)
+EXTERNAL ChooseCutscene(cutsceneName)
 EXTERNAL Debug(value)
 
 INCLUDE Characters\DonaCida.ink
@@ -31,6 +31,7 @@ Dona Maria: Se apresse, Luiz. A gente precisa pega água logo, antes que o poco 
 ->DONE
 
 == Day_01_Scene_03 ==
+~ PauseTimeline()
 Dona Maria: Bom, talvez se a gente passa a água numa camiseta, de pra tira a terra. Aí a gente ferve e já ta ótimo.
 Dona Maria: ...
 Luiz: Mainha, a senhora ta chorando?

@@ -5721,6 +5721,10 @@ PrefabInstance:
       value: House, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2096517864911307627, guid: 8f12ffb750e7d39439ae9f505d94499b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 5019853054294567196}
+    - target: {fileID: 2096517864911307627, guid: 8f12ffb750e7d39439ae9f505d94499b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
       value: 
       objectReference: {fileID: 0}
@@ -54983,28 +54987,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: ef573a38fd778b0459c9d67742ed2657, type: 2}
     - {fileID: 11400000, guid: 12d14d49b55311c4dab9ec6978e86aad, type: 2}
     - {fileID: 11400000, guid: dd254cfd8a3d0704bb27a2fe465e3de1, type: 2}
     - {fileID: 11400000, guid: 8d58fbba797d00c43bca5d230f6990b0, type: 2}
-    - {fileID: 11400000, guid: b95a922e82df4f447855250738013bd3, type: 2}
     - {fileID: 11400000, guid: 09797d061c6ac6c4ba2d058d5b5bffb5, type: 2}
-    - {fileID: 11400000, guid: f6a0b2f6cf28f4f49899b8986414a641, type: 2}
+    - {fileID: 11400000, guid: f2300e38005e8564c904ea5a4a47bc76, type: 2}
+    - {fileID: 11400000, guid: c543ba32c05fee64499450fe5565973d, type: 2}
+    - {fileID: 11400000, guid: ef573a38fd778b0459c9d67742ed2657, type: 2}
     m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4954474014940161754}
-          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
-          m_MethodName: PauseTimeline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 4954474014940161754}
@@ -55051,20 +55041,6 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 4954474014940161754}
           m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
-          m_MethodName: PlayerVCamOnOrOff
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4954474014940161754}
-          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
           m_MethodName: TurnObjectOn
           m_Mode: 2
           m_Arguments:
@@ -55079,8 +55055,24 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 4954474014940161754}
           m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
-          m_MethodName: SetCameraPriority
-          m_Mode: 3
+          m_MethodName: SetCurrentCutscene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls: []
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474014940161754}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: PauseTimeline
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -55156,6 +55148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bindPlayer: 0
   bindDialogCanvas: 0
+  possibleCutscenes: []
 --- !u!95 &4954474014940161755
 Animator:
   serializedVersion: 3
@@ -55214,6 +55207,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c543ba32c05fee64499450fe5565973d, type: 2}
     - {fileID: 11400000, guid: 8d58fbba797d00c43bca5d230f6990b0, type: 2}
     - {fileID: 11400000, guid: 9b90cd8bef677e04dbcc822878a3dd9e, type: 2}
+    - {fileID: 11400000, guid: f2300e38005e8564c904ea5a4a47bc76, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -55297,6 +55291,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4954474015135132345}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: SetCurrentCutscene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!95 &4954474015135132344
 Animator:
   serializedVersion: 3
@@ -55330,6 +55338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bindPlayer: 0
   bindDialogCanvas: 1
+  possibleCutscenes: []
 --- !u!4 &4954474015135132346
 Transform:
   m_ObjectHideFlags: 0
@@ -55412,6 +55421,9 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: b449319f91f897f43bbe227d9455d0fe, type: 2}
     - {fileID: 11400000, guid: c543ba32c05fee64499450fe5565973d, type: 2}
+    - {fileID: 11400000, guid: f2300e38005e8564c904ea5a4a47bc76, type: 2}
+    - {fileID: 11400000, guid: 8d58fbba797d00c43bca5d230f6990b0, type: 2}
+    - {fileID: 11400000, guid: dd254cfd8a3d0704bb27a2fe465e3de1, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -55441,6 +55453,48 @@ MonoBehaviour:
             m_StringArgument: Dona_Cida
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5019853054294567198}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: SetCurrentCutscene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5019853054294567198}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: SetCutscenePlayed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5019853054294567198}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: BindOrUnbindPlayer
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!320 &5019853054294567196
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -55464,6 +55518,12 @@ PlayableDirector:
     value: {fileID: 5265748493538721761}
   - key: {fileID: 3416876412345190003, guid: 8f397810d7575954489ed96e7d5fcbbc, type: 2}
     value: {fileID: 5265748493538721762}
+  - key: {fileID: 1117271579084116471, guid: 03c44b33ffa1172439cd2379786221d0, type: 2}
+    value: {fileID: 5019853054294567169}
+  - key: {fileID: -5165060830603525417, guid: 03c44b33ffa1172439cd2379786221d0, type: 2}
+    value: {fileID: 5265748493538721762}
+  - key: {fileID: 5517964756798219324, guid: 03c44b33ffa1172439cd2379786221d0, type: 2}
+    value: {fileID: 5265748493538721761}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &5019853054294567197
@@ -55492,8 +55552,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2cd4aa78d62ec4684829b5e0f955d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bindPlayer: 1
-  bindDialogCanvas: 1
+  bindPlayer: 0
+  bindDialogCanvas: 0
+  possibleCutscenes:
+  - {fileID: 11400000, guid: 1b02984ed4120bb48a0b64930faeaff9, type: 2}
+  - {fileID: 11400000, guid: 03c44b33ffa1172439cd2379786221d0, type: 2}
 --- !u!95 &5019853054294567199
 Animator:
   serializedVersion: 3
@@ -55526,7 +55589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428415062767704459, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428415062767704460, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_RootOrder
@@ -55570,6 +55633,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428415062767704460, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5008280663829075711, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5306640481416518663, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
