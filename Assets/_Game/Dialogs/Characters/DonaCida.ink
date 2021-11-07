@@ -17,7 +17,7 @@ Luiz: Bom dia, dona Cida! O Junior ta? Queria chama ele pra joga bola, se a senh
 Dona Cida: Oh fi, num ta não. Junior saiu agora de pouco com o pai dele pra irem vende uns ovos das nossas galinha num vilarejo aqui de perto, eles vão passar uns dias lá. Ocê quer entrar?
 *   [Entrar]
     ~ ChooseCutscene(0)
-    ~ ResumeTimeline()
+    ~ CloseDialog()
     Dona Cida: Como que ta a sua mãe e seus irmãozinhos, ein Luiz?
     Luiz: Eles tão bem, Dona Cida. Só minha mãe que ultimamente parece meio abatida...
     Dona Cida: Como assim, fi?
@@ -25,6 +25,7 @@ Dona Cida: Oh fi, num ta não. Junior saiu agora de pouco com o pai dele pra ire
     Dona Cida: Essa seca ta castigando todo mundo. Sua mãe deve ta preocupada, é só isso. Se Deus quiser, logo a chuva vem!
     Luiz: Brigada, Dona Cida! Eu já vou indo! Fique com Deus.
     Dona Cida: Vá com Deus, Luiz!
+    ~ ResumeTimeline()
     ->DONE
 *   [Melhor não]
     ~ ChooseCutscene(1)

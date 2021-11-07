@@ -9,7 +9,7 @@ public class CutsceneManager : MonoBehaviour
     public bool WasPlayed(string cutsceneName)
     {
         int cutsceneNum = int.Parse(cutsceneName.Split('_')[1]);
-        if(!(cutsceneData.states[cutsceneNum] == CutsceneState.Played)) return false;
+        if (!(cutsceneData.states[cutsceneNum] == CutsceneState.Played)) return false;
 
         return true;
     }
@@ -32,11 +32,11 @@ public class CutsceneManager : MonoBehaviour
 
     public void PauseTimeline()
     {
-        currentCutscene.playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+        if (currentCutscene.isPlaying) currentCutscene.playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
     }
 
     public void ResumeTimeline()
     {
-        currentCutscene.playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
+        if(currentCutscene.isPlaying) currentCutscene.playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
     }
 }

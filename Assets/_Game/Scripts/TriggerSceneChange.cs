@@ -11,7 +11,14 @@ public class TriggerSceneChange : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Globals.SceneChanger.ChangeScene(sceneName, newPosition);
+            CallSceneChange();
         }
     }
+
+    public void CallSceneChange()
+    {
+        Debug.Log(newPosition);
+        Globals.SceneChanger.ChangeScene(sceneName, newPosition);
+    }
 }
+

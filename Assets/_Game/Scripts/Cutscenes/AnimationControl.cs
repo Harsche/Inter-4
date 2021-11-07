@@ -8,7 +8,7 @@ public class AnimationControl : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator anim;
 
-    private void Start()
+    private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();

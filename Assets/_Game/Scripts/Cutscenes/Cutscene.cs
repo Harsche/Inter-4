@@ -1,7 +1,7 @@
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
-using Cinemachine;
 
 public class Cutscene : MonoBehaviour
 {
@@ -9,6 +9,7 @@ public class Cutscene : MonoBehaviour
     [SerializeField] private bool bindDialogCanvas;
     [SerializeField] private TimelineAsset[] possibleCutscenes;
     public PlayableDirector playableDirector { get; private set; }
+    public bool isPlaying { get; private set; }
     private TrackAsset[] cutsceneTracks;
     private TimelineAsset cutscene;
     static string PlayerReference = "Player";
@@ -17,10 +18,19 @@ public class Cutscene : MonoBehaviour
     private void Awake()
     {
         if (Globals.CutsceneManager.WasPlayed(gameObject.name)) Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
 
         playableDirector = GetComponent<PlayableDirector>();
+        if(playableDirector.playOnAwake)
+        {
+            SetCurrentCutscene();
+            isPlaying = true;
+        }
         cutscene = playableDirector.playableAsset as TimelineAsset;
         cutsceneTracks = (TrackAsset[])cutscene.GetOutputTracks();
+
+        playableDirector.played += (director) => { isPlaying = true; };
+        playableDirector.stopped += (director) => { isPlaying = false; };
     }
 
     private void Start()
@@ -35,6 +45,7 @@ public class Cutscene : MonoBehaviour
 
     public void SetCutscenePlayed()
     {
+        SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
         Globals.CutsceneManager.SetCutscenePlayed(gameObject.name);
     }
 
@@ -77,6 +88,7 @@ public class Cutscene : MonoBehaviour
     public void PlayPossibleCutscene(int index)
     {
         playableDirector.playableAsset = possibleCutscenes[index];
+        cutsceneTracks = (TrackAsset[])possibleCutscenes[index].GetOutputTracks();
         playableDirector.Play();
     }
 
@@ -84,6 +96,11 @@ public class Cutscene : MonoBehaviour
     public void StartDialog(string inkKnot)
     {
         Globals.DialogManager.JumpTo(inkKnot);
+        Globals.DialogManager.OpenDialog();
+    }
+
+    public void OpenDialog()
+    {
         Globals.DialogManager.OpenDialog();
     }
 
@@ -100,11 +117,6 @@ public class Cutscene : MonoBehaviour
     public void TurnObjectOff(GameObject obj)
     {
         obj.SetActive(false);
-    }
-
-    public void SetCameraPriority(int priority)
-    {
-        Globals.PlayerVirtualCamera.GetComponent<CinemachineVirtualCamera>().Priority = priority;
     }
 
     public void PauseTimeline()

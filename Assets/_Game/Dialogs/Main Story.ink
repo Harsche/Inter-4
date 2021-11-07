@@ -4,6 +4,7 @@ EXTERNAL newQuest(questName)
 EXTERNAL PauseTimeline()
 EXTERNAL ResumeTimeline()
 EXTERNAL ChooseCutscene(cutsceneName)
+EXTERNAL CloseDialog()
 EXTERNAL Debug(value)
 
 INCLUDE Characters\DonaCida.ink

@@ -27,9 +27,13 @@ public class DialogManager : MonoBehaviour
     {
         choicesCanvas.Setup();
         myCanvas = GetComponent<Canvas>();
-        playerMovement = Globals.Player.GetComponent<Movement>();
         SetStory(dialogJson);
         //ContinueStory();
+    }
+
+    private void Start()
+    {
+        playerMovement = Globals.Player.GetComponent<Movement>();
     }
 
     public void SetStory(TextAsset storyJson)
@@ -60,7 +64,7 @@ public class DialogManager : MonoBehaviour
 
     public void ContinueStory()
     {
-        if(displayingChoices) return;
+        if (displayingChoices) return;
 
         string[] separator = { ": " };
         charLine.Clear();
@@ -91,7 +95,7 @@ public class DialogManager : MonoBehaviour
             }
 
         }
-        else if(story.currentChoices.Count > 0)
+        else if (story.currentChoices.Count > 0)
         {
             displayingChoices = true;
             string[] choices = story.currentChoices.Select(text => text.text).ToArray();
@@ -140,6 +144,7 @@ public class DialogManager : MonoBehaviour
         story.BindExternalFunction("newQuest", (string questName) => { Globals.QuestManager.StartNewQuest(questName); });
         story.BindExternalFunction("Debug", (string value) => { Debug.Log(value); });
         story.BindExternalFunction("ChooseCutscene", (int choiceIndex) => { Globals.CutsceneManager.ChooseCutscene(choiceIndex); });
+        story.BindExternalFunction("CloseDialog", () => { CloseDialog(); });
     }
 
     public void OpenDialog()

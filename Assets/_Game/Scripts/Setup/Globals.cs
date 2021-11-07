@@ -16,7 +16,9 @@ public class Globals : MonoBehaviour
     [SerializeField] private QuestManager questManager;
     [SerializeField] private DialogManager dialogManager;
     [SerializeField] private SceneChanger sceneChanger;
+    [SerializeField] private SaveManager saveManager;
     [SerializeField] private GameObject[] dontDestroy;
+    
     
 
     public static GameObject Player;
@@ -28,6 +30,7 @@ public class Globals : MonoBehaviour
 
     public static QuestManager QuestManager;
     public static DialogManager DialogManager;
+    public static SaveManager SaveManager;
     
 
     private void Awake()
@@ -43,6 +46,7 @@ public class Globals : MonoBehaviour
         QuestManager = questManager;
         DialogManager = dialogManager;
         SceneChanger = sceneChanger;
+        SaveManager = saveManager;
 
         //Dont destroy objects on load
 

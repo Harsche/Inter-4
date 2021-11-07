@@ -28,6 +28,7 @@ public class SceneChanger : MonoBehaviour
     {
         fadeCanvas.SetActive(true);
         Globals.Player.GetComponent<Rigidbody2D>().simulated = false;
+        Globals.CutsceneManager.PauseTimeline();
 
         yield return fadeImage.DOFade(1, fadeDuration).WaitForCompletion();
         SceneManager.LoadScene(sceneName);
@@ -41,6 +42,7 @@ public class SceneChanger : MonoBehaviour
         virtualCamera.OnTargetObjectWarped(virtualCamera.m_Follow, newPosition-oldPosition);
 
         Globals.Player.GetComponent<Rigidbody2D>().simulated = true;
+        Globals.CutsceneManager.ResumeTimeline();
         yield return fadeImage.DOFade(0, fadeDuration).WaitForCompletion();
 
         fadeCanvas.SetActive(false);
