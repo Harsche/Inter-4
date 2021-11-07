@@ -1,77 +1,83 @@
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
-using Cinemachine;
 
 public class Cutscene : MonoBehaviour
 {
     [SerializeField] private bool bindPlayer;
     [SerializeField] private bool bindDialogCanvas;
-    private PlayableDirector playableDirector;
+    [SerializeField] private TimelineAsset[] possibleCutscenes;
+    public PlayableDirector playableDirector { get; private set; }
+    public bool isPlaying { get; private set; }
+    private TrackAsset[] cutsceneTracks;
     private TimelineAsset cutscene;
     static string PlayerReference = "Player";
     static string DialogCanvasReference = "DialogCanvas";
 
     private void Awake()
     {
-        if (Globals.CutsceneManager.WasPlayed(gameObject.name))
-        {
-            Destroy(gameObject);
-        }
+        if (Globals.CutsceneManager.WasPlayed(gameObject.name)) Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
 
         playableDirector = GetComponent<PlayableDirector>();
+        if(playableDirector.playOnAwake)
+        {
+            SetCurrentCutscene();
+            isPlaying = true;
+        }
         cutscene = playableDirector.playableAsset as TimelineAsset;
+        cutsceneTracks = (TrackAsset[])cutscene.GetOutputTracks();
+
+        playableDirector.played += (director) => { isPlaying = true; };
+        playableDirector.stopped += (director) => { isPlaying = false; };
     }
 
-
-
-    void Start()
+    private void Start()
     {
-        Globals.CutsceneManager.SetDirector(playableDirector);
         BindTimelineTracks();
+    }
+
+    public void SetCurrentCutscene()
+    {
+        Globals.CutsceneManager.SetCutscene(this);
     }
 
     public void SetCutscenePlayed()
     {
+        SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
         Globals.CutsceneManager.SetCutscenePlayed(gameObject.name);
     }
 
     public void BindTimelineTracks()
     {
-        if (bindPlayer)
+        if (bindPlayer) BindOrUnbindPlayer(true);
+        if (!bindDialogCanvas) return;
+        foreach (TrackAsset track in cutsceneTracks)
         {
-            BindOrUnbindPlayer(true);
-        }
-
-        if (bindDialogCanvas)
-        {
-            foreach (TrackAsset track in cutscene.GetOutputTracks())
-            {
-                if (track.name == DialogCanvasReference)
-                {
-                    playableDirector.SetGenericBinding(track, Globals.DialogCanvas);
-                    break;
-                }
-            }
+            if (!(track.name == DialogCanvasReference)) continue;
+            playableDirector.SetGenericBinding(track, Globals.DialogCanvas);
+            break;
         }
     }
 
     public void BindOrUnbindPlayer(bool bind)
     {
-        foreach (TrackAsset track in cutscene.GetOutputTracks())
+        foreach (TrackAsset track in cutsceneTracks)
         {
-            if (track.name == PlayerReference)
-            {
-                if (bind)
-                {
-                    playableDirector.SetGenericBinding(track, Globals.Player.GetComponent<Animator>());
-                }
-                else
-                {
-                    playableDirector.SetGenericBinding(track, null);
-                }
-            }
+            BindIfIsPlayer(track, bind);
         }
+    }
+
+    public void BindIfIsPlayer(TrackAsset track, bool bind)
+    {
+        if (!(track.name == PlayerReference)) return;
+        if (!bind)
+        {
+            playableDirector.SetGenericBinding(track, null);
+            return;
+        }
+        playableDirector.SetGenericBinding(track, Globals.Player.GetComponent<Animator>());
     }
 
     public void PlayerVCamOnOrOff(bool set)
@@ -79,11 +85,23 @@ public class Cutscene : MonoBehaviour
         Globals.PlayerVirtualCamera.SetActive(set);
     }
 
+    public void PlayPossibleCutscene(int index)
+    {
+        playableDirector.playableAsset = possibleCutscenes[index];
+        cutsceneTracks = (TrackAsset[])possibleCutscenes[index].GetOutputTracks();
+        playableDirector.Play();
+    }
+
 
     public void StartDialog(string inkKnot)
     {
         Globals.DialogManager.JumpTo(inkKnot);
-        Globals.DialogCanvas.SetActive(true);
+        Globals.DialogManager.OpenDialog();
+    }
+
+    public void OpenDialog()
+    {
+        Globals.DialogManager.OpenDialog();
     }
 
     public void SetStory(TextAsset storyJson)
@@ -99,11 +117,6 @@ public class Cutscene : MonoBehaviour
     public void TurnObjectOff(GameObject obj)
     {
         obj.SetActive(false);
-    }
-
-    public void SetCameraPriority(int priority)
-    {
-        Globals.PlayerVirtualCamera.GetComponent<CinemachineVirtualCamera>().Priority = priority;
     }
 
     public void PauseTimeline()

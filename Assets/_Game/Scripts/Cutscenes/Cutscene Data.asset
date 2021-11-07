@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02e809b744193fb4ba2edd5952e99fec, type: 3}
   m_Name: Cutscene Data
   m_EditorClassIdentifier: 
-  states: 020000000000000000000000
+  states: 02000000000000000000000000000000

@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/Quest", fileName = "Quest_New Quest")]
 public class Quest : ScriptableObject
@@ -34,6 +31,7 @@ public enum QuestType
 [System.Serializable]
 public class QuestStep
 {
+    public int id;
     public string goal;
     public QuestType questType;
     public string goalName;

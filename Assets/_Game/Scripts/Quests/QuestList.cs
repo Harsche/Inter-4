@@ -3,17 +3,17 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/QuestList")]
 public class QuestList : ScriptableObject
 {
-    [SerializeField] private Quest[] mainQuests;
+    [SerializeField] private Quest[] quests;
 
-    public Quest[] MainQuests
+    public Quest[] Quests
     {
-        get => mainQuests;
+        get => quests;
     }
 
     [ContextMenu("Reset quests")]
     public void ResetQuests()
     {
-        foreach(Quest q in mainQuests)
+        foreach(Quest q in quests)
         {
             q.questState = QuestSate.Inactive;
             q.currentStep = 0;

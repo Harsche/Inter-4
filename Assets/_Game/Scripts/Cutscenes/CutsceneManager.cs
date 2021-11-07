@@ -4,20 +4,19 @@ using UnityEngine;
 public class CutsceneManager : MonoBehaviour
 {
     [SerializeField] private CutsceneData cutsceneData;
-    public PlayableDirector director { get; private set; }
+    public Cutscene currentCutscene { get; private set; }
 
     public bool WasPlayed(string cutsceneName)
     {
-        
         int cutsceneNum = int.Parse(cutsceneName.Split('_')[1]);
-        if(cutsceneData.states[cutsceneNum] == CutsceneState.Played)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        if (!(cutsceneData.states[cutsceneNum] == CutsceneState.Played)) return false;
+
+        return true;
+    }
+
+    public void ChooseCutscene(int choiceIndex)
+    {
+        currentCutscene.PlayPossibleCutscene(choiceIndex);
     }
 
     public void SetCutscenePlayed(string cutsceneName)
@@ -26,25 +25,18 @@ public class CutsceneManager : MonoBehaviour
         cutsceneData.states[cutsceneNum] = CutsceneState.Played;
     }
 
-
-
-    public void SetDirector(PlayableDirector pd)
+    public void SetCutscene(Cutscene cutscene)
     {
-        director = pd;
-    }
-
-    public void StopCutscene()
-    {
-        director.Stop();
+        currentCutscene = cutscene;
     }
 
     public void PauseTimeline()
     {
-        director.playableGraph.GetRootPlayable(0).SetSpeed(0);
+        if (currentCutscene.isPlaying) currentCutscene.playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
     }
 
     public void ResumeTimeline()
     {
-        director.playableGraph.GetRootPlayable(0).SetSpeed(1);
+        if(currentCutscene.isPlaying) currentCutscene.playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
     }
 }

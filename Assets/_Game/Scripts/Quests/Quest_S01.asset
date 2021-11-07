@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85078579ead64a4aa07602ec4f65840, type: 3}
   m_Name: Quest_S01
   m_EditorClassIdentifier: 
-  questName: Ajuda a uma velha amiga
+  questName: Pegar Galinhas
   currentStep: 0
   questState: 0
   questSteps:
-  - goal: 
+  - id: 0
+    goal: 
     questType: 0
-    goalName: 
+    goalName: Dona Cida
     currentNum: 0
     goalNum: 0
-  - goal: 
-    questType: 0
+  - id: 0
+    goal: Coloque as galinhas de volta no cercado.
+    questType: 1
     goalName: 
     currentNum: 0
-    goalNum: 0
+    goalNum: 5

@@ -244,6 +244,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 1.95
       objectReference: {fileID: 0}
+    - target: {fileID: 6134396638313162235, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: isNPC
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134396638313162235, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: myName
+      value: Dona Cida
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134396638313162235, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: myStory
+      value: 
+      objectReference: {fileID: 4900000, guid: 6156ec15d70138442ba2a791bfb9e931, type: 3}
     - target: {fileID: 7223630361903441876, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_IsActive
       value: 1

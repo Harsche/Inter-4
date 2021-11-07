@@ -18,6 +18,18 @@ EditorBuildSettings:
     path: Assets/_Game/Scenes/House_2.unity
     guid: 51b02d57ce8216f4ea3e99030e170108
   - enabled: 1
+    path: Assets/_Game/Scenes/House_3.unity
+    guid: 54818dc41b4c27d4a999bf44faa51f54
+  - enabled: 1
+    path: Assets/_Game/Scenes/House_4.unity
+    guid: 86f6425e3638f9c4e965ccbcdf330688
+  - enabled: 1
+    path: Assets/_Game/Scenes/House_5.unity
+    guid: af48111fd45ab214598d6bc76c850123
+  - enabled: 1
+    path: Assets/_Game/Scenes/House_6.unity
+    guid: 8545a2376ea1bd042a7ec1b7a2ccff8e
+  - enabled: 1
     path: Assets/_Game/Scenes/Credits.unity
     guid: db9ec5108a00eb241afdcaa0cfc56363
   - enabled: 1

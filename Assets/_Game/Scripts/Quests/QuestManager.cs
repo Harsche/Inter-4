@@ -17,16 +17,57 @@ public class QuestManager : MonoBehaviour
 
     public void StartNewQuest(string questName)
     {
-        foreach(Quest q in questList.MainQuests)
+        foreach (Quest q in questList.Quests)
         {
-            if(q.questName == questName && q.questState == QuestSate.Inactive)
+            if (q.questName == questName && q.questState == QuestSate.Inactive)
             {
                 newQuestText.text = "Nova missão: " + q.questName;
-                q.questState = QuestSate.Active;
                 newQuestCanvas.SetActive(true);
+                AdvanceQuestStep(q);
                 StartCoroutine(NewQuestCanvas());
             }
         }
+    }
+
+    public void AdvanceQuestStep(Quest quest)
+    {
+        quest.currentStep++;
+    }
+
+    public string GetQuestDialog(string interactionName)
+    {
+        foreach (Quest q in questList.Quests)
+        {
+            if(q.questState == QuestSate.Inactive || q.questState == QuestSate.Completed)
+            {
+                continue;
+            }
+
+            QuestStep step = q.questSteps[q.currentStep];
+            switch (step.questType)
+            {
+                case QuestType.TalkTo:
+                    if (step.goalName == interactionName)
+                    {
+                        string knot = FormatToInkName(q.questName) + ".D" + (q.currentStep + 1).ToString("00");
+                        return knot;
+                    }
+                    else
+                    {
+                        continue;
+                    }
+
+                case QuestType.NumberedTask:
+                    return "";
+            }
+        }
+
+        return FormatToInkName(interactionName);
+    }
+
+    private string FormatToInkName(string name)
+    {
+        return name.Replace(' ', '_');
     }
 
     IEnumerator NewQuestCanvas()
