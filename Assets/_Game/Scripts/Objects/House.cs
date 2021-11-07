@@ -1,21 +1,21 @@
 using UnityEngine;
 using UnityEngine.Playables;
+using CleverCrow.Fluid.UniqueIds;
 
 public class House : MonoBehaviour
 {
     [SerializeField] private GameObject openedHouse;
     [SerializeField] private GameObject closedHouse;
-    [SerializeField] private string openedSaveValue;
+    private string myGuid;
     private HouseData houseData;
-    
-    private SpriteRenderer mySpriteRenderer;
 
     private void Awake()
     {
-        houseData = new HouseData();
-        mySpriteRenderer = GetComponent<SpriteRenderer>();
-        opened = Globals.SaveManager.GetValue<bool>(openedSaveValue);
-        if (!opened)
+        myGuid = GetComponent<UniqueId>().Id;
+        houseData = SaveManager.GetData<HouseData>(myGuid);
+        if (houseData == null)
+            houseData = new HouseData();
+        if (!houseData.opened)
         {
             CloseDoor();
             return;
@@ -27,24 +27,30 @@ public class House : MonoBehaviour
     {
         openedHouse.SetActive(true);
         closedHouse.SetActive(false);
-        Globals.SaveManager.SetValue<bool>(openedSaveValue, true);
+        houseData.opened = true;
+        SaveMyData();
     }
 
     public void CloseDoor()
     {
         closedHouse.SetActive(true);
         openedHouse.SetActive(false);
-        Globals.SaveManager.SetValue<bool>(openedSaveValue, false);
+        houseData.opened = false;
+        SaveMyData();
     }
 
     public void StartCutsceneInteraction(PlayableDirector director)
     {
         director.Play();
     }
+
+    public void SaveMyData()
+    {
+        SaveManager.SaveData(myGuid, houseData);
+    }
 }
 
 public class HouseData : ObjectData
 {
     public bool opened { get; set; }
-    public HouseData() : base() {}
 }

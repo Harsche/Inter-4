@@ -30,8 +30,6 @@ public class Globals : MonoBehaviour
 
     public static QuestManager QuestManager;
     public static DialogManager DialogManager;
-    public static SaveManager SaveManager;
-    
 
     private void Awake()
     {
@@ -46,7 +44,6 @@ public class Globals : MonoBehaviour
         QuestManager = questManager;
         DialogManager = dialogManager;
         SceneChanger = sceneChanger;
-        SaveManager = saveManager;
 
         //Dont destroy objects on load
 

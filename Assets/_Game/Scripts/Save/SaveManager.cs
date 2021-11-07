@@ -1,63 +1,92 @@
-using System.Reflection;
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-public class SaveManager : MonoBehaviour
+public class SaveManager
 {
-    public SaveFile saveFile { get; private set; }
-    private string savePath;
+    public static SaveFile saveFile { get; private set; } = new SaveFile();
+    private static string savePath = Application.persistentDataPath + @"\gamedata.json";
 
-    private void Awake()
-    {
-        savePath = Application.persistentDataPath + @"\gamedata";
-        saveFile = new SaveFile();
-    }
-
-    public void LoadGame()
+    public static void LoadGame()
     {
         string jsonSave = "";
-        if (File.Exists(savePath)) jsonSave = File.ReadAllText(savePath);
-        saveFile = JsonUtility.FromJson<SaveFile>(jsonSave);
+        if (File.Exists(savePath))
+            jsonSave = File.ReadAllText(savePath);
+        saveFile = JsonConvert.DeserializeObject<SaveFile>(jsonSave);
     }
 
-    public void SaveGame()
+    public static void SaveGame()
     {
-        string jsonSave = JsonUtility.ToJson(saveFile);
-        if (!Directory.Exists(savePath)) Directory.CreateDirectory(savePath);
-        File.WriteAllText(savePath, jsonSave);
+        string jsonSave =  JsonConvert.SerializeObject(saveFile);
+        if (!Directory.Exists(Path.GetDirectoryName(savePath))) Directory.CreateDirectory(Path.GetDirectoryName(savePath));
+            File.WriteAllText(savePath, jsonSave);
     }
 
-    public T GetValue<T>(string propertyName)
+    public static T GetData<T>(string guid) where T : ObjectData
     {
-        PropertyInfo property = saveFile.GetType().GetProperty(propertyName);
-        if(property == null)
-            return default(T);
-
-        return (T)property.GetValue(saveFile);
+        return (T)saveFile.GetData<T>(guid);
     }
 
-    public void SetValue<T>(string propertyName, T value)
+    public static void SaveData(string guid, ObjectData data)
     {
-        PropertyInfo property = saveFile.GetType().GetProperty(propertyName);
-        if(property != null)
-        {
-            property.SetValue(saveFile, value);
-        }
+        saveFile.AddData(guid, data);
     }
 }
 
 [System.Serializable]
-public class SaveFile
-{
-    public bool house_01_opened;
-    public bool house_02_opened;
-    public bool house_03_opened;
-    public bool house_04_opened;
-    public bool house_05_opened;
-    public bool house_06_opened;
+public class ObjectData {}
 
-    public SaveFile()
+[System.Serializable]
+public class SaveFile : ISerializationCallbackReceiver
+{
+    public Dictionary<string, ObjectData> data = new Dictionary<string, ObjectData>();
+    [SerializeField] private List<string> dataKeys = new List<string>();
+    [SerializeField] private List<ObjectData> dataValues = new List<ObjectData>();
+
+    public SaveFile() { }
+
+    public void OnBeforeSerialize()
     {
-        house_01_opened = true;
+        dataKeys.Clear();
+        dataValues.Clear();
+        foreach (KeyValuePair<string, ObjectData> dataPair in data)
+        {
+            dataKeys.Add(dataPair.Key);
+            dataValues.Add(dataPair.Value);
+        }
+    }
+
+    public void OnAfterDeserialize()
+    {
+        Dictionary<string, ObjectData> dataDictionary = new Dictionary<string, ObjectData>();
+        for (int i = 0; i < Mathf.Min(dataKeys.Count, dataValues.Count); i++)
+        {
+            dataDictionary.Add(dataKeys[i], dataValues[i]);
+        }
+    }
+
+    public bool Contains(string id)
+    {
+        if (!data.ContainsKey(id))
+            return false;
+        return true;
+    }
+
+    public void AddData(string key, ObjectData value)
+    {
+        if(!data.ContainsKey(key))
+        {
+            data.Add(key, value);
+            return;
+        }
+        data[key] = value;
+    }
+
+    public T GetData<T>(string id) where T : ObjectData
+    {
+        if (!data.ContainsKey(id))
+            return default(T);
+        return (T)data[id];
     }
 }

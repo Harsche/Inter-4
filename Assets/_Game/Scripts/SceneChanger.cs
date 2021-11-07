@@ -31,15 +31,17 @@ public class SceneChanger : MonoBehaviour
         Globals.CutsceneManager.PauseTimeline();
 
         yield return fadeImage.DOFade(1, fadeDuration).WaitForCompletion();
+        SaveManager.SaveGame();
+        Debug.Log("SAVED");
         SceneManager.LoadScene(sceneName);
-        while(!SceneManager.GetSceneByName(sceneName).isLoaded)
+        while (!SceneManager.GetSceneByName(sceneName).isLoaded)
         {
             yield return null;
         }
 
         Vector2 oldPosition = Globals.Player.transform.position;
         Globals.Player.transform.position = newPosition;
-        virtualCamera.OnTargetObjectWarped(virtualCamera.m_Follow, newPosition-oldPosition);
+        virtualCamera.OnTargetObjectWarped(virtualCamera.m_Follow, newPosition - oldPosition);
 
         Globals.Player.GetComponent<Rigidbody2D>().simulated = true;
         Globals.CutsceneManager.ResumeTimeline();

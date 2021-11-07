@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 6831280180311115090}
   - component: {fileID: 3389708271677722585}
   - component: {fileID: 3239999531139563248}
+  - component: {fileID: 1301749448621328092}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -531,6 +532,19 @@ CompositeCollider2D:
       - {x: -3.5221832, y: -2.2469597}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
+--- !u!114 &1301749448621328092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7630425525108079874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1796f3dc38e334ca54f2b0a067111d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 
 --- !u!1001 &4949148008523239271
 PrefabInstance:
   m_ObjectHideFlags: 0
