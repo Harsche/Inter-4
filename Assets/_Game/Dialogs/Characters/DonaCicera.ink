@@ -1,14 +1,71 @@
 === DONA_CICERA ===
 {GameDay:
-- 1:    ->Dona_Cicera_Day_01
+-   1:  -> Dona_Cicera_Day_01
+-   2:  -> Dona_Cicera_Day_02
 }
 
 
 === Dona_Cicera_Day_01 ===
 {Dona_Cicera_Day_01:
--   1:  ->Random_Dialog
--   else:   ->Random_Dialog
+-   1:  -> DONE
+-   else:   -> DONE
 }
+
+
+
+=== Dona_Cicera_Day_02 ===
+{lostKey: -> Found_Key}
+{Dona_Cicera_Day_02:
+-   1:  -> D01
+-   else:   -> Random_Dialog
+}
+
+= D01
+Luiz: Oi, Dona Cícera! A senhora ta bem? Porque a senhora ta aqui fora?
+Dona Cícera: LUIZ! Que bom que ocê apareceu, meu fi!
+Dona Cícera: Eu perdi a chave de casa e to trancada pra fora!
+Dona Cícera: Acontece que nessa idade é complicado procurar uma coisinha tão pequena.
+*   [Ajudar]
+    Luiz: Eu posso procurar a chave pra senhora!
+    Dona Cícera: Oh, fi, ocê é uma benção!
+    Dona Cícera: O problema é que não faço ideia de onde ela possa estar!
+    Dona Cícera: Andei o vilarejo inteiro pela manhã.
+    Luiz: Não se preocupa, Dona Cícera!
+    Luiz: Vou encontrar a chave e já trago pra senhora!
+    -> DONE
+*   [Não ajudar]
+    Luiz: Que pena, Dona Cícera!
+    Luiz: Eu queria saber se a senhora ia querer ajuda pra fazer as cestas de bambu seco.
+    Dona Cícera: Vou querer sim!
+    Dona Cícera: No fim de semana eu vou tentar vender as cestas naquele vilarejo aqui ao norte.
+    Dona Cícera: Volta mais tarde que provavelmente á vou ter achado a chave.
+    Luiz: Ta bom. Obrigado, Dona Cícera!
+    -> DONE
+
+= D02
+Dona Cícera: Aaah, ocê veio me ajudar com as cestas, né fi? Vem, entra!
+Dona Cícera: E a sua família, como que ta?
+Luiz: Meus irmãos tão bem, mas a mãe hoje tava tossindo demais da conta!
+Luiz: To mei preocupado com isso.
+Dona Cícera: Oh, fi... sabe o que é bom pra tosse? Romã!
+Dona Cícera: Seu João tinha comentado que tinha conseguido algumas!
+Dona Cícera: Ocê pode pedir a ele!
+Luiz: Uai, Dona Cícera! Ele me deu as romãs ontem mesmo!
+Luiz: É só dar elas a mainha e ela vai sarar, é?
+Dona Cícera: Isso aí, Luizinho! Olha só, já terminamos as cestas!
+Dona Cícera: Eu consegui esses pães ontem com um mercador!
+Dona Cícera: Ocê aceita eles por ter me ajudado?
+Luiz: Aceito sim, Dona Cícera! Muito obrigada!
+Dona Cícera: Eu que agradeço, Luiz!
+-> DONE
+
+
+= Found_Key
+Luiz: Tá aqui a chave, Dona Cícera!
+Dona Cícera: Obrigada, Luizinho! Ocê salvou meu dia!
+Luiz: Fico feliz, Dona Cícera!
+Luiz: Aliás, eu queria saber se a senhora vai querer ajuda pra fazer as cestas de bambu seco.
+-> D02
 
 = Random_Dialog
 

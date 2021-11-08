@@ -1,6 +1,7 @@
 === DONA_CIDA ===
 {GameDay:
-- 1:    ->Dona_Cida_Day_01
+-   1:  ->Dona_Cida_Day_01
+-   3:  ->Dona_Cida_Day_03
 }
 
 
@@ -62,3 +63,46 @@ Luiz: Então eu vou tentar só tocar elas pra dentro do cercado de novo.
 = D02
 ->DONE
 
+=== Dona_Cida_Day_03 ===
+{Dona_Cida_Day_03:
+-   1:  ->D01
+-   else:   ->Random_Dialog
+}
+
+= D01
+Dona Cida: Boa noite, Luiz! O que que cê ta fazendo aqui fora uma hora dessa?
+Dona Cida: Entra, meu fi!
+Luiz: Boa noite, Dona Cida! Vou entrar sim!
+Dona Cida: E então, Luizinho, como estão as coisas?
+Luiz: Ah, Dona Cida, a minha mãe anda meio adoentada...
+Luiz: Com dores, febre, cada dia algo novo aparece.
+Dona Cida: Oh, fi, porque ocê não me disse antes?
+Dona Cida: Se aparecer algum novo sintoma, passa aqui que a gente da um jeito, ta?
+Luiz: Eu passo sim, Dona Cida! Que Deus lhe pague!
+Dona Cida: Que tal ouvir uma história pra distrair um pouco a cabeça?
+Dona Cida: Quando eu era criança, contavam várias lendas aqui do sertão, eu adorava!
+*   [Quero ouvir]
+    Dona Cida: Há muitos anos, uma tia minha sempre nos falava sobre a Cuca...
+    Dona Cida: A Cuca, pelo que dizem, é uma bruxa com uma aparência terrível.
+    Dona Cida: Sua cabeça é de jacaré e as unha são longas.
+    Dona Cida: Dizem que quem ouve sua voz se arrepia inteiro.
+    Dona Cida: A Bruxa Cuca sequestra crianças desobedientes.
+    Dona Cida: Só Deus sabe o que ela faz com elas!
+    Luiz: Nossa, me arrepiei todin, Dona Cida!
+    Dona Cida: Pois é, Luiz. Falam ainda que ela só dorme uma vez a cada 7 anos!
+    Luiz: Não é que eu tenha medo dessas histórias...
+    Luiz: Mas o vilarejo a noite já é meio assustador.
+    Dona Cida: Não fique assim, Luiz! São só histórias que o povo conta.
+    Dona Cida: Mas é bom não arriscar, né fi?
+    Luiz: É... e falando nisso de arriscar, eu acho que já vou pra casa.
+    Dona Cida: Isso! Vá lá ver sua mãe. Boa noite, fi.
+    Luiz: Boa noite, Dona Cida!
+    -> DONE
+*   [Não tenho tempo]
+    Luiz: Obrigado, Dona Cida, mas eu preciso ir pra casa!
+    Dona Cida: Ah, fi. Tudo bem! Vá com Deus. E não se preocupe, tá?
+    Luiz: Amém!
+    -> DONE
+
+= Random_Dialog
+-> DONE

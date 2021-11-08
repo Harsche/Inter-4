@@ -1,4 +1,12 @@
 VAR GameDay = 1
+VAR lostKey = false
+VAR filledWaterBox = false
+// House 1 = Luiz
+// House 2 = Seu João
+// House 3 = Dona Cícera
+// House 4 = Seu Miguel
+// House 5 = Dona Cida
+// House 6 = Dona Helena / Seu José
 
 EXTERNAL newQuest(questName)
 EXTERNAL PauseTimeline()
@@ -6,7 +14,9 @@ EXTERNAL ResumeTimeline()
 EXTERNAL ChooseCutscene(cutsceneName)
 EXTERNAL CloseDialog()
 EXTERNAL Debug(value)
+//EXTERNAL ChangeGameDay(GameDay)
 
+INCLUDE Characters\Luiz.ink
 INCLUDE Characters\DonaCida.ink
 INCLUDE Characters\SeuJoao.ink
 INCLUDE Characters\DonaCicera.ink
@@ -16,6 +26,9 @@ INCLUDE Characters\Luisa.ink
 INCLUDE Characters\Pedro.ink
 INCLUDE Characters\SeuJose.ink
 INCLUDE Characters\SeuMiguel.ink
+INCLUDE Characters\DonaMaria.ink
+INCLUDE Characters\Cow.ink
+
 
 == Day_01_Scene_01 ==
 ~ PauseTimeline()
@@ -41,15 +54,15 @@ Dona Maria: To não, meu fi. Vamo pa casa tirar leite da vaquinha para dá aos s
 ->DONE
 
 == Day_01_Scene_04 ==
-
 = Dona_Maria
 { not Day_01_Scene_04.Cow:
 Dona Maria: Ô, meu bem. Pode tirá um poco de leite da Dondoca e trazê pra mim prepará o café da manhã?
-
-- else: Dona Maria: Pronto, meu fi, pode ir faze suas coisa. Só não vai longe, tá?
+-> DONE
+- else:
+Dona Maria: Pronto, meu fi, pode ir faze suas coisa. Só não vai longe, tá?
 Luiz: Sim, senhora!
+-> DONE
 }
-->DONE
 
 = Cow
 ~ PauseTimeline()
@@ -57,34 +70,74 @@ Luiz: Bom dia, Dondoca! Ocê parece que ta mais magrinha do que ontem... mas vai
 Dondoca: MUUUUUU!!
 ~ ResumeTimeline()
 ->DONE
-    
-    
+
+
+=== Other_Dialogs
+
+= No_One_Home
+Luiz: Ninguém responde. Eles devem ter saído!
+->DONE
+ 
+=== Luiz ===
+-> LUIZ
+
 === Dona_Cida ===
-->DONA_CIDA
+-> DONA_CIDA
 
 === Seu_Joao ===
-->SEU_JOAO
+-> SEU_JOAO
 
 === Dona_Cicera ===
-->DONA_CICERA
+-> DONA_CICERA
 
 === Dona_Helena ===
-->DONA_HELENA
+-> DONA_HELENA
 
 === Joao ===
-->JOAO
+-> JOAO
 
 === Luisa ===
-->LUISA
+-> LUISA
 
 === Pedro ===
-->PEDRO
+-> PEDRO
 
 === Seu_Jose ===
-->SEU_JOSE
+-> SEU_JOSE
 
 === Seu_Miguel ===
 -> SEU_MIGUEL
+
+=== House_01
+{GameDay:
+-   1: -> Other_Dialogs.No_One_Home
+}
+
+=== House_02
+{GameDay:
+-   1: -> SEU_JOAO
+}
+
+=== House_03
+{GameDay:
+-   1: -> Other_Dialogs.No_One_Home
+}
+
+=== House_04
+{GameDay:
+-   1: -> Other_Dialogs.No_One_Home
+}
+
+=== House_05
+{GameDay:
+-   1: ->DONA_CIDA
+}
+
+=== House_06
+{GameDay:
+-   1: -> Other_Dialogs.No_One_Home
+-   2: {Seu_Joao_Day_02.D01: -> Dona_Helena_Day_02.At_Night} -> Other_Dialogs.No_One_Home
+}
 
 == function newQuest(questName)
 ~ return
