@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: bdcf86b3c25218f42a8e0cff7dbb2748
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3188170866182625483
+    second: PocoAnimDescendo_0
+  - first:
+      213: 2443922731542429354
+    second: PocoAnimDescendo_1
+  - first:
+      213: 1154060201946916794
+    second: PocoAnimDescendo_2
+  - first:
+      213: 5694755146296771966
+    second: PocoAnimDescendo_3
+  - first:
+      213: -1931019517467484172
+    second: PocoAnimDescendo_4
+  - first:
+      213: 5491046085358853334
+    second: PocoAnimDescendo_5
+  - first:
+      213: -4482014146771943803
+    second: PocoAnimDescendo_6
+  - first:
+      213: 5726961265465705629
+    second: PocoAnimDescendo_7
+  - first:
+      213: -9012331042345045650
+    second: PocoAnimDescendo_8
+  - first:
+      213: -5323401832804958544
+    second: PocoAnimDescendo_9
+  - first:
+      213: -2385519130531500808
+    second: PocoAnimDescendo_10
+  - first:
+      213: 6364734785008406216
+    second: PocoAnimDescendo_11
+  - first:
+      213: -7088229032692591711
+    second: PocoAnimDescendo_12
+  - first:
+      213: -5096970622376152350
+    second: PocoAnimDescendo_13
+  - first:
+      213: 6729550993205700472
+    second: PocoAnimDescendo_14
+  - first:
+      213: -5974884564632886376
+    second: PocoAnimDescendo_15
+  - first:
+      213: 1307582377669021184
+    second: PocoAnimDescendo_16
+  - first:
+      213: 5657849453813245930
+    second: PocoAnimDescendo_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PocoAnimDescendo_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 328
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5376fe52d7751c3d0800000000000000
+      internalID: -3188170866182625483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 328
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaeb610a6ce8ae120800000000000000
+      internalID: 2443922731542429354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 328
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab72672a3ab040010800000000000000
+      internalID: 1154060201946916794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 328
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75c8d922a5d70f40800000000000000
+      internalID: 5694755146296771966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 246
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff1107daf3a335e0800000000000000
+      internalID: -1931019517467484172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 246
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc1d13625d143c40800000000000000
+      internalID: 5491046085358853334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_6
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 246
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ef16751efacc1c0800000000000000
+      internalID: -4482014146771943803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_7
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 247
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94418e9de04a7f40800000000000000
+      internalID: 5726961265465705629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 165
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e613cc69aa4cde280800000000000000
+      internalID: -9012331042345045650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_9
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 164
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be3ff6dc3a7f16b0800000000000000
+      internalID: -5323401832804958544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_10
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 164
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc65c36dfee4eed0800000000000000
+      internalID: -2385519130531500808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_11
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 164
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce8ffda094145850800000000000000
+      internalID: 6364734785008406216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 82
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a35fb3ff3d81ad90800000000000000
+      internalID: -7088229032692591711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_13
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 82
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2faae493ce349b0800000000000000
+      internalID: -5096970622376152350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_14
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 82
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87727ef39fa246d50800000000000000
+      internalID: 6729550993205700472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_15
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 82
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893a71f0522f41da0800000000000000
+      internalID: -5974884564632886376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ec58f9e37752210800000000000000
+      internalID: 1307582377669021184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo_17
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae72d270a18b48e40800000000000000
+      internalID: 5657849453813245930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
