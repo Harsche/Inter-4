@@ -1,26 +1,40 @@
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using System;
 
 public class SaveManager
 {
-    public static SaveFile saveFile { get; private set; } = new SaveFile();
+    public static SaveFile saveFile { get; private set; }
     private static string savePath = Application.persistentDataPath + @"\gamedata.json";
+
+    public static void NewSaveFile()
+    {
+        saveFile = new SaveFile();
+    }
 
     public static void LoadGame()
     {
         string jsonSave = "";
         if (File.Exists(savePath))
             jsonSave = File.ReadAllText(savePath);
-        saveFile = JsonConvert.DeserializeObject<SaveFile>(jsonSave);
+        saveFile = JsonConvert.DeserializeObject<SaveFile>(jsonSave, new JsonSerializerSettings{TypeNameHandling = TypeNameHandling.Auto});
     }
 
     public static void SaveGame()
     {
-        string jsonSave =  JsonConvert.SerializeObject(saveFile);
-        if (!Directory.Exists(Path.GetDirectoryName(savePath))) Directory.CreateDirectory(Path.GetDirectoryName(savePath));
-            File.WriteAllText(savePath, jsonSave);
+        string jsonSave =  JsonConvert.SerializeObject(saveFile, Formatting.Indented, new JsonSerializerSettings{TypeNameHandling = TypeNameHandling.Auto});
+        if (!Directory.Exists(Path.GetDirectoryName(savePath)))
+            Directory.CreateDirectory(Path.GetDirectoryName(savePath));
+        File.WriteAllText(savePath, jsonSave);
+    }
+
+    public static void DeleteSave()
+    {
+        if(File.Exists(savePath))
+            File.Delete(savePath);
     }
 
     public static T GetData<T>(string guid) where T : ObjectData
@@ -36,6 +50,20 @@ public class SaveManager
 
 [System.Serializable]
 public class ObjectData {}
+
+/*
+public class ObjectDataConverter : CustomCreationConverter<ObjectData>
+{
+    public override bool CanConvert(Type objectType)
+    {
+        return typeof(ObjectData).IsAssignableFrom(objectType);
+    }
+
+    public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+    {
+
+    }
+}*/
 
 [System.Serializable]
 public class SaveFile : ISerializationCallbackReceiver

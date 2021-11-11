@@ -6,23 +6,31 @@ public class CheckDistance : MonoBehaviour
     [SerializeField] private float checkFrequency;
     [SerializeField] private float maxDistance;
     [SerializeField] private float minDistance;
+    private const string idleAnimationName = "DonaMaria_Idle_Bucket_Empty";
+    private const string walkingAnimationName = "DonaMaria_Walking_Bucket_Empty";
     private AnimationControl animationControl;
+    private SpriteRenderer mySpriteRenderer;
     private Coroutine distance;
     private bool isWithinDistance;
     private bool isWaiting;
+    private Cutscene cutscene;
 
 
     void Start()
     {
         //Obtém os componentes e começa a coroutine de checar distância
-
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
         distance = StartCoroutine(CheckDistanceFromPlayer());
         animationControl = GetComponent<AnimationControl>();
+        cutscene = Globals.CutsceneManager.currentCutscene;
+        isWithinDistance = true;
     }
+
     private IEnumerator CheckDistanceFromPlayer()
     {
         //Checa a ditância do jogador até este objeto
-
+        if(cutscene == null)
+            cutscene = Globals.CutsceneManager.currentCutscene;
         while (true)
         {
             yield return new WaitForSeconds(checkFrequency);
@@ -30,7 +38,9 @@ public class CheckDistance : MonoBehaviour
             {
                 isWithinDistance = false;
                 Globals.CutsceneManager.PauseTimeline();
-                animationControl.Idle_Left();
+                cutscene.BindOrUnbindTracks("Dona Maria", false, gameObject);
+                animationControl.PlayByName(idleAnimationName);
+                mySpriteRenderer.flipX = true;
                 Globals.DialogCanvas.GetComponent<DialogManager>().JumpTo("Day_01_Scene_02");
                 Globals.DialogCanvas.GetComponent<DialogManager>().ContinueStory();
                 Globals.DialogManager.OpenDialog();
@@ -41,7 +51,9 @@ public class CheckDistance : MonoBehaviour
                 Globals.CutsceneManager.ResumeTimeline();
                 if (!isWaiting)
                 {
-                    animationControl.Walk_Right();
+                    mySpriteRenderer.flipX = false;
+                    cutscene.BindOrUnbindTracks("Dona Maria", true, gameObject);
+                    animationControl.PlayByName(walkingAnimationName);
                 }
             }
         }

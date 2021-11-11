@@ -22,11 +22,8 @@ public class AnimationControl : MonoBehaviour
         anim.SetFloat("Velocity", 0);
         anim.SetFloat("Vel_Y", 0);
         anim.SetFloat("Vel_X", -1);
+        spriteRenderer.flipX = true;
 
-        if(isNPC)
-        {
-            spriteRenderer.flipX = true;
-        }
     }
 
     public void Idle_Right()
@@ -35,7 +32,7 @@ public class AnimationControl : MonoBehaviour
         anim.SetFloat("Vel_Y", 0);
         anim.SetFloat("Vel_X", 1);
 
-        if(isNPC)
+        if (isNPC)
         {
             spriteRenderer.flipX = false;
         }
@@ -45,14 +42,14 @@ public class AnimationControl : MonoBehaviour
     {
         anim.SetFloat("Velocity", 0);
         anim.SetFloat("Vel_X", 0);
-        anim.SetFloat("Vel_Y", 1);  
+        anim.SetFloat("Vel_Y", 1);
     }
 
     public void Idle_Down()
     {
         anim.SetFloat("Velocity", 0);
         anim.SetFloat("Vel_X", 0);
-        anim.SetFloat("Vel_Y", -1);  
+        anim.SetFloat("Vel_Y", -1);
     }
 
     public void Walk_Left()
@@ -61,7 +58,7 @@ public class AnimationControl : MonoBehaviour
         anim.SetFloat("Vel_Y", 0);
         anim.SetFloat("Vel_X", -1);
 
-        if(isNPC)
+        if (isNPC)
         {
             spriteRenderer.flipX = true;
         }
@@ -73,7 +70,7 @@ public class AnimationControl : MonoBehaviour
         anim.SetFloat("Vel_Y", 0);
         anim.SetFloat("Vel_X", 1);
 
-        if(isNPC)
+        if (isNPC)
         {
             spriteRenderer.flipX = false;
         }
@@ -83,14 +80,24 @@ public class AnimationControl : MonoBehaviour
     {
         anim.SetFloat("Velocity", 1);
         anim.SetFloat("Vel_X", 0);
-        anim.SetFloat("Vel_Y", 1);  
+        anim.SetFloat("Vel_Y", 1);
     }
 
     public void Walk_Down()
     {
         anim.SetFloat("Velocity", 1);
         anim.SetFloat("Vel_X", 0);
-        anim.SetFloat("Vel_Y", -1);  
+        anim.SetFloat("Vel_Y", -1);
+    }
+
+    public void PlayByName(string animationName)
+    {
+        anim.Play(animationName);
+    }
+
+    public void FlipX(bool flip)
+    {
+        spriteRenderer.flipX = flip;
     }
 
     public void TurnOffSelf()

@@ -49,6 +49,21 @@ public class Cutscene : MonoBehaviour
         Globals.CutsceneManager.SetCutscenePlayed(gameObject.name);
     }
 
+    public void BindOrUnbindTracks(string trackName, bool bind, GameObject obj)
+    {
+        foreach(TrackAsset track in cutsceneTracks)
+        {
+            if(track.name != trackName)
+                continue;
+            if(bind)
+            {
+                playableDirector.SetGenericBinding(track, obj);
+                continue;
+            }
+            playableDirector.SetGenericBinding(track, null);
+        }
+    }
+
     public void BindTimelineTracks()
     {
         if (bindPlayer) BindOrUnbindPlayer(true);
@@ -91,7 +106,6 @@ public class Cutscene : MonoBehaviour
         cutsceneTracks = (TrackAsset[])possibleCutscenes[index].GetOutputTracks();
         playableDirector.Play();
     }
-
 
     public void StartDialog(string inkKnot)
     {
