@@ -32,11 +32,13 @@ public class CutsceneManager : MonoBehaviour
 
     public void PauseTimeline()
     {
-        if (currentCutscene.isPlaying) currentCutscene.playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+        if (currentCutscene != null && currentCutscene.isPlaying)
+            currentCutscene.playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
     }
 
     public void ResumeTimeline()
     {
-        if(currentCutscene.isPlaying) currentCutscene.playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
+        if(currentCutscene != null && currentCutscene.isPlaying)
+            currentCutscene.playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
     }
 }

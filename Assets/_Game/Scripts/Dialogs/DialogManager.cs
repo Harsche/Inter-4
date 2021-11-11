@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using Lean.Touch;
 using System;
 using System.Linq;
+using CleverCrow.Fluid.UniqueIds;
 
 public class DialogManager : MonoBehaviour
 {
@@ -20,13 +21,21 @@ public class DialogManager : MonoBehaviour
     private StringBuilder charName = new StringBuilder();
     private StringBuilder charLine = new StringBuilder();
     private Story story;
-    private string savedStory;
+    private static StoryData storyData;
+    private static string myGuid;
     private bool displayingChoices;
 
     private void Awake()
     {
+        myGuid = GetComponent<UniqueId>().Id;
         choicesCanvas.Setup();
         myCanvas = GetComponent<Canvas>();
+        storyData = SaveManager.GetData<StoryData>(myGuid);
+        if (storyData == null)
+        {
+            storyData = new StoryData();
+            return;
+        }
         SetStory(dialogJson);
         //ContinueStory();
     }
@@ -46,20 +55,25 @@ public class DialogManager : MonoBehaviour
         story = new Story(storyJson.text);
         BindMethods();
 
-        if (story != null && (savedStory != null && savedStory != ""))
+        if (story != null && !String.IsNullOrEmpty(storyData.jsonStory))
         {
             LoadStoryState();
         }
     }
 
+    public static void SaveStoryData()
+    {
+        SaveManager.SaveData(myGuid, storyData);
+    }
+
     public void SaveStoryState()
     {
-        savedStory = story.state.ToJson();
+        storyData.jsonStory = story.state.ToJson();
     }
 
     public void LoadStoryState()
     {
-        story.state.LoadJson(savedStory);
+        story.state.LoadJson(storyData.jsonStory);
     }
 
     public void ContinueStory()
@@ -174,5 +188,9 @@ public class DialogManager : MonoBehaviour
             TalkingNPC = null;
         }
     }
+}
 
+public class StoryData : ObjectData
+{
+    public string jsonStory;
 }

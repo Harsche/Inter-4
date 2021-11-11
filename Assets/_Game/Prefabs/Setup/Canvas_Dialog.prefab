@@ -734,6 +734,7 @@ GameObject:
   - component: {fileID: 8715271182620564572}
   - component: {fileID: 8715271182620564573}
   - component: {fileID: 8715271182620564560}
+  - component: {fileID: -4934455688927097870}
   m_Layer: 5
   m_Name: Canvas_Dialog
   m_TagString: Untagged
@@ -862,6 +863,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-4934455688927097870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8715271182620564570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1796f3dc38e334ca54f2b0a067111d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 
 --- !u!1 &8715271182728015003
 GameObject:
   m_ObjectHideFlags: 0
