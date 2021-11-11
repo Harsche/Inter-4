@@ -1,31 +1,34 @@
 fileFormatVersion: 2
-guid: d6f09229d91204b419eb9f296692e9fb
+guid: 25863e2f67456e447a61cceb86eeb856
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8947767428133630696
-    second: CarrocaIdleContinuacao_0
+      213: 8330304699153829180
+    second: CarrocaMovimento_0
   - first:
-      213: 815930898284243226
-    second: CarrocaIdleContinuacao_1
+      213: -5081603315606825916
+    second: CarrocaMovimento_1
   - first:
-      213: -968013854912327926
-    second: CarrocaIdleContinuacao_2
+      213: -2187380942269298946
+    second: CarrocaMovimento_2
   - first:
-      213: 5339845439417384738
-    second: CarrocaIdleContinuacao_3
+      213: -4916142606354557173
+    second: CarrocaMovimento_3
   - first:
-      213: 3045416356471109273
-    second: CarrocaIdleContinuacao_4
+      213: 7233159790861645084
+    second: CarrocaMovimento_4
   - first:
-      213: 306436674813702643
-    second: CarrocaIdleContinuacao_5
+      213: -8315522848711014526
+    second: CarrocaMovimento_5
   - first:
-      213: -2596099180545655927
-    second: CarrocaIdleContinuacao_6
+      213: 3713676246171577670
+    second: CarrocaMovimento_6
   - first:
-      213: 1843282961486775407
-    second: CarrocaIdleContinuacao_7
+      213: 829031226405358376
+    second: CarrocaMovimento_7
+  - first:
+      213: 5552788229598045341
+    second: CarrocaMovimento_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +142,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CarrocaIdleContinuacao_0
+      name: CarrocaMovimento_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 162
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3dc4dfecff2b9370800000000000000
+      internalID: 8330304699153829180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CarrocaMovimento_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 440
+        width: 162
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444decb35b48a79b0800000000000000
+      internalID: -5081603315606825916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CarrocaMovimento_2
       rect:
         serializedVersion: 2
         x: 0
@@ -153,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e237be811bdc2c70800000000000000
-      internalID: 8947767428133630696
+      spriteID: ef6449b4f9cd4a1e0800000000000000
+      internalID: -2187380942269298946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarrocaIdleContinuacao_1
+      name: CarrocaMovimento_3
       rect:
         serializedVersion: 2
         x: 162
@@ -174,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a196f7934d4c25b00800000000000000
-      internalID: 815930898284243226
+      spriteID: b07d21ba85a56cbb0800000000000000
+      internalID: -4916142606354557173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarrocaIdleContinuacao_2
+      name: CarrocaMovimento_4
       rect:
         serializedVersion: 2
         x: 0
@@ -195,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0f4b48178ce092f0800000000000000
-      internalID: -968013854912327926
+      spriteID: c1572f1c188516460800000000000000
+      internalID: 7233159790861645084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarrocaIdleContinuacao_3
+      name: CarrocaMovimento_5
       rect:
         serializedVersion: 2
         x: 162
@@ -216,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22f76fba221fa1a40800000000000000
-      internalID: 5339845439417384738
+      spriteID: 2878fe0d604599c80800000000000000
+      internalID: -8315522848711014526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarrocaIdleContinuacao_4
+      name: CarrocaMovimento_6
       rect:
         serializedVersion: 2
         x: 0
@@ -237,14 +282,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 996ff987a0e734a20800000000000000
-      internalID: 3045416356471109273
+      spriteID: 64decd7bed0a98330800000000000000
+      internalID: 3713676246171577670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarrocaIdleContinuacao_5
+      name: CarrocaMovimento_7
       rect:
         serializedVersion: 2
         x: 162
@@ -258,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f13c6c388ea04400800000000000000
-      internalID: 306436674813702643
+      spriteID: 82b099d028f418b00800000000000000
+      internalID: 829031226405358376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarrocaIdleContinuacao_6
+      name: CarrocaMovimento_8
       rect:
         serializedVersion: 2
         x: 0
@@ -279,29 +324,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98bb4edcc8dc8fbd0800000000000000
-      internalID: -2596099180545655927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarrocaIdleContinuacao_7
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 0
-        width: 162
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6403fb5618a49910800000000000000
-      internalID: 1843282961486775407
+      spriteID: d94692299777f0d40800000000000000
+      internalID: 5552788229598045341
       vertices: []
       indices: 
       edges: []

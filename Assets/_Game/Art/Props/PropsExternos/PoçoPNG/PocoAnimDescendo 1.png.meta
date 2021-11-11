@@ -1,61 +1,61 @@
 fileFormatVersion: 2
-guid: cf83b64757cee4340a2498961964d555
+guid: d04c0eb93e9480a40aa55bf351dbc986
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8675966007229719333
-    second: PocoAnimSubindo_0
+      213: -2076129420852808372
+    second: PocoAnimDescendo 1_0
   - first:
-      213: -8843796805711891584
-    second: PocoAnimSubindo_1
+      213: 5631330685076864191
+    second: PocoAnimDescendo 1_1
   - first:
-      213: -526285559445678106
-    second: PocoAnimSubindo_2
+      213: -2874024592477312030
+    second: PocoAnimDescendo 1_2
   - first:
-      213: -4628059414574384902
-    second: PocoAnimSubindo_3
+      213: -7390931643779266090
+    second: PocoAnimDescendo 1_3
   - first:
-      213: 4973646153578678533
-    second: PocoAnimSubindo_4
+      213: 7701727010465728718
+    second: PocoAnimDescendo 1_4
   - first:
-      213: 5986090445549262010
-    second: PocoAnimSubindo_5
+      213: -6160750766455935023
+    second: PocoAnimDescendo 1_5
   - first:
-      213: 2865266327682992382
-    second: PocoAnimSubindo_6
+      213: -6962291705003892040
+    second: PocoAnimDescendo 1_6
   - first:
-      213: -5620404500849978287
-    second: PocoAnimSubindo_7
+      213: 1989921136588885845
+    second: PocoAnimDescendo 1_7
   - first:
-      213: -7548129690905802626
-    second: PocoAnimSubindo_8
+      213: 8796278740285458240
+    second: PocoAnimDescendo 1_8
   - first:
-      213: -2029666854743129070
-    second: PocoAnimSubindo_9
+      213: 4185808889679461987
+    second: PocoAnimDescendo 1_9
   - first:
-      213: 642920112208283669
-    second: PocoAnimSubindo_10
+      213: 6469138595584369068
+    second: PocoAnimDescendo 1_10
   - first:
-      213: 432926528075300477
-    second: PocoAnimSubindo_11
+      213: 1175662885350569926
+    second: PocoAnimDescendo 1_11
   - first:
-      213: 777631811571864515
-    second: PocoAnimSubindo_12
+      213: -7947853557776216351
+    second: PocoAnimDescendo 1_12
   - first:
-      213: 7346436493169095672
-    second: PocoAnimSubindo_13
+      213: 1261931278093800881
+    second: PocoAnimDescendo 1_13
   - first:
-      213: -1887818546374815433
-    second: PocoAnimSubindo_14
+      213: 5418814965681577863
+    second: PocoAnimDescendo 1_14
   - first:
-      213: -7586805273347323560
-    second: PocoAnimSubindo_15
+      213: -7269157978831825391
+    second: PocoAnimDescendo 1_15
   - first:
-      213: 1622628757933724296
-    second: PocoAnimSubindo_16
+      213: -2990690044206888407
+    second: PocoAnimDescendo 1_16
   - first:
-      213: -2760209687943912594
-    second: PocoAnimSubindo_17
+      213: -92059498623629657
+    second: PocoAnimDescendo 1_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,13 +169,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PocoAnimSubindo_0
+      name: PocoAnimDescendo 1_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 328
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 523aa48cd19376870800000000000000
-      internalID: 8675966007229719333
+      spriteID: c45b452aa4b1033e0800000000000000
+      internalID: -2076129420852808372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_1
+      name: PocoAnimDescendo 1_1
       rect:
         serializedVersion: 2
-        x: 107
+        x: 100
         y: 328
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 083fec169a5844580800000000000000
-      internalID: -8843796805711891584
+      spriteID: fbc73c80c61862e40800000000000000
+      internalID: 5631330685076864191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_2
+      name: PocoAnimDescendo 1_2
       rect:
         serializedVersion: 2
-        x: 207
+        x: 200
         y: 328
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e792d2721242b8f0800000000000000
-      internalID: -526285559445678106
+      spriteID: 2eb27a14cd96d18d0800000000000000
+      internalID: -2874024592477312030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_3
+      name: PocoAnimDescendo 1_3
       rect:
         serializedVersion: 2
-        x: 307
+        x: 300
         y: 328
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af834e2ab74d5cfb0800000000000000
-      internalID: -4628059414574384902
+      spriteID: 6d9c75d24d22e6990800000000000000
+      internalID: -7390931643779266090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_4
+      name: PocoAnimDescendo 1_4
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 246
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5098b8e33d0f50540800000000000000
-      internalID: 4973646153578678533
+      spriteID: ec847d719e702ea60800000000000000
+      internalID: 7701727010465728718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_5
+      name: PocoAnimDescendo 1_5
       rect:
         serializedVersion: 2
-        x: 108
+        x: 100
         y: 246
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab4d2586b8dd21350800000000000000
-      internalID: 5986090445549262010
+      spriteID: 1dfada7a1dd908aa0800000000000000
+      internalID: -6160750766455935023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_6
+      name: PocoAnimDescendo 1_6
       rect:
         serializedVersion: 2
-        x: 207
+        x: 200
         y: 246
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,20 +309,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef8ce605b8873c720800000000000000
-      internalID: 2865266327682992382
+      spriteID: 8b228940598f06f90800000000000000
+      internalID: -6962291705003892040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_7
+      name: PocoAnimDescendo 1_7
       rect:
         serializedVersion: 2
-        x: 307
+        x: 300
         y: 246
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,20 +330,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15494d872ef4002b0800000000000000
-      internalID: -5620404500849978287
+      spriteID: 55f0c6d0bbe9d9b10800000000000000
+      internalID: 1989921136588885845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_8
+      name: PocoAnimDescendo 1_8
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 164
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,20 +351,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e780bfea908af3790800000000000000
-      internalID: -7548129690905802626
+      spriteID: 047090cd8e8a21a70800000000000000
+      internalID: 8796278740285458240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_9
+      name: PocoAnimDescendo 1_9
       rect:
         serializedVersion: 2
-        x: 107
+        x: 100
         y: 164
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,20 +372,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 214c6aecfbc25d3e0800000000000000
-      internalID: -2029666854743129070
+      spriteID: 36e340ff10bf61a30800000000000000
+      internalID: 4185808889679461987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_10
+      name: PocoAnimDescendo 1_10
       rect:
         serializedVersion: 2
-        x: 207
+        x: 200
         y: 164
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,20 +393,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 518012b8f6c1ce800800000000000000
-      internalID: 642920112208283669
+      spriteID: ca16398174ff6c950800000000000000
+      internalID: 6469138595584369068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_11
+      name: PocoAnimDescendo 1_11
       rect:
         serializedVersion: 2
-        x: 307
+        x: 300
         y: 164
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,20 +414,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7e75cf2260120600800000000000000
-      internalID: 432926528075300477
+      spriteID: 6c77ee05a2bc05010800000000000000
+      internalID: 1175662885350569926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_12
+      name: PocoAnimDescendo 1_12
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 82
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,20 +435,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c3d8c63304baca00800000000000000
-      internalID: 777631811571864515
+      spriteID: 1ee8ce97c4d83b190800000000000000
+      internalID: -7947853557776216351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_13
+      name: PocoAnimDescendo 1_13
       rect:
         serializedVersion: 2
-        x: 107
+        x: 100
         y: 82
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,41 +456,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f37f444119c3f560800000000000000
-      internalID: 7346436493169095672
+      spriteID: 1b55cb9bfc7438110800000000000000
+      internalID: 1261931278093800881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_14
+      name: PocoAnimDescendo 1_14
       rect:
         serializedVersion: 2
-        x: 204
-        y: 79
-        width: 93
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7315feeb80f1dc5e0800000000000000
-      internalID: -1887818546374815433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PocoAnimSubindo_15
-      rect:
-        serializedVersion: 2
-        x: 307
+        x: 200
         y: 82
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -498,20 +477,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 859821eecc046b690800000000000000
-      internalID: -7586805273347323560
+      spriteID: 78f550d408f733b40800000000000000
+      internalID: 5418814965681577863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_16
+      name: PocoAnimDescendo 1_15
       rect:
         serializedVersion: 2
-        x: 7
+        x: 300
+        y: 82
+        width: 100
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1165887f453ce1b90800000000000000
+      internalID: -7269157978831825391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PocoAnimDescendo 1_16
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -519,20 +519,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88219fe124cb48610800000000000000
-      internalID: 1622628757933724296
+      spriteID: 92a40c9004fee76d0800000000000000
+      internalID: -2990690044206888407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PocoAnimSubindo_17
+      name: PocoAnimDescendo 1_17
       rect:
         serializedVersion: 2
-        x: 107
+        x: 100
         y: 0
-        width: 93
-        height: 79
+        width: 100
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,8 +540,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e63e28cb9e3c1b9d0800000000000000
-      internalID: -2760209687943912594
+      spriteID: 7a6865eaf50f8bef0800000000000000
+      internalID: -92059498623629657
       vertices: []
       indices: 
       edges: []

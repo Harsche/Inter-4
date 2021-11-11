@@ -191,11 +191,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1678
-        width: 79
+        y: 292
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: JegueIdle_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1606
-        width: 79
+        x: 80
+        y: 292
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,12 +232,12 @@ TextureImporter:
       name: JegueIdle_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1533
-        width: 79
+        x: 160
+        y: 292
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: JegueIdle_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1460
-        width: 79
+        x: 240
+        y: 292
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: JegueIdle_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1387
-        width: 79
+        x: 320
+        y: 292
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,11 +296,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1314
-        width: 79
+        y: 219
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,12 +316,12 @@ TextureImporter:
       name: JegueIdle_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1241
-        width: 79
+        x: 80
+        y: 219
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,12 +337,12 @@ TextureImporter:
       name: JegueIdle_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1168
-        width: 79
+        x: 160
+        y: 219
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -358,12 +358,12 @@ TextureImporter:
       name: JegueIdle_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1095
-        width: 79
+        x: 240
+        y: 219
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -379,12 +379,12 @@ TextureImporter:
       name: JegueIdle_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1022
-        width: 79
+        x: 320
+        y: 219
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -401,11 +401,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 949
-        width: 79
+        y: 146
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -421,12 +421,12 @@ TextureImporter:
       name: JegueIdle_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 876
-        width: 79
+        x: 80
+        y: 146
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -442,12 +442,12 @@ TextureImporter:
       name: JegueIdle_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 803
-        width: 79
+        x: 160
+        y: 146
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -463,12 +463,12 @@ TextureImporter:
       name: JegueIdle_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 730
-        width: 79
+        x: 240
+        y: 146
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -484,12 +484,12 @@ TextureImporter:
       name: JegueIdle_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 657
-        width: 79
+        x: 320
+        y: 146
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -506,11 +506,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 584
-        width: 79
+        y: 73
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -526,12 +526,12 @@ TextureImporter:
       name: JegueIdle_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 511
-        width: 79
+        x: 80
+        y: 73
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -547,12 +547,12 @@ TextureImporter:
       name: JegueIdle_17
       rect:
         serializedVersion: 2
-        x: 0
-        y: 438
-        width: 79
+        x: 160
+        y: 73
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -568,12 +568,12 @@ TextureImporter:
       name: JegueIdle_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 365
-        width: 79
+        x: 240
+        y: 73
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -589,12 +589,12 @@ TextureImporter:
       name: JegueIdle_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 292
-        width: 79
+        x: 320
+        y: 73
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -611,11 +611,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 219
-        width: 79
+        y: 0
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -631,12 +631,12 @@ TextureImporter:
       name: JegueIdle_21
       rect:
         serializedVersion: 2
-        x: 0
-        y: 146
-        width: 79
+        x: 80
+        y: 0
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -652,12 +652,12 @@ TextureImporter:
       name: JegueIdle_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 73
-        width: 79
+        x: 160
+        y: 0
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -673,12 +673,12 @@ TextureImporter:
       name: JegueIdle_23
       rect:
         serializedVersion: 2
-        x: 0
+        x: 240
         y: 0
-        width: 79
+        width: 80
         height: 73
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
