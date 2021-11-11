@@ -27,18 +27,15 @@ public class SceneChanger : MonoBehaviour
     public void ChangeScene(string sceneName)
     {
         StartCoroutine(FadeOut(sceneName));
-    }
+    }    
 
     private IEnumerator FadeOut(string sceneName, Vector2 newPosition)
     {
         fadeCanvas.SetActive(true);
         Globals.Player.GetComponent<Rigidbody2D>().simulated = false;
         Globals.CutsceneManager.PauseTimeline();
-
         yield return fadeImage.DOFade(1, fadeDuration).WaitForCompletion();
-        Player.SavePlayerData(newPosition, sceneName);
-        DialogManager.SaveStoryData();
-        SaveManager.SaveGame();
+
         Debug.Log("SAVED");
         SceneManager.LoadScene(sceneName);
         while (!SceneManager.GetSceneByName(sceneName).isLoaded)
@@ -49,6 +46,9 @@ public class SceneChanger : MonoBehaviour
         Vector2 oldPosition = Globals.Player.transform.position;
         Globals.Player.transform.position = newPosition;
         virtualCamera.OnTargetObjectWarped(virtualCamera.m_Follow, newPosition - oldPosition);
+
+        SaveManager.SaveAllData?.Invoke();
+        SaveManager.SaveGame();
 
         Globals.Player.GetComponent<Rigidbody2D>().simulated = true;
         Globals.CutsceneManager.ResumeTimeline();
@@ -62,17 +62,17 @@ public class SceneChanger : MonoBehaviour
         fadeCanvas.SetActive(true);
         Globals.Player.GetComponent<Rigidbody2D>().simulated = false;
         Globals.CutsceneManager.PauseTimeline();
-        DialogManager.SaveStoryData();
         yield return fadeImage.DOFade(1, fadeDuration).WaitForCompletion();
         Vector3 position = Globals.Player.transform.position;
-        Player.SavePlayerData(position, sceneName);
-        SaveManager.SaveGame();
         Debug.Log("SAVED");
         SceneManager.LoadScene(sceneName);
         while (!SceneManager.GetSceneByName(sceneName).isLoaded)
         {
             yield return null;
         }
+
+        SaveManager.SaveAllData?.Invoke();
+        SaveManager.SaveGame();
 
         Globals.Player.GetComponent<Rigidbody2D>().simulated = true;
         Globals.CutsceneManager.ResumeTimeline();

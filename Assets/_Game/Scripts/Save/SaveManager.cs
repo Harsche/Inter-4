@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
@@ -9,6 +8,7 @@ public class SaveManager
 {
     public static SaveFile saveFile { get; private set; }
     private static string savePath = Application.persistentDataPath + @"\gamedata.json";
+    public static Action SaveAllData;
 
     public static void NewSaveFile()
     {
@@ -50,20 +50,6 @@ public class SaveManager
 
 [System.Serializable]
 public class ObjectData {}
-
-/*
-public class ObjectDataConverter : CustomCreationConverter<ObjectData>
-{
-    public override bool CanConvert(Type objectType)
-    {
-        return typeof(ObjectData).IsAssignableFrom(objectType);
-    }
-
-    public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
-    {
-
-    }
-}*/
 
 [System.Serializable]
 public class SaveFile : ISerializationCallbackReceiver

@@ -3,11 +3,13 @@
 -   1:  -> Dona_Maria_Day_01
 -   2:  -> Dona_Maria_Day_02
 -   3:  -> Dona_Maria_Day_03
+-   4:  -> Dona_Maria_Day_04
+-   5:  -> Dona_Maria_Day_05
 }
 
 === Dona_Maria_Day_01 ===
 {Dona_Maria_Day_01:
--   1:  ->D01
+-   1:  -> D01
 }
 
 = D01
@@ -51,7 +53,7 @@ Dona Maria: Então ta bom! Muito obrigada, fi.
 JOGO: Há um prato de arroz e farinha. A panela de arroz está vazia.
 JOGO: Temos apenas farinha a partir de agora...
 ~ GameDay = 3
-//~ ChangeGameDay(GameDay)
+~ ChangeGameDay(GameDay)
 -> DONE
 
 === Dona_Maria_Day_03 ===
@@ -82,5 +84,62 @@ Pedro: Mainha... a gente não tem mais arroz?
 Dona Maria: Acabou ontem, meu fi... mainha vai conseguir mais assim que ficar melhor.
 Dona Maria: A mãe promete, tá?
 ~ GameDay = 4
-//~ ChangeGameDay(GameDay)
+~ ChangeGameDay(GameDay)
 ->DONE
+
+=== Dona_Maria_Day_04 ===
+{Getting_Dark == 4: -> At_Night}
+{Dona_Maria_Day_04: -> DONE}
+
+= At_Night
+Luiz: Já voltei!
+Dona Maria: Oi fi...
+JOGO: A voz dela parece mais fraca do que estava hoje cedo...
+Luiz: Eu falei com Seu Zé, e amanhã vamos te levar pra cidade. Ocê vai no médico!
+Dona Maria: Sinto muito por estar dando esse trabalhp, fi.
+Dona Maria: Ocê... já é mesmo um homenzinho... O meu Luizinho ta crescido. Obrigada.
+Luiz: Não agradeça não, mainha! A senhora faz muito mais pela gente!
+Luisa: Mainha, eu to com fome...
+João: Eu também...
+JOGO: A farinha acabou ontem. Não há nada no armário.
+Dona Maria: Eu... eu não tenho -
+Luiz: Eu tenho uns pães e umas macaxeiras!
+Luiz: Consegui fazendo uns trabalhinhos! Venham cá que eu vou dividir!
+*   [Dar um pouco]
+    ~ ChooseCutscene(0)
+    Luiz: Logo, vamo te mais do que isso, ta Caramelo?
+    Luiz: Olha, Caramelo, mesmo que eu leve mainha ao médico amanhã...
+    Luiz: Não sei como arranjar mais comida... 
+    Luiz: Que Deus nos ajude.
+    ~ GameDay = 5
+    ~ ChangeGameDay(GameDay)
+    -> DONE
+*   [Há pouca comida]
+    ~ ChooseCutscene(1)
+    ~ GameDay = 5
+    ~ ChangeGameDay(GameDay)
+    -> DONE
+
+=== Dona_Maria_Day_05 ===
+{Dona_Maria_Day_04:
+-   1:  -> D01
+}
+
+= D01
+Dona Maria: LUIIIIIIZ! Entre pra jantar, meu fi!
+-> DONE
+
+
+= D02
+Dona Maria: Já servi seu pratinho, meu filho!
+JOGO: O prato com arroz e feijão é colorido por legumes e carne! O cheiro é ótimo!
+Luiz: Obrigada, mainha!
+Dona Maria: Ainda bem que aquele pessoal da ONG apareceu, né fi?
+Luiz: É sim, mainha!
+Luiz: Nem dá pra acreditar que ainda existem pessoas tão boas!
+Luiz: A ponto de doarem pra esses projetos só pra ajudar a gente...
+Luiz: Sem nem conhecer a gente!
+Dona Maria: É, Luizinho, é uma corrente do bem!
+Dona Maria: Assim como a nossa relação com nossos vizinhos!
+Dona Maria: Um ajuda o outro, e assim vamos vivendo...
+-> DONE

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using CleverCrow.Fluid.UniqueIds;
 
 public class Player : MonoBehaviour
@@ -9,6 +10,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        SaveManager.SaveAllData += SavePlayerData;
         myGuid = GetComponent<UniqueId>().Id;
         playerData = SaveManager.GetData<PlayerData>(myGuid);
         if (playerData != null)
@@ -31,10 +33,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    public static void SavePlayerData(Vector2 position, string sceneName)
+    private void SavePlayerData()
     {
-        playerData.scene = sceneName;
-        playerData.position = position;
+        playerData.scene = SceneManager.GetActiveScene().name;
+        playerData.position = transform.position;
         SaveManager.SaveData(myGuid, playerData);
     }
 }

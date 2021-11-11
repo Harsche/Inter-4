@@ -1,21 +1,23 @@
 === DONA_CIDA ===
 {GameDay:
--   1:  ->Dona_Cida_Day_01
--   3:  ->Dona_Cida_Day_03
+-   1:  -> Dona_Cida_Day_01
+-   3:  -> Dona_Cida_Day_03
 }
 
 
 === Dona_Cida_Day_01 ===
 {Dona_Cida_Day_01:
--   1:  ->D01
--   else:   ->Random_Dialog
+-   1:  -> D01
+-   else:   -> Random_Dialog
 }
 
 = D01
 ~ PauseTimeline()
 Dona Cida: Bom dia, meu fi.
 Luiz: Bom dia, dona Cida! O Junior ta? Queria chama ele pra joga bola, se a senhora deixa!
-Dona Cida: Oh fi, num ta não. Junior saiu agora de pouco com o pai dele pra irem vende uns ovos das nossas galinha num vilarejo aqui de perto, eles vão passar uns dias lá. Ocê quer entrar?
+Dona Cida: Oh fi, num ta não. Junior saiu agora de pouco com o pai dele.
+Dona Cida: Foram vende uns ovos das nossas galinha num vilarejo aqui de perto.
+Dona Cida: Eles vão passar uns dias lá... Ocê quer entrar toma um café?
 *   [Entrar]
     ~ ChooseCutscene(0)
     ~ CloseDialog()
@@ -23,7 +25,8 @@ Dona Cida: Oh fi, num ta não. Junior saiu agora de pouco com o pai dele pra ire
     Luiz: Eles tão bem, Dona Cida. Só minha mãe que ultimamente parece meio abatida...
     Dona Cida: Como assim, fi?
     Luiz: Ah, Dona Cida, eu num sei explica. Ela parece meio... cansada, meio fraca.
-    Dona Cida: Essa seca ta castigando todo mundo. Sua mãe deve ta preocupada, é só isso. Se Deus quiser, logo a chuva vem!
+    Dona Cida: Essa seca ta castigando todo mundo. Sua mãe deve ta preocupada, é só isso.
+    Dona Cida: Se Deus quiser, logo a chuva vem!
     Luiz: Brigada, Dona Cida! Eu já vou indo! Fique com Deus.
     Dona Cida: Vá com Deus, Luiz!
     ~ ResumeTimeline()
@@ -65,8 +68,8 @@ Luiz: Então eu vou tentar só tocar elas pra dentro do cercado de novo.
 
 === Dona_Cida_Day_03 ===
 {Dona_Cida_Day_03:
--   1:  ->D01
--   else:   ->Random_Dialog
+-   1:  -> D01
+-   else:   -> Random_Dialog
 }
 
 = D01
@@ -103,6 +106,57 @@ Dona Cida: Quando eu era criança, contavam várias lendas aqui do sertão, eu a
     Dona Cida: Ah, fi. Tudo bem! Vá com Deus. E não se preocupe, tá?
     Luiz: Amém!
     -> DONE
+
+= Random_Dialog
+-> DONE
+
+=== Dona_Cida_Day_04 ===
+{Dona_Cida_Day_04:
+-   1:  -> D01
+-   2:  -> D02
+-   else:   -> Random_Dialog
+}
+
+= D01
+Dona Cida: Opa, Luiz. Como sua mãe ta, fi?
+Luiz: Ela piorou, Dona Cida...
+Dona Cida: Vem, fi.
+-> DONE
+
+= D02
+Dona Cida: O que ela tá sentindo?
+Luiz: Os sintomas de antes não passaram, e agora ela ta tendo calafrio!
+Luiz: E dor de barriga também.
+Dona Cida: Um chá de boldo ajuda no calafrio, e um chá de mastruz na dor de barriga.
+Dona Cida: O difícil é achar isso por aqui, no mei dessa seca ingrata.
+Dona Cida: O melhor seria levar sua mãe no médico...
+Luiz: O Seu Miguel disse o mesmo, mas eu não tenho como levar ela!
+Luiz: Mainha ta fraca, não vai conseguir ir andando, e tem os meus irmãos...
+Luiz: O Seu Zé ficou de trazer hoje um capim santo pra ajudar na febre.
+Dona Cida: Luiz, o Zé tem uma carroça!
+Dona Cida: Talvez ele possa levar sua mãe pra ver um médico!
+Luiz: Uai, Dona Cida, não tinha pensado nisso! Mas ainda tem os meus irmãos.
+Dona Cida: Oh, fi, eu fico aqui com eles! Não se preocupe com isso não!
+Luiz: Nossa, Dona Cida, que Deus lhe pague!
+Dona Cida: A senhora é um anjo! Vou ir ver se Seu Zé já voltou!
+Dona Cida: Vá lá, meu fi!
+-> DONE
+
+= D03
+Luiz: Eita! DONA CIDA, AS GALINHA DA SENHORA TÃO TUDO SOLTA AQUI!
+Dona Cida: Oh meu Deus! Elas escaparam!
+Luiz: Eu vou pegar elas pra senhora.
+Dona Cida: É muito dificil pegar galinha, Luiz. São ligeiras demais.
+Luiz: Então eu vou tentar só tocar elas pra dentro do cercado de novo.
+-> DONE
+
+= Returned_Chickens
+Dona Cida: Obrigada, Luizinho! Essas galinhas são importante demais aqui pra casa.
+Luiz: Imagina, Dona Cida!
+Luiz: O Junior já me disse que cês vivem de vender os ovin delas...
+Dona Cida: Pois é, fi. Muito obrigada mesmo!
+Luiz: Disponha!
+-> DONE
 
 = Random_Dialog
 -> DONE

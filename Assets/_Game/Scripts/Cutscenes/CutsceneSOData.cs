@@ -1,8 +1,8 @@
-using UnityEngine.Timeline;
 using UnityEngine;
 
+[System.Serializable]
 [CreateAssetMenu(menuName = "ScriptableObjects/Cutscene Data")]
-public class CutsceneData : ScriptableObject
+public class CutsceneSOData : ScriptableObject
 {
     public CutsceneState[] states;
 

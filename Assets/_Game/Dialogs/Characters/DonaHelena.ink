@@ -74,7 +74,46 @@ Luiz: Oi, Dona Helena! Eu to bem, e a senhora?
 Dona Helena: To bem, fi.
 Dona Helena: Viu, vim te pergunta se ocê pode ajudar o Zé a encher a carroça pra levar pra cidade!
 Dona Helena: Tem bastante coisa e ele não queria demorar a partir!
-Luiz:  Ajudo sim, Dona Helena, vamos lá!
+Luiz: Ajudo sim, Dona Helena, vamos lá!
+
+= Random_Dialog
+-> DONE
+
+=== Dona_Helena_Day_04 ===
+{Dona_Helena_Day_04:
+-   1:  -> D01
+-   else:   -> Random_Dialog
+}
+
+= D01
+Dona Helena: Oi, Luiz!
+Luiz: Opa, Dona Helena! Vim ver se Seu Zé já voltou! Preciso demais falar com ele!
+Dona Helena: Luiz, ele ainda não chegou, mas deve chegar logo. Entra pra esperar, fi.
+-> DONE
+
+= D02
+Dona Helena: E sua mãe, Luiz?
+Luiz: Piorou, Dona Helena...
+Dona Helena: Meu Deus... Eu sinto muito.
+Luiz: Eu to com medo, Dona Helena. E se...
+Dona Helena: Não fique com medo não, meu bem. Logo as coisas vão se ajeitar! Eu tenho fé.
+Seu José: Cheguei! Opaaa, Luiz! Eu consegui! Eu trouxe a Erva Cidreira!
+Luiz: Seu Zé! Muito obrigado, mas eu precisava te pedir mais uma coisa!
+Seu José: Uai, fi, pode falar!
+Luiz: O senhor poderia, por favor, levar eu e minha mãe até a cidade?
+Luiz: Eu quero levar ela até um médico... mas acho que ela não aguenta ir caminhando.
+Luiz: Eu prometo que dou um jeito de pagar o senhor!
+Luiz: Trabalho sempre com a carroça, faço o que for preciso!
+Seu José: É claro que eu levo, Luizinho! E não precisa me pagar não, meu fi.
+Seu José: Vocês aqui do vilarejo são como família pra eu e pra Lena!
+Seu José: Eu fico é feliz por ter condição de poder te ajudar.
+Luiz: Seu Zé... Muito obrigado! Muito obrigado mesmo.
+Luiz: Eu nem sei o que dizer!
+Seu José: Não precisa dizer nada não, fi.
+Seu José: Vamos precisar sair amanhã cedo, porque hoje já tá tarde, okay?
+Seu José: Fique prontinho com sua mãe, que passo lá na sua casa pra te ajudar com ela!
+Luiz: Tudo bem, seu Zé! Eu vou ir ajeitar as coisas pra amanhã!
+-> DONE
 
 = Random_Dialog
 -> DONE

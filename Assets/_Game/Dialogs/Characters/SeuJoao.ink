@@ -12,13 +12,16 @@
 
 = D01
 Seu João: Aooo, Luizinho! Como que cê ta, ein?
-Luiz: Aooooo, seu João! Eu to bem, e o sinhô? Vim saber se posso ajudar o sinhô com o carvão hoje. To precisando...
-Seu João: Eu to bão, uai! Oh, fi... As coisas não andam bem pra mim, não. Quase ninguém ta comprando carvão... eu num tenho como te paga, Luiz.
+Luiz: Aooooo, seu João! Eu to bem, e o sinhô?
+Luiz: Vim saber se posso ajudar o sinhô com o carvão hoje. To precisando...
+Seu João: Eu to bão, uai! Oh, fi... As coisas não andam bem pra mim, não.
+Seu João: Quase ninguém ta comprando carvão... eu num tenho como te paga, Luiz.
 Luiz: Eu te ajudo, Seu João!
 Seu João: Tem certeza, fi?
 Luiz: Tenho sim!
 JOGO: (MINIGAME DE CORTAR LENHA)
-Seu João: Muito obrigado por me ajudar, Luizinho. Num queria te deixar ir de mão abanando, então fica com essas romãs.
+Seu João: Muito obrigado por me ajudar, Luizinho.
+Seu João: Num queria te deixar ir de mão abanando, então fica com essas romãs.
 Seu João: Eu consegui elas trocando carvão lá na cidade. Leva pro cê e pra sua família!
 Luiz: Obrigado, seu João!
 Seu João: Não tem de que, Luizinho!

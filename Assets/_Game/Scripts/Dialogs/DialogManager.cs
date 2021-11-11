@@ -27,6 +27,7 @@ public class DialogManager : MonoBehaviour
 
     private void Awake()
     {
+        SaveManager.SaveAllData += SaveStoryData;
         myGuid = GetComponent<UniqueId>().Id;
         choicesCanvas.Setup();
         myCanvas = GetComponent<Canvas>();
@@ -61,7 +62,7 @@ public class DialogManager : MonoBehaviour
         }
     }
 
-    public static void SaveStoryData()
+    private void SaveStoryData()
     {
         SaveManager.SaveData(myGuid, storyData);
     }
@@ -158,7 +159,9 @@ public class DialogManager : MonoBehaviour
         story.BindExternalFunction("newQuest", (string questName) => { Globals.QuestManager.StartNewQuest(questName); });
         story.BindExternalFunction("Debug", (string value) => { Debug.Log(value); });
         story.BindExternalFunction("ChooseCutscene", (int choiceIndex) => { Globals.CutsceneManager.ChooseCutscene(choiceIndex); });
+        story.BindExternalFunction("PlayCutscene", (int cutsceneNum) => { CutsceneManager.TriggerCutscene(cutsceneNum); });
         story.BindExternalFunction("CloseDialog", () => { CloseDialog(); });
+        story.BindExternalFunction("ChangeGameDay", (int day) => { Debug.Log("CHANGED DAY" + day); });
     }
 
     public void OpenDialog()
