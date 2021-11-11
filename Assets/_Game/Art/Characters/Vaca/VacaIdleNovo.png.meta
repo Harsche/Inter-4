@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: 505d9fef1805fee4f9de3ce1358afdab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8307849258668096107
+    second: VacaIdleNovo_0
+  - first:
+      213: -5425745816994078249
+    second: VacaIdleNovo_1
+  - first:
+      213: 6389730946694751690
+    second: VacaIdleNovo_2
+  - first:
+      213: -5626857136801036078
+    second: VacaIdleNovo_3
+  - first:
+      213: 6070978008887427156
+    second: VacaIdleNovo_4
+  - first:
+      213: 3466438050396177726
+    second: VacaIdleNovo_5
+  - first:
+      213: -3741152194170309702
+    second: VacaIdleNovo_6
+  - first:
+      213: 5512992992189415823
+    second: VacaIdleNovo_7
+  - first:
+      213: -7027226646162271397
+    second: VacaIdleNovo_8
+  - first:
+      213: -8572931641145576137
+    second: VacaIdleNovo_9
+  - first:
+      213: -51575561507427207
+    second: VacaIdleNovo_10
+  - first:
+      213: -8157837860029074960
+    second: VacaIdleNovo_11
+  - first:
+      213: -8964980121027993670
+    second: VacaIdleNovo_12
+  - first:
+      213: 1262585510483260188
+    second: VacaIdleNovo_13
+  - first:
+      213: -7058477745199061491
+    second: VacaIdleNovo_14
+  - first:
+      213: -868513678588657435
+    second: VacaIdleNovo_15
+  - first:
+      213: 7579414501651748431
+    second: VacaIdleNovo_16
+  - first:
+      213: 3701567356629179536
+    second: VacaIdleNovo_17
+  - first:
+      213: 122499820391429691
+    second: VacaIdleNovo_18
+  - first:
+      213: 3737030892790088579
+    second: VacaIdleNovo_19
+  - first:
+      213: 5505979745936216176
+    second: VacaIdleNovo_20
+  - first:
+      213: -6621216610316996562
+    second: VacaIdleNovo_21
+  - first:
+      213: 2791566416447249277
+    second: VacaIdleNovo_22
+  - first:
+      213: -6309022620398447253
+    second: VacaIdleNovo_23
+  - first:
+      213: -7384607317278492295
+    second: VacaIdleNovo_24
+  - first:
+      213: -4693945505814537853
+    second: VacaIdleNovo_25
+  - first:
+      213: -1025616274169259352
+    second: VacaIdleNovo_26
+  - first:
+      213: -3394963274828471932
+    second: VacaIdleNovo_27
+  - first:
+      213: 8956066286630693252
+    second: VacaIdleNovo_28
+  - first:
+      213: 161582708565294797
+    second: VacaIdleNovo_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VacaIdleNovo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a776642e86b4370800000000000000
+      internalID: 8307849258668096107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 400
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1a1802de0e3b4b0800000000000000
+      internalID: -5425745816994078249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 400
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5af081172eca850800000000000000
+      internalID: 6389730946694751690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_3
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 400
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d84a171f3369e1b0800000000000000
+      internalID: -5626857136801036078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_4
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 400
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45081fa6552704450800000000000000
+      internalID: 6070978008887427156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3503c57a034b1030800000000000000
+      internalID: 3466438050396177726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 320
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab33ecf96e1c41cc0800000000000000
+      internalID: -3741152194170309702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_7
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 320
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f810ba4dae5128c40800000000000000
+      internalID: 5512992992189415823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_8
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 320
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53965fd8964a7e90800000000000000
+      internalID: -7027226646162271397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_9
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 320
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735bfcdf714d60980800000000000000
+      internalID: -8572931641145576137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c2241dc44c84ff0800000000000000
+      internalID: -51575561507427207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_11
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 240
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1fbb930b989ce80800000000000000
+      internalID: -8157837860029074960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_12
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 240
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf10b3141ef59380800000000000000
+      internalID: -8964980121027993670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_13
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 240
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13f8e215da958110800000000000000
+      internalID: 1262585510483260188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_14
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 240
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06e86e53ef3b0e90800000000000000
+      internalID: -7058477745199061491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0c721396b62f3f0800000000000000
+      internalID: -868513678588657435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_16
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 160
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f469560f45d7f2960800000000000000
+      internalID: 7579414501651748431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_17
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 160
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c501c26eb9e5330800000000000000
+      internalID: 3701567356629179536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_18
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 160
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36fa7700f433b100800000000000000
+      internalID: 122499820391429691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_19
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 160
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3830a6f1cc99cd330800000000000000
+      internalID: 3737030892790088579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0701601386b296c40800000000000000
+      internalID: 5505979745936216176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_21
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 80
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20b329d296bc14a0800000000000000
+      internalID: -6621216610316996562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_22
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 80
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b9f3b8dd2adb620800000000000000
+      internalID: 2791566416447249277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_23
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 80
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b651f377a59d178a0800000000000000
+      internalID: -6309022620398447253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_24
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 80
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9797ddf25ca948990800000000000000
+      internalID: -7384607317278492295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38912ea9e61cbdeb0800000000000000
+      internalID: -4693945505814537853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_26
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa184ebe6744c1f0800000000000000
+      internalID: -1025616274169259352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_27
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4812a5a83eaa2e0d0800000000000000
+      internalID: -3394963274828471932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_28
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 0
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489697f16d65a4c70800000000000000
+      internalID: 8956066286630693252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaIdleNovo_29
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 95
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce31e90e9e0e3200800000000000000
+      internalID: 161582708565294797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
