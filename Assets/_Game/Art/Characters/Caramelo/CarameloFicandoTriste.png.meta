@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: b7ac3f3398147714b8391c69bb8ade73
+guid: aedbeddbf9e157e48886c38b28538ede
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2795896298430581996
-    second: CarameloWalk_0
+      213: 970574513442672284
+    second: CarameloFicandoTriste_0
   - first:
-      213: 8161677661455077800
-    second: CarameloWalk_1
+      213: 5242806355101298694
+    second: CarameloFicandoTriste_1
   - first:
-      213: 6032070311019436841
-    second: CarameloWalk_2
+      213: 8632591479617854344
+    second: CarameloFicandoTriste_2
   - first:
-      213: 6633575438034975335
-    second: CarameloWalk_3
+      213: 8568841722936218307
+    second: CarameloFicandoTriste_3
   - first:
-      213: 5770949829550150462
-    second: CarameloWalk_4
+      213: -3632950708749195787
+    second: CarameloFicandoTriste_4
   - first:
-      213: -21354526504988730
-    second: CarameloWalk_5
+      213: 482295469875167172
+    second: CarameloFicandoTriste_5
   - first:
-      213: -1070093211281013978
-    second: CarameloWalk_6
+      213: -7202158957786645124
+    second: CarameloFicandoTriste_6
   - first:
-      213: -6205867077275162845
-    second: CarameloWalk_7
+      213: -1839848891851592431
+    second: CarameloFicandoTriste_7
   - first:
-      213: -1291869724868156913
-    second: CarameloWalk_8
+      213: -4281610161454928779
+    second: CarameloFicandoTriste_8
   - first:
-      213: 6682620417376320305
-    second: CarameloWalk_9
+      213: 3388320358078650510
+    second: CarameloFicandoTriste_9
   - first:
-      213: 1046290023260936643
-    second: CarameloWalk_10
+      213: 4655498271566999713
+    second: CarameloFicandoTriste_10
   - first:
-      213: -3990221801911440388
-    second: CarameloWalk_11
+      213: 2159554560151194156
+    second: CarameloFicandoTriste_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,7 +151,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CarameloWalk_0
+      name: CarameloFicandoTriste_0
       rect:
         serializedVersion: 2
         x: 0
@@ -165,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 413373f312bf239d0800000000000000
-      internalID: -2795896298430581996
+      spriteID: c9e4ccda06c287d00800000000000000
+      internalID: 970574513442672284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_1
+      name: CarameloFicandoTriste_1
       rect:
         serializedVersion: 2
         x: 37
@@ -186,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a15546379a144170800000000000000
-      internalID: 8161677661455077800
+      spriteID: 60039f53a9032c840800000000000000
+      internalID: 5242806355101298694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_2
+      name: CarameloFicandoTriste_2
       rect:
         serializedVersion: 2
         x: 74
@@ -207,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92b5e741df736b350800000000000000
-      internalID: 6032070311019436841
+      spriteID: 88b9fa996302dc770800000000000000
+      internalID: 8632591479617854344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_3
+      name: CarameloFicandoTriste_3
       rect:
         serializedVersion: 2
         x: 111
@@ -228,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76ab4d6f6b13f0c50800000000000000
-      internalID: 6633575438034975335
+      spriteID: 3c2d828b524aae670800000000000000
+      internalID: 8568841722936218307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_4
+      name: CarameloFicandoTriste_4
       rect:
         serializedVersion: 2
         x: 0
@@ -249,14 +249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3310fe4b48861050800000000000000
-      internalID: 5770949829550150462
+      spriteID: 5f5208e149a259dc0800000000000000
+      internalID: -3632950708749195787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_5
+      name: CarameloFicandoTriste_5
       rect:
         serializedVersion: 2
         x: 37
@@ -270,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cfc259db2224bff0800000000000000
-      internalID: -21354526504988730
+      spriteID: 4cf70beac2571b600800000000000000
+      internalID: 482295469875167172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_6
+      name: CarameloFicandoTriste_6
       rect:
         serializedVersion: 2
         x: 74
@@ -291,14 +291,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 623c909d4e34621f0800000000000000
-      internalID: -1070093211281013978
+      spriteID: c7dba39269acc0c90800000000000000
+      internalID: -7202158957786645124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_7
+      name: CarameloFicandoTriste_7
       rect:
         serializedVersion: 2
         x: 111
@@ -312,14 +312,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 327e8b7f5c450e9a0800000000000000
-      internalID: -6205867077275162845
+      spriteID: 11d2ac84e2b8776e0800000000000000
+      internalID: -1839848891851592431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_8
+      name: CarameloFicandoTriste_8
       rect:
         serializedVersion: 2
         x: 0
@@ -333,14 +333,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f02e621745b521ee0800000000000000
-      internalID: -1291869724868156913
+      spriteID: 57ca6cb3e3aa494c0800000000000000
+      internalID: -4281610161454928779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_9
+      name: CarameloFicandoTriste_9
       rect:
         serializedVersion: 2
         x: 37
@@ -354,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13bfc721ddf6dbc50800000000000000
-      internalID: 6682620417376320305
+      spriteID: e889080e96bb50f20800000000000000
+      internalID: 3388320358078650510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_10
+      name: CarameloFicandoTriste_10
       rect:
         serializedVersion: 2
         x: 74
@@ -375,14 +375,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c9d0809b3b258e00800000000000000
-      internalID: 1046290023260936643
+      spriteID: 1a032391307ab9040800000000000000
+      internalID: 4655498271566999713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_11
+      name: CarameloFicandoTriste_11
       rect:
         serializedVersion: 2
         x: 111
@@ -396,8 +396,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfbac0a8962ef98c0800000000000000
-      internalID: -3990221801911440388
+      spriteID: c2a03ee3e6748fd10800000000000000
+      internalID: 2159554560151194156
       vertices: []
       indices: 
       edges: []

@@ -1,43 +1,25 @@
 fileFormatVersion: 2
-guid: b7ac3f3398147714b8391c69bb8ade73
+guid: 3a5a6c07e60e885469e25788f8f7dfaf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2795896298430581996
-    second: CarameloWalk_0
+      213: -5101348885399628403
+    second: CarameloComendo_0
   - first:
-      213: 8161677661455077800
-    second: CarameloWalk_1
+      213: -3976025496351581582
+    second: CarameloComendo_1
   - first:
-      213: 6032070311019436841
-    second: CarameloWalk_2
+      213: -8549590784228024870
+    second: CarameloComendo_2
   - first:
-      213: 6633575438034975335
-    second: CarameloWalk_3
+      213: -1412639641327898820
+    second: CarameloComendo_3
   - first:
-      213: 5770949829550150462
-    second: CarameloWalk_4
+      213: 980345022722823038
+    second: CarameloComendo_4
   - first:
-      213: -21354526504988730
-    second: CarameloWalk_5
-  - first:
-      213: -1070093211281013978
-    second: CarameloWalk_6
-  - first:
-      213: -6205867077275162845
-    second: CarameloWalk_7
-  - first:
-      213: -1291869724868156913
-    second: CarameloWalk_8
-  - first:
-      213: 6682620417376320305
-    second: CarameloWalk_9
-  - first:
-      213: 1046290023260936643
-    second: CarameloWalk_10
-  - first:
-      213: -3990221801911440388
-    second: CarameloWalk_11
+      213: 2310553979873398379
+    second: CarameloComendo_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,13 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CarameloWalk_0
+      name: CarameloComendo_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 80
-        width: 37
-        height: 40
+        y: 76
+        width: 50
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 413373f312bf239d0800000000000000
-      internalID: -2795896298430581996
+      spriteID: d859b62873e5439b0800000000000000
+      internalID: -5101348885399628403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_1
+      name: CarameloComendo_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 80
-        width: 37
-        height: 40
+        x: 50
+        y: 76
+        width: 50
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,62 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a15546379a144170800000000000000
-      internalID: 8161677661455077800
+      spriteID: 27a511080e152d8c0800000000000000
+      internalID: -3976025496351581582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_2
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 80
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92b5e741df736b350800000000000000
-      internalID: 6032070311019436841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarameloWalk_3
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 80
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76ab4d6f6b13f0c50800000000000000
-      internalID: 6633575438034975335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarameloWalk_4
+      name: CarameloComendo_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 40
-        width: 37
-        height: 40
+        y: 38
+        width: 50
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3310fe4b48861050800000000000000
-      internalID: 5770949829550150462
+      spriteID: add922bba70c95980800000000000000
+      internalID: -8549590784228024870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_5
+      name: CarameloComendo_3
       rect:
         serializedVersion: 2
-        x: 37
-        y: 40
-        width: 37
-        height: 40
+        x: 50
+        y: 38
+        width: 50
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,62 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cfc259db2224bff0800000000000000
-      internalID: -21354526504988730
+      spriteID: c3fe30f0bbb456ce0800000000000000
+      internalID: -1412639641327898820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_6
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 40
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 623c909d4e34621f0800000000000000
-      internalID: -1070093211281013978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarameloWalk_7
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 40
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 327e8b7f5c450e9a0800000000000000
-      internalID: -6205867077275162845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarameloWalk_8
+      name: CarameloComendo_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 37
-        height: 40
+        width: 50
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f02e621745b521ee0800000000000000
-      internalID: -1291869724868156913
+      spriteID: e7357b4aa92ea9d00800000000000000
+      internalID: 980345022722823038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloWalk_9
+      name: CarameloComendo_5
       rect:
         serializedVersion: 2
-        x: 37
+        x: 50
         y: 0
-        width: 37
-        height: 40
+        width: 50
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,50 +252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13bfc721ddf6dbc50800000000000000
-      internalID: 6682620417376320305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarameloWalk_10
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 0
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c9d0809b3b258e00800000000000000
-      internalID: 1046290023260936643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarameloWalk_11
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 0
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfbac0a8962ef98c0800000000000000
-      internalID: -3990221801911440388
+      spriteID: b6e08b45a9cb01020800000000000000
+      internalID: 2310553979873398379
       vertices: []
       indices: 
       edges: []
