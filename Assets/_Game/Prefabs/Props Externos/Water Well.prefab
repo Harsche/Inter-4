@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6110983583583800174}
   - component: {fileID: 2269550955489043128}
   - component: {fileID: 7342545388931156745}
+  - component: {fileID: 1822608283}
   m_Layer: 0
   m_Name: Water Well
   m_TagString: Untagged
@@ -99,3 +100,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.029273516, y: -0.0146386605}
   m_Size: {x: 2.1487265, y: 1.610918}
   m_Direction: 1
+--- !u!95 &1822608283
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6722658876736509648}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 030016ad510bee844844c44583cd7f47, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
