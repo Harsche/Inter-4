@@ -1,7 +1,22 @@
 fileFormatVersion: 2
-guid: a196592593c8ee746a5ee5f2d5f9a7a0
+guid: 606d1e4f6feffc14db3704f21fa431bf
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5158472922147221673
+    second: "Bot\xE3o Continuar Clic_0"
+  - first:
+      213: -2060477407722585924
+    second: "Bot\xE3o Continuar Clic_1"
+  - first:
+      213: -8344245088445862687
+    second: "Bot\xE3o Continuar Clic_2"
+  - first:
+      213: 7088996909934468159
+    second: "Bot\xE3o Continuar Clic_3"
+  - first:
+      213: -2076670135333369782
+    second: "Bot\xE3o Continuar Clic_4"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +56,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,7 +128,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Bot\xE3o Continuar Clic_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 92
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a07e0cbac3969740800000000000000
+      internalID: 5158472922147221673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Continuar Clic_1"
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 100
+        width: 92
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb04afce6b6b763e0800000000000000
+      internalID: -2060477407722585924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Continuar Clic_2"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 92
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ece2604d49433c80800000000000000
+      internalID: -8344245088445862687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Continuar Clic_3"
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 50
+        width: 92
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c5c76612d216260800000000000000
+      internalID: 7088996909934468159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Bot\xE3o Continuar Clic_4"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 92
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48cacbb38f2e23e0800000000000000
+      internalID: -2076670135333369782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
