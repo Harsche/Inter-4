@@ -154,12 +154,12 @@ TextureImporter:
       name: CarameloWalk_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 81
-        width: 34
-        height: 33
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 0
+        y: 80
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: CarameloWalk_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 81
-        width: 35
-        height: 34
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 37
+        y: 80
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: CarameloWalk_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 81
-        width: 35
-        height: 33
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 74
+        y: 80
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: CarameloWalk_3
       rect:
         serializedVersion: 2
-        x: 112
-        y: 81
-        width: 35
-        height: 34
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 111
+        y: 80
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: CarameloWalk_4
       rect:
         serializedVersion: 2
-        x: 2
-        y: 41
-        width: 34
-        height: 33
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 0
+        y: 40
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: CarameloWalk_5
       rect:
         serializedVersion: 2
-        x: 38
-        y: 41
-        width: 35
-        height: 34
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 37
+        y: 40
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,12 +280,12 @@ TextureImporter:
       name: CarameloWalk_6
       rect:
         serializedVersion: 2
-        x: 75
-        y: 41
-        width: 35
-        height: 33
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 74
+        y: 40
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: CarameloWalk_7
       rect:
         serializedVersion: 2
-        x: 112
-        y: 41
-        width: 35
-        height: 34
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 111
+        y: 40
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,12 +322,12 @@ TextureImporter:
       name: CarameloWalk_8
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1
-        width: 34
-        height: 33
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 0
+        y: 0
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: CarameloWalk_9
       rect:
         serializedVersion: 2
-        x: 38
-        y: 1
-        width: 35
-        height: 34
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 37
+        y: 0
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -364,12 +364,12 @@ TextureImporter:
       name: CarameloWalk_10
       rect:
         serializedVersion: 2
-        x: 75
-        y: 1
-        width: 35
-        height: 33
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 74
+        y: 0
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,12 +385,12 @@ TextureImporter:
       name: CarameloWalk_11
       rect:
         serializedVersion: 2
-        x: 112
-        y: 1
-        width: 35
-        height: 34
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 111
+        y: 0
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
