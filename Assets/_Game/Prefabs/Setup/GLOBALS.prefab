@@ -1206,6 +1206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3661951767844040429}
   - component: {fileID: 3661951767844040428}
+  - component: {fileID: 7274620337170283507}
   m_Layer: 0
   m_Name: Cutscene Manager
   m_TagString: Untagged
@@ -1241,6 +1242,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutsceneSOData: {fileID: 0}
+--- !u!114 &7274620337170283507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661951767844040427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1796f3dc38e334ca54f2b0a067111d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: cd62c160-a481-48b8-948c-85657e45ee9e
 --- !u!1 &3661951767957506115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,6 +1431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3661951768285001275}
   - component: {fileID: 3661951768285001276}
+  - component: {fileID: 5396756817059684058}
   m_Layer: 0
   m_Name: Quest Manager
   m_TagString: Untagged
@@ -1451,6 +1466,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questList: {fileID: 11400000, guid: df665dbecce674a43954257f179e5b33, type: 2}
+--- !u!114 &5396756817059684058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661951768285001274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1796f3dc38e334ca54f2b0a067111d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: ef079e23-d015-445f-b508-86fb8b7bff3b
 --- !u!1 &3661951768646721801
 GameObject:
   m_ObjectHideFlags: 0
