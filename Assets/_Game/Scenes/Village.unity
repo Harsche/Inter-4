@@ -5254,36 +5254,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5976457770932355458, guid: 24358d4cf83492441b934f43af0517db, type: 3}
   m_PrefabInstance: {fileID: 1057455167}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1079312893
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1079312894}
-  m_Layer: 0
-  m_Name: APAGAR
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1079312894
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079312893}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8812753, y: 1.6918484, z: -11.126505}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1106302055
 GameObject:
   m_ObjectHideFlags: 0
@@ -56373,7 +56343,7 @@ PrefabInstance:
     - target: {fileID: 3802403260933861077, guid: 8f12ffb750e7d39439ae9f505d94499b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 090319d4286989741b370dcabfe8e7b2, type: 3}
+      objectReference: {fileID: 21300000, guid: 001f4a96d27b497408be929997335548, type: 3}
     - target: {fileID: 3802403260933861077, guid: 8f12ffb750e7d39439ae9f505d94499b, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -56389,7 +56359,7 @@ PrefabInstance:
     - target: {fileID: 5785784825067809066, guid: 8f12ffb750e7d39439ae9f505d94499b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e48d6818ec20aeb46a91de15ca0cee96, type: 3}
+      objectReference: {fileID: 21300000, guid: ec85dbaf689af524eb9f726fbd811a31, type: 3}
     - target: {fileID: 5785784825067809066, guid: 8f12ffb750e7d39439ae9f505d94499b, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
