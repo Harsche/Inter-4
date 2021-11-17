@@ -8,6 +8,7 @@ public class Cutscene : MonoBehaviour
     [SerializeField] private bool bindPlayer;
     [SerializeField] private bool bindDialogCanvas;
     [SerializeField] private TimelineAsset[] possibleCutscenes;
+    [SerializeField] private CharacterInformation[] characterInformation;
     public PlayableDirector playableDirector { get; private set; }
     public bool isPlaying { get; private set; }
     private TrackAsset[] cutsceneTracks;
@@ -42,10 +43,10 @@ public class Cutscene : MonoBehaviour
         BindTimelineTracks();
     }
     
-    private void PlayCutsceneIfTriggered(int cutsceneNum)
+    public void PlayCutsceneIfTriggered(int cutsceneNum)
     {
-        if(cutsceneNum == this.cutsceneNum) Debug.Log(name);
-            //playableDirector.Play();
+        if(cutsceneNum == this.cutsceneNum)
+            playableDirector.Play();
     }
 
     public void SetCurrentCutscene()
@@ -108,6 +109,12 @@ public class Cutscene : MonoBehaviour
     public void PlayerVCamOnOrOff(bool set)
     {
         Globals.PlayerVirtualCamera.SetActive(set);
+    }
+
+    public void SetCharactersPlaces()
+    {
+        if(characterInformation.Length > 0)
+            CharacterManager.Instance.PlaceCharacters(characterInformation);
     }
 
     public void PlayPossibleCutscene(int index)

@@ -151,7 +151,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8712271811442902720}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef003a53e0e5180469183735c5bde5f8, type: 3}
   m_Name: 
@@ -235,8 +235,12 @@ PrefabInstance:
       value: 1.876
       objectReference: {fileID: 0}
     - target: {fileID: 6134396638313162235, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: isNPC
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134396638313162235, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: myName
-      value: Voluntaria
+      value: Livia
       objectReference: {fileID: 0}
     - target: {fileID: 7223630361903441876, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_IsActive

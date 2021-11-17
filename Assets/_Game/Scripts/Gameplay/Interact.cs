@@ -33,8 +33,9 @@ public class Interact : MonoBehaviour
     {
         string storyKnot = Globals.QuestManager.GetQuestDialog(myName);
         //Globals.DialogManager.SetStory(myStory);
-        Globals.DialogManager.JumpTo(storyKnot);
         Globals.DialogManager.OpenDialog();
+        Globals.DialogManager.JumpTo(storyKnot);
+        
 
         if(isNPC)
         {

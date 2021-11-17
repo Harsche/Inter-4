@@ -64,7 +64,7 @@ Dona Maria: Ô, meu bem. Pode tirá um poco de leite da Dondoca e trazê pra mim
 - else:
 Dona Maria: Pronto, meu fi, pode ir faze suas coisa. Só não vai longe, tá?
 Luiz: Sim, senhora!
-~ PlayCutscene(4)
+~ ChooseCutscene(0)
 -> DONE
 }
 
@@ -77,7 +77,7 @@ Dondoca: MUUUUUU!!
 ->DONE
 
 
-=== Other_Dialogs
+=== Other_Dialogs ===
 
 = No_One_Home
 Luiz: Ninguém responde. Eles devem ter saído!
@@ -141,8 +141,9 @@ Luiz: Ninguém responde. Eles devem ter saído!
 
 === House_05
 {GameDay:
--   1: ->DONA_CIDA
+-   1:  ~ PlayCutscene(3)
 }
+-> DONE
 
 === House_06
 {GameDay:

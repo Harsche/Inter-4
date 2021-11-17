@@ -241,6 +241,10 @@ PrefabInstance:
       value: 1.805
       objectReference: {fileID: 0}
     - target: {fileID: 6134396638313162235, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: isNPC
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134396638313162235, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: myName
       value: Dona Maria
       objectReference: {fileID: 0}
