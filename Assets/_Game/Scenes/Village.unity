@@ -1618,7 +1618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &326373103
 Transform:
   m_ObjectHideFlags: 0
@@ -55100,7 +55100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6286867434010981117, guid: c20273f5728eff14cb4ffce04394c231, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c20273f5728eff14cb4ffce04394c231, type: 3}
@@ -55184,7 +55184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2189013331610871974, guid: 6c97ff47606cfde4fb0485a524217e55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.48
+      value: 23.22
       objectReference: {fileID: 0}
     - target: {fileID: 2189013331610871974, guid: 6c97ff47606cfde4fb0485a524217e55, type: 3}
       propertyPath: m_LocalPosition.y
@@ -55247,17 +55247,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dona Maria
       objectReference: {fileID: 0}
+    - target: {fileID: 4644690052340019221, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644690052340019221, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8663120038284725893, guid: b6483220a051f564b8ef2713af964eef, type: 3}
     - target: {fileID: 4644690052340019222, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4644690052340019222, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: 18.48
       objectReference: {fileID: 0}
     - target: {fileID: 4644690052340019222, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.14
+      value: -14.68
       objectReference: {fileID: 0}
     - target: {fileID: 4644690052340019222, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_LocalPosition.z
@@ -55269,15 +55277,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4644690052340019222, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4644690052340019222, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4644690052340019222, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4644690052340019222, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
