@@ -231,7 +231,6 @@ MonoBehaviour:
     - {fileID: -7015897450179142546}
     - {fileID: 1282652624005409114}
     - {fileID: -1867874291953352566}
-    - {fileID: -1224600065233813850}
     - {fileID: -7981240310818578584}
 --- !u!74 &-3107664447111639770
 AnimationClip:
@@ -380,22 +379,6 @@ MonoBehaviour:
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: c543ba32c05fee64499450fe5565973d, type: 2}
---- !u!114 &-1224600065233813850
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
-  m_Name: Signal Emitter
-  m_EditorClassIdentifier: 
-  m_Time: 1.866666666666667
-  m_Retroactive: 0
-  m_EmitOnce: 0
-  m_Asset: {fileID: 11400000, guid: 8d58fbba797d00c43bca5d230f6990b0, type: 2}
 --- !u!74 &-1067075592740020717
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -717,7 +700,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
