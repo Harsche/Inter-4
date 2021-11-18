@@ -134,9 +134,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 100
-        width: 85
-        height: 50
+        y: 98
+        width: 82
+        height: 49
       alignment: 9
       pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,10 +154,10 @@ TextureImporter:
       name: "Bot\xE3o Cr\xE9ditos Clic_1"
       rect:
         serializedVersion: 2
-        x: 85
-        y: 100
-        width: 85
-        height: 50
+        x: 82
+        y: 98
+        width: 82
+        height: 49
       alignment: 9
       pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,9 +176,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 50
-        width: 85
-        height: 50
+        y: 49
+        width: 82
+        height: 49
       alignment: 9
       pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: "Bot\xE3o Cr\xE9ditos Clic_3"
       rect:
         serializedVersion: 2
-        x: 85
-        y: 50
-        width: 85
-        height: 50
+        x: 82
+        y: 49
+        width: 82
+        height: 49
       alignment: 9
       pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,8 +219,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 85
-        height: 50
+        width: 82
+        height: 49
       alignment: 9
       pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
