@@ -7,6 +7,9 @@ using System;
 public class SaveManager
 {
     public static SaveFile saveFile { get; private set; }
+    #if UNITY_EDITOR
+    = new SaveFile();
+    #endif
     private static string savePath = Application.persistentDataPath + @"\gamedata.json";
     public static Action SaveAllData;
 
