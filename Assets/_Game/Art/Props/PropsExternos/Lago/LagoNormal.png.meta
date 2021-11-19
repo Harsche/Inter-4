@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 24d946a89195e2144914bd0228cccb08
+guid: 02e21b7a64150274fa3d951fa1039688
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -17,9 +17,6 @@ TextureImporter:
   - first:
       213: -6508290219110920293
     second: LagoNormal_4
-  - first:
-      213: -6711911953471869265
-    second: LagoNormal_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -136,10 +133,10 @@ TextureImporter:
       name: LagoNormal_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 186
-        width: 104
-        height: 82
+        x: 5
+        y: 1466
+        width: 378
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +154,10 @@ TextureImporter:
       name: LagoNormal_1
       rect:
         serializedVersion: 2
-        x: 124
-        y: 186
-        width: 104
-        height: 82
+        x: 5
+        y: 1106
+        width: 378
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +175,10 @@ TextureImporter:
       name: LagoNormal_2
       rect:
         serializedVersion: 2
-        x: 4
-        y: 96
-        width: 104
-        height: 82
+        x: 5
+        y: 746
+        width: 378
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +196,10 @@ TextureImporter:
       name: LagoNormal_3
       rect:
         serializedVersion: 2
-        x: 124
-        y: 96
-        width: 104
-        height: 82
+        x: 5
+        y: 386
+        width: 378
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +217,10 @@ TextureImporter:
       name: LagoNormal_4
       rect:
         serializedVersion: 2
-        x: 4
-        y: 6
-        width: 104
-        height: 82
+        x: 5
+        y: 26
+        width: 378
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,27 +230,6 @@ TextureImporter:
       bones: []
       spriteID: b9f8eb23788eda5a0800000000000000
       internalID: -6508290219110920293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LagoNormal_5
-      rect:
-        serializedVersion: 2
-        x: 124
-        y: 6
-        width: 104
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fae6c99b3af7ad2a0800000000000000
-      internalID: -6711911953471869265
       vertices: []
       indices: 
       edges: []

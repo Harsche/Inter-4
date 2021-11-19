@@ -36,8 +36,10 @@ public class DialogManager : MonoBehaviour
         if (storyData == null)
         {
             storyData = new StoryData();
+            storyData.GameDay = GameDay;
             return;
         }
+        GameDay = storyData.GameDay;
         SetStory(dialogJson);
         //ContinueStory();
     }
@@ -65,6 +67,7 @@ public class DialogManager : MonoBehaviour
 
     private void SaveStoryData()
     {
+        storyData.GameDay = GameDay;
         SaveManager.SaveData(myGuid, storyData);
     }
 
@@ -162,7 +165,7 @@ public class DialogManager : MonoBehaviour
         story.BindExternalFunction("ChooseCutscene", (int choiceIndex) => { Globals.CutsceneManager.ChooseCutscene(choiceIndex); });
         story.BindExternalFunction("PlayCutscene", (int cutsceneNum) => { CutsceneManager.TriggerCutscene(cutsceneNum); });
         story.BindExternalFunction("CloseDialog", () => { CloseDialog(); });
-        story.BindExternalFunction("ChangeGameDay", (int day) => { Debug.Log("CHANGED DAY" + day); });
+        story.BindExternalFunction("ChangeGameDay", (int day) => { GameDay++; Debug.Log("CHANGED DAY " + day); });
     }
 
     public void OpenDialog()
@@ -196,5 +199,6 @@ public class DialogManager : MonoBehaviour
 
 public class StoryData : ObjectData
 {
+    public int GameDay;
     public string jsonStory;
 }

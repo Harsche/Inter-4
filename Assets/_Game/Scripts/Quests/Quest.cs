@@ -14,6 +14,7 @@ public class Quest : ScriptableObject
     }
 }
 
+[System.Serializable]
 public enum QuestSate
 {
     Inactive,
@@ -21,6 +22,7 @@ public enum QuestSate
     Completed
 }
 
+[System.Serializable]
 public enum QuestType
 {
     TalkTo,

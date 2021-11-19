@@ -6,6 +6,7 @@ public class CheckDistance : MonoBehaviour
     [SerializeField] private float checkFrequency;
     [SerializeField] private float maxDistance;
     [SerializeField] private float minDistance;
+    [SerializeField] private Cutscene cutscene;
     private const string idleAnimationName = "DonaMaria_Idle_Bucket_Empty";
     private const string walkingAnimationName = "DonaMaria_Walking_Bucket_Empty";
     private AnimationControl animationControl;
@@ -13,7 +14,7 @@ public class CheckDistance : MonoBehaviour
     private Coroutine distance;
     private bool isWithinDistance;
     private bool isWaiting;
-    private Cutscene cutscene;
+    
 
 
     void Start()
@@ -22,7 +23,6 @@ public class CheckDistance : MonoBehaviour
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         distance = StartCoroutine(CheckDistanceFromPlayer());
         animationControl = GetComponent<AnimationControl>();
-        cutscene = Globals.CutsceneManager.currentCutscene;
         isWithinDistance = true;
     }
 
