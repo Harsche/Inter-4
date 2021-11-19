@@ -20,7 +20,7 @@ public class Cutscene : MonoBehaviour
     private void Awake()
     {
         if (Globals.CutsceneManager.WasPlayed(gameObject.name)) Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
+        
 
         cutsceneNum = int.Parse(name.Substring(9));
         CutsceneManager.OnCallTriggerCutscene += PlayCutsceneIfTriggered;
@@ -40,6 +40,8 @@ public class Cutscene : MonoBehaviour
 
     private void Start()
     {
+        transform.SetParent(null);
+        DontDestroyOnLoad(gameObject);
         BindTimelineTracks();
     }
     

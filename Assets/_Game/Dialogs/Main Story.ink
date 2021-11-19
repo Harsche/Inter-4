@@ -57,7 +57,7 @@ Dona Maria: To não, meu fi. Vamo pa casa, vem.
 ->DONE
 
 == Day_01_Scene_04 ==
-= Dona_Maria
+= Dona_Maria_Scene_04
 { not Day_01_Scene_04.Cow:
 Dona Maria: Ô, meu bem. Pode tirá um poco de leite da Dondoca e trazê pra mim prepará o café da manhã?
 -> DONE
@@ -85,6 +85,9 @@ Luiz: Ninguém responde. Eles devem ter saído!
  
 === Luiz ===
 -> LUIZ
+
+=== Dona_Maria ==
+-> DONA_MARIA
 
 === Dona_Cida ===
 -> DONA_CIDA

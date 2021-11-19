@@ -8,20 +8,23 @@
 }
 
 === Dona_Maria_Day_01 ===
-{Dona_Maria_Day_01:
--   1:  -> D01
-}
+{Getting_Dark == 1: -> At_Night}
 
-= D01
-Dona Maria: LUIIIIZ! Entra, meu fi! Já ta tarde!
+= At_Night
+JOGO: Tem um pouco do feijão que sobrou de ontem com farinha de milho no prato.
+JOGO: Mamãe pega um prato. Há apenas farinha.
+Luisa: Mainha, a senhora não vai comer feijão?
+Dona Maria: A mainha não quer não, meu bem.
+~ GameDay = 2
+~ ChangeGameDay(GameDay)
 ->DONE
 
 === Dona_Maria_Day_02 ===
-{Seu_Joao_Day_02: -> D04} 
+{Seu_Joao_Day_02: -> At_Night} 
 {Dona_Maria_Day_02:
--   1:  ->D01
--   2:  ->D01
--   3:  ->D01
+-   1:  -> D01
+-   2:  -> D02
+-   3:  -> D03
 }
 
 = D01
@@ -33,15 +36,18 @@ Dona Maria: Vem, fi, vamo pra casa.
 Luiz: Mas, mainha, e a ag-
 Dona Maria: Vem, Luizinho, num se preocupa. A mainha vai dar um jeito, ta bem?
 Luiz: Ta bem, mãe.
-->DONE
+~ ResumeTimeline()
+-> DONE
 
 = D03
+~ PauseTimeline()
 Dona Maria: Luiz, eu vou pra casa, to me sentindo um tanto estranha.
 Dona Maria: Não se esqueça de tirar o leite pros seus irmão.
 Luiz: Podeixa, mainha!
+~ ResumeTimeline()
 ->DONE
 
-= D04
+= At_Night
 Dona Maria: Oh, fi! Você voltou tarde!
 Dona Maria: Eu acabei caindo no sono, por isso não te chamei!
 Dona Maria: Os seus irmãos já comeram, mas eu deixei separado o seu pratinho!

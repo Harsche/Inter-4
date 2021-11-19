@@ -25,7 +25,7 @@ Seu João: Num queria te deixar ir de mão abanando, então fica com essas romã
 Seu João: Eu consegui elas trocando carvão lá na cidade. Leva pro cê e pra sua família!
 Luiz: Obrigado, seu João!
 Seu João: Não tem de que, Luizinho!
-->DONE
+-> LUIZ
 
 = Random_Dialog
 

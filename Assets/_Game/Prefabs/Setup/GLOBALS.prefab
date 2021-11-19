@@ -1638,6 +1638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charactersSOData: {fileID: 11400000, guid: 5572a0eb0c5ebc04e92f2f7a4a28b383, type: 2}
+  characterList: {fileID: 11400000, guid: c7ef672660d752c438b7f57b6ee39688, type: 2}
 --- !u!114 &6648367284450415797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1650,7 +1651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1796f3dc38e334ca54f2b0a067111d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 4a3164d3-172b-431d-bdc4-810e692afa32
+  _id: 
 --- !u!1 &5075973646355279860
 GameObject:
   m_ObjectHideFlags: 0

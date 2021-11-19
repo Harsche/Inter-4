@@ -21,6 +21,7 @@ public class NPC_Movement : MonoBehaviour
         anim = GetComponent<Animator>();
 
         startPos = _transform.position;
+        if(mySpriteRenderer == null) Debug.Log("NULO");
     }
 
     private void OnEnable()

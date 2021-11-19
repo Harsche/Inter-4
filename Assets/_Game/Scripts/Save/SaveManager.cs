@@ -10,8 +10,13 @@ public class SaveManager
     #if UNITY_EDITOR
     = new SaveFile();
     #endif
-    private static string savePath = Application.persistentDataPath + @"\gamedata.json";
     public static Action SaveAllData;
+    private static string savePath = Application.persistentDataPath + @"\gamedata.json";
+    private static JsonSerializerSettings SerializerSettings = new JsonSerializerSettings
+    {
+        TypeNameHandling = TypeNameHandling.Auto,
+        PreserveReferencesHandling = PreserveReferencesHandling.Objects
+    };
 
     public static void NewSaveFile()
     {
@@ -23,12 +28,12 @@ public class SaveManager
         string jsonSave = "";
         if (File.Exists(savePath))
             jsonSave = File.ReadAllText(savePath);
-        saveFile = JsonConvert.DeserializeObject<SaveFile>(jsonSave, new JsonSerializerSettings{TypeNameHandling = TypeNameHandling.Auto});
+        saveFile = JsonConvert.DeserializeObject<SaveFile>(jsonSave, SerializerSettings);
     }
 
     public static void SaveGame()
     {
-        string jsonSave =  JsonConvert.SerializeObject(saveFile, Formatting.Indented, new JsonSerializerSettings{TypeNameHandling = TypeNameHandling.Auto});
+        string jsonSave =  JsonConvert.SerializeObject(saveFile, Formatting.Indented, SerializerSettings);
         if (!Directory.Exists(Path.GetDirectoryName(savePath)))
             Directory.CreateDirectory(Path.GetDirectoryName(savePath));
         File.WriteAllText(savePath, jsonSave);

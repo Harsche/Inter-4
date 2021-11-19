@@ -4,12 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ScriptableObjects/QuestList")]
 public class QuestList : ScriptableObject
 {
-    [SerializeField] private Quest[] quests;
-
-    public Quest[] Quests
-    {
-        get => quests;
-    }
+    public Quest[] quests;
 
     [ContextMenu("Reset quests")]
     public void ResetQuests()

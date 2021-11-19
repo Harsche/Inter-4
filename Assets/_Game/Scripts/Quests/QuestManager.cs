@@ -28,7 +28,7 @@ public class QuestManager : MonoBehaviour
 
     public void StartNewQuest(string questName)
     {
-        foreach (Quest q in questList.Quests)
+        foreach (Quest q in questList.quests)
         {
             if (q.questName == questName && q.questState == QuestSate.Inactive)
             {
@@ -47,7 +47,7 @@ public class QuestManager : MonoBehaviour
 
     public string GetQuestDialog(string interactionName)
     {
-        foreach (Quest q in questList.Quests)
+        foreach (Quest q in questList.quests)
         {
             if(q.questState == QuestSate.Inactive || q.questState == QuestSate.Completed)
             {
