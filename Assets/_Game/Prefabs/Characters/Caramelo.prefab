@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interaction Canvas Trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 1542309526447554819, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_RootOrder
       value: 0

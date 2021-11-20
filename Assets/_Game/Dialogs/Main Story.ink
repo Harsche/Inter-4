@@ -58,7 +58,7 @@ Dona Maria: To não, meu fi. Vamo pa casa, vem.
 
 == Day_01_Scene_04 ==
 = Dona_Maria_Scene_04
-{ not Day_01_Scene_04.Cow:
+{ not Day_01_Scene_04.Milk_Cow:
 Dona Maria: Ô, meu bem. Pode tirá um poco de leite da Dondoca e trazê pra mim prepará o café da manhã?
 -> DONE
 - else:
@@ -68,7 +68,7 @@ Luiz: Sim, senhora!
 -> DONE
 }
 
-= Cow
+= Milk_Cow
 ~ PauseTimeline()
 Luiz: Bom dia, Dondoca! Ocê parece que ta mais magrinha do que ontem...
 Luiz: Mas vai ficar tudo bem, né Dondoca?
@@ -122,36 +122,48 @@ Luiz: Ninguém responde. Eles devem ter saído!
 === Medico ===
 -> MEDICO
 
-=== House_01
-{GameDay:
--   1: -> Other_Dialogs.No_One_Home
-}
+===  Cow ===
+-> COW
+
 
 === House_02
 {GameDay:
 -   1: -> SEU_JOAO
+-   2: -> SEU_JOAO
+-   3: {Cow_Day_03: -> SEU_JOAO } -> Other_Dialogs.No_One_Home
+-   4: -> Other_Dialogs.No_One_Home
 }
 
 === House_03
 {GameDay:
 -   1: -> Other_Dialogs.No_One_Home
+-   2: -> DONA_CICERA
+-   3: -> Other_Dialogs.No_One_Home
+-   4: -> Other_Dialogs.No_One_Home
 }
 
 === House_04
 {GameDay:
 -   1: -> Other_Dialogs.No_One_Home
+-   2: -> Other_Dialogs.No_One_Home
+-   3: -> SEU_MIGUEL
+-   4: -> Other_Dialogs.No_One_Home
 }
 
 === House_05
 {GameDay:
 -   1:  ~ PlayCutscene(3)
+-   2: -> Other_Dialogs.No_One_Home
+-   3: {Seu_Joao_Day_03.Cow_Died: -> DONA_CIDA} -> Other_Dialogs.No_One_Home
+-   4: -> DONA_CIDA
 }
--> DONE
 
 === House_06
 {GameDay:
 -   1: -> Other_Dialogs.No_One_Home
--   2: {Seu_Joao_Day_02.D01: -> Dona_Helena_Day_02.At_Night} -> Other_Dialogs.No_One_Home
+-   2: {Seu_Joao_Day_02.D01 && Dona_Cicera_Day_02.D01: -> Dona_Helena_Day_02.At_Night} -> Other_Dialogs.No_One_Home
+-   3: -> SEU_JOSE
+-   4: {Dona_Cida_Day_04.Returned_Chickens: -> SEU_JOSE } -> Other_Dialogs.No_One_Home
 }
 
 == function newQuest(questName)

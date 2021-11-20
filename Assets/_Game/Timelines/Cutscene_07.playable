@@ -73,10 +73,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0.833333015441891
     m_DisplayName: DonaMaria_Walking_Bucket_Full
   - m_Version: 1
-    m_Start: 10.066666666666666
+    m_Start: 10.066666666666668
     m_ClipIn: 0
     m_Asset: {fileID: 8246542838612617317}
-    m_Duration: 1.4333333333333336
+    m_Duration: 1.4333333333333318
     m_TimeScale: 1
     m_ParentTrack: {fileID: -9179287807898975538}
     m_EaseInDuration: 0
@@ -139,7 +139,7 @@ MonoBehaviour:
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0.833333015441891
-    m_PreExtrapolationTime: 10.066666666666666
+    m_PreExtrapolationTime: 10.066666666666668
     m_DisplayName: DonaMaria_Coughing
   m_Markers:
     m_Objects: []
