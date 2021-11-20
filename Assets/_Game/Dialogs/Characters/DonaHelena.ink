@@ -3,6 +3,7 @@
 -   1:  -> Dona_Helena_Day_01
 -   2:  -> Dona_Helena_Day_02
 -   3:  -> Dona_Helena_Day_03
+-   4:  -> Dona_Helena_Day_04
 }
 
 
@@ -89,7 +90,7 @@ Luiz: Ajudo sim, Dona Helena, vamos lá!
 Dona Helena: Oi, Luiz!
 Luiz: Opa, Dona Helena! Vim ver se Seu Zé já voltou! Preciso demais falar com ele!
 Dona Helena: Luiz, ele ainda não chegou, mas deve chegar logo. Entra pra esperar, fi.
--> DONE
+-> D02
 
 = D02
 Dona Helena: E sua mãe, Luiz?
@@ -113,7 +114,7 @@ Seu José: Não precisa dizer nada não, fi.
 Seu José: Vamos precisar sair amanhã cedo, porque hoje já tá tarde, okay?
 Seu José: Fique prontinho com sua mãe, que passo lá na sua casa pra te ajudar com ela!
 Luiz: Tudo bem, seu Zé! Eu vou ir ajeitar as coisas pra amanhã!
--> DONE
+-> Getting_Dark
 
 = Random_Dialog
 -> DONE

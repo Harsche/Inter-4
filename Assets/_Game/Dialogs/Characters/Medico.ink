@@ -20,4 +20,4 @@ Lívia: Nós vamos terminar de atender seus vizinhos e podemos ir, okay?
 Luiz: Claro! Vou ajeita as coisas por aqui.
 JOGO: Eles deixaram uma cesta básica e um galão de água na nossa casa!
 JOGO: Hoje, vamos jantar!
--> DONE
+-> DONA_MARIA

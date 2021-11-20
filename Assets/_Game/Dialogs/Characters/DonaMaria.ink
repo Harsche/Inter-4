@@ -20,7 +20,7 @@ Dona Maria: A mainha não quer não, meu bem.
 ->DONE
 
 === Dona_Maria_Day_02 ===
-{Seu_Joao_Day_02: -> At_Night} 
+{Getting_Dark == 2: -> At_Night} 
 {Dona_Maria_Day_02:
 -   1:  -> D01
 -   2:  -> D02
@@ -133,7 +133,7 @@ Luiz: Consegui fazendo uns trabalhinhos! Venham cá que eu vou dividir!
 
 = D01
 Dona Maria: LUIIIIIIZ! Entre pra jantar, meu fi!
--> DONE
+-> D02
 
 
 = D02

@@ -121,7 +121,7 @@ Dona Cida: Quando eu era criança, contavam várias lendas aqui do sertão, eu a
 Dona Cida: Opa, Luiz. Como sua mãe ta, fi?
 Luiz: Ela piorou, Dona Cida...
 Dona Cida: Vem, fi.
--> DONE
+-> D02
 
 = D02
 Dona Cida: O que ela tá sentindo?
@@ -140,7 +140,7 @@ Dona Cida: Oh, fi, eu fico aqui com eles! Não se preocupe com isso não!
 Luiz: Nossa, Dona Cida, que Deus lhe pague!
 Dona Cida: A senhora é um anjo! Vou ir ver se Seu Zé já voltou!
 Dona Cida: Vá lá, meu fi!
--> DONE
+-> D03
 
 = D03
 Luiz: Eita! DONA CIDA, AS GALINHA DA SENHORA TÃO TUDO SOLTA AQUI!
@@ -148,7 +148,8 @@ Dona Cida: Oh meu Deus! Elas escaparam!
 Luiz: Eu vou pegar elas pra senhora.
 Dona Cida: É muito dificil pegar galinha, Luiz. São ligeiras demais.
 Luiz: Então eu vou tentar só tocar elas pra dentro do cercado de novo.
--> DONE
+JOGO: (Minigame de pegar as galinhas)
+-> Returned_Chickens
 
 = Returned_Chickens
 Dona Cida: Obrigada, Luizinho! Essas galinhas são importante demais aqui pra casa.

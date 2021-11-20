@@ -153,18 +153,44 @@ Luiz: Ninguém responde. Eles devem ter saído!
 === House_05
 {GameDay:
 -   1:  ~ PlayCutscene(3)
+        -> DONE
 -   2: -> Other_Dialogs.No_One_Home
 -   3: {Seu_Joao_Day_03.Cow_Died: -> DONA_CIDA} -> Other_Dialogs.No_One_Home
 -   4: -> DONA_CIDA
 }
+
 
 === House_06
 {GameDay:
 -   1: -> Other_Dialogs.No_One_Home
 -   2: {Seu_Joao_Day_02.D01 && Dona_Cicera_Day_02.D01: -> Dona_Helena_Day_02.At_Night} -> Other_Dialogs.No_One_Home
 -   3: -> SEU_JOSE
--   4: {Dona_Cida_Day_04.Returned_Chickens: -> SEU_JOSE } -> Other_Dialogs.No_One_Home
+-   4: {Dona_Cida_Day_04.Returned_Chickens: -> DONA_HELENA } -> Other_Dialogs.No_One_Home
 }
 
+
+// FUNCTION BINDINGS
+
 == function newQuest(questName)
+~ return
+
+== function PauseTimeline()
+~ return
+
+== function ResumeTimeline()
+~ return
+
+== function PlayCutscene(cutsceneNum)
+~ return
+
+== function ChooseCutscene(choiceIndex)
+~ return
+
+== function CloseDialog()
+~ return
+
+== function Debug(value)
+~ return
+
+== function ChangeGameDay(day)
 ~ return

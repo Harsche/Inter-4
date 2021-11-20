@@ -2,6 +2,7 @@
 {GameDay:
 -   1:  -> Seu_Joao_Day_01
 -   2:  -> Seu_Joao_Day_02
+-   3:  -> Seu_Joao_Day_03
 }
 
 === Seu_Joao_Day_01 ===
@@ -54,17 +55,21 @@ Luiz: Eu to bem! Vim saber se posso ajudar com o carvão de novo!
 Seu João: Poxa, Luiz! Eu não vou mais fazer carvão até vender o que tem aqui.
 Luiz: Tudo bem, Seu João! Obrigada mesmo assim!
 Seu João: De nada, fi! Sinto muito...
--> DONE
+-> Getting_Dark
 
 = Random_Dialog
 -> DONE
 
 === Seu_Joao_Day_03 ===
-{Cow_Day_03.D01: -> Cow_Died}
 {Seu_Joao_Day_03:
--   1:  -> Random_Dialog
+-   1:  -> D01
 -   else:   -> Random_Dialog
 }
+
+= D01
+Seu João: Aooo, Luizinho! Uai, porque que ocê ta com essa cara?
+-> Cow_Died
+
 
 = Cow_Died
 Seu João: Com a seca, os bichin não dura muito, Luizinho.

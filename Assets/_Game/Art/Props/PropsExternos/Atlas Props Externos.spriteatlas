@@ -154,7 +154,6 @@ SpriteAtlas:
   - {fileID: -149129407126274057, guid: 02e21b7a64150274fa3d951fa1039688, type: 3}
   - {fileID: -5200052051347644089, guid: 02e21b7a64150274fa3d951fa1039688, type: 3}
   - {fileID: -6508290219110920293, guid: 02e21b7a64150274fa3d951fa1039688, type: 3}
-  - {fileID: 21300000, guid: a4f21b1bbea108544b7b11dbd9ecb4b2, type: 3}
   - {fileID: 21300000, guid: ef501d4b206e55b4ca2e72d5c89ee906, type: 3}
   - {fileID: 21300000, guid: e736470cab8d66a4ba5a427c6bf7939b, type: 3}
   - {fileID: 21300000, guid: 783f053c521ab1b4da7b50ed2b66618f, type: 3}
@@ -163,6 +162,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2cfe350dbddc66c4ab38b0e88888a2f6, type: 3}
   - {fileID: 21300000, guid: c884cf5ddd01ea24083177055ec35169, type: 3}
   - {fileID: 21300000, guid: bc7d2ebd4cbf6024b91789665b7757fe, type: 3}
+  - {fileID: 21300000, guid: 1818cd4eb3306be488063aa3ce5936a8, type: 3}
   - {fileID: 1027006235474657104, guid: b3b7c8fe2c2a358419f13f7670ad3020, type: 3}
   - {fileID: -2238373782701319868, guid: b3b7c8fe2c2a358419f13f7670ad3020, type: 3}
   - {fileID: 4511884672408426924, guid: b3b7c8fe2c2a358419f13f7670ad3020, type: 3}
@@ -291,7 +291,6 @@ SpriteAtlas:
   - LagoNormal_2
   - LagoNormal_3
   - LagoNormal_4
-  - LagoVazio
   - Arbusto6
   - Arbusto4
   - Cesta5
@@ -300,6 +299,7 @@ SpriteAtlas:
   - Arbusto10
   - Cesta
   - Poco
+  - LagoVazio
   - CarrocaIdleInicio_4
   - CarrocaIdleInicio_5
   - CarrocaIdleInicio_6

@@ -1,6 +1,7 @@
 === SEU_JOSE ===
 {GameDay:
 -   1:  -> Seu_Jose_Day_01
+-   3:  -> Seu_Jose_Day_03
 }
 
 === Seu_Jose_Day_01 ===
