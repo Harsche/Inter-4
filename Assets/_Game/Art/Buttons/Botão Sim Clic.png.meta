@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 0bb093af718d3df439081a405a6eb4ee
+guid: 762d02b669e9ca1429172abdbc403146
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 553084344042207929
-    second: CarameloTriste_0
+      213: 7676626700338514875
+    second: "Bot\xE3o Sim Clic_0"
   - first:
-      213: -2733571436184888717
-    second: CarameloTriste_1
+      213: -3102873662548956151
+    second: "Bot\xE3o Sim Clic_1"
   - first:
-      213: 8583389302098530621
-    second: CarameloTriste_2
+      213: -1346324444483895979
+    second: "Bot\xE3o Sim Clic_2"
   - first:
-      213: 7892665282270619339
-    second: CarameloTriste_3
+      213: 7839794984006779551
+    second: "Bot\xE3o Sim Clic_3"
   - first:
-      213: 4655604738377223419
-    second: CarameloTriste_4
-  - first:
-      213: -2721741085682007758
-    second: CarameloTriste_5
+      213: -2192780956237265823
+    second: "Bot\xE3o Sim Clic_4"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,127 +130,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CarameloTriste_0
+      name: "Bot\xE3o Sim Clic_0"
       rect:
         serializedVersion: 2
         x: 0
-        y: 40
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 50
+        width: 33
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ba3771d743fca700800000000000000
-      internalID: 553084344042207929
+      spriteID: bbbc4fabf4bd88a60800000000000000
+      internalID: 7676626700338514875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloTriste_1
+      name: "Bot\xE3o Sim Clic_1"
       rect:
         serializedVersion: 2
-        x: 37
-        y: 40
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 33
+        y: 50
+        width: 33
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37a9b0a0347601ad0800000000000000
-      internalID: -2733571436184888717
+      spriteID: 90caad8f7d060f4d0800000000000000
+      internalID: -3102873662548956151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloTriste_2
+      name: "Bot\xE3o Sim Clic_2"
       rect:
         serializedVersion: 2
-        x: 74
-        y: 40
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 66
+        y: 50
+        width: 33
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d319870f7135e1770800000000000000
-      internalID: 8583389302098530621
+      spriteID: 55dbc160d05e05de0800000000000000
+      internalID: -1346324444483895979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloTriste_3
+      name: "Bot\xE3o Sim Clic_3"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 33
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc66cc0d141688d60800000000000000
-      internalID: 7892665282270619339
+      spriteID: f920d9d300c8ccc60800000000000000
+      internalID: 7839794984006779551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarameloTriste_4
+      name: "Bot\xE3o Sim Clic_4"
       rect:
         serializedVersion: 2
-        x: 37
+        x: 33
         y: 0
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 33
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfc8995d7d70c9040800000000000000
-      internalID: 4655604738377223419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CarameloTriste_5
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 0
-        width: 37
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 231865927ee6a3ad0800000000000000
-      internalID: -2721741085682007758
+      spriteID: 1648c31965da191e0800000000000000
+      internalID: -2192780956237265823
       vertices: []
       indices: 
       edges: []
