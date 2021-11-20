@@ -131,9 +131,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1130
-        width: 1130
-        height: 1130
+        y: 113
+        width: 113
+        height: 113
       alignment: 9
       pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,10 +151,10 @@ TextureImporter:
       name: "Luiz+Jo\xE3o Dormindo_1"
       rect:
         serializedVersion: 2
-        x: 1130
-        y: 1130
-        width: 1130
-        height: 1130
+        x: 113
+        y: 113
+        width: 113
+        height: 113
       alignment: 9
       pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1130
-        height: 1130
+        width: 113
+        height: 113
       alignment: 9
       pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: "Luiz+Jo\xE3o Dormindo_3"
       rect:
         serializedVersion: 2
-        x: 1130
+        x: 113
         y: 0
-        width: 1130
-        height: 1130
+        width: 113
+        height: 113
       alignment: 9
       pivot: {x: 0.5, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
