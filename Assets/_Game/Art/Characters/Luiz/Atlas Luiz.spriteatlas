@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 1883b5474b20bb0469c76a23a2f2355b, type: 3}
-    totalSpriteSurfaceArea: 718600
+    totalSpriteSurfaceArea: 769676
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -134,6 +134,10 @@ SpriteAtlas:
   - {fileID: 7914738233851777293, guid: 66886045656729443873a28c764ab9ba, type: 3}
   - {fileID: -1096219445491272083, guid: 66886045656729443873a28c764ab9ba, type: 3}
   - {fileID: 1747840030079175056, guid: 66886045656729443873a28c764ab9ba, type: 3}
+  - {fileID: -7230056600831379669, guid: f133f345338632341af7862f65045b41, type: 3}
+  - {fileID: 1099163202444167630, guid: f133f345338632341af7862f65045b41, type: 3}
+  - {fileID: 238089276546506160, guid: f133f345338632341af7862f65045b41, type: 3}
+  - {fileID: -8105468781182231146, guid: f133f345338632341af7862f65045b41, type: 3}
   - {fileID: -7981593909443708854, guid: bc6b2995b8ed8dd47824906a461167d6, type: 3}
   - {fileID: -5198724132642517695, guid: bc6b2995b8ed8dd47824906a461167d6, type: 3}
   - {fileID: 8883171147870025205, guid: b4db29d6ec0dfdc46ba8972788606291, type: 3}
@@ -325,6 +329,10 @@ SpriteAtlas:
   - Luiz Comendo Farinha_5
   - Luiz Comendo Farinha_6
   - Luiz Comendo Farinha_7
+  - "Luiz+Jo\xE3o Dormindo_3"
+  - "Luiz+Jo\xE3o Dormindo_2"
+  - "Luiz+Jo\xE3o Dormindo_1"
+  - "Luiz+Jo\xE3o Dormindo_0"
   - Luiz Agua Idle Side_1
   - Luiz Agua Idle Side_0
   - Luiz Agua Walk Back_2
