@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: e092f49ebbe897a49bcd4b446c80972e, type: 3}
-    totalSpriteSurfaceArea: 143480
+    totalSpriteSurfaceArea: 137560
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -132,16 +132,12 @@ SpriteAtlas:
   - {fileID: -4281610161454928779, guid: aedbeddbf9e157e48886c38b28538ede, type: 3}
   - {fileID: 4655498271566999713, guid: aedbeddbf9e157e48886c38b28538ede, type: 3}
   - {fileID: 2159554560151194156, guid: aedbeddbf9e157e48886c38b28538ede, type: 3}
-  - {fileID: 8291867904225987689, guid: 0bb093af718d3df439081a405a6eb4ee, type: 3}
-  - {fileID: -4728420618887745834, guid: 0bb093af718d3df439081a405a6eb4ee, type: 3}
   - {fileID: -2721741085682007758, guid: 0bb093af718d3df439081a405a6eb4ee, type: 3}
   - {fileID: 4655604738377223419, guid: 0bb093af718d3df439081a405a6eb4ee, type: 3}
   - {fileID: 7892665282270619339, guid: 0bb093af718d3df439081a405a6eb4ee, type: 3}
   - {fileID: 8583389302098530621, guid: 0bb093af718d3df439081a405a6eb4ee, type: 3}
   - {fileID: -2733571436184888717, guid: 0bb093af718d3df439081a405a6eb4ee, type: 3}
   - {fileID: 553084344042207929, guid: 0bb093af718d3df439081a405a6eb4ee, type: 3}
-  - {fileID: -4375919474094752520, guid: 0bb093af718d3df439081a405a6eb4ee, type: 3}
-  - {fileID: -1588281052858501681, guid: 0bb093af718d3df439081a405a6eb4ee, type: 3}
   m_PackedSpriteNamesToIndex:
   - CarameloSubindo_8
   - CarameloSubindo_9
@@ -225,16 +221,12 @@ SpriteAtlas:
   - CarameloFicandoTriste_8
   - CarameloFicandoTriste_10
   - CarameloFicandoTriste_11
-  - CarameloTriste_7
-  - CarameloTriste_6
   - CarameloTriste_5
   - CarameloTriste_4
   - CarameloTriste_3
   - CarameloTriste_2
   - CarameloTriste_1
   - CarameloTriste_0
-  - CarameloTriste_9
-  - CarameloTriste_8
   m_RenderDataMap: {}
   m_Tag: Atlas Caramelo
   m_IsVariant: 0
