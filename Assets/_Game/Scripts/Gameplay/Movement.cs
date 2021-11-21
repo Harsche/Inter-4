@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
 
     [SerializeField] private GameObject canvasJoystick;
     private Transform myTransform;
-    public bool canMove = true;
+    public static bool canMove = true;
     private SpriteRenderer spriteRenderer;
     public static Animator anim { get; private set; }
     public static BoxCollider2D boxCollider2D { get; private set; }

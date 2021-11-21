@@ -163,7 +163,7 @@ Luiz: Ninguém responde. Eles devem ter saído!
 
 === House_06
 {GameDay:
--   1: -> Other_Dialogs.No_One_Home
+-   1: ~ PlayCutscene(5) //-> Other_Dialogs.No_One_Home
 -   2: {Seu_Joao_Day_02.D01 && Dona_Cicera_Day_02.D01: -> Dona_Helena_Day_02.At_Night} -> Other_Dialogs.No_One_Home
 -   3: -> SEU_JOSE
 -   4: {Dona_Cida_Day_04.Returned_Chickens: -> DONA_HELENA } -> Other_Dialogs.No_One_Home

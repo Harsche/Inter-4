@@ -7,6 +7,8 @@ public class WoodenLog : MonoBehaviour
     private SpriteRenderer mySpriteRenderer;
     private PlayableDirector myPlayableDirector;
     private static bool playerWithAxe;
+    private const string axeUp = "Luiz_Subindo_Machado";
+    private const string axeDown = "Luiz_Cortando_Lenha";
 
     private void Awake()
     {
@@ -28,6 +30,12 @@ public class WoodenLog : MonoBehaviour
         if(myPlayableDirector != null)
             myPlayableDirector.Play();
         Movement.boxCollider2D.enabled = false;
-        //Movement.anim.applyRootMotion = true;
+        Movement.canMove = false;
+
+    }
+
+    public void OnCutsceneFinished()
+    {
+        Player.animationControl.PlayByName(axeUp);
     }
 }

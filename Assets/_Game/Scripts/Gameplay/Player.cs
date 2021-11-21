@@ -4,12 +4,14 @@ using CleverCrow.Fluid.UniqueIds;
 
 public class Player : MonoBehaviour
 {
+    public static AnimationControl animationControl { get; private set; }
     private static PlayerData playerData;
     private static string myGuid;
     private bool wasDataNull;
 
     private void Awake()
     {
+        animationControl = GetComponent<AnimationControl>();
         SaveManager.SaveAllData += SavePlayerData;
         myGuid = GetComponent<UniqueId>().Id;
         playerData = SaveManager.GetData<PlayerData>(myGuid);
