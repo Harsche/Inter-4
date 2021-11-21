@@ -112,7 +112,7 @@ Dona Maria: Eu... eu não tenho -
 Luiz: Eu tenho uns pães e umas macaxeiras!
 Luiz: Consegui fazendo uns trabalhinhos! Venham cá que eu vou dividir!
 *   [Dar um pouco]
-    ~ ChooseCutscene(0)
+    // ~ ChooseCutscene(0)
     Luiz: Logo, vamo te mais do que isso, ta Caramelo?
     Luiz: Olha, Caramelo, mesmo que eu leve mainha ao médico amanhã...
     Luiz: Não sei como arranjar mais comida... 
@@ -121,7 +121,7 @@ Luiz: Consegui fazendo uns trabalhinhos! Venham cá que eu vou dividir!
     ~ ChangeGameDay(GameDay)
     -> DONE
 *   [Há pouca comida]
-    ~ ChooseCutscene(1)
+    // ~ ChooseCutscene(1)
     ~ GameDay = 5
     ~ ChangeGameDay(GameDay)
     -> DONE
