@@ -128,7 +128,8 @@ Luiz: Ninguém responde. Eles devem ter saído!
 
 === House_02
 {GameDay:
--   1: -> SEU_JOAO
+-   1:  ~ PlayCutscene(4)
+        -> DONE
 -   2: -> SEU_JOAO
 -   3: {Cow_Day_03: -> SEU_JOAO } -> Other_Dialogs.No_One_Home
 -   4: -> Other_Dialogs.No_One_Home

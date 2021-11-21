@@ -86,14 +86,14 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5af6081416b22fa40a351bff3755853d, type: 3}
   - {fileID: 21300000, guid: 570aeb1596259ed458e27579c7ee6f8c, type: 3}
   - {fileID: 21300000, guid: d749316587a8d0045b9d2b88fdaa14eb, type: 3}
-  - {fileID: 4719450464721515763, guid: 5438c775b9af9984285364677269bc7c, type: 3}
-  - {fileID: 460313507822672124, guid: 5438c775b9af9984285364677269bc7c, type: 3}
-  - {fileID: -4436353799688784131, guid: 5438c775b9af9984285364677269bc7c, type: 3}
-  - {fileID: -4715730711973604361, guid: 5438c775b9af9984285364677269bc7c, type: 3}
-  - {fileID: -4932116443550263250, guid: 5438c775b9af9984285364677269bc7c, type: 3}
-  - {fileID: 2912681578402346778, guid: 5438c775b9af9984285364677269bc7c, type: 3}
-  - {fileID: -6365470404802402894, guid: 5438c775b9af9984285364677269bc7c, type: 3}
-  - {fileID: 6435580732719732407, guid: 5438c775b9af9984285364677269bc7c, type: 3}
+  - {fileID: -7337773570621201810, guid: 5438c775b9af9984285364677269bc7c, type: 3}
+  - {fileID: 5664955900394462722, guid: 5438c775b9af9984285364677269bc7c, type: 3}
+  - {fileID: -363743377575698154, guid: 5438c775b9af9984285364677269bc7c, type: 3}
+  - {fileID: 5240301337567857406, guid: 5438c775b9af9984285364677269bc7c, type: 3}
+  - {fileID: 8853976021890088575, guid: 5438c775b9af9984285364677269bc7c, type: 3}
+  - {fileID: 437502385276089311, guid: 5438c775b9af9984285364677269bc7c, type: 3}
+  - {fileID: -297191168141659760, guid: 5438c775b9af9984285364677269bc7c, type: 3}
+  - {fileID: -7528928722445624444, guid: 5438c775b9af9984285364677269bc7c, type: 3}
   - {fileID: 21300000, guid: e3520095420e99140a6464ef73f9ee2d, type: 3}
   - {fileID: 21300000, guid: 18763aa5ea9c52140b899b1ec2fa4bb0, type: 3}
   - {fileID: 21300000, guid: 009aeda5f1677c441a1d4dc1180f2f5a, type: 3}
@@ -223,14 +223,14 @@ SpriteAtlas:
   - Cactu4
   - Arbusto3
   - Arvore1.1
-  - CarrocaIdlePadrao_2
-  - CarrocaIdlePadrao_3
-  - CarrocaIdlePadrao_0
-  - CarrocaIdlePadrao_1
-  - CarrocaIdlePadrao_6
-  - CarrocaIdlePadrao_7
-  - CarrocaIdlePadrao_4
-  - CarrocaIdlePadrao_5
+  - Carroca_Idle_Padrao_4
+  - Carroca_Idle_Padrao_5
+  - Carroca_Idle_Padrao_6
+  - Carroca_Idle_Padrao_7
+  - Carroca_Idle_Padrao_0
+  - Carroca_Idle_Padrao_1
+  - Carroca_Idle_Padrao_2
+  - Carroca_Idle_Padrao_3
   - TocoDrop
   - Pedra5
   - Cactu5

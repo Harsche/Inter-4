@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     public bool canMove = true;
     private SpriteRenderer spriteRenderer;
     public static Animator anim { get; private set; }
+    public static BoxCollider2D boxCollider2D { get; private set; }
     private GameObject circleCenter;
     private GameObject circleDirection;
     private Rigidbody2D myRb2d;
@@ -35,6 +36,8 @@ public class Movement : MonoBehaviour
         circleDirection.transform.SetParent(canvasJoystick.transform.GetChild(0));
         canvasJoystick.SetActive(false);
         anim = GetComponent<Animator>();
+        boxCollider2D = GetComponent<BoxCollider2D>();
+        
 
         circleCenter.GetComponent<Image>().color *= new Color(1.0f, 1.0f, 1.0f, 0.25f);
 

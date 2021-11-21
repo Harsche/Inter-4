@@ -32,11 +32,7 @@ public class Cutscene : MonoBehaviour
         CutsceneManager.OnCallTriggerCutscene += PlayCutsceneIfTriggered;
 
         playableDirector = GetComponent<PlayableDirector>();
-        if (playableDirector.playOnAwake)
-        {
-            SetCurrentCutscene();
-            isPlaying = true;
-        }
+        
         cutscene = playableDirector.playableAsset as TimelineAsset;
         cutsceneTracks = (TrackAsset[])cutscene.GetOutputTracks();
 
@@ -46,6 +42,11 @@ public class Cutscene : MonoBehaviour
 
     private void Start()
     {
+        if (playableDirector.playOnAwake)
+        {
+            SetCurrentCutscene();
+            isPlaying = true;
+        }
         transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
         BindTimelineTracks();
@@ -134,6 +135,7 @@ public class Cutscene : MonoBehaviour
 
     public void StartDialog(string inkKnot)
     {
+        inkKnot = inkKnot.Replace(' ', '_');
         Globals.DialogManager.JumpTo(inkKnot);
         Globals.DialogManager.OpenDialog();
     }
