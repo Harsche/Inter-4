@@ -11,15 +11,20 @@ public class Movement : MonoBehaviour
     [SerializeField] private GameObject circle;
 
     [SerializeField] private GameObject canvasJoystick;
+    private Transform myTransform;
     public bool canMove = true;
     private SpriteRenderer spriteRenderer;
-    private Animator anim;
+    public static Animator anim { get; private set; }
     private GameObject circleCenter;
     private GameObject circleDirection;
     private Rigidbody2D myRb2d;
+    private Vector2 deltaPosition;
+    private Vector3 lastPosition;
 
     private void Start()
     {
+        myTransform = transform;
+        lastPosition = myTransform.position;
         spriteRenderer = GetComponent<SpriteRenderer>();
         myRb2d = GetComponent<Rigidbody2D>();
         circleCenter = Instantiate(circle);
@@ -35,6 +40,15 @@ public class Movement : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (!canMove)
+        {
+            deltaPosition = myTransform.position - lastPosition;
+            lastPosition = myTransform.position;
+        }
+    }
+
     private void FixedUpdate()
     {
         UpdateAnimation();
@@ -44,14 +58,32 @@ public class Movement : MonoBehaviour
     {
         if (canMove)
         {
-            anim.SetFloat("Velocity", myRb2d.velocity.magnitude);
+            UpdateAnimationByRigidbody();
+            return;
+        }
+        UpdateAnimationByTransform();
+    }
 
-            if (myRb2d.velocity.magnitude != 0)
-            {
-                anim.SetFloat("Vel_X", myRb2d.velocity.x);
-                anim.SetFloat("Vel_Y", myRb2d.velocity.y);
-                spriteRenderer.flipX = myRb2d.velocity.x >= 0 ? false : true;
-            }
+    private void UpdateAnimationByRigidbody()
+    {
+        anim.SetFloat("Velocity", myRb2d.velocity.magnitude);
+        if (myRb2d.velocity.magnitude != 0)
+        {
+            anim.SetFloat("Vel_X", myRb2d.velocity.x);
+            anim.SetFloat("Vel_Y", myRb2d.velocity.y);
+            spriteRenderer.flipX = myRb2d.velocity.x >= 0 ? false : true;
+        }
+    }
+
+    private void UpdateAnimationByTransform()
+    {
+        Vector2 offset = deltaPosition.normalized;
+        anim.SetFloat("Velocity", offset.magnitude);
+        if (offset.magnitude != 0)
+        {
+            anim.SetFloat("Vel_X", offset.x);
+            anim.SetFloat("Vel_Y", offset.y);
+            spriteRenderer.flipX = offset.x >= 0 ? false : true;
         }
     }
 

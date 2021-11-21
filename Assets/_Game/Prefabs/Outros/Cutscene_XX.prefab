@@ -82,8 +82,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2cd4aa78d62ec4684829b5e0f955d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  storyCutscene: 1
   bindPlayer: 1
   bindDialogCanvas: 1
+  possibleCutscenes: []
+  characterInformation: []
 --- !u!1001 &984444306776073145
 PrefabInstance:
   m_ObjectHideFlags: 0

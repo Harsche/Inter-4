@@ -5,6 +5,7 @@ using UnityEngine.Timeline;
 
 public class Cutscene : MonoBehaviour
 {
+    [SerializeField] private bool storyCutscene;
     [SerializeField] private bool bindPlayer;
     [SerializeField] private bool bindDialogCanvas;
     [SerializeField] private TimelineAsset[] possibleCutscenes;
@@ -19,14 +20,19 @@ public class Cutscene : MonoBehaviour
 
     private void Awake()
     {
-        if (Globals.CutsceneManager.WasPlayed(gameObject.name)) Destroy(gameObject);
-        
+        if (storyCutscene)
+        {
+            if (Globals.CutsceneManager.WasPlayed(gameObject.name)) Destroy(gameObject);
+            cutsceneNum = int.Parse(name.Substring(9));
+        }
 
-        cutsceneNum = int.Parse(name.Substring(9));
+
+
+
         CutsceneManager.OnCallTriggerCutscene += PlayCutsceneIfTriggered;
 
         playableDirector = GetComponent<PlayableDirector>();
-        if(playableDirector.playOnAwake)
+        if (playableDirector.playOnAwake)
         {
             SetCurrentCutscene();
             isPlaying = true;
@@ -44,10 +50,10 @@ public class Cutscene : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         BindTimelineTracks();
     }
-    
+
     public void PlayCutsceneIfTriggered(int cutsceneNum)
     {
-        if(cutsceneNum == this.cutsceneNum)
+        if (cutsceneNum == this.cutsceneNum)
             playableDirector.Play();
     }
 
@@ -64,11 +70,11 @@ public class Cutscene : MonoBehaviour
 
     public void BindOrUnbindTracks(string trackName, bool bind, GameObject obj)
     {
-        foreach(TrackAsset track in cutsceneTracks)
+        foreach (TrackAsset track in cutsceneTracks)
         {
-            if(track.name != trackName)
+            if (track.name != trackName)
                 continue;
-            if(bind)
+            if (bind)
             {
                 playableDirector.SetGenericBinding(track, obj);
                 continue;
@@ -115,7 +121,7 @@ public class Cutscene : MonoBehaviour
 
     public void SetCharactersPlaces()
     {
-        if(characterInformation.Length > 0)
+        if (characterInformation.Length > 0)
             CharacterManager.Instance.PlaceCharacters(characterInformation);
     }
 

@@ -6,7 +6,9 @@ public class TriggerInteractionCanvas : MonoBehaviour
 {
     [SerializeField] private float scaleDuration;
     private Transform interactionTransform;
-    Canvas interactionCanvas;
+    private Canvas interactionCanvas;
+    private Tween disable;
+    private Tween enable;
 
     private void Awake()
     {
@@ -34,15 +36,19 @@ public class TriggerInteractionCanvas : MonoBehaviour
 
     public void EnableInteraction()
     {
+        if(disable != null)
+            disable.Kill();
         interactionCanvas.enabled = true;
         interactionTransform.gameObject.SetActive(true);
         interactionTransform.localScale = Vector3.zero;
-        interactionTransform.DOScale(1.0f, scaleDuration);
+        enable = interactionTransform.DOScale(1.0f, scaleDuration);
     }
 
     public void DisableInteraction()
     {
-        interactionTransform.DOScale(0.0f, scaleDuration).OnComplete(() =>
+        if(enable != null)
+            enable.Kill();
+        disable = interactionTransform.DOScale(0.0f, scaleDuration).OnComplete(() =>
             {
                 interactionCanvas.enabled = false;
                 interactionTransform.gameObject.SetActive(false);
