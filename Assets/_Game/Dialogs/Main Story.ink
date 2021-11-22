@@ -81,7 +81,11 @@ Dondoca: MUUUUUU!!
 
 = No_One_Home
 Luiz: Ninguém responde. Eles devem ter saído!
-->DONE
+-> DONE
+
+= Need_Axe
+Luiz: Preciso do machado para poder cortar lenha.
+-> DONE
  
 === Luiz ===
 -> LUIZ
