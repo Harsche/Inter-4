@@ -29,6 +29,7 @@ public class WoodenLog : MonoBehaviour
 
     public void PlayCutscene()
     {
+        //if()
         if(myPlayableDirector != null)
             myPlayableDirector.Play();
         Movement.boxCollider2D.enabled = false;
@@ -36,7 +37,7 @@ public class WoodenLog : MonoBehaviour
 
     }
 
-    public void OnCutsceneFinished()
+    public void ReadyToCutWood()
     {
         Player.animationControl.PlayByName(axeUp);
     }
