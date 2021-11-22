@@ -4,6 +4,7 @@ using UnityEngine.Playables;
 public class WoodenLog : MonoBehaviour
 {
     [SerializeField] private Sprite[] logSprites;
+    private Movement playerMovement;
     private SpriteRenderer mySpriteRenderer;
     private PlayableDirector myPlayableDirector;
     private static bool playerWithAxe;
@@ -14,6 +15,7 @@ public class WoodenLog : MonoBehaviour
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         myPlayableDirector = GetComponent<PlayableDirector>();
+        playerMovement = Globals.Player.GetComponent<Movement>();
     }
 
     public void ChangeAxe()
@@ -30,7 +32,7 @@ public class WoodenLog : MonoBehaviour
         if(myPlayableDirector != null)
             myPlayableDirector.Play();
         Movement.boxCollider2D.enabled = false;
-        Movement.canMove = false;
+        playerMovement.canMove = false;
 
     }
 
