@@ -62,6 +62,7 @@ public class ChopTask : MonoBehaviour
         myCanvas.enabled = false;
         Movement.PlayerMovement.canMove = true;
         Movement.anim.Rebind();
+        Movement.anim.SetBool("Axe", true);
         taskStarted = false;
         Destroy(woodenLog.gameObject);
     }
