@@ -37,6 +37,7 @@ public class DialogManager : MonoBehaviour
         {
             storyData = new StoryData();
             storyData.GameDay = GameDay;
+            SetStory(dialogJson);
             return;
         }
         GameDay = storyData.GameDay;

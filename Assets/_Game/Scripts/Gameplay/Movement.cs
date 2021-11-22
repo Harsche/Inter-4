@@ -4,7 +4,7 @@ using Lean.Touch;
 
 public class Movement : MonoBehaviour
 {
-
+    public static Movement PlayerMovement { get; private set; }
     [SerializeField] private float speed;
     [SerializeField] private float deadzone;
     [SerializeField] private float joystickSize;
@@ -24,6 +24,9 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
+        if(PlayerMovement != null)
+            Destroy(gameObject);
+        PlayerMovement = this;
         myTransform = transform;
         lastPosition = myTransform.position;
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -37,7 +40,7 @@ public class Movement : MonoBehaviour
         canvasJoystick.SetActive(false);
         anim = GetComponent<Animator>();
         boxCollider2D = GetComponent<BoxCollider2D>();
-        
+
 
         circleCenter.GetComponent<Image>().color *= new Color(1.0f, 1.0f, 1.0f, 0.25f);
 
