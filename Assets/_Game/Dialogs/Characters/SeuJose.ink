@@ -28,6 +28,7 @@
 {Seu_Jose_Day_03:
 -   1:  -> D01
 -   2:  -> D02
+-   3:  -> D03
 -   else:   -> Random_Dialog
 }
 
@@ -38,6 +39,11 @@ Luiz: To bão, uai!
 Seu José: Vamo lá, Luiz! Ocê pega as coisas mais leves e vai colocando na carroça.
 Seu José: Eu vou buscar as coisas mais pesadas.
 Luiz: Podeixa, Seu Zé!
+~ PlayCutscene(15)
+-> DONE
+
+= D02
+~ PauseTimeline()
 Dona Helena: Oooopa, Luiz!
 Luiz: Opa, Dona Helena!
 Dona Helena: Oh fi, tava pensando... e hoje eu não vi sua mãe!
@@ -49,10 +55,11 @@ Dona Helena: Ela cura febre que é uma beleza.
 Seu José: Olha... tudo que eu tenho conseguido, é na troca, aí fica difícil garantir!
 Seu José: Mas eu prometo que se eu conseguir um dinheirinho vendendo algo, eu trago a erva cidreira.
 Seu José: Não fique encaducado não, meu fi!
-Luiz: Ta bem, seu Zé! Muito obrigada!
+Luiz: Ta bem, seu Zé! Muito obrigado!
+~ ResumeTimeline()
 -> DONE
 
-= D02
+= D03
 Seu José: Bom, terminamo aqui, Luiz! Eu já vou indo!
 Seu José: Volto amanhã, se Deus quiser com a erva cidreira pra sua mãe!
 Dona Helena: Isso mesmo! E Luiz, fica com essas macaxeiras, por ter ajudado o Zé!
