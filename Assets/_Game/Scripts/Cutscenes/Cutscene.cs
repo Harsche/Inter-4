@@ -25,10 +25,6 @@ public class Cutscene : MonoBehaviour
             if (Globals.CutsceneManager.WasPlayed(gameObject.name)) Destroy(gameObject);
             cutsceneNum = int.Parse(name.Substring(9));
         }
-
-
-
-
         CutsceneManager.OnCallTriggerCutscene += PlayCutsceneIfTriggered;
 
         playableDirector = GetComponent<PlayableDirector>();
