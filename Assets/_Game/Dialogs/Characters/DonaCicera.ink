@@ -17,6 +17,8 @@
 {lostKey: -> Found_Key}
 {Dona_Cicera_Day_02:
 -   1:  -> D01
+-   2:  -> D02
+-   3:  -> D03
 -   else:   -> Random_Dialog
 }
 
@@ -44,6 +46,10 @@ Dona Cícera: Acontece que nessa idade é complicado procurar uma coisinha tão 
 
 = D02
 Dona Cícera: Aaah, ocê veio me ajudar com as cestas, né fi? Vem, entra!
+~ PlayCutscene(9)
+-> DONE
+
+= D03
 Dona Cícera: E a sua família, como que ta?
 Luiz: Meus irmãos tão bem, mas a mãe hoje tava tossindo demais da conta!
 Luiz: To mei preocupado com isso.
