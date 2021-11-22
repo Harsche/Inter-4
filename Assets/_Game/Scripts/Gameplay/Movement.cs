@@ -24,8 +24,8 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
-        if(PlayerMovement != null)
-            Destroy(gameObject);
+        if(PlayerMovement != null) return;
+            //Destroy(gameObject);
         PlayerMovement = this;
         myTransform = transform;
         lastPosition = myTransform.position;
