@@ -82,6 +82,11 @@ public class DialogManager : MonoBehaviour
         story.state.LoadJson(storyData.jsonStory);
     }
 
+    public void ChangeStoryVariable<T>(string variableName, T value)
+    {
+        story.variablesState[variableName] = value;
+    }
+
     public void ContinueStory()
     {
         if (displayingChoices) return;
