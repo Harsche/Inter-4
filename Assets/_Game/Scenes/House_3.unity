@@ -1379,11 +1379,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1267428185231168028, guid: 57a2160cd72012c41af20de4cdabf71c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.110668
+      value: 7.92
       objectReference: {fileID: 0}
     - target: {fileID: 1267428185231168028, guid: 57a2160cd72012c41af20de4cdabf71c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1327543
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 1267428185231168028, guid: 57a2160cd72012c41af20de4cdabf71c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1790,11 +1790,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190499209207253087, guid: 6f22edea83143124c91119c4e230e2ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.579668
+      value: 8.389
       objectReference: {fileID: 0}
     - target: {fileID: 2190499209207253087, guid: 6f22edea83143124c91119c4e230e2ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3527546
+      value: 2.9700003
       objectReference: {fileID: 0}
     - target: {fileID: 2190499209207253087, guid: 6f22edea83143124c91119c4e230e2ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1827,6 +1827,10 @@ PrefabInstance:
     - target: {fileID: 2190499209207253087, guid: 6f22edea83143124c91119c4e230e2ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058719594288172740, guid: 6f22edea83143124c91119c4e230e2ee, type: 3}
+      propertyPath: m_SortingOrder
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8415773661481858156, guid: 6f22edea83143124c91119c4e230e2ee, type: 3}
       propertyPath: m_Name
@@ -4404,11 +4408,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2882412497047617116, guid: 2e043d529f393494b99a4d1a25428762, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.6106687
+      value: 7.4200006
       objectReference: {fileID: 0}
     - target: {fileID: 2882412497047617116, guid: 2e043d529f393494b99a4d1a25428762, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2957544
+      value: 2.913
       objectReference: {fileID: 0}
     - target: {fileID: 2882412497047617116, guid: 2e043d529f393494b99a4d1a25428762, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4496,6 +4500,10 @@ PlayableDirector:
     value: {fileID: 534206359}
   - key: {fileID: -434842562479182084, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
     value: {fileID: 651843213}
+  - key: {fileID: 8066928222310272717, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
+    value: {fileID: 2028787349}
+  - key: {fileID: 8890659889900267918, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &3287997914569623757

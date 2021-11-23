@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
@@ -7,6 +8,7 @@ public class CharacterManager : MonoBehaviour
 {
     [SerializeField] private CharactersSOData charactersSOData;
     [SerializeField] private CharacterList characterList;
+    public List<GameObject> currentCharacters { get; private set; } = new List<GameObject>();
     public static CharacterManager Instance;
     private string myGuid;
 
@@ -43,13 +45,14 @@ public class CharacterManager : MonoBehaviour
 
     private void SpawnSceneCharacters(Scene scene, LoadSceneMode mode)
     {
+        currentCharacters.Clear();
         CharacterInformation[] presentCharacters = charactersSOData.characterInformation
             .Where(charInfo => charInfo.presentScene == scene.name)
             .ToArray();
         foreach (CharacterInformation characterInformation in presentCharacters)
         {
-            Debug.Log(characterInformation.character.name);
             GameObject character = characterInformation.character;
+            currentCharacters.Add(character);
             Vector2 position = characterInformation.characterPosition;
             Instantiate(character, position, Quaternion.identity);
         }
