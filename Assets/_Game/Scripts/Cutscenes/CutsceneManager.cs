@@ -29,12 +29,13 @@ public class CutsceneManager : MonoBehaviour
         OnCallTriggerCutscene?.Invoke(cutsceneNum);
     }
 
-    public bool WasPlayed(string cutsceneName)
+    public bool WasPlayedOrCantPlay(string cutsceneName)
     {
         int cutsceneNum = int.Parse(cutsceneName.Split('_')[1]);
-        if (!(cutsceneSOData.states[cutsceneNum] == CutsceneState.Played)) return false;
-
-        return true;
+        CutsceneState state = cutsceneSOData.states[cutsceneNum];
+        if (state == CutsceneState.Played || state == CutsceneState.CanNotPlay)
+            return true;
+        return false;
     }
 
     public void ChooseCutscene(int choiceIndex)

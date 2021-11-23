@@ -10,6 +10,7 @@ public class Cutscene : MonoBehaviour
     [SerializeField] private bool bindDialogCanvas;
     [SerializeField] private TimelineAsset[] possibleCutscenes;
     [SerializeField] private CharacterInformation[] characterInformation;
+    [SerializeField] private string[] deleteCharactersWithName;
     public PlayableDirector playableDirector { get; private set; }
     public bool isPlaying { get; private set; }
     private TrackAsset[] cutsceneTracks;
@@ -22,7 +23,7 @@ public class Cutscene : MonoBehaviour
     {
         if (storyCutscene)
         {
-            if (Globals.CutsceneManager.WasPlayed(gameObject.name)) Destroy(gameObject);
+            if (Globals.CutsceneManager.WasPlayedOrCantPlay(gameObject.name)) Destroy(gameObject);
             cutsceneNum = int.Parse(name.Substring(9));
         }
         CutsceneManager.OnCallTriggerCutscene += PlayCutsceneIfTriggered;
@@ -63,6 +64,15 @@ public class Cutscene : MonoBehaviour
     {
         SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
         Globals.CutsceneManager.SetCutscenePlayed(gameObject.name);
+    }
+
+    public void DeleteCharactersWithName()
+    {
+        GameObject[] currentCharacters = CharacterManager.Instance.currentCharacters.ToArray();
+        if(currentCharacters.Length < 1)
+            return;
+        foreach(GameObject character in currentCharacters)
+            Destroy(character);
     }
 
     public void BindOrUnbindTracks(string trackName, bool bind, GameObject obj)

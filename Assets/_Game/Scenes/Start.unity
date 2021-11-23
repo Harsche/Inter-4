@@ -522,6 +522,7 @@ MonoBehaviour:
   - {fileID: 1442647808}
   - {fileID: 1692729673}
   cutsceneSOData: {fileID: 11400000, guid: 72ea2724ab4599e449be36d26612a060, type: 2}
+  cutsceneSODataNewGame: {fileID: 11400000, guid: a3c9996223d521a46b6204c98225030e, type: 2}
   questList: {fileID: 11400000, guid: df665dbecce674a43954257f179e5b33, type: 2}
   charactersSOData: {fileID: 11400000, guid: 5572a0eb0c5ebc04e92f2f7a4a28b383, type: 2}
 --- !u!1 &1009202030
