@@ -9,6 +9,7 @@ public class StartScreen : MonoBehaviour
     [SerializeField] private CutsceneSOData cutsceneSOData;
     [SerializeField] private QuestList questList;
     [SerializeField] private CharactersSOData charactersSOData;
+    [SerializeField] private CharactersSOData charactersSODataNewGame;
 
     private bool hasSave;
 
@@ -48,7 +49,7 @@ public class StartScreen : MonoBehaviour
         SaveManager.NewSaveFile();
         cutsceneSOData.SetAllPlayable();
         questList.ResetQuests();
-        charactersSOData.ResetCharacters();
+        charactersSOData = charactersSODataNewGame;
          if (SaveManager.saveFile != null)
             SceneManager.LoadScene("Load");
     }
