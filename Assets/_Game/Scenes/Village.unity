@@ -27470,6 +27470,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7824961994236980721, guid: 699a1727d7cd59f4aa4c0ec0cdf1f18d, type: 3}
   m_PrefabInstance: {fileID: 971870393}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &971870395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7824961994236980725, guid: 699a1727d7cd59f4aa4c0ec0cdf1f18d, type: 3}
+  m_PrefabInstance: {fileID: 971870393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &971870396 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7824961994236980723, guid: 699a1727d7cd59f4aa4c0ec0cdf1f18d, type: 3}
+  m_PrefabInstance: {fileID: 971870393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &972844270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37025,7 +37035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1269794203
 Transform:
   m_ObjectHideFlags: 0
@@ -41986,7 +41996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1464177703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99784,7 +99794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2024822771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103673,6 +103683,12 @@ PlayableDirector:
     value: {fileID: 545863828}
   - key: {fileID: 3443518744147287922, guid: 5b3bbff79b67a6c40a27ed2d5e444768, type: 2}
     value: {fileID: 545863829}
+  - key: {fileID: -8197049050359559923, guid: 5b3bbff79b67a6c40a27ed2d5e444768, type: 2}
+    value: {fileID: 971870395}
+  - key: {fileID: -6106615355705030462, guid: 5b3bbff79b67a6c40a27ed2d5e444768, type: 2}
+    value: {fileID: 971870396}
+  - key: {fileID: -6285162421670059939, guid: 5b3bbff79b67a6c40a27ed2d5e444768, type: 2}
+    value: {fileID: 971870396}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &3336892312844442897
