@@ -52,9 +52,9 @@ public class CharacterManager : MonoBehaviour
         foreach (CharacterInformation characterInformation in presentCharacters)
         {
             GameObject character = characterInformation.character;
-            currentCharacters.Add(character);
             Vector2 position = characterInformation.characterPosition;
-            Instantiate(character, position, Quaternion.identity);
+            GameObject spawnedCharacter = Instantiate(character, position, Quaternion.identity);
+            currentCharacters.Add(spawnedCharacter);
         }
     }
 

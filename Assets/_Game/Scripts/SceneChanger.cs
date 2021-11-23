@@ -27,7 +27,7 @@ public class SceneChanger : MonoBehaviour
     public void ChangeScene(string sceneName)
     {
         StartCoroutine(FadeOut(sceneName));
-    }    
+    }
 
     private IEnumerator FadeOut(string sceneName, Vector2 newPosition)
     {
@@ -79,5 +79,10 @@ public class SceneChanger : MonoBehaviour
         yield return fadeImage.DOFade(0, fadeDuration).WaitForCompletion();
 
         fadeCanvas.SetActive(false);
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        StartCoroutine(FadeOut(sceneName));
     }
 }

@@ -47,6 +47,7 @@ public class Cutscene : MonoBehaviour
         transform.SetParent(null);
         DontDestroyOnLoad(gameObject);
         BindTimelineTracks();
+        DeleteCharactersWithName();
     }
 
     public void PlayCutsceneIfTriggered(int cutsceneNum)
@@ -68,9 +69,9 @@ public class Cutscene : MonoBehaviour
 
     public void DeleteCharactersWithName()
     {
-        GameObject[] currentCharacters = CharacterManager.Instance.currentCharacters.ToArray();
-        if(currentCharacters.Length < 1)
+        if(deleteCharactersWithName == null)
             return;
+        GameObject[] currentCharacters = CharacterManager.Instance.currentCharacters.ToArray();
         foreach(GameObject character in currentCharacters)
             Destroy(character);
     }
@@ -174,5 +175,10 @@ public class Cutscene : MonoBehaviour
     public void ResumeTimeline()
     {
         Globals.CutsceneManager.ResumeTimeline();
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        Globals.SceneChanger.LoadScene(sceneName);
     }
 }

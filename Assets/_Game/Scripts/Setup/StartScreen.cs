@@ -50,13 +50,13 @@ public class StartScreen : MonoBehaviour
         cutsceneSOData.SetAllPlayable();
         questList.ResetQuests();
         cutsceneSOData = cutsceneSODataNewGame;
-         if (SaveManager.saveFile != null)
+        if (SaveManager.saveFile != null)
             SceneManager.LoadScene("Load");
     }
 
     public void ActivateOrDeactivate(bool active)
     {
-        foreach(GameObject obj in objectsToTurnOff)
+        foreach (GameObject obj in objectsToTurnOff)
             obj.SetActive(active);
     }
 }
