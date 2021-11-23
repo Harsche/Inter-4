@@ -83,6 +83,8 @@ Luiz: Ajudo sim, Dona Helena, vamos lá!
 === Dona_Helena_Day_04 ===
 {Dona_Helena_Day_04:
 -   1:  -> D01
+-   2:  -> D02
+-   3:  -> D03
 -   else:   -> Random_Dialog
 }
 
@@ -98,6 +100,9 @@ Luiz: Piorou, Dona Helena...
 Dona Helena: Meu Deus... Eu sinto muito.
 Luiz: Eu to com medo, Dona Helena. E se...
 Dona Helena: Não fique com medo não, meu bem. Logo as coisas vão se ajeitar! Eu tenho fé.
+-> DONE
+
+= D03
 Seu José: Cheguei! Opaaa, Luiz! Eu consegui! Eu trouxe a Erva Cidreira!
 Luiz: Seu Zé! Muito obrigado, mas eu precisava te pedir mais uma coisa!
 Seu José: Uai, fi, pode falar!
