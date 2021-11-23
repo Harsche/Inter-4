@@ -1048,7 +1048,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 7.7
+    m_StopTime: 9.583333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -1151,7 +1151,14 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 9.583333
+    functionName: PlayByName
+    data: SeuJose_Idle_Up
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
 --- !u!114 &-4574838108360726573
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1589,6 +1596,13 @@ AnimationClip:
   - time: 4.95
     functionName: PlayByName
     data: Idle_Right
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 9.583333
+    functionName: Idle_Down
+    data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
@@ -2150,7 +2164,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 4.95
+    m_StopTime: 9.583333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -2257,6 +2271,13 @@ AnimationClip:
   - time: 4.95
     functionName: PlayByName
     data: DonaHelena_Idle_Side
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 9.583333
+    functionName: PlayByName
+    data: DonaHelena_Idle_Down
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
