@@ -172,7 +172,7 @@ public class DialogManager : MonoBehaviour
         story.BindExternalFunction("PlayCutscene", (int cutsceneNum) => { CutsceneManager.TriggerCutscene(cutsceneNum); });
         story.BindExternalFunction("CloseDialog", () => { CloseDialog(); });
         story.BindExternalFunction("ChangeGameDay", (int day) => { GameDay++; Debug.Log("CHANGED DAY " + day); });
-        story.BindExternalFunction("SetCutscenePlayable", (int cutsceneNum) => { Globals.CutsceneManager.SetCutscenePlayable(cutsceneNum); });
+        story.BindExternalFunction("SetCutscenePlayable", (string cutsceneNum) => { Globals.CutsceneManager.SetCutscenePlayable(cutsceneNum); });
     }
 
     public void OpenDialog()

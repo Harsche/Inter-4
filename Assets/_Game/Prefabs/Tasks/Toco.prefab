@@ -69,7 +69,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.00007224083, y: 0.09049988}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.0904541}
   m_SizeDelta: {x: 0, y: 0.181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6449798460856854661
@@ -143,7 +143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.8911241}
-  m_AnchoredPosition: {x: 0, y: 0.000008106232}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0.000016332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6449798461681275213
@@ -183,8 +183,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1281.14, y: 718.87}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 0.91, y: 0.4}
+  m_SizeDelta: {x: 0.7286, y: 1.8429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6449798461681275210
 Canvas:
@@ -434,6 +434,7 @@ MonoBehaviour:
   bindDialogCanvas: 0
   possibleCutscenes: []
   characterInformation: []
+  deleteCharactersWithName: []
 --- !u!114 &6449798462113156189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,6 +452,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: dd254cfd8a3d0704bb27a2fe465e3de1, type: 2}
     - {fileID: 11400000, guid: f2300e38005e8564c904ea5a4a47bc76, type: 2}
     - {fileID: 11400000, guid: 1a9fce2787a195141b9075f27e6ebbcc, type: 2}
+    - {fileID: 11400000, guid: c543ba32c05fee64499450fe5565973d, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -492,6 +494,20 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6449798462113156188}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: StartDialog
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Seu Jose
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &6449798462113156186
@@ -548,8 +564,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.4557495, y: 0.36315918}
-  m_SizeDelta: {x: 0.6185303, y: 1.5875244}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.6547, y: 1.6804}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &6449798462156724661
 CanvasRenderer:
@@ -669,11 +685,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.78
       objectReference: {fileID: 0}
     - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_LocalPosition.z
