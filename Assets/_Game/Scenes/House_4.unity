@@ -3824,6 +3824,7 @@ MonoBehaviour:
   bindDialogCanvas: 1
   possibleCutscenes: []
   characterInformation: []
+  deleteCharactersWithName: []
 --- !u!1 &8644124517037886973
 GameObject:
   m_ObjectHideFlags: 0
@@ -3838,7 +3839,7 @@ GameObject:
   - component: {fileID: 8644124517037886947}
   - component: {fileID: 8644124517037886974}
   m_Layer: 0
-  m_Name: Cutscene_18.5
+  m_Name: Cutscene_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
