@@ -11,6 +11,7 @@ VAR filledWaterBox = false
 EXTERNAL newQuest(questName)
 EXTERNAL PauseTimeline()
 EXTERNAL ResumeTimeline()
+EXTERNAL SetCutscenePlayable(cutsceneNum)
 EXTERNAL PlayCutscene(cutsceneNum)
 EXTERNAL ChooseCutscene(choiceIndex)
 EXTERNAL CloseDialog()

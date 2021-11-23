@@ -48,6 +48,11 @@ public class CutsceneManager : MonoBehaviour
         cutsceneSOData.states[cutsceneNum] = CutsceneState.Played;
     }
 
+    public void SetCutscenePlayable(int cutsceneNum)
+    {
+        cutsceneSOData.states[cutsceneNum] = CutsceneState.CanPlay;
+    }
+
     public void SetCutscene(Cutscene cutscene)
     {
         currentCutscene = cutscene;
