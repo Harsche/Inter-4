@@ -32,9 +32,20 @@ public class MilkCowTask : MonoBehaviour
     public void StartTask()
     {
         taskCanvas.enabled = true;
-        for(int i = 0; i < transform.childCount; i++)
+        Globals.Player.transform.Find("LeanTouch").gameObject.SetActive(false);
+        for (int i = 0; i < transform.childCount; i++)
         {
-            //transform.
+            transform.GetChild(i).gameObject.SetActive(true);
+        }
+    }
+
+    public void EndTask()
+    {
+        taskCanvas.enabled = false;
+        Globals.Player.transform.Find("LeanTouch").gameObject.SetActive(false);
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).gameObject.SetActive(false);
         }
     }
 
@@ -73,8 +84,10 @@ public class MilkCowTask : MonoBehaviour
         if (!(swipedUp.swiped && swipedDown.swiped))
             return;
         DoMilkAnimation();
-        milkAmount += 1f/timesToMilk;
+        milkAmount += 1f / timesToMilk;
         milkSlider.DOValue(milkAmount, 0.3f);
+        if(milkAmount == 1)
+            EndTask();
     }
 
     public void DoMilkAnimation()

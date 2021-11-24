@@ -2,6 +2,7 @@ using CleverCrow.Fluid.UniqueIds;
 using UnityEngine.Playables;
 using UnityEngine;
 using System;
+using System.Linq;
 
 public class CutsceneManager : MonoBehaviour
 {
@@ -31,8 +32,8 @@ public class CutsceneManager : MonoBehaviour
 
     public bool WasPlayedOrCantPlay(string cutsceneName)
     {
-        int cutsceneNum = int.Parse(cutsceneName.Split('_')[1]);
-        CutsceneState state = cutsceneSOData.states[cutsceneNum];
+        CutsceneStatus status = GetCutsceneStatus(cutsceneName);
+        CutsceneState state = status.state;
         if (state == CutsceneState.Played || state == CutsceneState.CanNotPlay)
             return true;
         return false;
@@ -45,13 +46,14 @@ public class CutsceneManager : MonoBehaviour
 
     public void SetCutscenePlayed(string cutsceneName)
     {
-        int cutsceneNum = int.Parse(cutsceneName.Split('_')[1]);
-        cutsceneSOData.states[cutsceneNum] = CutsceneState.Played;
+        CutsceneStatus status = GetCutsceneStatus(cutsceneName);
+        status.state = CutsceneState.Played;
     }
 
-    public void SetCutscenePlayable(int cutsceneNum)
+    public void SetCutscenePlayable(string cutsceneNumber)
     {
-        cutsceneSOData.states[cutsceneNum] = CutsceneState.CanPlay;
+        CutsceneStatus status = GetCutsceneStatus(cutsceneNumber);
+        status.state = CutsceneState.CanPlay;
     }
 
     public void SetCutscene(Cutscene cutscene)
@@ -76,9 +78,17 @@ public class CutsceneManager : MonoBehaviour
         cutsceneData.cutsceneSOData = cutsceneSOData;
         SaveManager.SaveData(myGuid, cutsceneData);
     }
+
+    private CutsceneStatus GetCutsceneStatus(string cutsceneName)
+    {
+        string cutsceneNum = cutsceneName.Split('_')[1];
+        CutsceneStatus status = cutsceneSOData.statuses.First(status => status.cutsceneNumber == cutsceneNum);
+        return status;
+    }
 }
 
 public class CutsceneData : ObjectData
 {
     public CutsceneSOData cutsceneSOData;
+    
 }

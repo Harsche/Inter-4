@@ -1,37 +1,45 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
 [CreateAssetMenu(menuName = "ScriptableObjects/Cutscene Data")]
 public class CutsceneSOData : ScriptableObject
 {
-    public CutsceneState[] states;
+    public CutsceneStatus[] statuses;
 
     [ContextMenu("Set all playable")]
     public void SetAllPlayable()
     {
-        for(int i = 0; i < states.Length; i++)
+        for(int i = 0; i < statuses.Length; i++)
         {
-            states[i] = CutsceneState.CanPlay;
+            statuses[i].state = CutsceneState.CanPlay;
         }
     }
 
     [ContextMenu("Set all unplayable")]
     public void SetAllUnlayable()
     {
-        for(int i = 0; i < states.Length; i++)
+        for(int i = 0; i < statuses.Length; i++)
         {
-            states[i] = CutsceneState.CanNotPlay;
+            statuses[i].state = CutsceneState.CanNotPlay;
         }
     }
 
     [ContextMenu("Set all played")]
     public void SetAllPlayed()
     {
-        for(int i = 0; i < states.Length; i++)
+        for(int i = 0; i < statuses.Length; i++)
         {
-            states[i] = CutsceneState.Played;
+            statuses[i].state = CutsceneState.Played;
         }
     }
+}
+
+[System.Serializable]
+public struct CutsceneStatus
+{
+    public string cutsceneNumber;
+    public CutsceneState state;
 }
 
 public enum CutsceneState
