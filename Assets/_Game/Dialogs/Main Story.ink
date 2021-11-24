@@ -87,6 +87,10 @@ Luiz: Ninguém responde. Eles devem ter saído!
 = Need_Axe
 Luiz: Preciso do machado para poder cortar lenha.
 -> DONE
+
+=Need_Bucket
+Luiz: Acho melhor pegar um balde primeiro.
+-> DONE
  
 === Luiz ===
 -> LUIZ

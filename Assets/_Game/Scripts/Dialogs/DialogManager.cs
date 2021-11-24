@@ -183,7 +183,7 @@ public class DialogManager : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(true);
         }
         myCanvas.enabled = true;
-        playerMovement.canMove = false;
+        //playerMovement.canMove = false;
     }
 
     public void CloseDialog()
@@ -194,7 +194,7 @@ public class DialogManager : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(false);
         }
         myCanvas.enabled = false;
-        playerMovement.canMove = true;
+        //playerMovement.canMove = true;
 
         if (TalkingNPC != null)
         {
