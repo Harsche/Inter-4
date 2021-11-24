@@ -1,7 +1,6 @@
 using System.Text;
 using UnityEngine;
 using Ink.Runtime;
-using UnityEngine.UI;
 using Lean.Touch;
 using System;
 using System.Linq;
@@ -34,12 +33,7 @@ public class DialogManager : MonoBehaviour
         myCanvas = GetComponent<Canvas>();
         storyData = SaveManager.GetData<StoryData>(myGuid);
         if (storyData == null)
-        {
             storyData = new StoryData();
-            storyData.GameDay = GameDay;
-            SetStory(dialogJson);
-            return;
-        }
         GameDay = storyData.GameDay;
         SetStory(dialogJson);
         //ContinueStory();
@@ -172,6 +166,7 @@ public class DialogManager : MonoBehaviour
         story.BindExternalFunction("PlayCutscene", (int cutsceneNum) => { CutsceneManager.TriggerCutscene(cutsceneNum); });
         story.BindExternalFunction("CloseDialog", () => { CloseDialog(); });
         story.BindExternalFunction("ChangeGameDay", (int day) => { GameDay++; Debug.Log("CHANGED DAY " + day); });
+        story.BindExternalFunction("ChangeDayTime", (string time) => { Enum.TryParse<DayTime>(time, out SceneSetup.DayTime); });
         story.BindExternalFunction("SetCutscenePlayable", (string cutsceneNum) => { Globals.CutsceneManager.SetCutscenePlayable(cutsceneNum); });
     }
 

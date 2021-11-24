@@ -62,6 +62,7 @@ public class WoodenLog : MonoBehaviour
     public void ReadyToCutWood()
     {
         Player.animationControl.PlayByName(axeUp);
+        Player.animationControl.spriteRenderer.flipX = false;
         chopTask.StartTask();
     }
 }

@@ -17,6 +17,7 @@ EXTERNAL ChooseCutscene(choiceIndex)
 EXTERNAL CloseDialog()
 EXTERNAL Debug(value)
 EXTERNAL ChangeGameDay(GameDay)
+EXTERNAL ChangeDayTime(Time)
 
 INCLUDE Characters\Luiz.ink
 INCLUDE Characters\DonaCida.ink
@@ -32,6 +33,7 @@ INCLUDE Characters\DonaMaria.ink
 INCLUDE Characters\Cow.ink
 INCLUDE Characters\Livia.ink
 INCLUDE Characters\Medico.ink
+
 
 == Day_01_Scene_01 ==
 ~ PauseTimeline()

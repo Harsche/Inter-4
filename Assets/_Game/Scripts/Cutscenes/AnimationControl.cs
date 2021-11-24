@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimationControl : MonoBehaviour
 {
     [SerializeField] bool isNPC;
-    private SpriteRenderer spriteRenderer;
-    private Animator anim;
+    public  SpriteRenderer spriteRenderer {get; private set;}
+    public Animator anim {get; private set;}
 
     private void Awake()
     {
