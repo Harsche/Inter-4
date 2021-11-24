@@ -1099,6 +1099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Fade
       objectReference: {fileID: 0}
+    - target: {fileID: 2391333265179437772, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3475886065368583011, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
       propertyPath: m_SizeDelta.x
       value: 3040
@@ -1117,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4021998194708895047, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026241179972044328, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
       propertyPath: m_Color.a
@@ -1732,11 +1736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549493611817115143, guid: e18db3752bb742241ad4baa975643446, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.865
+      value: 6.44
       objectReference: {fileID: 0}
     - target: {fileID: 4549493611817115143, guid: e18db3752bb742241ad4baa975643446, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.052
+      value: -1.92
       objectReference: {fileID: 0}
     - target: {fileID: 4549493611817115143, guid: e18db3752bb742241ad4baa975643446, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1780,6 +1784,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18db3752bb742241ad4baa975643446, type: 3}
+--- !u!95 &1157737012 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6058577577523833878, guid: e18db3752bb742241ad4baa975643446, type: 3}
+  m_PrefabInstance: {fileID: 1157737011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1419137256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4297,11 +4306,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5153578617845332815, guid: 16a5e5d031e434543b4706cb697a5a98, type: 3}
   m_PrefabInstance: {fileID: 2028787347}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2028787350 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5153578617845332810, guid: 16a5e5d031e434543b4706cb697a5a98, type: 3}
-  m_PrefabInstance: {fileID: 2028787347}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2061192933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4573,13 +4577,7 @@ PlayableDirector:
   - key: {fileID: -4641299311026600652, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
     value: {fileID: 1885237691}
   - key: {fileID: -2903239908925293, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 976255687409570388, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 7044548835377873250, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 1577385732565316110, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
-    value: {fileID: 2028787350}
+    value: {fileID: 1157737012}
   - key: {fileID: 7815786248677213705, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
     value: {fileID: 1974388037}
   - key: {fileID: -7802092762144339629, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
@@ -4591,7 +4589,7 @@ PlayableDirector:
   - key: {fileID: 8066928222310272717, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
     value: {fileID: 2028787349}
   - key: {fileID: 8890659889900267918, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1157737012}
   - key: {fileID: 2128445064668363322, guid: b098bb49940b6b64c89e3fe9f31a9de1, type: 2}
     value: {fileID: 651843212}
   m_ExposedReferences:
