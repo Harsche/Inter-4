@@ -36207,7 +36207,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 4019814831561130339}
+    m_TransformParent: {fileID: 8501207076737503892}
     m_Modifications:
     - target: {fileID: 428415062767704459, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_Name
@@ -106041,7 +106041,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9124822219332095220}
-  - {fileID: 1244059260}
   m_Father: {fileID: 2024822772}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -108645,6 +108644,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4364828029652049669}
+  - {fileID: 1244059260}
   m_Father: {fileID: 771794582}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -108658,7 +108658,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: ba0af07ba313e374b836c918342c94dd, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
