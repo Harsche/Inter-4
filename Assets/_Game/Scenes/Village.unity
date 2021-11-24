@@ -28027,6 +28027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vaca
       objectReference: {fileID: 0}
+    - target: {fileID: 4279998210318621427, guid: 5eba6d606f920f547a6fbc0854286031, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8675414804844416422, guid: 5eba6d606f920f547a6fbc0854286031, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -32256,7 +32260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1121552234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36639,7 +36643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1256798128
 Transform:
   m_ObjectHideFlags: 0
@@ -38889,7 +38893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8382132012913449271, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8382132012913449271, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
       propertyPath: m_AnchorMax.x
