@@ -17,14 +17,14 @@ public class Cutscene : MonoBehaviour
     private TimelineAsset cutscene;
     static string PlayerReference = "Player";
     static string DialogCanvasReference = "DialogCanvas";
-    private int cutsceneNum;
+    private float cutsceneNum;
 
     private void Awake()
     {
         if (storyCutscene)
         {
             if (Globals.CutsceneManager.WasPlayedOrCantPlay(gameObject.name)) Destroy(gameObject);
-            cutsceneNum = int.Parse(name.Substring(9));
+            cutsceneNum = float.Parse(name.Substring(9));
         }
         CutsceneManager.OnCallTriggerCutscene += PlayCutsceneIfTriggered;
 

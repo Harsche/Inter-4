@@ -36,7 +36,7 @@ public class CutsceneSOData : ScriptableObject
 }
 
 [System.Serializable]
-public struct CutsceneStatus
+public class CutsceneStatus
 {
     public string cutsceneNumber;
     public CutsceneState state;

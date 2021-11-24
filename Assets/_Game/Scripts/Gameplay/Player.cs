@@ -5,7 +5,7 @@ using CleverCrow.Fluid.UniqueIds;
 public class Player : MonoBehaviour
 {
     public static AnimationControl animationControl { get; private set; }
-    private static PlayerData playerData;
+    public static PlayerData playerData { get; private set; }
     private static string myGuid;
     private bool wasDataNull;
 
@@ -35,6 +35,11 @@ public class Player : MonoBehaviour
         }
     }
 
+    public static void ChangeDayTime(DayTime time)
+    {
+        playerData.dayTime = time;
+    }
+
     private void SavePlayerData()
     {
         playerData.scene = SceneManager.GetActiveScene().name;
@@ -47,4 +52,5 @@ public class PlayerData : ObjectData
 {
     public string scene;
     public Vector2 position;
+    public DayTime dayTime;
 }

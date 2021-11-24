@@ -49,7 +49,7 @@ public class StartScreen : MonoBehaviour
         SaveManager.NewSaveFile();
         cutsceneSOData.SetAllPlayable();
         questList.ResetQuests();
-        cutsceneSOData = cutsceneSODataNewGame;
+        cutsceneSOData.statuses = cutsceneSODataNewGame.statuses;
         if (SaveManager.saveFile != null)
             SceneManager.LoadScene("Load");
     }

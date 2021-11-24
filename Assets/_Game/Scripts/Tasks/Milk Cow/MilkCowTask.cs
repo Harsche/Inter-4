@@ -14,6 +14,8 @@ public class MilkCowTask : MonoBehaviour
     [SerializeField] private LeanFingerSwipeAuto leanSwipeDown;
     [SerializeField] private LeanFingerSwipeAuto leanSwipeUp;
     [SerializeField] private Slider milkSlider;
+    private const string talkDay1 = "Day_01_Scene_04.Milk_Cow";
+    private const string talkDay2 = "Cow";
     private Canvas taskCanvas;
     private const float animationTime = 31 / 60f;
     private bool milkLeftOrRight;
@@ -47,6 +49,8 @@ public class MilkCowTask : MonoBehaviour
         {
             transform.GetChild(i).gameObject.SetActive(false);
         }
+        string talk = (DialogManager.GameDay == 1) ? talkDay1 : talkDay2;
+        Globals.DialogManager.StartDialog(talk);
     }
 
     public void SwipeUp(LeanFinger finger)
@@ -85,8 +89,13 @@ public class MilkCowTask : MonoBehaviour
             return;
         DoMilkAnimation();
         milkAmount += 1f / timesToMilk;
-        milkSlider.DOValue(milkAmount, 0.3f);
-        if(milkAmount == 1)
+        Tween milkGauge = milkSlider.DOValue(milkAmount, 0.3f);
+        
+    }
+
+    public void CheckAmount()
+    {
+        if(Mathf.Equals(milkAmount, 1f) || milkAmount > 1f)
             EndTask();
     }
 

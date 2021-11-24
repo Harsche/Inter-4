@@ -1,5 +1,4 @@
 using UnityEngine;
-using Cinemachine;
 
 public class CameraManager : MonoBehaviour
 {
@@ -7,13 +6,11 @@ public class CameraManager : MonoBehaviour
 
     private void Awake()
     {
-        if(PlayerCamera == null)
-        {
-            PlayerCamera = gameObject;
-        }
-        else
+        if (PlayerCamera != null)
         {
             Destroy(gameObject);
+            return;
         }
+        PlayerCamera = gameObject;
     }
 }

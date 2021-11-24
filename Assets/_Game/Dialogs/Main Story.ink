@@ -1,6 +1,9 @@
 VAR GameDay = 1
 VAR lostKey = false
 VAR filledWaterBox = false
+CONST DAY = "Day"
+CONST NIGHT = "Night"
+
 // House 1 = Luiz
 // House 2 = Seu João
 // House 3 = Dona Cícera
@@ -206,4 +209,7 @@ Luiz: Acho melhor pegar um balde primeiro.
 ~ return
 
 == function ChangeGameDay(day)
+~ return
+
+== function ChangeDayTime(time)
 ~ return

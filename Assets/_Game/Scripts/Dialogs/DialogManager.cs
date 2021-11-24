@@ -9,7 +9,7 @@ using TMPro;
 
 public class DialogManager : MonoBehaviour
 {
-    public static int GameDay = 1;
+    public static int GameDay;
     public static GameObject TalkingNPC;
     [SerializeField] private TextAsset dialogJson;
     [SerializeField] private TextMeshProUGUI dialogText;
@@ -150,6 +150,12 @@ public class DialogManager : MonoBehaviour
         }
     }
 
+    public void StartDialog(string inkKnot)
+    {
+        Globals.DialogManager.JumpTo(inkKnot);
+        Globals.DialogManager.OpenDialog();
+    }
+
     public void JumpTo(string inkKnot)
     {
         story.ChoosePathString(inkKnot);
@@ -166,7 +172,7 @@ public class DialogManager : MonoBehaviour
         story.BindExternalFunction("PlayCutscene", (int cutsceneNum) => { CutsceneManager.TriggerCutscene(cutsceneNum); });
         story.BindExternalFunction("CloseDialog", () => { CloseDialog(); });
         story.BindExternalFunction("ChangeGameDay", (int day) => { GameDay++; Debug.Log("CHANGED DAY " + day); });
-        story.BindExternalFunction("ChangeDayTime", (string time) => { Enum.TryParse<DayTime>(time, out SceneSetup.DayTime); });
+        story.BindExternalFunction("ChangeDayTime", (string time) => { Player.ChangeDayTime((DayTime)Enum.Parse(typeof(DayTime), time)); });
         story.BindExternalFunction("SetCutscenePlayable", (string cutsceneNum) => { Globals.CutsceneManager.SetCutscenePlayable(cutsceneNum); });
     }
 
@@ -203,4 +209,9 @@ public class StoryData : ObjectData
 {
     public int GameDay;
     public string jsonStory;
+
+    public StoryData()
+    {
+        GameDay = 1;
+    }
 }
