@@ -50,7 +50,7 @@ public class Cutscene : MonoBehaviour
         DeleteCharactersWithName();
     }
 
-    public void PlayCutsceneIfTriggered(int cutsceneNum)
+    public void PlayCutsceneIfTriggered(float cutsceneNum)
     {
         if (cutsceneNum == this.cutsceneNum)
             playableDirector.Play();

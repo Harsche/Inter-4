@@ -21,6 +21,7 @@ EXTERNAL CloseDialog()
 EXTERNAL Debug(value)
 EXTERNAL ChangeGameDay(GameDay)
 EXTERNAL ChangeDayTime(Time)
+EXTERNAL ChangePlayerAnim(parameter, value)
 
 INCLUDE Characters\Luiz.ink
 INCLUDE Characters\DonaCida.ink
@@ -212,4 +213,7 @@ Luiz: Acho melhor pegar um balde primeiro.
 ~ return
 
 == function ChangeDayTime(time)
+~ return
+
+== function ChangePlayerAnim(parameter, value)
 ~ return

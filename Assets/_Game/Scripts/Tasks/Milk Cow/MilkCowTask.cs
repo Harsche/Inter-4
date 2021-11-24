@@ -14,10 +14,11 @@ public class MilkCowTask : MonoBehaviour
     [SerializeField] private LeanFingerSwipeAuto leanSwipeDown;
     [SerializeField] private LeanFingerSwipeAuto leanSwipeUp;
     [SerializeField] private Slider milkSlider;
-    private const string talkDay1 = "Day_01_Scene_04.Milk_Cow";
-    private const string talkDay2 = "Cow";
     private Canvas taskCanvas;
     private const float animationTime = 31 / 60f;
+    private const string noBucket = "Other_Dialogs.Need_Bucket";
+    private const string bucket = "Bucket";
+    private const string milk = "Milk";
     private bool milkLeftOrRight;
     private Swiped swipedUp = new Swiped();
     private Swiped swipedDown = new Swiped();
@@ -29,6 +30,16 @@ public class MilkCowTask : MonoBehaviour
         taskCanvas.enabled = true;
         milkAmount = 0;
         milkSlider.value = milkAmount;
+    }
+
+    public void TriggerTask()
+    {
+        if(!Movement.anim.GetBool(bucket))
+        {
+            Globals.DialogManager.StartDialog(noBucket);
+            return;
+        }
+        CutsceneManager.TriggerCutscene(2);
     }
 
     public void StartTask()
@@ -44,13 +55,12 @@ public class MilkCowTask : MonoBehaviour
     public void EndTask()
     {
         taskCanvas.enabled = false;
-        Globals.Player.transform.Find("LeanTouch").gameObject.SetActive(false);
+        Globals.Player.transform.Find("LeanTouch").gameObject.SetActive(true);
         for (int i = 0; i < transform.childCount; i++)
         {
             transform.GetChild(i).gameObject.SetActive(false);
         }
-        string talk = (DialogManager.GameDay == 1) ? talkDay1 : talkDay2;
-        Globals.DialogManager.StartDialog(talk);
+        Movement.anim.SetBool(milk, true);
     }
 
     public void SwipeUp(LeanFinger finger)
@@ -85,12 +95,14 @@ public class MilkCowTask : MonoBehaviour
 
     public void TakeMilk()
     {
+        if(Mathf.Equals(milkAmount, 1f) || milkAmount > 1f)
+            return;
         if (!(swipedUp.swiped && swipedDown.swiped))
             return;
         DoMilkAnimation();
         milkAmount += 1f / timesToMilk;
-        Tween milkGauge = milkSlider.DOValue(milkAmount, 0.3f);
-        
+        Tween gaugeTween = milkSlider.DOValue(milkAmount, 0.3f);
+        gaugeTween.OnComplete(() => CheckAmount());
     }
 
     public void CheckAmount()

@@ -7,7 +7,7 @@ using System.Linq;
 public class CutsceneManager : MonoBehaviour
 {
     [SerializeField] private CutsceneSOData cutsceneSOData;
-    public static Action<int> OnCallTriggerCutscene;
+    public static Action<float> OnCallTriggerCutscene;
     public Cutscene currentCutscene { get; private set; }
     private CutsceneData cutsceneData;
     private string myGuid;
@@ -25,7 +25,7 @@ public class CutsceneManager : MonoBehaviour
         cutsceneData = new CutsceneData();
     }
 
-    public static void TriggerCutscene(int cutsceneNum)
+    public static void TriggerCutscene(float cutsceneNum)
     {
         OnCallTriggerCutscene?.Invoke(cutsceneNum);
     }

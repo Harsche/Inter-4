@@ -12,5 +12,6 @@ public class BucketTasks : MonoBehaviour
     public void PickBucketUp()
     {
         playerAnimator.SetBool(bucketTrigger, true);
+        gameObject.SetActive(false);
     }
 }
