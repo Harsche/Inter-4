@@ -10783,7 +10783,7 @@ PlayableDirector:
   - key: {fileID: 3416876412345190003, guid: 7b3f526d24f80fa4a9ffd496b3ec733c, type: 2}
     value: {fileID: 97709741}
   - key: {fileID: 998142940363740993, guid: 7b3f526d24f80fa4a9ffd496b3ec733c, type: 2}
-    value: {fileID: 504063466}
+    value: {fileID: 504063468}
   - key: {fileID: -3158834984877337215, guid: 7b3f526d24f80fa4a9ffd496b3ec733c, type: 2}
     value: {fileID: 941243948}
   - key: {fileID: -5889249544666095417, guid: 7b3f526d24f80fa4a9ffd496b3ec733c, type: 2}
@@ -10794,6 +10794,8 @@ PlayableDirector:
     value: {fileID: 397038925}
   - key: {fileID: -8309029056545353160, guid: 7b3f526d24f80fa4a9ffd496b3ec733c, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 7119059845706196227, guid: 7b3f526d24f80fa4a9ffd496b3ec733c, type: 2}
+    value: {fileID: 504063467}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &400605219
@@ -13540,6 +13542,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 6.1383
       objectReference: {fileID: 0}
+    - target: {fileID: 4021998194708895047, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6026241179972044328, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -13648,6 +13654,30 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504063465}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &504063467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4021998194708895047, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
+  m_PrefabInstance: {fileID: 504063463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &504063468
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504063467}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 0}
