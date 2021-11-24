@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.Playables;
+using DG.Tweening;
 
 public class WoodenLog : MonoBehaviour
 {
     [SerializeField] private Sprite[] logSprites;
     [SerializeField] private ChopTask chopTask;
+    [SerializeField] private Transform chopPosition;
+    private Rigidbody2D playerRigidbody2D;
     private Movement playerMovement;
     private SpriteRenderer mySpriteRenderer;
     private PlayableDirector myPlayableDirector;
@@ -22,6 +25,7 @@ public class WoodenLog : MonoBehaviour
     private void Start()
     {
         playerMovement = Globals.Player.GetComponent<Movement>();
+        playerRigidbody2D = Globals.Player.GetComponent<Rigidbody2D>();
     }
 
     public void ChangeAxe()
@@ -41,11 +45,12 @@ public class WoodenLog : MonoBehaviour
             Globals.DialogManager.OpenDialog();
             return;
         }
-        if (myPlayableDirector != null)
-            myPlayableDirector.Play();
+        Debug.Log("CHANGED");
         Movement.boxCollider2D.enabled = false;
         playerMovement.canMove = false;
-
+        Tween goToPosition = playerRigidbody2D.DOMove(chopPosition.position, 0.2f);
+        goToPosition.SetEase(Ease.Linear);
+        goToPosition.OnComplete(() => ReadyToCutWood());
     }
 
     public void ChangeLogSprite(int index)

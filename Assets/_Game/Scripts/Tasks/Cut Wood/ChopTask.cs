@@ -24,6 +24,7 @@ public class ChopTask : MonoBehaviour
 
     public void StartTask()
     {
+        Movement.PlayerMovement.spriteRenderer.flipX = false;
         myCanvas.enabled = true;
         StartSlider();
         taskStarted = true;
@@ -64,6 +65,7 @@ public class ChopTask : MonoBehaviour
         Movement.anim.Rebind();
         Movement.anim.SetBool("Axe", true);
         taskStarted = false;
+        Movement.boxCollider2D.enabled = true;
         Destroy(woodenLog.gameObject);
     }
 

@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1085691515902859567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4237791009360701600}
+  m_Layer: 0
+  m_Name: Chop Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4237791009360701600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085691515902859567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6449798462113156190}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6449798460760196820
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,9 +330,6 @@ GameObject:
   - component: {fileID: 6449798462113156190}
   - component: {fileID: 6449798462113156191}
   - component: {fileID: 6449798462113156160}
-  - component: {fileID: 6449798462113156187}
-  - component: {fileID: 6449798462113156188}
-  - component: {fileID: 6449798462113156189}
   - component: {fileID: 6449798462113156186}
   m_Layer: 0
   m_Name: Toco
@@ -324,6 +351,7 @@ Transform:
   m_Children:
   - {fileID: 5131852987469491581}
   - {fileID: 6449798461681275212}
+  - {fileID: 4237791009360701600}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -394,122 +422,6 @@ CircleCollider2D:
   m_Offset: {x: 0.017454445, y: 0.110000014}
   serializedVersion: 2
   m_Radius: 0.28669137
---- !u!320 &6449798462113156187
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6449798462113156161}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: d94aeb544e7607543968c4bebbc065bd, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -7980645921803602750, guid: d94aeb544e7607543968c4bebbc065bd, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 1315964366827565797, guid: d94aeb544e7607543968c4bebbc065bd, type: 2}
-    value: {fileID: 6449798462113156161}
-  - key: {fileID: -8953132927606252271, guid: d94aeb544e7607543968c4bebbc065bd, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References: []
---- !u!114 &6449798462113156188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6449798462113156161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c2cd4aa78d62ec4684829b5e0f955d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  storyCutscene: 0
-  bindPlayer: 0
-  bindDialogCanvas: 0
-  possibleCutscenes: []
-  characterInformation: []
-  deleteCharactersWithName: []
---- !u!114 &6449798462113156189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6449798462113156161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals:
-    - {fileID: 11400000, guid: dd254cfd8a3d0704bb27a2fe465e3de1, type: 2}
-    - {fileID: 11400000, guid: f2300e38005e8564c904ea5a4a47bc76, type: 2}
-    - {fileID: 11400000, guid: 1a9fce2787a195141b9075f27e6ebbcc, type: 2}
-    - {fileID: 11400000, guid: c543ba32c05fee64499450fe5565973d, type: 2}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6449798462113156188}
-          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
-          m_MethodName: BindOrUnbindPlayer
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6449798462113156188}
-          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
-          m_MethodName: SetCurrentCutscene
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6449798462113156186}
-          m_TargetAssemblyTypeName: WoodenLog, Assembly-CSharp
-          m_MethodName: ReadyToCutWood
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 6449798462113156188}
-          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
-          m_MethodName: StartDialog
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Seu Jose
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &6449798462113156186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +439,7 @@ MonoBehaviour:
   - {fileID: -1036360024836356894, guid: 4b832b53e89f88149ba1ff54b1ad7f23, type: 3}
   - {fileID: -6561874678562750270, guid: 4b832b53e89f88149ba1ff54b1ad7f23, type: 3}
   chopTask: {fileID: 6449798461681275209}
+  chopPosition: {fileID: 4237791009360701600}
 --- !u!1 &6449798462156724665
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +578,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 958909708148630860, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_Radius
-      value: 0.34144515
+      value: 0.21431637
       objectReference: {fileID: 0}
     - target: {fileID: 958909708148630860, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_Offset.x
@@ -673,7 +586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958909708148630860, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_Offset.y
-      value: -0.13507831
+      value: -0.122365475
       objectReference: {fileID: 0}
     - target: {fileID: 1542309526447554819, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_Name
@@ -685,11 +598,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.78
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.01
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_LocalPosition.z
@@ -725,11 +638,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5713526477061938143, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.77
+      value: 0.71
       objectReference: {fileID: 0}
     - target: {fileID: 5713526477061938143, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.86
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 6464552260374400012, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
