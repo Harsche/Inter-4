@@ -6,6 +6,7 @@
 }
 
 === Seu_Joao_Day_01 ===
+{woodChopped == 3: -> Chopped_Wood}
 {Seu_Joao_Day_01:
 -   1:  -> D01
 -   else:   -> Random_Dialog
@@ -20,7 +21,11 @@ Seu João: Quase ninguém ta comprando carvão... eu num tenho como te paga, Lui
 Luiz: Eu te ajudo, Seu João!
 Seu João: Tem certeza, fi?
 Luiz: Tenho sim!
-JOGO: (MINIGAME DE CORTAR LENHA)
+~ chopTask = true
+-> DONE
+
+= Chopped_Wood
+~ chopTask = false
 Seu João: Muito obrigado por me ajudar, Luizinho.
 Seu João: Num queria te deixar ir de mão abanando, então fica com essas romãs.
 Seu João: Eu consegui elas trocando carvão lá na cidade. Leva pro cê e pra sua família!

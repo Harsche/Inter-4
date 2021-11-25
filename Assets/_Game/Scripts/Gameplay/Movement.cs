@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private GameObject canvasJoystick;
     private Transform myTransform;
     public bool canMove = true;
+    public bool animateByTransform;
     public SpriteRenderer spriteRenderer { get; private set;}
     public static Animator anim { get; private set; }
     public static BoxCollider2D boxCollider2D { get; private set; }
@@ -40,6 +41,7 @@ public class Movement : MonoBehaviour
         canvasJoystick.SetActive(false);
         anim = GetComponent<Animator>();
         boxCollider2D = GetComponent<BoxCollider2D>();
+        animateByTransform = true;
 
 
         circleCenter.GetComponent<Image>().color *= new Color(1.0f, 1.0f, 1.0f, 0.25f);
@@ -83,6 +85,8 @@ public class Movement : MonoBehaviour
 
     private void UpdateAnimationByTransform()
     {
+        if(!animateByTransform)
+            return;
         Vector2 offset = deltaPosition.normalized;
         anim.SetFloat("Velocity", offset.magnitude);
         if (offset.magnitude != 0)

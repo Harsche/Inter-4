@@ -14,7 +14,7 @@ Luiz: Já está escurecendo... vou direto pra casa ver mainha!
 Luiz: Já está escurecendo... é melhor eu ir pra casa!
 {GameDay == 1:
 Dona Maria: Entra, meu fi! Já ta tarde!
-~ SetCutscenePlayable(5)
+~ SetCutscenePlayable("05")
 }
 -> DONE
 

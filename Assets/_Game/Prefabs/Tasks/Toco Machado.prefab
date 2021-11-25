@@ -117,6 +117,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b7eea5ec597a00147900aa660aba95ed, type: 3}
   - {fileID: 21300000, guid: 5c9a8e113809e5046a024916b8615a66, type: 3}
   chopTask: {fileID: 0}
+  chopPosition: {fileID: 0}
 --- !u!1001 &4405851962541621055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +132,10 @@ PrefabInstance:
     - target: {fileID: 1542309526447554819, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_Name
       value: Interaction Canvas Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542309526447554819, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2214162006278168287, guid: a85f3f6e784887f44b11f2d4d2a54169, type: 3}
       propertyPath: m_RootOrder

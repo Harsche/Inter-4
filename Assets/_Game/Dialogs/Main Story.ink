@@ -1,8 +1,15 @@
 VAR GameDay = 1
 VAR lostKey = false
 VAR filledWaterBox = false
+VAR woodChopped = 0
+
+VAR chopTask = false
+
 CONST DAY = "Day"
 CONST NIGHT = "Night"
+
+CONST PLAYERBUCKET = "Bucket"
+CONST PLAYERMLIK = "Milk"
 
 // House 1 = Luiz
 // House 2 = Seu João
@@ -21,7 +28,7 @@ EXTERNAL CloseDialog()
 EXTERNAL Debug(value)
 EXTERNAL ChangeGameDay(GameDay)
 EXTERNAL ChangeDayTime(Time)
-EXTERNAL ChangePlayerAnim(parameter, value)
+EXTERNAL SetPlayerAnimatorBool(parameter, value)
 
 INCLUDE Characters\Luiz.ink
 INCLUDE Characters\DonaCida.ink
@@ -71,6 +78,8 @@ Dona Maria: Ô, meu bem. Pode tirá um poco de leite da Dondoca e trazê pra mim
 - else:
 Dona Maria: Pronto, meu fi, pode ir faze suas coisa. Só não vai longe, tá?
 Luiz: Sim, senhora!
+~ SetPlayerAnimatorBool(PLAYERBUCKET, false)
+~ SetPlayerAnimatorBool(PLAYERMLIK, false)
 ~ ChooseCutscene(0)
 -> DONE
 }
@@ -215,5 +224,5 @@ Luiz: Acho melhor pegar um balde primeiro.
 == function ChangeDayTime(time)
 ~ return
 
-== function ChangePlayerAnim(parameter, value)
+== function SetPlayerAnimatorBool(parameter, value)
 ~ return

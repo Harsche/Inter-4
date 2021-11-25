@@ -52,7 +52,8 @@ public class CutsceneManager : MonoBehaviour
 
     public void SetCutscenePlayable(string cutsceneNumber)
     {
-        CutsceneStatus status = GetCutsceneStatus(cutsceneNumber);
+        string cutsceneName = "Cutscene_" + cutsceneNumber;
+        CutsceneStatus status = GetCutsceneStatus(cutsceneName);
         status.state = CutsceneState.CanPlay;
     }
 

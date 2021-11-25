@@ -23,7 +23,11 @@ public class Cutscene : MonoBehaviour
     {
         if (storyCutscene)
         {
-            if (Globals.CutsceneManager.WasPlayedOrCantPlay(gameObject.name)) Destroy(gameObject);
+            if (Globals.CutsceneManager.WasPlayedOrCantPlay(gameObject.name))
+            {
+                Destroy(gameObject);
+                return;
+            }
             cutsceneNum = float.Parse(name.Substring(9));
         }
         CutsceneManager.OnCallTriggerCutscene += PlayCutsceneIfTriggered;

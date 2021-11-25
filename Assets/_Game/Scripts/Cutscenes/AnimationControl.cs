@@ -93,18 +93,7 @@ public class AnimationControl : MonoBehaviour
     {
         anim.Play(animationName);
     }
-
-    public void ChangePlayerParameter<T>(string parameterName, T value)
-    {
-        TypeCode paramType = Type.GetTypeCode(value.GetType());
-        switch(paramType)
-        {
-            case TypeCode.Boolean:
-                anim.SetBool(parameterName, Convert.ToBoolean(value));
-                break;
-        }
-    }
-
+    
     public void FlipX(bool flip)
     {
         spriteRenderer.flipX = flip;

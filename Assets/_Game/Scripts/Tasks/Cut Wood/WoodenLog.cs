@@ -22,10 +22,18 @@ public class WoodenLog : MonoBehaviour
 
     }
 
+    private void ToggleTask(bool toggle)
+    {
+        for (int i = 0; i < transform.childCount; i++)
+            transform.GetChild(i).gameObject.SetActive(toggle);
+    }
+
     private void Start()
     {
         playerMovement = Globals.Player.GetComponent<Movement>();
         playerRigidbody2D = Globals.Player.GetComponent<Rigidbody2D>();
+        Globals.DialogManager.story.ObserveVariable("chopTask", (string varName, object value) => { ToggleTask((bool)value); });
+        ToggleTask(false);
     }
 
     public void ChangeAxe()
@@ -61,6 +69,7 @@ public class WoodenLog : MonoBehaviour
 
     public void ReadyToCutWood()
     {
+        Movement.PlayerMovement.animateByTransform = false;
         Player.animationControl.PlayByName(axeUp);
         Player.animationControl.spriteRenderer.flipX = false;
         chopTask.StartTask();

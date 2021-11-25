@@ -20,7 +20,7 @@ public class DialogManager : MonoBehaviour
     private Movement playerMovement;
     private StringBuilder charName = new StringBuilder();
     private StringBuilder charLine = new StringBuilder();
-    private Story story;
+    public Story story {get; private set;}
     private static StoryData storyData;
     private static string myGuid;
     private bool displayingChoices;
@@ -174,6 +174,7 @@ public class DialogManager : MonoBehaviour
         story.BindExternalFunction("ChangeGameDay", (int day) => { GameDay++; Debug.Log("CHANGED DAY " + day); });
         story.BindExternalFunction("ChangeDayTime", (string time) => { Player.ChangeDayTime((DayTime)Enum.Parse(typeof(DayTime), time)); });
         story.BindExternalFunction("SetCutscenePlayable", (string cutsceneNum) => { Globals.CutsceneManager.SetCutscenePlayable(cutsceneNum); });
+        story.BindExternalFunction("SetPlayerAnimatorBool", (string parameter, bool value) => { Player.animationControl.anim.SetBool(parameter, value); });
     }
 
     public void OpenDialog()
