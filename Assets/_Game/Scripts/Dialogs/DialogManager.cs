@@ -20,10 +20,14 @@ public class DialogManager : MonoBehaviour
     private Movement playerMovement;
     private StringBuilder charName = new StringBuilder();
     private StringBuilder charLine = new StringBuilder();
-    public Story story {get; private set;}
+    public Story story { get; private set; }
     private static StoryData storyData;
     private static string myGuid;
     private bool displayingChoices;
+    public static StoryVariableStates VariableStates { get; private set; } = new StoryVariableStates();
+    public event EventHandler VariablesChanged;
+    public static event Action<Story> OnCreateStory;
+    public static bool DialogOpened {get; private set;}
 
     private void Awake()
     {
@@ -53,6 +57,8 @@ public class DialogManager : MonoBehaviour
 
         story = new Story(storyJson.text);
         BindMethods();
+        ObserveVariables();
+        OnCreateStory?.Invoke(story);
 
         if (story != null && !String.IsNullOrEmpty(storyData.jsonStory))
         {
@@ -152,8 +158,8 @@ public class DialogManager : MonoBehaviour
 
     public void StartDialog(string inkKnot)
     {
-        Globals.DialogManager.JumpTo(inkKnot);
         Globals.DialogManager.OpenDialog();
+        Globals.DialogManager.JumpTo(inkKnot);
     }
 
     public void JumpTo(string inkKnot)
@@ -177,6 +183,16 @@ public class DialogManager : MonoBehaviour
         story.BindExternalFunction("SetPlayerAnimatorBool", (string parameter, bool value) => { Player.animationControl.anim.SetBool(parameter, value); });
     }
 
+    private void ObserveVariables()
+    {
+        story.ObserveVariable("chopTask", (string varName, object value) => { VariableStates.chopTask = (bool)value; NotifyVariableChange(); });
+    }
+
+    public void NotifyVariableChange()
+    {
+        VariablesChanged?.Invoke(this, EventArgs.Empty);
+    }
+
     public void OpenDialog()
     {
         enableTime = Time.time;
@@ -185,6 +201,7 @@ public class DialogManager : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(true);
         }
         myCanvas.enabled = true;
+        DialogOpened = false;
         //playerMovement.canMove = false;
     }
 
@@ -196,11 +213,13 @@ public class DialogManager : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(false);
         }
         myCanvas.enabled = false;
+        DialogOpened = false;
         //playerMovement.canMove = true;
 
         if (TalkingNPC != null)
         {
-            TalkingNPC.GetComponent<NPC_Movement>().enabled = true;
+            //TalkingNPC.GetComponent<NPC_Movement>().enabled = true;
+            TalkingNPC.GetComponent<NPC_Movement>().enabled = false;
             TalkingNPC = null;
         }
     }
@@ -215,4 +234,9 @@ public class StoryData : ObjectData
     {
         GameDay = 1;
     }
+}
+
+public class StoryVariableStates
+{
+    public bool chopTask;
 }

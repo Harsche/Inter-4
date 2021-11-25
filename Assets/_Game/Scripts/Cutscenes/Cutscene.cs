@@ -2,6 +2,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
+using System.Globalization;
 
 public class Cutscene : MonoBehaviour
 {
@@ -28,16 +29,16 @@ public class Cutscene : MonoBehaviour
                 Destroy(gameObject);
                 return;
             }
-            cutsceneNum = float.Parse(name.Substring(9));
+            cutsceneNum = float.Parse(name.Substring(9), CultureInfo.InvariantCulture);
         }
         CutsceneManager.OnCallTriggerCutscene += PlayCutsceneIfTriggered;
 
         playableDirector = GetComponent<PlayableDirector>();
-        
+
         cutscene = playableDirector.playableAsset as TimelineAsset;
         cutsceneTracks = (TrackAsset[])cutscene.GetOutputTracks();
 
-        playableDirector.played += (director) => { isPlaying = true; };
+        playableDirector.played += (director) => { isPlaying = true; DontDestroyOnLoad(gameObject); };
         playableDirector.stopped += (director) => { isPlaying = false; };
     }
 
@@ -49,9 +50,13 @@ public class Cutscene : MonoBehaviour
             isPlaying = true;
         }
         transform.SetParent(null);
-        DontDestroyOnLoad(gameObject);
         BindTimelineTracks();
         DeleteCharactersWithName();
+    }
+
+    private void OnDestroy() {
+        CutsceneManager.OnCallTriggerCutscene -= PlayCutsceneIfTriggered;
+
     }
 
     public void PlayCutsceneIfTriggered(float cutsceneNum)
@@ -73,10 +78,10 @@ public class Cutscene : MonoBehaviour
 
     public void DeleteCharactersWithName()
     {
-        if(deleteCharactersWithName == null)
+        if (deleteCharactersWithName == null)
             return;
         GameObject[] currentCharacters = CharacterManager.Instance.currentCharacters.ToArray();
-        foreach(GameObject character in currentCharacters)
+        foreach (GameObject character in currentCharacters)
             Destroy(character);
     }
 
@@ -146,9 +151,11 @@ public class Cutscene : MonoBehaviour
 
     public void StartDialog(string inkKnot)
     {
+        if (DialogManager.DialogOpened)
+            return;
         inkKnot = inkKnot.Replace(' ', '_');
-        Globals.DialogManager.JumpTo(inkKnot);
         Globals.DialogManager.OpenDialog();
+        Globals.DialogManager.JumpTo(inkKnot);
     }
 
     public void OpenDialog()

@@ -14,38 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterInformation:
   - presentScene: 
-    character: {fileID: 0}
+    character: {fileID: 5153578617845332810, guid: 16a5e5d031e434543b4706cb697a5a98, type: 3}
     characterPosition: {x: 0, y: 0}
   - presentScene: 
-    character: {fileID: 0}
+    character: {fileID: 428415062767704459, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
     characterPosition: {x: -9.44, y: -3.040001}
   - presentScene: 
-    character: {fileID: 0}
+    character: {fileID: 2001151654592404638, guid: c5275cdd30fae4b4292d9b8a7d8df5cc, type: 3}
     characterPosition: {x: 0, y: 0}
-  - presentScene: 
-    character: {fileID: 0}
+  - presentScene: House_1
+    character: {fileID: 4644690052340019217, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
     characterPosition: {x: 0, y: -3.03}
   - presentScene: 
-    character: {fileID: 0}
+    character: {fileID: 1003971804574667921, guid: 8711a07917e01d84fa8aa9c89745666e, type: 3}
     characterPosition: {x: 0, y: 0}
   - presentScene: 
-    character: {fileID: 0}
+    character: {fileID: 1604165698838864253, guid: a88bf55be81f882499c1ac856d0c0a89, type: 3}
     characterPosition: {x: 0, y: 0}
   - presentScene: 
-    character: {fileID: 0}
+    character: {fileID: 3884357566645730381, guid: a53102c5b78386545a206a3bc7d2f0a0, type: 3}
     characterPosition: {x: 0, y: 0}
   - presentScene: 
-    character: {fileID: 0}
+    character: {fileID: 1648546401117152831, guid: 197ad16bb32e51345a68a268a4bb8ec9, type: 3}
     characterPosition: {x: 0, y: 0}
   - presentScene: 
-    character: {fileID: 0}
+    character: {fileID: 3444110319969164068, guid: 739e504b8f162a340b1a1c486a65c1fc, type: 3}
+    characterPosition: {x: -4.21, y: -3.03}
+  - presentScene: 
+    character: {fileID: 6454336064142782448, guid: 56e67fb1f40a94743b69421d1c08bb0c, type: 3}
     characterPosition: {x: 0, y: 0}
   - presentScene: 
-    character: {fileID: 0}
+    character: {fileID: 7253663636425622137, guid: 4d92ca32a8e00e94e9beda84f8aabf9d, type: 3}
     characterPosition: {x: 0, y: 0}
   - presentScene: 
-    character: {fileID: 0}
-    characterPosition: {x: 0, y: 0}
-  - presentScene: 
-    character: {fileID: 0}
+    character: {fileID: 8712271811442902720, guid: 02b7d2b47e8b7814ab24110bb3fe9cd5, type: 3}
     characterPosition: {x: 0, y: 0}

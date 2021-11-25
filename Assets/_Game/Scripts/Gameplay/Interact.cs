@@ -33,7 +33,6 @@ public class Interact : MonoBehaviour
         //Globals.DialogManager.SetStory(myStory);
         Globals.DialogManager.OpenDialog();
         Globals.DialogManager.JumpTo(storyKnot);
-        
 
         if(isNPC)
         {

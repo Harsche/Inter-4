@@ -29,6 +29,8 @@ MonoBehaviour:
     state: 0
   - cutsceneNumber: 07
     state: 0
+  - cutsceneNumber: 07.5
+    state: 0
   - cutsceneNumber: 08
     state: 0
   - cutsceneNumber: 09

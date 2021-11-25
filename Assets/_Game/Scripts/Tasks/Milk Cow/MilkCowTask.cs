@@ -34,12 +34,17 @@ public class MilkCowTask : MonoBehaviour
 
     public void TriggerTask()
     {
-        if(!Movement.anim.GetBool(bucket))
+        if (!Movement.anim.GetBool(bucket))
         {
             Globals.DialogManager.StartDialog(noBucket);
             return;
         }
-        CutsceneManager.TriggerCutscene(2);
+        if (DialogManager.GameDay == 1)
+        {
+            CutsceneManager.TriggerCutscene(2);
+            return;
+        }
+        CutsceneManager.TriggerCutscene(07.5f);
     }
 
     public void StartTask()
@@ -61,6 +66,8 @@ public class MilkCowTask : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(false);
         }
         Movement.anim.SetBool(milk, true);
+        if(DialogManager.GameDay == 2)
+            Globals.DialogManager.StartDialog("Cow");
     }
 
     public void SwipeUp(LeanFinger finger)
@@ -95,28 +102,35 @@ public class MilkCowTask : MonoBehaviour
 
     public void TakeMilk()
     {
-        if(Mathf.Equals(milkAmount, 1f) || milkAmount > 1f)
+        if (Mathf.Equals(milkAmount, 1f) || milkAmount > 1f)
             return;
         if (!(swipedUp.swiped && swipedDown.swiped))
             return;
-        DoMilkAnimation();
         milkAmount += 1f / timesToMilk;
-        Tween gaugeTween = milkSlider.DOValue(milkAmount, 0.3f);
+        DoMilkAnimation();
+        float tweenValue = 0f;
+        if (DialogManager.GameDay == 1)
+            tweenValue = milkAmount;
+        if (DialogManager.GameDay == 2)
+            tweenValue = Mathf.Clamp(milkAmount, 0f, 0.4f);
+        Tween gaugeTween = milkSlider.DOValue(tweenValue, 0.3f); 
         gaugeTween.OnComplete(() => CheckAmount());
     }
 
     public void CheckAmount()
     {
-        if(Mathf.Equals(milkAmount, 1f) || milkAmount > 1f)
+        if (Mathf.Equals(milkAmount, 1f) || milkAmount > 1f)
             EndTask();
     }
 
     public void DoMilkAnimation()
     {
         string trigger = milkLeftOrRight ? "Left" : "Right";
-        milkAnimator.SetTrigger(trigger);
         backgroundAnimator.SetTrigger(trigger);
         milkLeftOrRight = !milkLeftOrRight;
+        if(DialogManager.GameDay == 2 && milkAmount > 0.4f)
+            return;
+        milkAnimator.SetTrigger(trigger);
     }
 
     private IEnumerator DisableCanvas()

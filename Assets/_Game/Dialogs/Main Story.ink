@@ -2,6 +2,7 @@ VAR GameDay = 1
 VAR lostKey = false
 VAR filledWaterBox = false
 VAR woodChopped = 0
+VAR milkDay2 = false
 
 VAR chopTask = false
 
@@ -9,6 +10,7 @@ CONST DAY = "Day"
 CONST NIGHT = "Night"
 
 CONST PLAYERBUCKET = "Bucket"
+CONST PLAYERAXE = "Axe"
 CONST PLAYERMLIK = "Milk"
 
 // House 1 = Luiz
@@ -187,7 +189,7 @@ Luiz: Acho melhor pegar um balde primeiro.
 
 === House_06
 {GameDay:
--   1:  ~ PlayCutscene(5) //-> Other_Dialogs.No_One_Home
+-   1:  -> Other_Dialogs.No_One_Home
         -> DONE
 -   2: {Seu_Joao_Day_02.D01 && Dona_Cicera_Day_02.D01: -> Dona_Helena_Day_02.At_Night} -> Other_Dialogs.No_One_Home
 -   3: -> SEU_JOSE

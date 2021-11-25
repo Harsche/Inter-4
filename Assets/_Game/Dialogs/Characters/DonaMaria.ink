@@ -26,10 +26,12 @@ Dona Maria: A mainha não quer não, meu bem.
 ~ ResumeTimeline()
 ~ GameDay = 2
 ~ ChangeGameDay(GameDay)
+~ ChangeDayTime(DAY)
 ->DONE
 
 === Dona_Maria_Day_02 ===
-{Getting_Dark == 2: -> At_Night} 
+{Getting_Dark == 2: -> At_Night}
+{milkDay2 == false && D03: -> Milk_Day_02}
 {Dona_Maria_Day_02:
 -   1:  -> D01
 -   2:  -> D02
@@ -56,6 +58,19 @@ Dona Maria: Luiz, eu vou pra casa, to me sentindo um tanto estranha.
 Dona Maria: Não se esqueça de tirar o leite pros seus irmão.
 Luiz: Podeixa, mainha!
 ~ ResumeTimeline()
+-> DONE
+
+= Milk_Day_02
+{not Cow_Day_02.D01:
+Dona Maria: Ô, meu bem. Pode tirá um poco de leite da Dondoca e trazê pra mim prepará o café da manhã?
+-> DONE
+}
+Dona Maria: Pronto, meu fi, pode ir faze suas coisa. Só não vai longe, tá?
+Luiz: Sim, senhora!
+~ milkDay2 = true
+~ SetPlayerAnimatorBool(PLAYERBUCKET, false)
+~ SetPlayerAnimatorBool(PLAYERMLIK, false)
+~ ChooseCutscene(0)
 ->DONE
 
 = At_Night

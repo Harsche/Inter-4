@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Playables;
 using DG.Tweening;
+using System;
 
 public class WoodenLog : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class WoodenLog : MonoBehaviour
     private SpriteRenderer mySpriteRenderer;
     private PlayableDirector myPlayableDirector;
     private static bool playerWithAxe;
+    private static bool taskActive;
     private const string axeUp = "Luiz_Subindo_Machado";
     private const string noAxe = "Other_Dialogs.Need_Axe";
 
@@ -19,21 +21,31 @@ public class WoodenLog : MonoBehaviour
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         myPlayableDirector = GetComponent<PlayableDirector>();
-
-    }
-
-    private void ToggleTask(bool toggle)
-    {
-        for (int i = 0; i < transform.childCount; i++)
-            transform.GetChild(i).gameObject.SetActive(toggle);
+        taskActive = DialogManager.VariableStates.chopTask;
+        Globals.DialogManager.VariablesChanged += WatchChopTaskActivated;
     }
 
     private void Start()
     {
         playerMovement = Globals.Player.GetComponent<Movement>();
         playerRigidbody2D = Globals.Player.GetComponent<Rigidbody2D>();
-        Globals.DialogManager.story.ObserveVariable("chopTask", (string varName, object value) => { ToggleTask((bool)value); });
-        ToggleTask(false);
+        ToggleTask(taskActive);
+    }
+
+    private void OnDestroy() {
+        Globals.DialogManager.VariablesChanged -= WatchChopTaskActivated;
+    }
+
+    private void WatchChopTaskActivated(object sender, EventArgs args)
+    {
+        taskActive = DialogManager.VariableStates.chopTask;
+        ToggleTask(taskActive);
+    }
+
+    private void ToggleTask(bool toggle)
+    {
+        for (int i = 0; i < transform.childCount; i++)
+            transform.GetChild(i).gameObject.SetActive(toggle);
     }
 
     public void ChangeAxe()

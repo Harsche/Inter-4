@@ -16,6 +16,7 @@ Luiz: Já está escurecendo... é melhor eu ir pra casa!
 Dona Maria: Entra, meu fi! Já ta tarde!
 ~ SetCutscenePlayable("05")
 }
+~ ChangeDayTime(NIGHT)
 -> DONE
 
 === Luiz_Day_01 ===

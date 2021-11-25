@@ -9,10 +9,11 @@
 {woodChopped == 3: -> Chopped_Wood}
 {Seu_Joao_Day_01:
 -   1:  -> D01
--   else:   -> Random_Dialog
+-   else:   -> Seu_Joao_Random_Dialog
 }
 
 = D01
+~ PauseTimeline()
 Seu João: Aooo, Luizinho! Como que cê ta, ein?
 Luiz: Aooooo, seu João! Eu to bem, e o sinhô?
 Luiz: Vim saber se posso ajudar o sinhô com o carvão hoje. To precisando...
@@ -21,6 +22,7 @@ Seu João: Quase ninguém ta comprando carvão... eu num tenho como te paga, Lui
 Luiz: Eu te ajudo, Seu João!
 Seu João: Tem certeza, fi?
 Luiz: Tenho sim!
+~ ResumeTimeline()
 ~ chopTask = true
 -> DONE
 
@@ -31,26 +33,15 @@ Seu João: Num queria te deixar ir de mão abanando, então fica com essas romã
 Seu João: Eu consegui elas trocando carvão lá na cidade. Leva pro cê e pra sua família!
 Luiz: Obrigado, seu João!
 Seu João: Não tem de que, Luizinho!
--> LUIZ
+~ SetPlayerAnimatorBool(PLAYERAXE, false)
+{Dona_Cida_Day_01.D01 : -> Luiz}
+-> DONE
 
-= Random_Dialog
-
-{ shuffle once:
-
--   Seu João: Sabe, Luiz, quando eu era pequeno, eu jogava bola com o Seu Miguel. A gente era craque!
-    ->DONE
--   Seu João: Quando a chuva vier, ela vai enche o lago e a gente vai poder volta a plantar!
-    ->DONE
--   Seu João: Vender carvão tem sido o único jeito de conseguir me manter... Obrigado por me ajudar nisso, Luiz!
-    ->DONE
--   Seu João: A sua mãe foi uma muié guerreira desde sempre, ela te criou muito bem!
-    ->DONE
-}
 
 === Seu_Joao_Day_02 ===
 {Seu_Joao_Day_02:
 -   1:  -> D01
--   else:   -> Random_Dialog
+-   else:   -> Seu_Joao_Random_Dialog
 }
 
 = D01
@@ -62,13 +53,11 @@ Luiz: Tudo bem, Seu João! Obrigada mesmo assim!
 Seu João: De nada, fi! Sinto muito...
 -> Getting_Dark
 
-= Random_Dialog
--> DONE
 
 === Seu_Joao_Day_03 ===
 {Seu_Joao_Day_03:
 -   1:  -> D01
--   else:   -> Random_Dialog
+-   else:   -> Seu_Joao_Random_Dialog
 }
 
 = D01
@@ -87,8 +76,16 @@ Luiz: Que Deus lhe ouça...
 Seu João: Se precisar de alguma coisa, eu vou estar lá em casa.
 -> Getting_Dark
 
-= Random_Dialog
--> DONE
 
+=== Seu_Joao_Random_Dialog ===
+{ shuffle once:
 
-
+-   Seu João: Sabe, Luiz, quando eu era pequeno, eu jogava bola com o Seu Miguel. A gente era craque!
+    ->DONE
+-   Seu João: Quando a chuva vier, ela vai enche o lago e a gente vai poder volta a plantar!
+    ->DONE
+-   Seu João: Vender carvão tem sido o único jeito de conseguir me manter... Obrigado por me ajudar nisso, Luiz!
+    ->DONE
+-   Seu João: A sua mãe foi uma muié guerreira desde sempre, ela te criou muito bem!
+    ->DONE
+}

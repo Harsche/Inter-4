@@ -31,6 +31,7 @@ Dona Cida: Eles vão passar uns dias lá... Ocê quer entrar toma um café?
     Luiz: Brigada, Dona Cida! Eu já vou indo! Fique com Deus.
     Dona Cida: Vá com Deus, Luiz!
     ~ ResumeTimeline()
+    {Seu_Joao_Day_01.Chopped_Wood: -> LUIZ}
     ->DONE
 *   [Melhor não]
     ~ ChooseCutscene(1)
@@ -38,6 +39,7 @@ Dona Cida: Eles vão passar uns dias lá... Ocê quer entrar toma um café?
     Luiz: Não se incomode não, Dona Cida! Eu passo aqui outra hora!
     Dona Cida: Ta bom, Luizinho!
     ~ ResumeTimeline()
+    {Seu_Joao_Day_01.Chopped_Wood: -> LUIZ}
     ->DONE
     
 = Random_Dialog
@@ -162,3 +164,4 @@ Luiz: Disponha!
 
 = Random_Dialog
 -> DONE
+
