@@ -56,16 +56,6 @@ Dona Cida: Eles vão passar uns dias lá... Ocê quer entrar toma um café?
     ->DONE
 }
 
-=== Pegar_Galinhas ===
-
-= D01
-Luiz: Eita! DONA CIDA, AS GALINHA DA SENHORA TÃO TUDO SOLTA AQUI!!!
-Dona Cida: Oh meu Deus! Elas escaparam!
-Luiz: Eu vou pegar elas pra senhora.
-Dona Cida: É muito dificil pegar galinha, Luiz. São ligeiras demais.
-Luiz: Então eu vou tentar só tocar elas pra dentro do cercado de novo.
-->DONE
-
 = D02
 ->DONE
 
@@ -124,9 +114,11 @@ Dona Cida: Quando eu era criança, contavam várias lendas aqui do sertão, eu a
 }
 
 = D01
+~ PauseTimeline()
 Dona Cida: Opa, Luiz. Como sua mãe ta, fi?
 Luiz: Ela piorou, Dona Cida...
 Dona Cida: Vem, fi.
+~ ResumeTimeline()
 -> D02
 
 = D02
@@ -149,12 +141,14 @@ Dona Cida: Vá lá, meu fi!
 -> D03
 
 = D03
+~ PauseTimeline()
 Luiz: Eita! DONA CIDA, AS GALINHA DA SENHORA TÃO TUDO SOLTA AQUI!
 Dona Cida: Oh meu Deus! Elas escaparam!
 Luiz: Eu vou pegar elas pra senhora.
 Dona Cida: É muito dificil pegar galinha, Luiz. São ligeiras demais.
 Luiz: Então eu vou tentar só tocar elas pra dentro do cercado de novo.
 JOGO: (Minigame de pegar as galinhas)
+~ ResumeTimeline()
 -> Returned_Chickens
 
 = Returned_Chickens

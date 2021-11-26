@@ -23,6 +23,7 @@
 }
 
 = D01
+~ PauseTimeline()
 Luiz: Oi, Dona Cícera! A senhora ta bem? Porque a senhora ta aqui fora?
 Dona Cícera: LUIZ! Que bom que ocê apareceu, meu fi!
 Dona Cícera: Eu perdi a chave de casa e to trancada pra fora!
@@ -34,6 +35,7 @@ Dona Cícera: Acontece que nessa idade é complicado procurar uma coisinha tão 
     Dona Cícera: Andei o vilarejo inteiro pela manhã.
     Luiz: Não se preocupa, Dona Cícera!
     Luiz: Vou encontrar a chave e já trago pra senhora!
+    ~ ResumeTimeline()
     -> DONE
 *   [Não ajudar]
     Luiz: Que pena, Dona Cícera!
@@ -43,6 +45,7 @@ Dona Cícera: Acontece que nessa idade é complicado procurar uma coisinha tão 
     Dona Cícera: Volta mais tarde que provavelmente á vou ter achado a chave.
     Luiz: Ta bom. Obrigado, Dona Cícera!
     ~ ciceraFoundKey = true
+    ~ ResumeTimeline()
     -> DONE
 
 = Help_Make_Basket_01
@@ -73,11 +76,13 @@ Dona Cícera: Eu que agradeço, Luiz!
 
 = Found_Key
 {Help_Make_Basket_01: -> Dona_Cicera_Random_Dialog}
+~ PauseTimeline()
 Luiz: Tá aqui a chave, Dona Cícera!
 Dona Cícera: Obrigada, Luizinho! Ocê salvou meu dia!
 Luiz: Fico feliz, Dona Cícera!
 Luiz: Aliás, eu queria saber se a senhora vai querer ajuda pra fazer as cestas de bambu seco.
 Dona Cícera: Se ocê puder eu aceito sim! Vamo entrar.
+~ ResumeTimeline()
 ~ lostKey = false
 ~ PlayCutscene(8)
 -> DONE

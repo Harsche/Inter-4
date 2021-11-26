@@ -79,9 +79,11 @@ Luiz: Ajudo sim, Dona Helena, vamos lá!
 }
 
 = D01
+~ PauseTimeline()
 Dona Helena: Oi, Luiz!
 Luiz: Opa, Dona Helena! Vim ver se Seu Zé já voltou! Preciso demais falar com ele!
 Dona Helena: Luiz, ele ainda não chegou, mas deve chegar logo. Entra pra esperar, fi.
+~ ResumeTimeline()
 -> D02
 
 = D02

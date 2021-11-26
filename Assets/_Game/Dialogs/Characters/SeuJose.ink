@@ -18,7 +18,7 @@
     ->DONE
 -   Seu José: Eu e a Lena gostávamos de correr na chuva quando éramos mais jovens. Esses dias eram incríveis.
     ->DONE
--   Seu José: Eu herdei a carroça do meu painho... E o meu cavalin, o Raio, também.
+-   Seu José: Eu herdei a carroça do meu painho... E o meu jeguin, o Raio, também.
     ->DONE
 -   Seu José: Graças a Deus eu ainda consigo vender algumas coisinhas lá na cidade. Até a seca passar, esse tem sido o único jeito de tocar a vida.
     ->DONE
@@ -33,12 +33,14 @@
 }
 
 = D01
+~ PauseTimeline()
 Luiz: Opa, Seu Zé! Ta bão?
 Seu José: Aoooo, Luizinho! Eu to bão, e ocê?
 Luiz: To bão, uai!
 Seu José: Vamo lá, Luiz! Ocê pega as coisas mais leves e vai colocando na carroça.
 Seu José: Eu vou buscar as coisas mais pesadas.
 Luiz: Podeixa, Seu Zé!
+~ ResumeTimeline()
 ~ PlayCutscene(15)
 -> DONE
 
@@ -60,10 +62,12 @@ Luiz: Ta bem, seu Zé! Muito obrigado!
 -> DONE
 
 = D03
+~ PauseTimeline()
 Seu José: Bom, terminamo aqui, Luiz! Eu já vou indo!
 Seu José: Volto amanhã, se Deus quiser com a erva cidreira pra sua mãe!
 Dona Helena: Isso mesmo! E Luiz, fica com essas macaxeiras, por ter ajudado o Zé!
 Luiz: Oh, Dona Helena, muito obrigado!
+~ ResumeTimeline()
 -> DONE
 
 = Random_Dialog
