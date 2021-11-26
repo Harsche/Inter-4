@@ -1805,6 +1805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Luisa
       objectReference: {fileID: 0}
+    - target: {fileID: 1604165698838864253, guid: a88bf55be81f882499c1ac856d0c0a89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4107420278172667616, guid: a88bf55be81f882499c1ac856d0c0a89, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1843,7 +1847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &528585879
 Transform:
   m_ObjectHideFlags: 0
@@ -2062,6 +2066,10 @@ PrefabInstance:
     - target: {fileID: 1648546401117152831, guid: 197ad16bb32e51345a68a268a4bb8ec9, type: 3}
       propertyPath: m_Name
       value: Pedro
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648546401117152831, guid: 197ad16bb32e51345a68a268a4bb8ec9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4153313882343590306, guid: 197ad16bb32e51345a68a268a4bb8ec9, type: 3}
       propertyPath: m_IsActive
@@ -4368,6 +4376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caramelo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3402308421271960224, guid: 48b534623d8014e4c92a88d14f292bfd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3402308421271960231, guid: 48b534623d8014e4c92a88d14f292bfd, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -4840,7 +4852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1101231940
 Transform:
   m_ObjectHideFlags: 0
@@ -6628,6 +6640,10 @@ PrefabInstance:
     - target: {fileID: 2391333265179437772, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
       propertyPath: m_Name
       value: Canvas_Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391333265179437772, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3475886065368583011, guid: 5075ab4d40c551f4083f9d8a01788b9d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -10253,6 +10269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Joao
       objectReference: {fileID: 0}
+    - target: {fileID: 1003971804574667921, guid: 8711a07917e01d84fa8aa9c89745666e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1003971804574667926, guid: 8711a07917e01d84fa8aa9c89745666e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -10460,6 +10480,10 @@ PrefabInstance:
     - target: {fileID: 4644690052340019217, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_Name
       value: Dona Maria
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644690052340019217, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4644690052340019221, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_FlipX
@@ -11253,7 +11277,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 0c01b875bc4c6b944ad6c80fb7ee3134, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -12192,6 +12216,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: f2300e38005e8564c904ea5a4a47bc76, type: 2}
     - {fileID: 11400000, guid: dd254cfd8a3d0704bb27a2fe465e3de1, type: 2}
     - {fileID: 11400000, guid: 8d58fbba797d00c43bca5d230f6990b0, type: 2}
+    - {fileID: 11400000, guid: 9cc9dcb31e3f7dd4ca600567f8a6fb21, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -12249,6 +12274,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7432433184438795725}
+          m_TargetAssemblyTypeName: Cutscene, Assembly-CSharp
+          m_MethodName: LoadScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: House_1
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &7641841847119062796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12296,7 +12335,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: dd79176137047794baeee636558e3a1a, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0

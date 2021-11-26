@@ -89,10 +89,11 @@ Dona Maria: Então ta bom! Muito obrigada, fi.
 
 = At_Night_02
 ~ PauseTimeline()
-JOGO: Há um prato de arroz e farinha. A panela de arroz está vazia.
+JOGO: Há um prato de feijão e farinha. A panela de feijão está vazia.
 JOGO: Temos apenas farinha a partir de agora...
 ~ GameDay = 3
 ~ ChangeGameDay(GameDay)
+~ ChangeDayTime(DAY)
 ~ ResumeTimeline()
 -> DONE
 
@@ -100,17 +101,25 @@ JOGO: Temos apenas farinha a partir de agora...
 {Getting_Dark == 3: -> At_Night}
 {Dona_Maria_Day_03:
 -   1:  ->D01
+-   2:  ->D02
 }
 
 = D01
+~ PauseTimeline()
 Luiz: Mainha? Senhora ta bem?
 Dona Maria: Oh, Luizinho, to sim... só to me sentindo mei fraca.
+~ ResumeTimeline()
+-> DONE
+
+= D02
+~ PauseTimeline()
 JOGO: A testa dela está quente...
 Luiz: Mainha, a senhora ta com febre...
 Dona Maria: Não se preocupa, meu bem. Logo a mainha melhora!
 Dona Maria: Eu to é com uma dor de cabeça daquelas...
 Dona Maria: Fala com Seu Miguel pra mim, pergunta de algum remédio.
 Luiz: Podeixa, mainha!
+~ ResumeTimeline()
 -> DONE
 
 = At_Night
@@ -120,11 +129,12 @@ Luiz: Sou eu sim, mainha. Eu to aqui...
 Luiz: Eu falei com Seu Miguel, ele mandou esse chá de Capim Santo pra senhora.
 Dona Maria: Obrigada, meu fi. Hoje, a gente só tem um pouco de farinha.
 Dona Maria: Mas a mainha deixou seu pratinho separado ali na pia...
-Pedro: Mainha... a gente não tem mais arroz?
+Pedro: Mainha... a gente não tem mais feijão?
 Dona Maria: Acabou ontem, meu fi... mainha vai conseguir mais assim que ficar melhor.
 Dona Maria: A mãe promete, tá?
 ~ GameDay = 4
 ~ ChangeGameDay(GameDay)
+~ ChangeDayTime(DAY)
 ->DONE
 
 === Dona_Maria_Day_04 ===
@@ -153,11 +163,13 @@ Luiz: Consegui fazendo uns trabalhinhos! Venham cá que eu vou dividir!
     Luiz: Que Deus nos ajude.
     ~ GameDay = 5
     ~ ChangeGameDay(GameDay)
+    ~ ChangeDayTime(DAY)
     -> DONE
 *   [Há pouca comida]
     // ~ ChooseCutscene(1)
     ~ GameDay = 5
     ~ ChangeGameDay(GameDay)
+    ~ ChangeDayTime(DAY)
     -> DONE
 
 === Dona_Maria_Day_05 ===

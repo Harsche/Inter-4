@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: a1b632e6e19dc624c952a841364fc2be, type: 3}
-    totalSpriteSurfaceArea: 222189
+    totalSpriteSurfaceArea: 242889
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -52,6 +52,7 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 8b20441043dbbd6408accbf9ee81b9be, type: 3}
   - {fileID: 21300000, guid: 8eca1a7079fd34641bbf9c608e316fd8, type: 3}
+  - {fileID: 21300000, guid: f8698c70c1eede4489b68df0107b9109, type: 3}
   - {fileID: 21300000, guid: 9d8b6501b5d272f44840a7090001f92f, type: 3}
   - {fileID: 21300000, guid: b77780113a54b194eb84e67b947d0774, type: 3}
   - {fileID: 21300000, guid: f83851516998eb84c9635465ec49bddc, type: 3}
@@ -84,6 +85,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f565c46700a3ef940b03e87637cccb38, type: 3}
   - {fileID: 21300000, guid: 03003b7779067484fb4f86acc5e64b9f, type: 3}
   - {fileID: 21300000, guid: 2196eb8779de77141874a2585f36abd9, type: 3}
+  - {fileID: 21300000, guid: 993cd268fc05bca4399d6c4057478390, type: 3}
   - {fileID: 21300000, guid: 77505c68a230044408fd8c55a0b1e616, type: 3}
   - {fileID: 21300000, guid: 0d50de8834d720342b4e151b6bb09461, type: 3}
   - {fileID: 21300000, guid: 4ee71d984225428498cd628f3bc85592, type: 3}
@@ -121,9 +123,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a778036f47ca80a4fb16dc582b25f650, type: 3}
   - {fileID: 21300000, guid: 6bb9188fff6d3fc45be8dbfb76cb529d, type: 3}
   - {fileID: 21300000, guid: f4bd789f6b721d24faf10906a6b9a70e, type: 3}
+  - {fileID: 21300000, guid: ee8260cf99a26ab4c8f75556a590d0c3, type: 3}
   m_PackedSpriteNamesToIndex:
   - CamaCasal
   - Cama4
+  - JanelaNoite1
   - Porta3
   - Pia4
   - Frigideira
@@ -156,6 +160,7 @@ SpriteAtlas:
   - Quadro6
   - Cama
   - "PoteDeRa\xE7\xE3oCheio"
+  - JanelaNoite2
   - Cadeira
   - Mesinha
   - "Prateleirach\xE3oEsquerda"
@@ -193,6 +198,7 @@ SpriteAtlas:
   - Pia2
   - Caixa1
   - TabuaCarne
+  - JanelaNoite3
   m_RenderDataMap: {}
   m_Tag: Atlas Props Internos
   m_IsVariant: 0

@@ -9,28 +9,15 @@
 
 === Dona_Helena_Day_01 ===
 {Dona_Helena_Day_01:
--   1:  -> Random_Dialog
--   else:   -> Random_Dialog
-}
-
-= Random_Dialog
-
-{ shuffle once:
--   Dona Helena: Eu e o Zé tamo junto já fazem uns 20 anos... Ele me pediu em namoro quando a gente tinha 17 anos!
-    ->DONE
--   Dona Helena: Eu vim morar aqui porque eu perdi meus pais quando era jovenzinha. Foi o Zé que me deu esperança de novo.
-    ->DONE
--   Dona Helena: Eu e sua mãe costumávamos vender as verduras que plantávamos junta, lá na cidade. Íamos com o Zé. Parece que faz tanto tempo.
-    ->DONE
--   Dona Helena: Você tem os olhos da sua mãe. Ela sempre foi muito minha amiga!
-    ->DONE
+-   1:  -> Dona_Helena_Random_Dialog
+-   else:   -> Dona_Helena_Random_Dialog
 }
 
 === Dona_Helena_Day_02 ===
 {Dona_Helena_Day_02:
 -   1:  -> At_Night
 -   2:  -> At_Night_02
--   else:   -> Random_Dialog
+-   else:   -> Dona_Helena_Random_Dialog
 }
 
 = At_Night
@@ -66,26 +53,21 @@ Dona Helena: Não fique com medo não, Luiz! Boa noite!
 ~ ResumeTimeline()
 -> DONE
 
-= Random_Dialog
--> DONE
-
 === Dona_Helena_Day_03 ===
 {Dona_Helena_Day_03:
 -   1:  -> D01
--   else:   -> Random_Dialog
+-   else:   -> Dona_Helena_Random_Dialog
 }
 
 = D01
-
--> DONE
+~ PauseTimeline()
 Dona Helena: Luiz! Bom dia, como ocê tá?
 Luiz: Oi, Dona Helena! Eu to bem, e a senhora?
 Dona Helena: To bem, fi.
 Dona Helena: Viu, vim te pergunta se ocê pode ajudar o Zé a encher a carroça pra levar pra cidade!
 Dona Helena: Tem bastante coisa e ele não queria demorar a partir!
 Luiz: Ajudo sim, Dona Helena, vamos lá!
-
-= Random_Dialog
+~ ResumeTimeline()
 -> DONE
 
 === Dona_Helena_Day_04 ===
@@ -93,7 +75,7 @@ Luiz: Ajudo sim, Dona Helena, vamos lá!
 -   1:  -> D01
 -   2:  -> D02
 -   3:  -> D03
--   else:   -> Random_Dialog
+-   else:   -> Dona_Helena_Random_Dialog
 }
 
 = D01
@@ -129,6 +111,16 @@ Seu José: Fique prontinho com sua mãe, que passo lá na sua casa pra te ajudar
 Luiz: Tudo bem, seu Zé! Eu vou ir ajeitar as coisas pra amanhã!
 -> Getting_Dark
 
-= Random_Dialog
--> DONE
 
+== Dona_Helena_Random_Dialog
+
+{ shuffle once:
+-   Dona Helena: Eu e o Zé tamo junto já fazem uns 20 anos... Ele me pediu em namoro quando a gente tinha 17 anos!
+    ->DONE
+-   Dona Helena: Eu vim morar aqui porque eu perdi meus pais quando era jovenzinha. Foi o Zé que me deu esperança de novo.
+    ->DONE
+-   Dona Helena: Eu e sua mãe costumávamos vender as verduras que plantávamos junta, lá na cidade. Íamos com o Zé. Parece que faz tanto tempo.
+    ->DONE
+-   Dona Helena: Você tem os olhos da sua mãe. Ela sempre foi muito minha amiga!
+    ->DONE
+}

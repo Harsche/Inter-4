@@ -186,9 +186,10 @@ Luiz: Acho que não tenho mais como ajudar o Seu João...
 {GameDay:
 -   1: -> Other_Dialogs.No_One_Home
 -   2: -> Other_Dialogs.No_One_Home
--   3: -> SEU_MIGUEL
+-   3: ~ PlayCutscene(17)
 -   4: -> Other_Dialogs.No_One_Home
 }
+--> DONE
 
 === House_05
 {GameDay:
