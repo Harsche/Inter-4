@@ -74,8 +74,8 @@ Seu João: Não chore não, vai ficar tudo bem.
 Seu João: Já já a chuva vem e a gente sai desse aperto...
 Luiz: Que Deus lhe ouça...
 Seu João: Se precisar de alguma coisa, eu vou estar lá em casa.
--> Getting_Dark
-
+{}
+-> DONE
 
 === Seu_Joao_Random_Dialog ===
 { shuffle once:

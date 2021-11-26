@@ -17102,7 +17102,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.31764707, g: 0.44313726, b: 0.6039216, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000d9753975
@@ -18083,8 +18083,6 @@ PlayableDirector:
   - key: {fileID: -8536490893746688474, guid: 1b02984ed4120bb48a0b64930faeaff9, type: 2}
     value: {fileID: 0}
   - key: {fileID: 8670551390854721766, guid: 03c44b33ffa1172439cd2379786221d0, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 5391608955410008509, guid: 3e22ecb9f6103b1429ade29198dceaf7, type: 2}
     value: {fileID: 0}
   - key: {fileID: 2064172303631193798, guid: 3e22ecb9f6103b1429ade29198dceaf7, type: 2}
     value: {fileID: 1152178032}

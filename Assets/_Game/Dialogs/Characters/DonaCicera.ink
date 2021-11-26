@@ -73,8 +73,7 @@ Luiz: Fico feliz, Dona Cícera!
 Luiz: Aliás, eu queria saber se a senhora vai querer ajuda pra fazer as cestas de bambu seco.
 -> D02
 
-= Random_Dialog
-
+== Dona_Cicera_Random_Dialog
 { shuffle once:
 
 -   Dona Cícera: O meu marido partiu fazem uns anos e meus fi foram tudo pra cidade. Não voltaram mais nem pra me ve... Aí eu fiquei sozinha. Mas as suas visitas com seus irmão sempre me alegram!

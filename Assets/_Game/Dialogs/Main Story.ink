@@ -156,11 +156,11 @@ Luiz: Acho melhor pegar um balde primeiro.
 === House_02
 {GameDay:
 -   1:  ~ PlayCutscene(4)
-        -> DONE
--   2: -> SEU_JOAO
+-   2:  ~ PlayCutscene(10)
 -   3: {Cow_Day_03: -> SEU_JOAO } -> Other_Dialogs.No_One_Home
 -   4: -> Other_Dialogs.No_One_Home
 }
+-> DONE
 
 === House_03
 {GameDay:
