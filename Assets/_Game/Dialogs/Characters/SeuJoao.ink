@@ -64,11 +64,14 @@ Seu João: De nada, fi! Sinto muito...
 }
 
 = D01
+~ PauseTimeline()
 Seu João: Aooo, Luizinho! Uai, porque que ocê ta com essa cara?
+~ ResumeTimeline()
 -> Cow_Died
 
 
 = Cow_Died
+~ PauseTimeline()
 Seu João: Com a seca, os bichin não dura muito, Luizinho.
 Seu João: Fica difícil de dar água e comida... e Dondoca já não era nova.
 Luiz: É... ela tava com a gente desde que eu era menorzinho...
@@ -77,6 +80,7 @@ Seu João: Não chore não, vai ficar tudo bem.
 Seu João: Já já a chuva vem e a gente sai desse aperto...
 Luiz: Que Deus lhe ouça...
 Seu João: Se precisar de alguma coisa, eu vou estar lá em casa.
+~ ResumeTimeline()
 -> DONE
 
 === Seu_Joao_Random_Dialog ===

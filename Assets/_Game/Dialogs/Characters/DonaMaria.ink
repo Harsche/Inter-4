@@ -14,6 +14,7 @@
 
 = At_Night
 ~ PauseTimeline()
+Dona Maria: Aqui seu pratin, meu fi.
 JOGO: Tem um pouco do feijão que sobrou de ontem com farinha de milho no prato.
 ~ ResumeTimeline()
 -> DONE
@@ -45,6 +46,7 @@ Dona Maria: Oh, Luiz, meu fi. Vamo lá busca a água, a gente precisa guarda tud
 ->DONE
 
 = D02
+~ PauseTimeline()
 Dona Maria: Vem, fi, vamo pra casa.
 Luiz: Mas, mainha, e a ag-
 Dona Maria: Vem, Luizinho, num se preocupa. A mainha vai dar um jeito, ta bem?
@@ -62,7 +64,7 @@ Luiz: Podeixa, mainha!
 
 = Milk_Day_02
 {not Cow_Day_02.D01:
-Dona Maria: Ô, meu bem. Pode tirá um poco de leite da Dondoca e trazê pra mim prepará o café da manhã?
+Dona Maria: Ô, meu fi. Pode tirá um poco de leite da Dondoca e trazê pra mim?
 -> DONE
 }
 Dona Maria: Pronto, meu fi, pode ir faze suas coisa. Só não vai longe, tá?
@@ -123,6 +125,7 @@ Luiz: Podeixa, mainha!
 -> DONE
 
 = At_Night
+~ PauseTimeline()
 Luiz: Mainha?
 Dona Maria: Luiz? É ocê, meu filho?
 Luiz: Sou eu sim, mainha. Eu to aqui...
@@ -135,6 +138,7 @@ Dona Maria: A mãe promete, tá?
 ~ GameDay = 4
 ~ ChangeGameDay(GameDay)
 ~ ChangeDayTime(DAY)
+~ ResumeTimeline()
 ->DONE
 
 === Dona_Maria_Day_04 ===
@@ -142,6 +146,7 @@ Dona Maria: A mãe promete, tá?
 {Dona_Maria_Day_04: -> DONE}
 
 = At_Night
+~ PauseTimeline()
 Luiz: Já voltei!
 Dona Maria: Oi fi...
 JOGO: A voz dela parece mais fraca do que estava hoje cedo...
@@ -155,8 +160,10 @@ JOGO: A farinha acabou ontem. Não há nada no armário.
 Dona Maria: Eu... eu não tenho -
 Luiz: Eu tenho uns pães e umas macaxeiras!
 Luiz: Consegui fazendo uns trabalhinhos! Venham cá que eu vou dividir!
+~ ResumeTimeline()
 *   [Dar um pouco]
     // ~ ChooseCutscene(0)
+    ~ PauseTimeline()
     Luiz: Logo, vamo te mais do que isso, ta Caramelo?
     Luiz: Olha, Caramelo, mesmo que eu leve mainha ao médico amanhã...
     Luiz: Não sei como arranjar mais comida... 
@@ -164,12 +171,15 @@ Luiz: Consegui fazendo uns trabalhinhos! Venham cá que eu vou dividir!
     ~ GameDay = 5
     ~ ChangeGameDay(GameDay)
     ~ ChangeDayTime(DAY)
+    ~ ResumeTimeline()
     -> DONE
 *   [Há pouca comida]
     // ~ ChooseCutscene(1)
+    ~ PauseTimeline()
     ~ GameDay = 5
     ~ ChangeGameDay(GameDay)
     ~ ChangeDayTime(DAY)
+    ~ ResumeTimeline()
     -> DONE
 
 === Dona_Maria_Day_05 ===
@@ -183,6 +193,7 @@ Dona Maria: LUIIIIIIZ! Entre pra jantar, meu fi!
 
 
 = D02
+~ PauseTimeline()
 Dona Maria: Já servi seu pratinho, meu filho!
 JOGO: O prato com arroz e feijão é colorido por legumes e carne! O cheiro é ótimo!
 Luiz: Obrigada, mainha!
@@ -194,4 +205,5 @@ Luiz: Sem nem conhecer a gente!
 Dona Maria: É, Luizinho, é uma corrente do bem!
 Dona Maria: Assim como a nossa relação com nossos vizinhos!
 Dona Maria: Um ajuda o outro, e assim vamos vivendo...
+~ ResumeTimeline()
 -> DONE

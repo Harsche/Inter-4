@@ -9,6 +9,7 @@
 }
 
 = D01
+~ PauseTimeline()
 Médico: Bom, ela tem sintomas de esquistossomose, chamam isso de barriga d'água...
 Médico: É comum em locais que não tem saneamento básico.
 Médico: É necessário encaminhá-la para um hospital.
@@ -20,4 +21,5 @@ Lívia: Nós vamos terminar de atender seus vizinhos e podemos ir, okay?
 Luiz: Claro! Vou ajeita as coisas por aqui.
 JOGO: Eles deixaram uma cesta básica e um galão de água na nossa casa!
 JOGO: Hoje, vamos jantar!
+~ ResumeTimeline()
 -> DONA_MARIA
