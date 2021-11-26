@@ -11,8 +11,8 @@
 }
 
 === Seu_Miguel_Day_03 ===
-{Seu_Miguel_Day_03.D02: -> Filled_Water_Box}
-//{filledWaterBox: -> Filled_Water_Box}
+//{Seu_Miguel_Day_03.D02: -> Filled_Water_Box}
+{filledWaterBox: -> Filled_Water_Box}
 {Seu_Miguel_Day_03:
 -   1:  -> D01
 -   2:  -> D02

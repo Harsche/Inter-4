@@ -76,6 +76,7 @@ Luiz: Então eu vou tentar só tocar elas pra dentro do cercado de novo.
 }
 
 = D01
+~ PauseTimeline()
 Dona Cida: Boa noite, Luiz! O que que cê ta fazendo aqui fora uma hora dessa?
 Dona Cida: Entra, meu fi!
 Luiz: Boa noite, Dona Cida! Vou entrar sim!
@@ -103,11 +104,13 @@ Dona Cida: Quando eu era criança, contavam várias lendas aqui do sertão, eu a
     Luiz: É... e falando nisso de arriscar, eu acho que já vou pra casa.
     Dona Cida: Isso! Vá lá ver sua mãe. Boa noite, fi.
     Luiz: Boa noite, Dona Cida!
+    ~ ResumeTimeline()
     -> DONE
 *   [Não tenho tempo]
     Luiz: Obrigado, Dona Cida, mas eu preciso ir pra casa!
     Dona Cida: Ah, fi. Tudo bem! Vá com Deus. E não se preocupe, tá?
     Luiz: Amém!
+    ~ ResumeTimeline()
     -> DONE
 
 = Random_Dialog
