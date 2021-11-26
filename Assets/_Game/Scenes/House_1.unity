@@ -5398,11 +5398,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549493611817115143, guid: e18db3752bb742241ad4baa975643446, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: -6.47
       objectReference: {fileID: 0}
     - target: {fileID: 4549493611817115143, guid: e18db3752bb742241ad4baa975643446, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.71
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 4549493611817115143, guid: e18db3752bb742241ad4baa975643446, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5443,6 +5443,10 @@ PrefabInstance:
     - target: {fileID: 7625309853035629971, guid: e18db3752bb742241ad4baa975643446, type: 3}
       propertyPath: _id
       value: 05dca74d-c9ae-410c-9029-4a1a5fb87075
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544894745085906874, guid: e18db3752bb742241ad4baa975643446, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18db3752bb742241ad4baa975643446, type: 3}
@@ -11364,15 +11368,15 @@ PlayableDirector:
   - key: {fileID: 8272928473429935647, guid: 0c01b875bc4c6b944ad6c80fb7ee3134, type: 2}
     value: {fileID: 1454146082}
   - key: {fileID: -4901308922936336778, guid: 0c01b875bc4c6b944ad6c80fb7ee3134, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1227660147}
   - key: {fileID: -4229791402389373738, guid: 0c01b875bc4c6b944ad6c80fb7ee3134, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1227660148}
   - key: {fileID: -5593712207148249864, guid: 0c01b875bc4c6b944ad6c80fb7ee3134, type: 2}
     value: {fileID: 1729655370}
   - key: {fileID: 2722566422888316023, guid: 0c01b875bc4c6b944ad6c80fb7ee3134, type: 2}
     value: {fileID: 1729655371}
   - key: {fileID: 6029249754427379852, guid: 0c01b875bc4c6b944ad6c80fb7ee3134, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1227660147}
   - key: {fileID: 1785911718901011017, guid: 0c01b875bc4c6b944ad6c80fb7ee3134, type: 2}
     value: {fileID: 249367475}
   - key: {fileID: 3652704746474672482, guid: 0c01b875bc4c6b944ad6c80fb7ee3134, type: 2}
