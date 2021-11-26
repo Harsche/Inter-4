@@ -110,8 +110,8 @@ public class DialogManager : MonoBehaviour
                 charLine.Append("    ");
                 charLine.Append(newLine[1]);
 
-                bool disableName = (charName.ToString() == "JOGO" || charName.ToString() == "Jogo") ? true : false;
-                nameText.transform.parent.gameObject.SetActive(disableName);
+                bool activateName = (charName.ToString() == "JOGO" || charName.ToString() == "Jogo") ? false : true;
+                nameText.transform.parent.gameObject.SetActive(activateName);
 
                 nameText.text = charName.ToString();
                 dialogText.text = charLine.ToString();

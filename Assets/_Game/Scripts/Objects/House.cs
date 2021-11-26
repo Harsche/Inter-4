@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Playables;
 using CleverCrow.Fluid.UniqueIds;
-using Ink.Runtime;
 
 public class House : MonoBehaviour
 {
@@ -17,19 +16,20 @@ public class House : MonoBehaviour
         houseData = SaveManager.GetData<HouseData>(myGuid);
         if (houseData == null)
             houseData = new HouseData();
+        changedDay = (bool)Globals.DialogManager.story.variablesState["changedDay"];
+        if (changedDay && DialogManager.GameDay >= 2)
+            houseData.opened = !(bool)Globals.DialogManager.story.variablesState["changedDay"];
         if (!houseData.opened)
         {
             CloseDoor();
             return;
         }
         OpenDoor();
-        changedDay = (bool)Globals.DialogManager.story.variablesState["changedDay"];
-        if(changedDay)
-            CloseDoor();
     }
 
-    private void Start() {
-        if(changedDay)
+    private void Start()
+    {
+        if (changedDay)
             Globals.DialogManager.story.variablesState["changedDay"] = false;
     }
 
@@ -63,5 +63,4 @@ public class House : MonoBehaviour
 public class HouseData : ObjectData
 {
     public bool opened { get; set; }
-    public bool changedDay { get; set; }
 }
