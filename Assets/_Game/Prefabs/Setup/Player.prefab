@@ -514,6 +514,7 @@ MonoBehaviour:
   circle: {fileID: 6627615427066352383, guid: 1307b8af9145c5440898ce505d4e6d0f, type: 3}
   canvasJoystick: {fileID: 1212048453}
   canMove: 1
+  animateByTransform: 0
 --- !u!114 &1210636927
 MonoBehaviour:
   m_ObjectHideFlags: 0
