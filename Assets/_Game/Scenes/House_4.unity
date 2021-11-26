@@ -980,6 +980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Seu Miguel
       objectReference: {fileID: 0}
+    - target: {fileID: 7253663636425622137, guid: 4d92ca32a8e00e94e9beda84f8aabf9d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7253663636425622142, guid: 4d92ca32a8e00e94e9beda84f8aabf9d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1689,7 +1693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498635524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.906491, y: -5.7174363, z: -1152.4641}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8644124517037886944}
@@ -3561,8 +3565,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8644124517037886973}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.906491, y: -5.7174363, z: -1152.4641}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 477980191}
