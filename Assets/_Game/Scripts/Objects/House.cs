@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.Playables;
 using CleverCrow.Fluid.UniqueIds;
+using Ink.Runtime;
 
 public class House : MonoBehaviour
 {
     [SerializeField] private GameObject openedHouse;
     [SerializeField] private GameObject closedHouse;
+    private bool changedDay;
     private string myGuid;
     private HouseData houseData;
 
@@ -21,6 +23,14 @@ public class House : MonoBehaviour
             return;
         }
         OpenDoor();
+        changedDay = (bool)Globals.DialogManager.story.variablesState["changedDay"];
+        if(changedDay)
+            CloseDoor();
+    }
+
+    private void Start() {
+        if(changedDay)
+            Globals.DialogManager.story.variablesState["changedDay"] = false;
     }
 
     public void OpenDoor()
@@ -53,4 +63,5 @@ public class House : MonoBehaviour
 public class HouseData : ObjectData
 {
     public bool opened { get; set; }
+    public bool changedDay { get; set; }
 }

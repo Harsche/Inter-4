@@ -9004,6 +9004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dona Cida
       objectReference: {fileID: 0}
+    - target: {fileID: 428415062767704459, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 428415062767704460, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -14178,6 +14182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Seu Jose
       objectReference: {fileID: 0}
+    - target: {fileID: 6454336064142782448, guid: 56e67fb1f40a94743b69421d1c08bb0c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6454336064142782455, guid: 56e67fb1f40a94743b69421d1c08bb0c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15542,6 +15550,10 @@ PrefabInstance:
     - target: {fileID: 428415062767704459, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_Name
       value: Dona Cida
+      objectReference: {fileID: 0}
+    - target: {fileID: 428415062767704459, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428415062767704460, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_RootOrder
@@ -24557,6 +24569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dona Helena
       objectReference: {fileID: 0}
+    - target: {fileID: 2001151654592404638, guid: c5275cdd30fae4b4292d9b8a7d8df5cc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784954553530954499, guid: c5275cdd30fae4b4292d9b8a7d8df5cc, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -28735,6 +28751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Seu Miguel
       objectReference: {fileID: 0}
+    - target: {fileID: 7253663636425622137, guid: 4d92ca32a8e00e94e9beda84f8aabf9d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7253663636425622142, guid: 4d92ca32a8e00e94e9beda84f8aabf9d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -32872,7 +32892,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 428415062767704459, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_Name
-      value: Dona Cida (1)
+      value: Dona Cida
+      objectReference: {fileID: 0}
+    - target: {fileID: 428415062767704459, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428415062767704460, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_RootOrder
@@ -35567,6 +35591,10 @@ PrefabInstance:
     - target: {fileID: 3444110319969164068, guid: 739e504b8f162a340b1a1c486a65c1fc, type: 3}
       propertyPath: m_Name
       value: Seu Joao
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444110319969164068, guid: 739e504b8f162a340b1a1c486a65c1fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 739e504b8f162a340b1a1c486a65c1fc, type: 3}
@@ -38695,6 +38723,10 @@ PrefabInstance:
     - target: {fileID: 428415062767704459, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_Name
       value: Dona Cida
+      objectReference: {fileID: 0}
+    - target: {fileID: 428415062767704459, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428415062767704460, guid: 311719124baaa334facf1cdb6bcf1a1d, type: 3}
       propertyPath: m_RootOrder
@@ -46538,6 +46570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Seu Miguel
       objectReference: {fileID: 0}
+    - target: {fileID: 7253663636425622137, guid: 4d92ca32a8e00e94e9beda84f8aabf9d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7253663636425622142, guid: 4d92ca32a8e00e94e9beda84f8aabf9d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -52646,6 +52682,10 @@ PrefabInstance:
     - target: {fileID: 2001151654592404638, guid: c5275cdd30fae4b4292d9b8a7d8df5cc, type: 3}
       propertyPath: m_Name
       value: Dona Helena
+      objectReference: {fileID: 0}
+    - target: {fileID: 2001151654592404638, guid: c5275cdd30fae4b4292d9b8a7d8df5cc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784954553530954499, guid: c5275cdd30fae4b4292d9b8a7d8df5cc, type: 3}
       propertyPath: m_IsActive
@@ -105812,6 +105852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dona Helena (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2001151654592404638, guid: c5275cdd30fae4b4292d9b8a7d8df5cc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3784954553530954499, guid: c5275cdd30fae4b4292d9b8a7d8df5cc, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -110601,11 +110645,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
@@ -110618,7 +110662,7 @@ PrefabInstance:
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4620916364183236114}
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -110641,7 +110685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetStory
+      value: StartDialog
       objectReference: {fileID: 0}
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -110666,7 +110710,11 @@ PrefabInstance:
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 4900000, guid: f7d5036718ac23d4298974eb677ddfcc, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Day_01_Scene_03
+      objectReference: {fileID: 0}
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
       value: Day_01_Scene_03
@@ -110677,7 +110725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.TextAsset, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5576550199618019904, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -110700,6 +110748,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 122217916569923407, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
   m_PrefabInstance: {fileID: 4620916364183236111}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4620916364183236114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4752590522320456631, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}
+  m_PrefabInstance: {fileID: 4620916364183236111}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4620916364183236113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f0c6f611807414a994607e22de68d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4620916364183236115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4644690052340019222, guid: b2da2e4c372b77a49b4e6159e3e19457, type: 3}

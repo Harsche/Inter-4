@@ -27,7 +27,7 @@ public class DialogManager : MonoBehaviour
     public static StoryVariableStates VariableStates { get; private set; } = new StoryVariableStates();
     public event EventHandler VariablesChanged;
     public static event Action<Story> OnCreateStory;
-    public static bool DialogOpened {get; private set;}
+    public static bool DialogOpened { get; private set; }
 
     private void Awake()
     {
@@ -110,6 +110,8 @@ public class DialogManager : MonoBehaviour
                 charLine.Append("    ");
                 charLine.Append(newLine[1]);
 
+                bool disableName = (charName.ToString() == "JOGO" || charName.ToString() == "Jogo") ? true : false;
+                nameText.transform.parent.gameObject.SetActive(disableName);
 
                 nameText.text = charName.ToString();
                 dialogText.text = charLine.ToString();
@@ -177,7 +179,7 @@ public class DialogManager : MonoBehaviour
         story.BindExternalFunction("ChooseCutscene", (int choiceIndex) => { Globals.CutsceneManager.ChooseCutscene(choiceIndex); });
         story.BindExternalFunction("PlayCutscene", (int cutsceneNum) => { CutsceneManager.TriggerCutscene(cutsceneNum); });
         story.BindExternalFunction("CloseDialog", () => { CloseDialog(); });
-        story.BindExternalFunction("ChangeGameDay", (int day) => { GameDay++; Debug.Log("CHANGED DAY " + day); });
+        story.BindExternalFunction("ChangeGameDay", (int day) => { GameDay++; story.variablesState["changedDay"] = true; });
         story.BindExternalFunction("ChangeDayTime", (string time) => { Player.ChangeDayTime((DayTime)Enum.Parse(typeof(DayTime), time)); });
         story.BindExternalFunction("SetCutscenePlayable", (string cutsceneNum) => { Globals.CutsceneManager.SetCutscenePlayable(cutsceneNum); });
         story.BindExternalFunction("SetPlayerAnimatorBool", (string parameter, bool value) => { Player.animationControl.anim.SetBool(parameter, value); });

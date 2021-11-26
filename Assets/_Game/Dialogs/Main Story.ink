@@ -3,6 +3,7 @@ VAR lostKey = false
 VAR filledWaterBox = false
 VAR woodChopped = 0
 VAR milkDay2 = false
+VAR changedDay = false
 
 VAR chopTask = false
 
