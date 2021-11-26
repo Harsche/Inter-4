@@ -18,8 +18,8 @@ public class Interact : MonoBehaviour
 
     public void StartDialog(string inkKnot)
     {
-        Globals.DialogManager.JumpTo(inkKnot);
         Globals.DialogManager.OpenDialog();
+        Globals.DialogManager.JumpTo(inkKnot);
     }
 
     public void SetObjectActive(GameObject obj)

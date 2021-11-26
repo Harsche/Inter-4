@@ -1,5 +1,4 @@
 using UnityEngine;
-using Ink.Runtime;
 
 public class LostKey : MonoBehaviour
 {
@@ -9,6 +8,9 @@ public class LostKey : MonoBehaviour
 
     private void Awake()
     {
+        bool foundKey = (bool)Globals.DialogManager.story.variablesState["lostKey"];
+        if(foundKey)
+            Destroy(gameObject);
         mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
