@@ -6,7 +6,9 @@ VAR milkDay2 = false
 VAR changedDay = false
 VAR chopTask = false
 VAR waterTask = false
+VAR chickenTask = false
 VAR ciceraFoundKey = false
+VAR returnedChicken = false
 
 CONST DAY = "Day"
 CONST NIGHT = "Night"

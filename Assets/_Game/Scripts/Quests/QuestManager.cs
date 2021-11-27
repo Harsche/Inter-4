@@ -18,26 +18,31 @@ public class QuestManager : MonoBehaviour
         questData = SaveManager.GetData<QuestData>(myGuid);
         newQuestCanvas = Globals.NewQuestCanvas;
         newQuestText = newQuestCanvas.transform.GetChild(0).GetChild(0).gameObject.GetComponent<Text>();
-        if(questData != null)
+        if (questData != null)
         {
             questList = questData.questList;
             return;
         }
-        questData = new QuestData();            
+        questData = new QuestData();
     }
 
     public void StartNewQuest(string questName)
     {
+        newQuestText.text = questName;
+        newQuestCanvas.SetActive(true);
+        StartCoroutine(NewQuestCanvas());
+        /*
         foreach (Quest q in questList.quests)
         {
             if (q.questName == questName && q.questState == QuestSate.Inactive)
             {
-                newQuestText.text = "Nova missão: " + q.questName;
+                newQuestText.text = q.questName;
                 newQuestCanvas.SetActive(true);
                 AdvanceQuestStep(q);
                 StartCoroutine(NewQuestCanvas());
             }
         }
+        */
     }
 
     public void AdvanceQuestStep(Quest quest)
@@ -49,7 +54,7 @@ public class QuestManager : MonoBehaviour
     {
         foreach (Quest q in questList.quests)
         {
-            if(q.questState == QuestSate.Inactive || q.questState == QuestSate.Completed)
+            if (q.questState == QuestSate.Inactive || q.questState == QuestSate.Completed)
             {
                 continue;
             }

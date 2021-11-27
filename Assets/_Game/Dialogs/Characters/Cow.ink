@@ -16,6 +16,7 @@
 === Cow_Day_02 ===
 {Cow_Day_02:
 -   1:  -> D01
+-   else:  -> DONE
 }
 
 = D01
