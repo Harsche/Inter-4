@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class WaterWell : MonoBehaviour
 {
-    [SerializeField] private GameObject waterGauge;
-    [SerializeField] private Slider waterSlider;
+    [SerializeField] private Canvas waterGauge;
+    [SerializeField] private WaterSlider waterSlider;
     private const string bucket = "Bucket";
     private const string water = "Water";
     private const string getWater = "Get Water";
@@ -14,10 +15,14 @@ public class WaterWell : MonoBehaviour
     private Movement playerMovement;
     private AnimationControl playerAnimationControl;
     private Animator myAnimator;
+    private bool taskActive;
 
     private void Awake()
     {
         myAnimator = GetComponent<Animator>();
+        taskActive = DialogManager.VariableStates.waterTask;
+        ToggleTask(taskActive);
+        Globals.DialogManager.VariablesChanged += WatchTaskState;
     }
 
     private void Start()
@@ -25,6 +30,24 @@ public class WaterWell : MonoBehaviour
         playerAnimator = Globals.Player.GetComponent<Animator>();
         playerMovement = Globals.Player.GetComponent<Movement>();
         playerAnimationControl = Globals.Player.GetComponent<AnimationControl>();
+    }
+
+    private void OnDestroy() {
+        Globals.DialogManager.VariablesChanged -= WatchTaskState;
+    }
+
+    private void WatchTaskState(object sender, EventArgs args)
+    {
+        taskActive = DialogManager.VariableStates.waterTask;
+        ToggleTask(taskActive);
+    }
+
+    private void ToggleTask(bool toggle)
+    {
+        for(int i = 0; i < transform.childCount; i++)
+        {
+            transform.GetChild(i).gameObject.SetActive(toggle);
+        }
     }
 
     public void GetWater()
@@ -48,14 +71,13 @@ public class WaterWell : MonoBehaviour
         yield return new WaitForEndOfFrame();
         float wait = myAnimator.GetCurrentAnimatorStateInfo(0).length;
         yield return new WaitForSeconds(wait);
-        Debug.Log("END");
         playerAnimator.SetBool(bucket, true);
         playerAnimator.SetBool(water, true);
         playerMovement.canMove = true;
         waterGauge.transform.SetParent(Globals.Player.transform);
         waterGauge.transform.localPosition = Vector3.zero;
-        waterSlider.value = 1f;
-        waterGauge.SetActive(true);
+        waterGauge.enabled = true;
+        waterSlider.TakeWater();
     }
 
 }

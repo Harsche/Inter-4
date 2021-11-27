@@ -6,6 +6,7 @@ public class WaterSlider : MonoBehaviour
 {
     [SerializeField] private float duration;
     [SerializeField] private Slider mySlider;
+    private Canvas myCanvas;
     public static WaterSlider Instance { get; private set; }
     public static bool withWater;
     private Tween sliderDown;
@@ -14,20 +15,19 @@ public class WaterSlider : MonoBehaviour
     {
         if (Instance == null)
             Instance = this;
-    }
-
-    private void OnEnable() {
-        TakeWater();
+        myCanvas = GetComponent<Canvas>();
     }
 
     public void DisableGauge()
     {
-        gameObject.SetActive(false);
+        myCanvas.enabled = false;
     }
 
     public void TakeWater()
     {
+        mySlider.value = 1;
         sliderDown = mySlider.DOValue(0, duration);
+        sliderDown.SetEase(Ease.Linear);
         withWater = true;
     }
 
