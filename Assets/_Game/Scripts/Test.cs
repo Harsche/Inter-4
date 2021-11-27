@@ -13,7 +13,7 @@ public class Test : MonoBehaviour
         if(active != activate)
         {
             active = activate;
-            Globals.DialogManager.story.variablesState["waterTask"] = active;
+            Globals.DialogManager.story.variablesState["chickenTask"] = active;
             Debug.Log(active);
         }
     }

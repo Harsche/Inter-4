@@ -192,6 +192,7 @@ public class DialogManager : MonoBehaviour
     {
         story.ObserveVariable("chopTask", (string varName, object value) => { VariableStates.chopTask = (bool)value; NotifyVariableChange(); });
         story.ObserveVariable("waterTask", (string varName, object value) => { VariableStates.waterTask = (bool)value; NotifyVariableChange(); });
+        story.ObserveVariable("chickenTask", (string varName, object value) => { VariableStates.chickenTask = (bool)value; NotifyVariableChange(); });
     }
 
     public void NotifyVariableChange()
@@ -249,4 +250,5 @@ public class StoryVariableStates
 {
     public bool chopTask;
     public bool waterTask;
+    public bool chickenTask;
 }
