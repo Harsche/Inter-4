@@ -2874,10 +2874,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rede (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 8675010395204278808, guid: 2aa9681ce90e52246bd93f782697ae68, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8675010395204278810, guid: 2aa9681ce90e52246bd93f782697ae68, type: 3}
       propertyPath: m_RootOrder
       value: 1
