@@ -8,8 +8,9 @@ public class Chicken : MonoBehaviour
     private BoxCollider2D myBoxCollider2D;
     private Rigidbody2D myRigibody2d;
     private SpriteRenderer mySpriteRenderer;
-    Coroutine stopRunning;
-    Coroutine checkPlayer;
+    private bool running;
+    private Coroutine stopRunning;
+    private Coroutine checkPlayer;
 
     void Start()
     {
@@ -21,6 +22,8 @@ public class Chicken : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if(!running)
+            return;
         Vector2 direction = transform.position;
         direction -= other.GetContact(0).point;
         direction *= -1;
@@ -36,6 +39,7 @@ public class Chicken : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             checkPlayer = StartCoroutine(CheckPlayerDirection(other));
+            running = true;
             if (stopRunning != null)
             {
                 StopCoroutine(stopRunning);
@@ -48,6 +52,7 @@ public class Chicken : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             stopRunning = StartCoroutine(StopRunning());
+            running = false;
             if (checkPlayer != null)
             {
                 StopCoroutine(checkPlayer);

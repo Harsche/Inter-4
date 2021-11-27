@@ -10,7 +10,7 @@
 === Dona_Maria_Day_01 ===
 {At_Night: -> At_Night_02 }
 {Getting_Dark == 1: -> At_Night}
-
+-> DONE
 
 = At_Night
 ~ PauseTimeline()
@@ -37,6 +37,7 @@ Dona Maria: A mainha não quer não, meu bem.
 -   1:  -> D01
 -   2:  -> D02
 -   3:  -> D03
+-   else:  -> DONE
 }
 
 = D01
@@ -107,6 +108,7 @@ JOGO: Temos apenas farinha a partir de agora...
 {Dona_Maria_Day_03:
 -   1:  ->D01
 -   2:  ->D02
+-   else:  -> DONE
 }
 
 = D01
@@ -151,6 +153,7 @@ Dona Maria: A mãe promete, tá?
 === Dona_Maria_Day_04 ===
 {Getting_Dark == 4: -> At_Night}
 {Dona_Maria_Day_04: -> DONE}
+-> DONE
 
 = At_Night
 ~ PauseTimeline()
@@ -192,6 +195,7 @@ Luiz: Consegui fazendo uns trabalhinhos! Venham cá que eu vou dividir!
 === Dona_Maria_Day_05 ===
 {Dona_Maria_Day_04:
 -   1:  -> D01
+-   else:  -> DONE
 }
 
 = D01
