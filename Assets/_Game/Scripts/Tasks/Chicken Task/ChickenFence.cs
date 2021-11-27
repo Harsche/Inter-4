@@ -1,17 +1,20 @@
 using UnityEngine;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ChickenFence : MonoBehaviour
 {
     [SerializeField] private float waitBeforeStopping;
+    [SerializeField] private Chicken[] chickens;
+    private static HashSet<int> returnedChickens;
     private BoxCollider2D boxCollider2D;
-    private int chickenCount;
+    private static int chickenCount;
     private bool taskActive;
     
     private void Awake() {
         boxCollider2D = GetComponent<BoxCollider2D>();
-        boxCollider2D.enabled = false;
+        boxCollider2D.enabled = false;;
     }
 
     void Start()
@@ -25,10 +28,10 @@ public class ChickenFence : MonoBehaviour
         Globals.DialogManager.VariablesChanged -= WatchTaskActivated;
     }
 
-    private void GetChicken()
+    private void GetChicken(Chicken chicken)
     {
         chickenCount++;
-        Debug.Log(chickenCount);
+        returnedChickens.Add(chicken.chickenTaskNumber);
         if(chickenCount >= 5)
             Globals.DialogManager.story.variablesState["chickenTask"] = false;
             Globals.DialogManager.story.variablesState["returnedChicken"] = false;
@@ -40,6 +43,13 @@ public class ChickenFence : MonoBehaviour
         {
             transform.GetChild(i).gameObject.SetActive(toggle);
             boxCollider2D.enabled = toggle;
+        }
+        if(!toggle)
+            return;
+        foreach(Chicken chicken in chickens)
+        {
+            if(returnedChickens.Contains(chicken.chickenTaskNumber))
+                chicken.gameObject.SetActive(true);
         }
     }
 
@@ -61,7 +71,8 @@ public class ChickenFence : MonoBehaviour
     {
         chicken.transform.GetChild(0).gameObject.SetActive(false);
         chicken.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
-        GetChicken();
+        Chicken whichChicken = chicken.GetComponent<Chicken>();
+        GetChicken(whichChicken);
         yield return new WaitForSeconds(waitBeforeStopping);
     }
 }

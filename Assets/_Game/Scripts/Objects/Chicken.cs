@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class Chicken : MonoBehaviour
 {
-    [SerializeField] float speed;
+    [SerializeField] private float speed;
+    public int chickenTaskNumber;
     private Animator myAnimator;
     private BoxCollider2D myBoxCollider2D;
     private Rigidbody2D myRigibody2d;
@@ -11,6 +12,7 @@ public class Chicken : MonoBehaviour
     private bool running;
     private Coroutine stopRunning;
     private Coroutine checkPlayer;
+    private bool taskActive;
 
     void Start()
     {
