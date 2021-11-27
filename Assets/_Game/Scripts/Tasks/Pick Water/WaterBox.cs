@@ -70,6 +70,11 @@ public class WaterBox : MonoBehaviour
         playerMovement.canMove = true;
         playerAnimator.SetBool(water, false);
         if(boxSlider.value >= 1)
+        {
             Globals.DialogManager.story.variablesState["waterTask"] = false;
+            Globals.DialogManager.story.variablesState["filledWaterBox"] = true;
+            Globals.CutsceneManager.SetCutscenePlayable("18");
+        }
+            
     }
 }

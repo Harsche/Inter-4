@@ -68,6 +68,9 @@ Luiz: Graças a Deus, Seu Miguel!
 Seu Miguel: Amém! Vem, Luiz, vou fazer o chá.Amém! Vem, Luiz, vou fazer o chá.
 Seu Miguel: Dê o chá pra sua mãe, e se Deus quiser ela vai melhorar!
 Luiz: Muito obrigado, Seu Miguel!
+~ SetPlayerAnimatorBool(PLAYERBUCKET, false)
+~ SetPlayerAnimatorBool(PLAYERMLIK, false)
+~ waterTask = false
 ~ ResumeTimeline()
 -> DONE
 
