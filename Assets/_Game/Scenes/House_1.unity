@@ -12152,12 +12152,8 @@ PlayableDirector:
     value: {fileID: 1326094072}
   - key: {fileID: 2273759284938790311, guid: 50c9d8d43891a924c9e32bc4c0cd1ab6, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 6499459064949670213, guid: 50c9d8d43891a924c9e32bc4c0cd1ab6, type: 2}
-    value: {fileID: 634881512}
   - key: {fileID: -6381910145585161455, guid: 50c9d8d43891a924c9e32bc4c0cd1ab6, type: 2}
     value: {fileID: 646493976}
-  - key: {fileID: -6888171385042823578, guid: 50c9d8d43891a924c9e32bc4c0cd1ab6, type: 2}
-    value: {fileID: 634881514}
   - key: {fileID: -8968157418502016960, guid: 50c9d8d43891a924c9e32bc4c0cd1ab6, type: 2}
     value: {fileID: 1326094073}
   - key: {fileID: -2983364441183325247, guid: 50c9d8d43891a924c9e32bc4c0cd1ab6, type: 2}
