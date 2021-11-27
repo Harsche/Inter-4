@@ -67,6 +67,7 @@ Dona Helena: To bem, fi.
 Dona Helena: Viu, vim te pergunta se ocê pode ajudar o Zé a encher a carroça pra levar pra cidade!
 Dona Helena: Tem bastante coisa e ele não queria demorar a partir!
 Luiz: Ajudo sim, Dona Helena, vamos lá!
+~ newQuest("Vá ajudar Seu Zé")
 ~ ResumeTimeline()
 -> DONE
 

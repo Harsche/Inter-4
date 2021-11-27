@@ -138,6 +138,7 @@ Dona Cida: Oh, fi, eu fico aqui com eles! Não se preocupe com isso não!
 Luiz: Nossa, Dona Cida, que Deus lhe pague!
 Dona Cida: A senhora é um anjo! Vou ir ver se Seu Zé já voltou!
 Dona Cida: Vá lá, meu fi!
+~ newQuest("Vá falar com Seu Zé")
 -> D03
 
 = D03
@@ -148,6 +149,7 @@ Luiz: Eu vou pegar elas pra senhora.
 Dona Cida: É muito dificil pegar galinha, Luiz. São ligeiras demais.
 Luiz: Então eu vou tentar só tocar elas pra dentro do cercado de novo.
 JOGO: (Minigame de pegar as galinhas)
+~ newQuest("Coloque as galinhas no galinheiro")
 ~ ResumeTimeline()
 -> Returned_Chickens
 

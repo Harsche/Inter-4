@@ -35,6 +35,7 @@ Dona Cícera: Acontece que nessa idade é complicado procurar uma coisinha tão 
     Dona Cícera: Andei o vilarejo inteiro pela manhã.
     Luiz: Não se preocupa, Dona Cícera!
     Luiz: Vou encontrar a chave e já trago pra senhora!
+    ~ newQuest("Ache a chave da Dona Cícera")
     ~ ResumeTimeline()
     -> DONE
 *   [Não ajudar]

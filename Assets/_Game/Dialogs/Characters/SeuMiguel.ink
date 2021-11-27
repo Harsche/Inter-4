@@ -54,6 +54,7 @@ Seu Miguel: Ta todo mundo mei velho pra ficar carregando balde.
 Seu Miguel: Mas quem sabe tem água lá! Talvez você possa ir dar uma olhada!
 Seu Miguel: Aí você já traz água para o chá da sua mãe!
 Luiz: Eu vou agora mesmo, Seu Miguel!
+~ newQuest("Vá ver se tem água no poço")
 ~ waterTask = true
 ~ ResumeTimeline()
 -> DONE
