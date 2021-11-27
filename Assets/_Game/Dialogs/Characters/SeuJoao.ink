@@ -60,6 +60,8 @@ Seu João: De nada, fi! Sinto muito...
 === Seu_Joao_Day_03 ===
 {Seu_Joao_Day_03:
 -   1:  -> D01
+-   2:  -> Cow_Died
+-   3:  -> After_Cow_Died
 -   else:   -> Seu_Joao_Random_Dialog
 }
 
@@ -67,7 +69,7 @@ Seu João: De nada, fi! Sinto muito...
 ~ PauseTimeline()
 Seu João: Aooo, Luizinho! Uai, porque que ocê ta com essa cara?
 ~ ResumeTimeline()
--> Cow_Died
+-> DONE
 
 
 = Cow_Died
@@ -81,6 +83,12 @@ Seu João: Já já a chuva vem e a gente sai desse aperto...
 Luiz: Que Deus lhe ouça...
 Seu João: Se precisar de alguma coisa, eu vou estar lá em casa.
 ~ ResumeTimeline()
+-> DONE
+
+= After_Cow_Died
+{Seu_Miguel_Day_03.Filled_Water_Box && Seu_Jose_Day_03.D03:
+-> Getting_Dark
+}
 -> DONE
 
 === Seu_Joao_Random_Dialog ===

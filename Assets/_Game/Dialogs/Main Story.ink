@@ -162,7 +162,10 @@ Luiz: A porta tá trancada...
 {GameDay:
 -   1:  ~ PlayCutscene(4)
 -   2:  -> Day_02
--   3: {Cow_Day_03: -> SEU_JOAO } -> Other_Dialogs.No_One_Home
+-   3: {Cow_Day_03: 
+            ~ PlayCutscene(20)
+            -> DONE
+        } -> Other_Dialogs.No_One_Home
 -   4: -> Other_Dialogs.No_One_Home
 }
 -> DONE
@@ -197,7 +200,10 @@ Luiz: Acho que não tenho mais como ajudar o Seu João...
 -   1:  ~ PlayCutscene(3)
         -> DONE
 -   2: -> Other_Dialogs.No_One_Home
--   3: {Seu_Joao_Day_03.Cow_Died: -> DONA_CIDA} -> Other_Dialogs.No_One_Home
+-   3: {Getting_Dark == 3: 
+            ~ PlayCutscene(22)
+            -> DONE
+        } -> Other_Dialogs.No_One_Home
 -   4: -> DONA_CIDA
 }
 
@@ -211,11 +217,10 @@ Luiz: Acho que não tenho mais como ajudar o Seu João...
     -> DONE
     } 
     -> Other_Dialogs.No_One_Home
--   3: -> SEU_JOSE
+-   3: -> Other_Dialogs.Door_Locked
 -   4: {Dona_Cida_Day_04.Returned_Chickens: -> DONA_HELENA } -> Other_Dialogs.No_One_Home
 }
 -> DONE
-
 
 // FUNCTION BINDINGS
 

@@ -59,6 +59,10 @@ Luiz: Eu vou agora mesmo, Seu Miguel!
 -> DONE
 
 = Filled_Water_Box
+{Filled_Water_Box == 1:
+~ PlayCutscene(18)
+-> DONE
+}
 ~ PauseTimeline()
 Seu Miguel: Luiz, ocê demorou, fiquei preocupado, fi!
 Luiz: Eu achei o poço! Aproveitei e enchi a caixa d'água do vilarejo.
@@ -69,9 +73,11 @@ Seu Miguel: Amém! Vem, Luiz, vou fazer o chá.Amém! Vem, Luiz, vou fazer o ch�
 Seu Miguel: Dê o chá pra sua mãe, e se Deus quiser ela vai melhorar!
 Luiz: Muito obrigado, Seu Miguel!
 ~ SetPlayerAnimatorBool(PLAYERBUCKET, false)
-~ SetPlayerAnimatorBool(PLAYERMLIK, false)
-~ waterTask = false
+~ filledWaterBox = false
 ~ ResumeTimeline()
+{Seu_Jose_Day_03.D03 && Seu_Joao_Day_03.Cow_Died:
+-> Getting_Dark
+}
 -> DONE
 
 == Seu_Miguel_Random_Dialog

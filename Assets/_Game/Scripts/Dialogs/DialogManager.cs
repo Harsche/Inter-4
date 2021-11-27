@@ -39,6 +39,7 @@ public class DialogManager : MonoBehaviour
         if (storyData == null)
             storyData = new StoryData();
         GameDay = storyData.GameDay;
+        VariableStates = storyData.variableStates;
         SetStory(dialogJson);
         //ContinueStory();
     }
@@ -69,6 +70,8 @@ public class DialogManager : MonoBehaviour
     private void SaveStoryData()
     {
         storyData.GameDay = GameDay;
+        storyData.variableStates = VariableStates;
+        SaveStoryState();
         SaveManager.SaveData(myGuid, storyData);
     }
 
@@ -204,7 +207,7 @@ public class DialogManager : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(true);
         }
         myCanvas.enabled = true;
-        DialogOpened = false;
+        DialogOpened = true;
         //playerMovement.canMove = false;
     }
 
@@ -232,13 +235,16 @@ public class StoryData : ObjectData
 {
     public int GameDay;
     public string jsonStory;
+    public StoryVariableStates variableStates;
 
     public StoryData()
     {
         GameDay = 1;
+        variableStates = new StoryVariableStates();
     }
 }
 
+[Serializable]
 public class StoryVariableStates
 {
     public bool chopTask;

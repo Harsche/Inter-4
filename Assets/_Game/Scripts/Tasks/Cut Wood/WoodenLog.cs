@@ -21,12 +21,12 @@ public class WoodenLog : MonoBehaviour
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         myPlayableDirector = GetComponent<PlayableDirector>();
-        taskActive = DialogManager.VariableStates.chopTask;
-        Globals.DialogManager.VariablesChanged += WatchChopTaskActivated;
     }
 
     private void Start()
     {
+        taskActive = DialogManager.VariableStates.chopTask;
+        Globals.DialogManager.VariablesChanged += WatchChopTaskActivated;
         playerMovement = Globals.Player.GetComponent<Movement>();
         playerRigidbody2D = Globals.Player.GetComponent<Rigidbody2D>();
         ToggleTask(taskActive);

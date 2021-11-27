@@ -100,7 +100,10 @@ JOGO: Temos apenas farinha a partir de agora...
 -> DONE
 
 === Dona_Maria_Day_03 ===
-{Getting_Dark == 3: -> At_Night}
+{Getting_Dark == 3:
+{At_Night: -> At_Night_02}
+-> At_Night
+}
 {Dona_Maria_Day_03:
 -   1:  ->D01
 -   2:  ->D02
@@ -125,13 +128,17 @@ Luiz: Podeixa, mainha!
 -> DONE
 
 = At_Night
-~ PauseTimeline()
 Luiz: Mainha?
 Dona Maria: Luiz? É ocê, meu filho?
 Luiz: Sou eu sim, mainha. Eu to aqui...
 Luiz: Eu falei com Seu Miguel, ele mandou esse chá de Capim Santo pra senhora.
 Dona Maria: Obrigada, meu fi. Hoje, a gente só tem um pouco de farinha.
 Dona Maria: Mas a mainha deixou seu pratinho separado ali na pia...
+~ PlayCutscene(23)
+-> DONE
+
+= At_Night_02
+~ PauseTimeline()
 Pedro: Mainha... a gente não tem mais feijão?
 Dona Maria: Acabou ontem, meu fi... mainha vai conseguir mais assim que ficar melhor.
 Dona Maria: A mãe promete, tá?

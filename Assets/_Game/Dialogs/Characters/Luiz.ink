@@ -11,6 +11,9 @@
 Luiz: Já está escurecendo... vou direto pra casa ver mainha!
 -> DONE
 }
+{GameDay == 3:
+~ SetCutscenePlayable("23")
+}
 {GameDay == 2:
 ~ SetCutscenePlayable("12")
 }

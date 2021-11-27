@@ -11,6 +11,8 @@ public class WaterWell : MonoBehaviour
     private const string water = "Water";
     private const string getWater = "Get Water";
     private const string noBucket = "Other_Dialogs.Need_Bucket";
+    private const string waterTaskLuiz = "Luiz_Day_03.D02";
+    private static bool sawStartDialog;
     private Animator playerAnimator;
     private Movement playerMovement;
     private AnimationControl playerAnimationControl;
@@ -20,13 +22,13 @@ public class WaterWell : MonoBehaviour
     private void Awake()
     {
         myAnimator = GetComponent<Animator>();
-        taskActive = DialogManager.VariableStates.waterTask;
-        ToggleTask(taskActive);
-        Globals.DialogManager.VariablesChanged += WatchTaskState;
     }
 
     private void Start()
     {
+        taskActive = DialogManager.VariableStates.waterTask;
+        ToggleTask(taskActive);
+        Globals.DialogManager.VariablesChanged += WatchTaskState;
         playerAnimator = Globals.Player.GetComponent<Animator>();
         playerMovement = Globals.Player.GetComponent<Movement>();
         playerAnimationControl = Globals.Player.GetComponent<AnimationControl>();
@@ -60,14 +62,23 @@ public class WaterWell : MonoBehaviour
             Globals.DialogManager.OpenDialog();
             return;
         }
-        playerMovement.canMove = false;
-        playerAnimator.SetBool(bucket, false);
-        myAnimator.SetTrigger(getWater);
         StartCoroutine(WaitForGetWater());
     }
 
     private IEnumerator WaitForGetWater()
     {
+        if(!sawStartDialog)
+        {
+            Globals.DialogManager.StartDialog(waterTaskLuiz);
+            sawStartDialog = true;
+            while(DialogManager.DialogOpened)
+            {
+                yield return null;
+            }
+        }
+        playerMovement.canMove = false;
+        playerAnimator.SetBool(bucket, false);
+        myAnimator.SetTrigger(getWater);
         yield return new WaitForEndOfFrame();
         float wait = myAnimator.GetCurrentAnimatorStateInfo(0).length;
         yield return new WaitForSeconds(wait);

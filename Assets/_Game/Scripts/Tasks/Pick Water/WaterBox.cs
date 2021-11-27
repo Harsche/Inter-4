@@ -18,6 +18,12 @@ public class WaterBox : MonoBehaviour
     private void Awake()
     {
         boxSlider.value = 0f;
+    }
+
+    private void Start() {
+        playerAnimationControl = Globals.Player.GetComponent<AnimationControl>();
+        playerAnimator = Globals.Player.GetComponent<Animator>();
+        playerMovement = Globals.Player.GetComponent<Movement>();
         taskActive = DialogManager.VariableStates.waterTask;
         ToggleTask(taskActive);
         Globals.DialogManager.VariablesChanged += WatchTaskState;
@@ -39,13 +45,6 @@ public class WaterBox : MonoBehaviour
         {
             transform.GetChild(i).gameObject.SetActive(toggle);
         }
-    }
-
-    private void Start()
-    {
-        playerAnimationControl = Globals.Player.GetComponent<AnimationControl>();
-        playerAnimator = Globals.Player.GetComponent<Animator>();
-        playerMovement = Globals.Player.GetComponent<Movement>();
     }
 
     public void FillWaterBox()
