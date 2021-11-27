@@ -27,6 +27,7 @@ Dondoca: ...
 === Cow_Day_03 ===
 {Cow_Day_03:
 -   1:  -> D01
+-   else:  -> DONE
 }
 
 = D01
