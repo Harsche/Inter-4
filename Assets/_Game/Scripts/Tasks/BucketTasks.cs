@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BucketTasks : MonoBehaviour
 {
+    [SerializeField] private bool forWaterTask;
     private const string bucketTrigger = "Bucket";
     private Animator playerAnimator;
 
