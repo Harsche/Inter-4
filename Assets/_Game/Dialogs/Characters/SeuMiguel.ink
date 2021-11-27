@@ -70,7 +70,9 @@ Luiz: Eu achei o poço! Aproveitei e enchi a caixa d'água do vilarejo.
 Seu Miguel: Não acredito! Que benção, Luizinho.
 Seu Miguel: O povo vai ficar feliz demais.
 Luiz: Graças a Deus, Seu Miguel!
-Seu Miguel: Amém! Vem, Luiz, vou fazer o chá.Amém! Vem, Luiz, vou fazer o chá.
+Seu Miguel: Amém! Vem, Luiz, vou fazer o chá. Amém! Vem, Luiz, vou fazer o chá.
+~ ResumeTimeline()
+~ PauseTimeline()
 Seu Miguel: Dê o chá pra sua mãe, e se Deus quiser ela vai melhorar!
 Luiz: Muito obrigado, Seu Miguel!
 ~ SetPlayerAnimatorBool(PLAYERBUCKET, false)
