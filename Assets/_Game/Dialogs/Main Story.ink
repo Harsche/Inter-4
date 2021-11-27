@@ -5,6 +5,7 @@ VAR woodChopped = 0
 VAR milkDay2 = false
 VAR changedDay = false
 VAR chopTask = false
+VAR waterTask = false
 VAR ciceraFoundKey = false
 
 CONST DAY = "Day"

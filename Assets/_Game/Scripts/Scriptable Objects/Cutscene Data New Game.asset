@@ -54,7 +54,7 @@ MonoBehaviour:
   - cutsceneNumber: 17.5
     state: 0
   - cutsceneNumber: 18
-    state: 0
+    state: 1
   - cutsceneNumber: 19
     state: 0
   - cutsceneNumber: 20

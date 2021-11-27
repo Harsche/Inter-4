@@ -2,11 +2,19 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    [SerializeField] private GameObject prefab;
-    [SerializeField] private GameObject obj;
+    [SerializeField] bool activate;
+    bool active;
 
-    void Start()
-    {
-        Debug.Log(prefab == obj);
+    private void Awake() {
+        active = false;
+    }
+
+    private void Update() {
+        if(active != activate)
+        {
+            active = activate;
+            Globals.DialogManager.story.variablesState["waterTask"] = active;
+            Debug.Log(active);
+        }
     }
 }
