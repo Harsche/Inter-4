@@ -43,13 +43,13 @@ Dona Maria: A mainha não quer não, meu bem.
 = D01
 ~ PauseTimeline()
 Dona Maria: Oh, Luiz, meu fi. Vamo lá busca a água, a gente precisa guarda tudo que puder.
+~ newQuest("Siga a mamãe")
 ~ ResumeTimeline()
 ->DONE
 
 = D02
 ~ PauseTimeline()
-Dona Maria: Vem, fi, vamo pra casa.
-Luiz: Mas, mainha, e a ag-
+Luiz: Mainha, a ag-
 Dona Maria: Vem, Luizinho, num se preocupa. A mainha vai dar um jeito, ta bem?
 Luiz: Ta bem, mãe.
 ~ ResumeTimeline()
@@ -57,19 +57,21 @@ Luiz: Ta bem, mãe.
 
 = D03
 ~ PauseTimeline()
-Dona Maria: Luiz, eu vou pra casa, to me sentindo um tanto estranha.
-Dona Maria: Não se esqueça de tirar o leite pros seus irmão.
-Luiz: Podeixa, mainha!
+Dona Maria: To me sentindo um tanto estranha, vamo pra casa. 
+Luiz: Ta bom.
 ~ ResumeTimeline()
 -> DONE
 
 = Milk_Day_02
 {not Cow_Day_02.D01:
 Dona Maria: Ô, meu fi. Pode tirá um poco de leite da Dondoca e trazê pra mim?
+~ newQuest("Ordenhe a Dondoca")
 -> DONE
 }
 Dona Maria: Pronto, meu fi, pode ir faze suas coisa. Só não vai longe, tá?
 Luiz: Sim, senhora!
+~ newQuest("Vá falar com Dona Cícera")
+~ newQuest("Vá falar com Seu João")
 ~ milkDay2 = true
 ~ SetPlayerAnimatorBool(PLAYERBUCKET, false)
 ~ SetPlayerAnimatorBool(PLAYERMLIK, false)
@@ -126,6 +128,8 @@ Dona Maria: Não se preocupa, meu bem. Logo a mainha melhora!
 Dona Maria: Eu to é com uma dor de cabeça daquelas...
 Dona Maria: Fala com Seu Miguel pra mim, pergunta de algum remédio.
 Luiz: Podeixa, mainha!
+~ newQuest("Vá ajudar Seu Zé")
+~ newQuest("Vá falar com Seu Miguel")
 ~ ResumeTimeline()
 -> DONE
 

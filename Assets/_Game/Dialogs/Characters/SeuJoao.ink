@@ -22,6 +22,7 @@ Seu João: Quase ninguém ta comprando carvão... eu num tenho como te paga, Lui
 Luiz: Eu te ajudo, Seu João!
 Seu João: Tem certeza, fi?
 Luiz: Tenho sim!
+~ newQuest("Corte a lenha")
 ~ ResumeTimeline()
 ~ chopTask = true
 -> DONE

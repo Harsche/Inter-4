@@ -58,6 +58,7 @@ Luiz: Eu vou já levar para a caixa d'água do vilarejo.
 Luiz: Acho que uns 5 baldes já dá!
 Luiz: Só preciso tomar cuidado porque o balde ta furado...
 Luiz: Bom, é o que eu tenho. Vou precisar ser rápido!
+~ newQuest("Encha a caixa d'agua do vilarejo")
 -> DONE
 
 === Luiz_Day_04 ===
@@ -73,4 +74,5 @@ Luiz: Eu vou cuidar da mamãe e de vocês também!
 João: Ela tava toda se tremendo, com calafrio...
 Luiz: Dona Cida disse que ia me ajudar se a mamãe piorasse.
 Luiz: Eu vou lá na casa dela!
+~ newQuest("Vá falar com Dona Cida")
 -> DONE

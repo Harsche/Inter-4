@@ -79,11 +79,14 @@ Dona Maria: To não, meu fi. Vamo pa casa, vem.
 == Day_01_Scene_04 ==
 = Dona_Maria_Scene_04
 { not Day_01_Scene_04.Milk_Cow:
-Dona Maria: Ô, meu bem. Pode tirá um poco de leite da Dondoca e trazê pra mim prepará o café da manhã?
+Dona Maria: Ô, meu bem, faz favor. Vá tirar um poco de leite da Dondoca.
+~ newQuest("Ordenhe a Dondoca")
 -> DONE
 - else:
 Dona Maria: Pronto, meu fi, pode ir faze suas coisa. Só não vai longe, tá?
 Luiz: Sim, senhora!
+~ newQuest("Vá falar com Dona Cida")
+~ newQuest("Vá falar com Seu João")
 ~ SetPlayerAnimatorBool(PLAYERBUCKET, false)
 ~ SetPlayerAnimatorBool(PLAYERMLIK, false)
 ~ ChooseCutscene(0)
