@@ -209,7 +209,8 @@ Luiz: Acho que não tenho mais como ajudar o Seu João...
             ~ PlayCutscene(22)
             -> DONE
         } -> Other_Dialogs.No_One_Home
--   4: -> DONA_CIDA
+-   4: ~ PlayCutscene(24)
+        -> DONE
 }
 
 
@@ -257,4 +258,7 @@ Luiz: Acho que não tenho mais como ajudar o Seu João...
 ~ return
 
 == function SetPlayerAnimatorBool(parameter, value)
+~ return
+
+== function SetCutscenePlayable(cutsceneNum)
 ~ return

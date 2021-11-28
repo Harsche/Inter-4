@@ -9,7 +9,7 @@
 === Dona_Cida_Day_01 ===
 {Dona_Cida_Day_01:
 -   1:  -> D01
--   else:   -> Random_Dialog
+-   else:   -> Dona_Cida_Random_Dialog
 }
 
 = D01
@@ -41,20 +41,6 @@ Dona Cida: Eles vão passar uns dias lá... Ocê quer entrar toma um café?
     ~ ResumeTimeline()
     {Seu_Joao_Day_01.Chopped_Wood: -> LUIZ}
     ->DONE
-    
-= Random_Dialog
-
-{ shuffle once:
-
--    Dona Cida: Eu fico feliz por você e o Junior serem amigos. Tenho um carinho pelo cê como se ocê fosse meu neto, Luizinho!
-    ->DONE
--    Dona Cida: Sabe um coisa que eu tenho saudade? Do cheiro da terra molhada, o cheiro da chuva... Sim, é um cheiro único.
-    ->DONE
--    Dona Cida: Logo logo vai chover, meu fi. Eu tenho fé, eu oro todos os dias por isso!
-    ->DONE
--    Dona Cida: Espero que o Junior e o meu fi voltem logo pra casa, que consigam vender tudo que levaram. Se for assim, eu posso até ajudar ocê e a sua mãe, Luiz!
-    ->DONE
-}
 
 = D02
 ->DONE
@@ -62,7 +48,7 @@ Dona Cida: Eles vão passar uns dias lá... Ocê quer entrar toma um café?
 === Dona_Cida_Day_03 ===
 {Dona_Cida_Day_03:
 -   1:  -> D01
--   else:   -> Random_Dialog
+-   else:   -> Dona_Cida_Random_Dialog
 }
 
 = D01
@@ -103,14 +89,12 @@ Dona Cida: Quando eu era criança, contavam várias lendas aqui do sertão, eu a
     ~ ResumeTimeline()
     -> DONE
 
-= Random_Dialog
--> DONE
-
 === Dona_Cida_Day_04 ===
+{returnedChicken: -> Returned_Chickens}
 {Dona_Cida_Day_04:
 -   1:  -> D01
 -   2:  -> D02
--   else:   -> Random_Dialog
+-   else:   -> Dona_Cida_Random_Dialog
 }
 
 = D01
@@ -119,7 +103,7 @@ Dona Cida: Opa, Luiz. Como sua mãe ta, fi?
 Luiz: Ela piorou, Dona Cida...
 Dona Cida: Vem, fi.
 ~ ResumeTimeline()
--> D02
+-> DONE
 
 = D02
 Dona Cida: O que ela tá sentindo?
@@ -139,19 +123,26 @@ Luiz: Nossa, Dona Cida, que Deus lhe pague!
 Dona Cida: A senhora é um anjo! Vou ir ver se Seu Zé já voltou!
 Dona Cida: Vá lá, meu fi!
 ~ newQuest("Vá falar com Seu Zé")
--> D03
+~ SetCutscenePlayable("25")
+-> DONE
 
-= D03
+= Chicken_Running_Away_01
+{Chicken_Running_Away_01 > 1: -> Chicken_Running_Away_02}
 ~ PauseTimeline()
 Luiz: Eita! DONA CIDA, AS GALINHA DA SENHORA TÃO TUDO SOLTA AQUI!
+~ ResumeTimeline()
+-> DONE
+
+= Chicken_Running_Away_02
+~ PauseTimeline()
 Dona Cida: Oh meu Deus! Elas escaparam!
 Luiz: Eu vou pegar elas pra senhora.
 Dona Cida: É muito dificil pegar galinha, Luiz. São ligeiras demais.
 Luiz: Então eu vou tentar só tocar elas pra dentro do cercado de novo.
-JOGO: (Minigame de pegar as galinhas)
+~ chickenTask = true
 ~ newQuest("Coloque as galinhas no galinheiro")
 ~ ResumeTimeline()
--> Returned_Chickens
+-> DONE
 
 = Returned_Chickens
 Dona Cida: Obrigada, Luizinho! Essas galinhas são importante demais aqui pra casa.
@@ -161,6 +152,16 @@ Dona Cida: Pois é, fi. Muito obrigada mesmo!
 Luiz: Disponha!
 -> DONE
 
-= Random_Dialog
--> DONE
+== Dona_Cida_Random_Dialog
 
+{ shuffle once:
+
+-    Dona Cida: Eu fico feliz por você e o Junior serem amigos. Tenho um carinho pelo cê como se ocê fosse meu neto, Luizinho!
+    ->DONE
+-    Dona Cida: Sabe um coisa que eu tenho saudade? Do cheiro da terra molhada, o cheiro da chuva... Sim, é um cheiro único.
+    ->DONE
+-    Dona Cida: Logo logo vai chover, meu fi. Eu tenho fé, eu oro todos os dias por isso!
+    ->DONE
+-    Dona Cida: Espero que o Junior e o meu fi voltem logo pra casa, que consigam vender tudo que levaram. Se for assim, eu posso até ajudar ocê e a sua mãe, Luiz!
+    ->DONE
+}

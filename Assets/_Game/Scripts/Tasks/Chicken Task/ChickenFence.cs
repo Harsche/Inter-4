@@ -6,8 +6,9 @@ using System.Collections.Generic;
 public class ChickenFence : MonoBehaviour
 {
     [SerializeField] private float waitBeforeStopping;
+    [SerializeField] private GameObject[] chickensLoad;
     [SerializeField] private Chicken[] chickens;
-    private static HashSet<int> returnedChickens;
+    private static HashSet<int> returnedChickens = new HashSet<int>();
     private BoxCollider2D boxCollider2D;
     private static int chickenCount;
     private bool taskActive;
@@ -32,9 +33,11 @@ public class ChickenFence : MonoBehaviour
     {
         chickenCount++;
         returnedChickens.Add(chicken.chickenTaskNumber);
-        if(chickenCount >= 5)
-            Globals.DialogManager.story.variablesState["chickenTask"] = false;
-            Globals.DialogManager.story.variablesState["returnedChicken"] = false;
+        if(chickenCount < 5)
+            return;
+        Globals.DialogManager.story.variablesState["chickenTask"] = false;
+        Globals.DialogManager.story.variablesState["returnedChicken"] = false;
+        CutsceneManager.TriggerCutscene(26f);
     }
 
     private void ToggleTask(bool toggle)
@@ -44,12 +47,19 @@ public class ChickenFence : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(toggle);
             boxCollider2D.enabled = toggle;
         }
+        foreach(Chicken chicken in chickens)
+        {
+            chicken.gameObject.SetActive(toggle);
+        }
         if(!toggle)
             return;
         foreach(Chicken chicken in chickens)
         {
-            if(returnedChickens.Contains(chicken.chickenTaskNumber))
-                chicken.gameObject.SetActive(true);
+            bool chickenActive = !(returnedChickens.Contains(chicken.chickenTaskNumber));
+            chicken.gameObject.SetActive(chickenActive);
+            if(!chickenActive)
+                chickensLoad[chicken.chickenTaskNumber].SetActive(true);
+            
         }
     }
 
