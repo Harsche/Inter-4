@@ -277,7 +277,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -883,8 +883,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -102, y: -212}
-  m_SizeDelta: {x: -1784.8809, y: -715.0024}
+  m_AnchoredPosition: {x: -103.088196, y: -212}
+  m_SizeDelta: {x: -1787.0574, y: -715.0024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4305337650398180529
 CanvasRenderer:
@@ -941,7 +941,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -976,10 +976,10 @@ RectTransform:
   m_Father: {fileID: 4808366344086226093}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.2953, y: -0.6477}
-  m_SizeDelta: {x: 68.9131, y: 337.0385}
+  m_AnchorMin: {x: 0.24052206, y: 0.03852052}
+  m_AnchorMax: {x: 0.7445221, y: 0.95600003}
+  m_AnchoredPosition: {x: -0.2952881, y: 0.35229492}
+  m_SizeDelta: {x: -1.0868988, y: 3.0385132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8430002331132727102
 GameObject:
@@ -1013,10 +1013,10 @@ RectTransform:
   m_Father: {fileID: 4808366344086226093}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.24052206, y: 0.03852052}
+  m_AnchorMax: {x: 0.7445221, y: 0.95600003}
+  m_AnchoredPosition: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 65, y: 29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4053541209826128393
 CanvasRenderer:
@@ -1048,7 +1048,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 47df7bcf72f2b0148a805f1aa644771f, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

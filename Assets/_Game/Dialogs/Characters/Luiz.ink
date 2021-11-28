@@ -4,6 +4,7 @@
 -   2:  -> Luiz_Day_02
 -   3:  -> Luiz_Day_03
 -   4:  -> Luiz_Day_04
+-   5:  -> Luiz_Day_05
 }
 
 === Getting_Dark ===
@@ -77,4 +78,8 @@ João: Ela tava toda se tremendo, com calafrio...
 Luiz: Dona Cida disse que ia me ajudar se a mamãe piorasse.
 Luiz: Eu vou lá na casa dela!
 ~ newQuest("Vá falar com Dona Cida")
+-> DONE
+
+=== Luiz_Day_05 ===
+Luiz: Uai, que que o Caramelo tanto late lá fora?
 -> DONE

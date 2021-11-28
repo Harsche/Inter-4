@@ -1,6 +1,7 @@
 === LUISA ===
 {GameDay:
 - 1:    ->Luisa_Day_01
+- 4:    ->Luisa_Day_04
 }
 
 
@@ -23,3 +24,23 @@
 -   Luisa: O Caramelo é o melhor cachorro do mundo!
     ->DONE
 }
+
+=== Luisa_Day_04 ===
+{Luisa_Day_04:
+-   1:  -> D01
+-   else:   ->Random_Dialog
+}
+
+= D01
+Luiz: Luisa, cade a mainha?
+Luisa: Ela foi no banheiro... foi várias vezes. A mainha ta doente, Luiz?
+Luiz: Ela só não ta muito bem, mas não se preocupa, tá?
+Luiz: Eu vou cuidar da mamãe e de vocês também!
+João: Ela tava toda se tremendo, com calafrio...
+Luiz: Dona Cida disse que ia me ajudar se a mamãe piorasse.
+Luiz: Eu vou lá na casa dela!
+~ newQuest("Vá falar com a Dona Cida")
+-> DONE
+
+= Random_Dialog
+-> DONE
