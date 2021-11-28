@@ -20,5 +20,6 @@ Voluntária: Podemos te ajudar com um diagnostico preliminar. Qual seu nome?
 Luiz: Eu sou o Luiz! Luiz Oliveira da Silva! E a senhora?
 Voluntária: Eu me chamo Livia! Eu vou chamar o médico pra ver a sua mãe, tudo bem?
 Luiz: Claro!
+~ SetCutscenePlayable("33")
 ~ ResumeTimeline()
--> MEDICO
+-> DONE

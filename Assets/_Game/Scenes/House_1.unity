@@ -682,6 +682,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1248580597365471560}
+  - {fileID: 8823676979719262946}
+  - {fileID: 383279227}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1257,7 +1259,7 @@ Transform:
   - {fileID: 1701330831}
   - {fileID: 854998724}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &305022572
 PrefabInstance:
@@ -1671,10 +1673,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.543848, y: -1.1861569, z: -100.99831}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 8823676979719262946}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Children: []
+  m_Father: {fileID: 236260025}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &409781954
 PrefabInstance:
@@ -2322,6 +2323,7 @@ GameObject:
   - component: {fileID: 590870279}
   - component: {fileID: 590870281}
   - component: {fileID: 590870280}
+  - component: {fileID: 590870282}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2447,6 +2449,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590870278}
   m_CullTransparentMesh: 1
+--- !u!95 &590870282
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590870278}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &618525360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2869,7 +2890,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &646493974
 PrefabInstance:
@@ -8973,6 +8994,7 @@ GameObject:
   - component: {fileID: 1784209087}
   - component: {fileID: 1784209089}
   - component: {fileID: 1784209088}
+  - component: {fileID: 1784209090}
   m_Layer: 0
   m_Name: Logo
   m_TagString: Untagged
@@ -9037,6 +9059,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784209086}
   m_CullTransparentMesh: 1
+--- !u!95 &1784209090
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784209086}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1793146932
 GameObject:
   m_ObjectHideFlags: 0
@@ -9276,10 +9317,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -9388,7 +9429,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1913928301
 PrefabInstance:
@@ -12412,8 +12453,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8823676979719262975}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.543848, y: -1.1861569, z: -100.99831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 551574973}
@@ -12428,8 +12469,8 @@ Transform:
   - {fileID: 1382153570}
   - {fileID: 1863207451}
   - {fileID: 971520305}
-  m_Father: {fileID: 383279227}
-  m_RootOrder: 0
+  m_Father: {fileID: 236260025}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!320 &8823676979719262947
 PlayableDirector:
@@ -12479,7 +12520,9 @@ PlayableDirector:
   - key: {fileID: -2400303917848504625, guid: 4ac3ec7cee85da54db39bc26ded3ee17, type: 2}
     value: {fileID: 1863207450}
   - key: {fileID: 386454806613579153, guid: 4ac3ec7cee85da54db39bc26ded3ee17, type: 2}
-    value: {fileID: 1863207455}
+    value: {fileID: 590870282}
+  - key: {fileID: -8450763583638183016, guid: 4ac3ec7cee85da54db39bc26ded3ee17, type: 2}
+    value: {fileID: 1784209090}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &8823676979719262975

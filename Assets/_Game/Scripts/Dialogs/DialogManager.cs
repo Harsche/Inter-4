@@ -1,19 +1,19 @@
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 using Ink.Runtime;
 using Lean.Touch;
 using System;
 using System.Linq;
 using CleverCrow.Fluid.UniqueIds;
-using TMPro;
 
 public class DialogManager : MonoBehaviour
 {
     public static int GameDay;
     public static GameObject TalkingNPC;
     [SerializeField] private TextAsset dialogJson;
-    [SerializeField] private TextMeshProUGUI dialogText;
-    [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private Text dialogText;
+    [SerializeField] private Text nameText;
     [SerializeField] private ChoicesCanvas choicesCanvas;
     private Canvas myCanvas;
     private float enableTime;

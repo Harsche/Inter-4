@@ -1001,8 +1001,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogJson: {fileID: 4900000, guid: f7d5036718ac23d4298974eb677ddfcc, type: 3}
-  dialogText: {fileID: 0}
-  nameText: {fileID: 0}
+  dialogText: {fileID: 1514672767}
+  nameText: {fileID: 1514672766}
   choicesCanvas: {fileID: 232071321614199253}
 --- !u!95 &8715271182620564560
 Animator:

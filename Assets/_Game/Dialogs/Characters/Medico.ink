@@ -6,6 +6,7 @@
 === Medico_Day_05 ==
 {Medico_Day_05:
 -   1:  -> D01
+-   2:  -> D02
 }
 
 = D01
@@ -19,7 +20,14 @@ Lívia: Mas nós podemos levá-la até lá de carro, se você aceitar!
 Luiz: Nossa, seria muito mais rápido, seria ótimo! Muito obrigada!
 Lívia: Nós vamos terminar de atender seus vizinhos e podemos ir, okay?
 Luiz: Claro! Vou ajeita as coisas por aqui.
+~ ResumeTimeline()
+-> DONE
+
+= D02
+~ PauseTimeline()
 JOGO: Eles deixaram uma cesta básica e um galão de água na nossa casa!
 JOGO: Hoje, vamos jantar!
+~ ChangeDayTime(NIGHT)
+~ SetCutscenePlayable("35")
 ~ ResumeTimeline()
--> DONA_MARIA
+-> DONE

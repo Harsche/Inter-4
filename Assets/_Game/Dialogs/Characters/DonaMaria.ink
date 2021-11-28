@@ -221,6 +221,8 @@ JOGO: Caramelo parece estar com fome.
 === Dona_Maria_Day_05 ===
 {Dona_Maria_Day_04:
 -   1:  -> D01
+-   2:  -> D02
+-   3:  -> D03
 -   else:  -> DONE
 }
 
@@ -228,12 +230,16 @@ JOGO: Caramelo parece estar com fome.
 Dona Maria: LUIIIIIIZ! Entre pra jantar, meu fi!
 -> D02
 
-
 = D02
 ~ PauseTimeline()
 Dona Maria: Já servi seu pratinho, meu filho!
 JOGO: O prato com arroz e feijão é colorido por legumes e carne! O cheiro é ótimo!
 Luiz: Obrigada, mainha!
+~ ResumeTimeline()
+-> DONE
+
+= D03
+~ PauseTimeline()
 Dona Maria: Ainda bem que aquele pessoal da ONG apareceu, né fi?
 Luiz: É sim, mainha!
 Luiz: Nem dá pra acreditar que ainda existem pessoas tão boas!
