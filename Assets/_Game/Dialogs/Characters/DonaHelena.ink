@@ -88,11 +88,13 @@ Dona Helena: Luiz, ele ainda não chegou, mas deve chegar logo. Entra pra espera
 -> DONE
 
 = D02
+~ PauseTimeline()
 Dona Helena: E sua mãe, Luiz?
 Luiz: Piorou, Dona Helena...
 Dona Helena: Meu Deus... Eu sinto muito.
 Luiz: Eu to com medo, Dona Helena. E se...
 Dona Helena: Não fique com medo não, meu bem. Logo as coisas vão se ajeitar! Eu tenho fé.
+~ ResumeTimeline()
 -> DONE
 
 = D03

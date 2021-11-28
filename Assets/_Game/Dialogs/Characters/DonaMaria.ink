@@ -155,11 +155,13 @@ Dona Maria: A mãe promete, tá?
 ->DONE
 
 === Dona_Maria_Day_04 ===
+{Give_Food: -> Give_Food}
 {Getting_Dark == 4: -> At_Night}
 {Dona_Maria_Day_04: -> DONE}
 -> DONE
 
 = At_Night
+{At_Night == 2: -> At_Night_02}
 ~ PauseTimeline()
 Luiz: Já voltei!
 Dona Maria: Oi fi...
@@ -175,10 +177,28 @@ Dona Maria: Eu... eu não tenho -
 Luiz: Eu tenho uns pães e umas macaxeiras!
 Luiz: Consegui fazendo uns trabalhinhos! Venham cá que eu vou dividir!
 ~ ResumeTimeline()
+~ PlayCutscene(30)
+-> DONE
+    
+= At_Night_02
+~ PauseTimeline()
+JOGO: Caramelo parece estar com fome.
 *   [Dar um pouco]
-    // ~ ChooseCutscene(0)
-    ~ PauseTimeline()
+    -> Give_Food
+*   [Há pouca comida]
+    -> Dont_Give_Food
+    
+= Give_Food
+{Give_Food:
+
+    -   1:
+    ~ ChooseCutscene(0)
     Luiz: Logo, vamo te mais do que isso, ta Caramelo?
+    ~ ResumeTimeline()
+    -> DONE
+    
+    -   2:
+    ~ PauseTimeline()
     Luiz: Olha, Caramelo, mesmo que eu leve mainha ao médico amanhã...
     Luiz: Não sei como arranjar mais comida... 
     Luiz: Que Deus nos ajude.
@@ -187,15 +207,17 @@ Luiz: Consegui fazendo uns trabalhinhos! Venham cá que eu vou dividir!
     ~ ChangeDayTime(DAY)
     ~ ResumeTimeline()
     -> DONE
-*   [Há pouca comida]
-    // ~ ChooseCutscene(1)
+}
+
+= Dont_Give_Food
+    ~ ChooseCutscene(1)
     ~ PauseTimeline()
     ~ GameDay = 5
     ~ ChangeGameDay(GameDay)
     ~ ChangeDayTime(DAY)
     ~ ResumeTimeline()
-    -> DONE
-
+    ->DONE
+    
 === Dona_Maria_Day_05 ===
 {Dona_Maria_Day_04:
 -   1:  -> D01

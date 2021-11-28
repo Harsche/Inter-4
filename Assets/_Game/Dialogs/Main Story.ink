@@ -224,7 +224,8 @@ Luiz: Acho que não tenho mais como ajudar o Seu João...
     } 
     -> Other_Dialogs.No_One_Home
 -   3: -> Other_Dialogs.Door_Locked
--   4: {Dona_Cida_Day_04.Returned_Chickens:
+-   4: {Getting_Dark == 4: -> Other_Dialogs.No_One_Home}
+        {Dona_Cida_Day_04.Returned_Chickens:
         ~ PlayCutscene(28)
         -> DONE
         } -> Other_Dialogs.No_One_Home

@@ -9,6 +9,8 @@
 === Getting_Dark ===
 {GameDay == 4:
 Luiz: Já está escurecendo... vou direto pra casa ver mainha!
+~ SetCutscenePlayable("30")
+~ ChangeDayTime(NIGHT)
 -> DONE
 }
 {GameDay == 3:
