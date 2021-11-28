@@ -44,6 +44,7 @@ public class ChickenFence : MonoBehaviour
 
     private void ToggleTask(bool toggle)
     {
+        bool returnedAllChickens = (bool)Globals.DialogManager.story.variablesState["returnedChicken"];
         for (int i = 0; i < transform.childCount; i++)
         {
             transform.GetChild(i).gameObject.SetActive(toggle);
@@ -51,7 +52,8 @@ public class ChickenFence : MonoBehaviour
         }
         foreach (Chicken chicken in chickens)
         {
-            chicken.gameObject.SetActive(toggle);
+            if(!returnedAllChickens)
+                chicken.gameObject.SetActive(toggle);
         }
         if (!toggle)
             return;
