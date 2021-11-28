@@ -28,6 +28,6 @@ Luiz: Claro! Vou ajeita as coisas por aqui.
 JOGO: Eles deixaram uma cesta básica e um galão de água na nossa casa!
 JOGO: Hoje, vamos jantar!
 ~ ChangeDayTime(NIGHT)
-~ SetCutscenePlayable("35")
+~ SetCutscenePlayable("34.5")
 ~ ResumeTimeline()
 -> DONE

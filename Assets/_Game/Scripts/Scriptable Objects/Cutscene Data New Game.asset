@@ -88,8 +88,8 @@ MonoBehaviour:
   - cutsceneNumber: 33
     state: 1
   - cutsceneNumber: 34
-    state: 0
+    state: 1
+  - cutsceneNumber: 34.5
+    state: 1
   - cutsceneNumber: 35
     state: 1
-  - cutsceneNumber: 36
-    state: 0

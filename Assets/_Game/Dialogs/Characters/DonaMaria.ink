@@ -228,6 +228,7 @@ JOGO: Caramelo parece estar com fome.
 
 = D01
 Dona Maria: LUIIIIIIZ! Entre pra jantar, meu fi!
+~ SetCutscenePlayable("35")
 -> D02
 
 = D02
