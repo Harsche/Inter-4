@@ -1019,10 +1019,6 @@ PrefabInstance:
       propertyPath: _id
       value: f0062d2b-a54d-4fc2-b4b7-d996ee746db9
       objectReference: {fileID: 0}
-    - target: {fileID: 7831011793051971220, guid: 0da156793bc5f6841ba3b5c8f0fd172d, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -2457847447732365304, guid: 98f768637c4f4834f83c23a7e03ac06c, type: 2}
     - target: {fileID: 8715271182620564561, guid: 0da156793bc5f6841ba3b5c8f0fd172d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1111,10 +1107,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_Dialog
       objectReference: {fileID: 0}
-    - target: {fileID: 8892520634136052099, guid: 0da156793bc5f6841ba3b5c8f0fd172d, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -2457847447732365304, guid: 98f768637c4f4834f83c23a7e03ac06c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0da156793bc5f6841ba3b5c8f0fd172d, type: 3}
 --- !u!1 &1691913378 stripped
@@ -1186,6 +1178,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1077859832, guid: 71bf64e6944e53b4a9650d8e5251b6b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3661951768646721801, guid: 71bf64e6944e53b4a9650d8e5251b6b6, type: 3}
       propertyPath: m_Name
       value: GLOBALS
@@ -1274,15 +1270,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3847583263496928407, guid: 71bf64e6944e53b4a9650d8e5251b6b6, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -2457847447732365304, guid: 98f768637c4f4834f83c23a7e03ac06c, type: 2}
     - target: {fileID: 4621164984863646872, guid: 71bf64e6944e53b4a9650d8e5251b6b6, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -2457847447732365304, guid: 98f768637c4f4834f83c23a7e03ac06c, type: 2}
-    - target: {fileID: 5626778208787900086, guid: 71bf64e6944e53b4a9650d8e5251b6b6, type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -2457847447732365304, guid: 98f768637c4f4834f83c23a7e03ac06c, type: 2}
@@ -1291,15 +1279,51 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2457847447732365304, guid: 98f768637c4f4834f83c23a7e03ac06c, type: 2}
     - target: {fileID: 7677472035960590281, guid: 71bf64e6944e53b4a9650d8e5251b6b6, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -2457847447732365304, guid: 98f768637c4f4834f83c23a7e03ac06c, type: 2}
-    - target: {fileID: 9033396937526810439, guid: 71bf64e6944e53b4a9650d8e5251b6b6, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -2457847447732365304, guid: 98f768637c4f4834f83c23a7e03ac06c, type: 2}
-    m_RemovedComponents: []
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1579920466, guid: 71bf64e6944e53b4a9650d8e5251b6b6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 71bf64e6944e53b4a9650d8e5251b6b6, type: 3}
+--- !u!1 &1856674731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1579920464, guid: 71bf64e6944e53b4a9650d8e5251b6b6, type: 3}
+  m_PrefabInstance: {fileID: 1856674730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1856674732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856674731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 41c64921b836e4e41b4f6700a848578f, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 2
+  m_Text: Deseja realmente retornar ao menu?
 --- !u!1001 &2047180203
 PrefabInstance:
   m_ObjectHideFlags: 0

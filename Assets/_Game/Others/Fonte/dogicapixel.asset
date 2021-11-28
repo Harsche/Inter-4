@@ -102,9 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: dogicapixel
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 344317647
   material: {fileID: -2831436283432270356}
-  materialHashCode: 0
+  materialHashCode: -1416835185
   m_Version: 1.1.0
   m_SourceFontFileGUID: 41c64921b836e4e41b4f6700a848578f
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 41c64921b836e4e41b4f6700a848578f, type: 3}
