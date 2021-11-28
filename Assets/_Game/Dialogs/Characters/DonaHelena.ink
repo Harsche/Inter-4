@@ -85,7 +85,7 @@ Dona Helena: Oi, Luiz!
 Luiz: Opa, Dona Helena! Vim ver se Seu Zé já voltou! Preciso demais falar com ele!
 Dona Helena: Luiz, ele ainda não chegou, mas deve chegar logo. Entra pra esperar, fi.
 ~ ResumeTimeline()
--> D02
+-> DONE
 
 = D02
 Dona Helena: E sua mãe, Luiz?

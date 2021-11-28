@@ -12,10 +12,11 @@ public class ChickenFence : MonoBehaviour
     private BoxCollider2D boxCollider2D;
     private static int chickenCount;
     private bool taskActive;
-    
-    private void Awake() {
+
+    private void Awake()
+    {
         boxCollider2D = GetComponent<BoxCollider2D>();
-        boxCollider2D.enabled = false;;
+        boxCollider2D.enabled = false; ;
     }
 
     void Start()
@@ -25,7 +26,8 @@ public class ChickenFence : MonoBehaviour
         ToggleTask(taskActive);
     }
 
-    private void OnDestroy() {
+    private void OnDestroy()
+    {
         Globals.DialogManager.VariablesChanged -= WatchTaskActivated;
     }
 
@@ -33,10 +35,10 @@ public class ChickenFence : MonoBehaviour
     {
         chickenCount++;
         returnedChickens.Add(chicken.chickenTaskNumber);
-        if(chickenCount < 5)
+        if (chickenCount < 5)
             return;
         Globals.DialogManager.story.variablesState["chickenTask"] = false;
-        Globals.DialogManager.story.variablesState["returnedChicken"] = false;
+        Globals.DialogManager.story.variablesState["returnedChicken"] = true;
         CutsceneManager.TriggerCutscene(26f);
     }
 
@@ -47,19 +49,18 @@ public class ChickenFence : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(toggle);
             boxCollider2D.enabled = toggle;
         }
-        foreach(Chicken chicken in chickens)
+        foreach (Chicken chicken in chickens)
         {
             chicken.gameObject.SetActive(toggle);
         }
-        if(!toggle)
+        if (!toggle)
             return;
-        foreach(Chicken chicken in chickens)
+        foreach (Chicken chicken in chickens)
         {
-            bool chickenActive = !(returnedChickens.Contains(chicken.chickenTaskNumber));
-            chicken.gameObject.SetActive(chickenActive);
-            if(!chickenActive)
-                chickensLoad[chicken.chickenTaskNumber].SetActive(true);
-            
+            bool returnedChicken = returnedChickens.Contains(chicken.chickenTaskNumber);
+            chicken.gameObject.SetActive(!returnedChicken);
+            chickensLoad[chicken.chickenTaskNumber - 1].SetActive(returnedChicken);
+
         }
     }
 
@@ -69,10 +70,11 @@ public class ChickenFence : MonoBehaviour
         ToggleTask(taskActive);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.isTrigger)
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.isTrigger)
             return;
-        if(!(other.name.Contains("Chicken")))
+        if (!(other.name.Contains("Chicken")))
             return;
         StartCoroutine(StopChicken(other));
     }
@@ -82,7 +84,7 @@ public class ChickenFence : MonoBehaviour
         chicken.transform.GetChild(0).gameObject.SetActive(false);
         chicken.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         Chicken whichChicken = chicken.GetComponent<Chicken>();
-        GetChicken(whichChicken);
         yield return new WaitForSeconds(waitBeforeStopping);
+        GetChicken(whichChicken);
     }
 }
