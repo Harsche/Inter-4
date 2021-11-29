@@ -193,6 +193,7 @@ JOGO: Caramelo parece estar com fome.
 
     -   1:
     ~ ChooseCutscene(0)
+    ~ PauseTimeline()
     Luiz: Logo, vamo te mais do que isso, ta Caramelo?
     ~ ResumeTimeline()
     -> DONE
@@ -219,7 +220,7 @@ JOGO: Caramelo parece estar com fome.
     ->DONE
     
 === Dona_Maria_Day_05 ===
-{Dona_Maria_Day_04:
+{Dona_Maria_Day_05:
 -   1:  -> D01
 -   2:  -> D02
 -   3:  -> D03
@@ -227,9 +228,11 @@ JOGO: Caramelo parece estar com fome.
 }
 
 = D01
+~ PauseTimeline()
 Dona Maria: LUIIIIIIZ! Entre pra jantar, meu fi!
+~ ResumeTimeline()
 ~ SetCutscenePlayable("35")
--> D02
+-> DONE
 
 = D02
 ~ PauseTimeline()

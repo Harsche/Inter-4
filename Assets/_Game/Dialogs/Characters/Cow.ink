@@ -35,5 +35,6 @@ Dondoca: ...
 Luiz: Dondoca? Dondoquinha?
 JOGO: Dondoca não se move.
 Luiz: Dondoca, porque ocê ta aí deitada?
+~ newQuest("Vá falar com o Seu João")
 -> DONE
 
