@@ -19,6 +19,12 @@ public class StartScreen : MonoBehaviour
         Application.targetFrameRate = 60;
     }
 
+    private void Update()
+    {
+        if(Application.targetFrameRate != 60)
+            Application.targetFrameRate = 60;
+    }
+
     public void NewGameButton()
     {
         if (hasSave)

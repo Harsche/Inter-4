@@ -54,6 +54,11 @@ public class SaveManager
     {
         saveFile.AddData(guid, data);
     }
+
+    public static void ResetSaveAllData()
+    {
+        SaveAllData = null;
+    }
 }
 
 [System.Serializable]

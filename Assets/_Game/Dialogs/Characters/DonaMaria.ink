@@ -193,12 +193,15 @@ JOGO: Caramelo parece estar com fome.
 
     -   1:
     ~ ChooseCutscene(0)
-    ~ PauseTimeline()
+    -> DONE
+    
+    -   2:
+     ~ PauseTimeline()
     Luiz: Logo, vamo te mais do que isso, ta Caramelo?
     ~ ResumeTimeline()
     -> DONE
     
-    -   2:
+    -   3:
     ~ PauseTimeline()
     Luiz: Olha, Caramelo, mesmo que eu leve mainha ao médico amanhã...
     Luiz: Não sei como arranjar mais comida... 

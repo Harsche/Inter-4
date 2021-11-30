@@ -34,25 +34,28 @@ public class SceneChanger : MonoBehaviour
         fadeCanvas.SetActive(true);
         Globals.Player.GetComponent<Rigidbody2D>().simulated = false;
         Globals.CutsceneManager.PauseTimeline();
-        yield return fadeImage.DOFade(1, fadeDuration).WaitForCompletion();
+        Tween fade = fadeImage.DOFade(1, fadeDuration);
+        fade.SetLink(gameObject);
+        yield return fade.WaitForCompletion();
 
         Debug.Log("SAVED");
+        Vector2 oldPosition = Globals.Player.transform.position;
+        Globals.Player.transform.position = newPosition;
+        virtualCamera.OnTargetObjectWarped(virtualCamera.m_Follow, newPosition - oldPosition);
+
         SceneManager.LoadScene(sceneName);
         while (!SceneManager.GetSceneByName(sceneName).isLoaded)
         {
             yield return null;
         }
 
-        Vector2 oldPosition = Globals.Player.transform.position;
-        Globals.Player.transform.position = newPosition;
-        virtualCamera.OnTargetObjectWarped(virtualCamera.m_Follow, newPosition - oldPosition);
-
         SaveManager.SaveAllData?.Invoke();
         SaveManager.SaveGame();
 
         Globals.Player.GetComponent<Rigidbody2D>().simulated = true;
         Globals.CutsceneManager.ResumeTimeline();
-        yield return fadeImage.DOFade(0, fadeDuration).WaitForCompletion();
+        fade = fadeImage.DOFade(0, fadeDuration);
+        yield return fade.WaitForCompletion();
 
         fadeCanvas.SetActive(false);
     }
@@ -62,7 +65,9 @@ public class SceneChanger : MonoBehaviour
         fadeCanvas.SetActive(true);
         Globals.Player.GetComponent<Rigidbody2D>().simulated = false;
         Globals.CutsceneManager.PauseTimeline();
-        yield return fadeImage.DOFade(1, fadeDuration).WaitForCompletion();
+        Tween fade = fadeImage.DOFade(1, fadeDuration);
+        fade.SetLink(gameObject);
+        yield return fade.WaitForCompletion();
         Vector3 position = Globals.Player.transform.position;
         Debug.Log("SAVED");
         SceneManager.LoadScene(sceneName);
@@ -76,7 +81,8 @@ public class SceneChanger : MonoBehaviour
 
         Globals.Player.GetComponent<Rigidbody2D>().simulated = true;
         Globals.CutsceneManager.ResumeTimeline();
-        yield return fadeImage.DOFade(0, fadeDuration).WaitForCompletion();
+        fade = fadeImage.DOFade(0, fadeDuration);
+        yield return fade.WaitForCompletion();
 
         fadeCanvas.SetActive(false);
     }

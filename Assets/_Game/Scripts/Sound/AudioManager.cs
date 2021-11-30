@@ -2,23 +2,15 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    private AudioSource myAudioSource;
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource soundSource;
+    [SerializeField] private AudioClip music;
+    [SerializeField] private AudioClip sounds;
     private bool musicVolume;
+    private bool soundVolume;
 
     private void Awake()
     {
-        myAudioSource = GetComponent<AudioSource>();
-    }
-
-    public void PlayMusic(AudioClip music, bool loop)
-    {
-        if (!musicVolume) return;
-        if (loop)
-        {
-            myAudioSource.Play();
-            return;
-        }
-        myAudioSource.PlayOneShot(music);
     }
 
     public void ToggleMusicVolume(bool onOrOff)

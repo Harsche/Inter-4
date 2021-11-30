@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using CleverCrow.Fluid.UniqueIds;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Player : MonoBehaviour
     public static PlayerData playerData { get; private set; }
     private static string myGuid;
     private bool wasDataNull;
+    private string lastScene;
+    private Vector2 lastPosition;
 
     private void Awake()
     {
@@ -22,6 +25,17 @@ public class Player : MonoBehaviour
         }
         playerData = new PlayerData();
         wasDataNull = true;
+        lastScene = playerData.scene;
+        lastPosition = playerData.position;
+    }
+
+    private void TestScene(Scene scene, LoadSceneMode mode)
+    {
+        StartCoroutine(WaitToTestScene(scene));   
+    }
+
+    private void OnDestroy() {
+        SceneManager.sceneLoaded -= TestScene;
     }
 
     private void Start()
@@ -33,6 +47,7 @@ public class Player : MonoBehaviour
             LoadSceneReady.SceneName = playerData.scene;
             transform.position = playerData.position;
         }
+        SceneManager.sceneLoaded += TestScene;
     }
 
     public static void ChangeDayTime(DayTime time)
@@ -42,9 +57,19 @@ public class Player : MonoBehaviour
 
     private void SavePlayerData()
     {
-        playerData.scene = SceneManager.GetActiveScene().name;
-        playerData.position = transform.position;
+        playerData.scene = lastScene;
+        playerData.position = lastPosition;
         SaveManager.SaveData(myGuid, playerData);
+    }
+
+    private IEnumerator WaitToTestScene(Scene scene)
+    {
+        yield return new WaitUntil(() => scene.isLoaded);
+        if(scene.name != "Start" && scene.name != "Load")
+        {
+            lastScene = scene.name;
+            lastPosition = transform.position;
+        }
     }
 }
 

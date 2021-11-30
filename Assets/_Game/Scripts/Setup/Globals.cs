@@ -8,6 +8,7 @@ using UnityEditor.SceneManagement;
 
 public class Globals : MonoBehaviour
 {
+    public static Globals Instance {get; private set;}
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject playerVirtualCamera;
     [SerializeField] private GameObject dialogCanvas;
@@ -17,7 +18,7 @@ public class Globals : MonoBehaviour
     [SerializeField] private DialogManager dialogManager;
     [SerializeField] private SceneChanger sceneChanger;
     [SerializeField] private SaveManager saveManager;
-    [SerializeField] private GameObject[] dontDestroy;
+    public GameObject[] dontDestroy;
     
     
 
@@ -51,6 +52,9 @@ public class Globals : MonoBehaviour
         {
             DontDestroyOnLoad(go);
         }
+
+        if(Instance == null)
+            Instance = this;
     }
 
     #if UNITY_EDITOR
