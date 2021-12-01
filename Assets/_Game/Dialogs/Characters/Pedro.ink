@@ -1,14 +1,18 @@
 === PEDRO ===
 {GameDay:
-- 1:    ->Pedro_Day_01
+- 1:    -> Pedro_Day_01
+- 2:    -> Pedro_Day_01
+- 3:    -> Pedro_Day_01
+- 4:    -> Pedro_Day_01
+- 5:    -> Pedro_Day_01
 }
 === Pedro_Day_01 ===
 {Pedro_Day_01:
--   1:  ->Random_Dialog
--   else:   ->Random_Dialog
+-   1:  -> Pedro_Random_Dialog
+-   else:   -> Pedro_Random_Dialog
 }
 
-= Random_Dialog
+== Pedro_Random_Dialog
 
 { shuffle once:
 
