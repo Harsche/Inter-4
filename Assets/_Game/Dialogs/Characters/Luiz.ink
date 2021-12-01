@@ -61,6 +61,7 @@ Luiz: Eu vou já levar para a caixa d'água do vilarejo.
 Luiz: Acho que uns 5 baldes já dá!
 Luiz: Só preciso tomar cuidado porque o balde ta furado...
 Luiz: Bom, é o que eu tenho. Vou precisar ser rápido!
+~ RemoveQuest("Vá ver se tem água no poço")
 ~ newQuest("Encha a caixa d'agua do vilarejo")
 -> DONE
 

@@ -114,6 +114,7 @@ Seu José: Não precisa dizer nada não, fi.
 Seu José: Vamos precisar sair amanhã cedo, porque hoje já tá tarde, okay?
 Seu José: Fique prontinho com sua mãe, que passo lá na sua casa pra te ajudar com ela!
 Luiz: Tudo bem, seu Zé! Eu vou ir ajeitar as coisas pra amanhã!
+~ RemoveQuest("Vá falar com Seu Zé")
 -> Getting_Dark
 
 

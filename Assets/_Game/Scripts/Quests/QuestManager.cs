@@ -1,13 +1,15 @@
 using CleverCrow.Fluid.UniqueIds;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour
 {
     [SerializeField] private QuestList questList;
+    [SerializeField] private TasksMenu tasksMenu;
     private string myGuid;
-    private QuestData questData;
+    public QuestData questData { get; private set; }
     private GameObject newQuestCanvas;
     private Text newQuestText;
 
@@ -18,9 +20,14 @@ public class QuestManager : MonoBehaviour
         questData = SaveManager.GetData<QuestData>(myGuid);
         newQuestCanvas = Globals.NewQuestCanvas;
         newQuestText = newQuestCanvas.transform.GetChild(0).GetChild(0).gameObject.GetComponent<Text>();
+        tasksMenu.InstantiateTaskMenu();
         if (questData != null)
         {
             questList = questData.questList;
+            foreach (string task in questData.tasks)
+            {
+                TasksMenu.Instance.AddTask(task);
+            }
             return;
         }
         questData = new QuestData();
@@ -28,9 +35,12 @@ public class QuestManager : MonoBehaviour
 
     public void StartNewQuest(string questName)
     {
-        newQuestText.text = questName;
-        newQuestCanvas.SetActive(true);
-        StartCoroutine(NewQuestCanvas());
+        if(questData.tasks.Contains(questName))
+            return;
+        ShowQuestOnCanvas(questName);
+        questData.tasks.Add(questName);
+        TasksMenu.Instance.AddTask(questName);
+
         /*
         foreach (Quest q in questList.quests)
         {
@@ -43,6 +53,19 @@ public class QuestManager : MonoBehaviour
             }
         }
         */
+    }
+
+    public void RemoveQuest(string taskName)
+    {
+        questData.tasks.Remove(taskName);
+        TasksMenu.Instance.RemoveTask(taskName);
+    }
+
+    public void ShowQuestOnCanvas(string questName)
+    {
+        newQuestText.text = questName;
+        newQuestCanvas.SetActive(true);
+        StartCoroutine(NewQuestCanvas());
     }
 
     public void AdvanceQuestStep(Quest quest)
@@ -102,4 +125,5 @@ public class QuestManager : MonoBehaviour
 public class QuestData : ObjectData
 {
     public QuestList questList;
+    public List<string> tasks = new List<string>();
 }

@@ -44,6 +44,7 @@ public class ChickenFence : MonoBehaviour
 
     private void ToggleTask(bool toggle)
     {
+        Tutorials.Instance.ShowTutorial(TutorialType.Chicken);
         bool returnedAllChickens = (bool)Globals.DialogManager.story.variablesState["returnedChicken"];
         boxCollider2D.enabled = toggle;
         for (int i = 0; i < transform.childCount; i++)

@@ -54,6 +54,7 @@ Seu Miguel: Ta todo mundo mei velho pra ficar carregando balde.
 Seu Miguel: Mas quem sabe tem água lá! Talvez você possa ir dar uma olhada!
 Seu Miguel: Aí você já traz água para o chá da sua mãe!
 Luiz: Eu vou agora mesmo, Seu Miguel!
+~ RemoveQuest("Vá falar com Seu Miguel")
 ~ newQuest("Vá ver se tem água no poço")
 ~ waterTask = true
 ~ ResumeTimeline()
@@ -77,6 +78,7 @@ Seu Miguel: Dê o chá pra sua mãe, e se Deus quiser ela vai melhorar!
 Luiz: Muito obrigado, Seu Miguel!
 ~ SetPlayerAnimatorBool(PLAYERBUCKET, false)
 ~ filledWaterBox = false
+~ RemoveQuest("Encha a caixa d'agua do vilarejo")
 ~ ResumeTimeline()
 {Seu_Jose_Day_03.D03 && Seu_Joao_Day_03.Cow_Died:
 -> Getting_Dark

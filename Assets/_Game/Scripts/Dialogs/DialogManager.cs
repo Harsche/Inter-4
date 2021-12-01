@@ -178,6 +178,7 @@ public class DialogManager : MonoBehaviour
         story.BindExternalFunction("PauseTimeline", () => { Globals.CutsceneManager.PauseTimeline(); });
         story.BindExternalFunction("ResumeTimeline", () => { Globals.CutsceneManager.ResumeTimeline(); });
         story.BindExternalFunction("newQuest", (string questName) => { Globals.QuestManager.StartNewQuest(questName); });
+        story.BindExternalFunction("RemoveQuest", (string questName) => { Globals.QuestManager.RemoveQuest(questName); });
         story.BindExternalFunction("Debug", (string value) => { Debug.Log(value); });
         story.BindExternalFunction("ChooseCutscene", (int choiceIndex) => { Globals.CutsceneManager.ChooseCutscene(choiceIndex); });
         story.BindExternalFunction("PlayCutscene", (int cutsceneNum) => { CutsceneManager.TriggerCutscene(cutsceneNum); });

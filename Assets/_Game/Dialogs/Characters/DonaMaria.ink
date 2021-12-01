@@ -65,6 +65,7 @@ Luiz: Ta bom.
 = Milk_Day_02
 {not Cow_Day_02.D01:
 Dona Maria: Ô, meu fi. Pode tirá um poco de leite da Dondoca e trazê pra mim?
+~ RemoveQuest("Siga a mamãe")
 ~ newQuest("Ordenhe a Dondoca")
 -> DONE
 }
@@ -72,6 +73,7 @@ Dona Maria: Pronto, meu fi, pode ir faze suas coisa. Só não vai longe, tá?
 Luiz: Sim, senhora!
 ~ newQuest("Vá falar com Dona Cícera")
 ~ newQuest("Vá falar com Seu João")
+~ RemoveQuest("Ordenhe a Dondoca")
 ~ milkDay2 = true
 ~ SetPlayerAnimatorBool(PLAYERBUCKET, false)
 ~ SetPlayerAnimatorBool(PLAYERMLIK, false)

@@ -16,6 +16,7 @@ public class ChopTask : MonoBehaviour
     private int chopCount;
     private Canvas myCanvas;
     private Tween chop;
+    private static bool sawTutorial;
 
     private void Awake()
     {
@@ -31,6 +32,11 @@ public class ChopTask : MonoBehaviour
         myCanvas.enabled = true;
         StartSlider();
         taskStarted = true;
+        if(!sawTutorial)
+        {
+            Tutorials.Instance.ShowTutorial(TutorialType.Wood);
+            sawTutorial = true;
+        }
     }
 
     public void TryToChop(LeanFinger finger)

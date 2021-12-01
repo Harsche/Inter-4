@@ -54,6 +54,7 @@ Seu José: Bom, terminamo aqui, Luiz! Eu já vou indo!
 Seu José: Volto amanhã, se Deus quiser com a erva cidreira pra sua mãe!
 Dona Helena: Isso mesmo! E Luiz, fica com essas macaxeiras, por ter ajudado o Zé!
 Luiz: Oh, Dona Helena, muito obrigado!
+~ RemoveQuest("Vá ajudar Seu Zé")
 ~ ResumeTimeline()
 -> DONE
 

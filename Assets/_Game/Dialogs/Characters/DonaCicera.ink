@@ -24,6 +24,7 @@
 
 = D01
 ~ PauseTimeline()
+~ RemoveQuest("Vá falar com Dona Cícera")
 Luiz: Oi, Dona Cícera! A senhora ta bem? Porque a senhora ta aqui fora?
 Dona Cícera: LUIZ! Que bom que ocê apareceu, meu fi!
 Dona Cícera: Eu perdi a chave de casa e to trancada pra fora!
@@ -71,6 +72,7 @@ Dona Cícera: Eu consegui esses pães ontem com um mercador!
 Dona Cícera: Ocê aceita eles por ter me ajudado?
 Luiz: Aceito sim, Dona Cícera! Muito obrigada!
 Dona Cícera: Eu que agradeço, Luiz!
+~ RemoveQuest("Ache a chave da Dona Cícera")
 ~ ResumeTimeline()
 {Seu_Joao_Day_02.D01: -> Getting_Dark}
 -> DONE

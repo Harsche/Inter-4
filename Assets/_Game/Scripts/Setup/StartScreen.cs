@@ -45,8 +45,7 @@ public class StartScreen : MonoBehaviour
 
     private bool CheckIfThereIsSaveFile()
     {
-        string path = Application.persistentDataPath + @"\gamedata.json";
-        return File.Exists(path);
+        return File.Exists(SaveManager.savePath);
     }
 
     public void StartNewGame()
@@ -59,6 +58,8 @@ public class StartScreen : MonoBehaviour
         cutsceneSOData.statuses = cutsceneSODataNewGame.statuses;
         if (SaveManager.saveFile != null)
             SceneManager.LoadScene("Load");
+        if(CheckIfThereIsSaveFile())
+            File.Delete(SaveManager.savePath);
     }
 
     public void ActivateOrDeactivate(bool active)
