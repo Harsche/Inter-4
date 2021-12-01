@@ -12,6 +12,7 @@ public class ChickenFence : MonoBehaviour
     private BoxCollider2D boxCollider2D;
     private static int chickenCount;
     private bool taskActive;
+    private static bool sawTutorial;
 
     private void Awake()
     {
@@ -44,6 +45,11 @@ public class ChickenFence : MonoBehaviour
 
     private void ToggleTask(bool toggle)
     {
+        if(!sawTutorial)
+        {
+            Tutorials.Instance.ShowTutorial(TutorialType.Chicken);
+            sawTutorial = true;
+        }
         bool returnedAllChickens = (bool)Globals.DialogManager.story.variablesState["returnedChicken"];
         boxCollider2D.enabled = toggle;
         for (int i = 0; i < transform.childCount; i++)

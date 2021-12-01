@@ -7,11 +7,11 @@ using System;
 public class SaveManager
 {
     public static SaveFile saveFile { get; private set; }
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
     = new SaveFile();
-    #endif
+#endif
     public static Action SaveAllData;
-    private static string savePath = Application.persistentDataPath + @"\gamedata.json";
+    public static string savePath { get; private set; } = Application.persistentDataPath + @"\gamedata.json";
     private static JsonSerializerSettings SerializerSettings = new JsonSerializerSettings
     {
         TypeNameHandling = TypeNameHandling.Auto,
@@ -33,7 +33,7 @@ public class SaveManager
 
     public static void SaveGame()
     {
-        string jsonSave =  JsonConvert.SerializeObject(saveFile, Formatting.Indented, SerializerSettings);
+        string jsonSave = JsonConvert.SerializeObject(saveFile, Formatting.Indented, SerializerSettings);
         if (!Directory.Exists(Path.GetDirectoryName(savePath)))
             Directory.CreateDirectory(Path.GetDirectoryName(savePath));
         File.WriteAllText(savePath, jsonSave);
@@ -41,7 +41,7 @@ public class SaveManager
 
     public static void DeleteSave()
     {
-        if(File.Exists(savePath))
+        if (File.Exists(savePath))
             File.Delete(savePath);
     }
 
@@ -62,7 +62,7 @@ public class SaveManager
 }
 
 [System.Serializable]
-public class ObjectData {}
+public class ObjectData { }
 
 [System.Serializable]
 public class SaveFile : ISerializationCallbackReceiver
@@ -102,7 +102,7 @@ public class SaveFile : ISerializationCallbackReceiver
 
     public void AddData(string key, ObjectData value)
     {
-        if(!data.ContainsKey(key))
+        if (!data.ContainsKey(key))
         {
             data.Add(key, value);
             return;

@@ -22,6 +22,7 @@ Seu João: Quase ninguém ta comprando carvão... eu num tenho como te paga, Lui
 Luiz: Eu te ajudo, Seu João!
 Seu João: Tem certeza, fi?
 Luiz: Tenho sim!
+~ RemoveQuest("Vá falar com Seu João")
 ~ newQuest("Corte a lenha")
 ~ ResumeTimeline()
 ~ chopTask = true
@@ -34,6 +35,7 @@ Seu João: Num queria te deixar ir de mão abanando, então fica com essas romã
 Seu João: Eu consegui elas trocando carvão lá na cidade. Leva pro cê e pra sua família!
 Luiz: Obrigado, seu João!
 Seu João: Não tem de que, Luizinho!
+~ RemoveQuest("Corte a lenha")
 ~ SetPlayerAnimatorBool(PLAYERAXE, false)
 {Dona_Cida_Day_01.D01 : -> Luiz}
 -> DONE
@@ -53,6 +55,7 @@ Luiz: Eu to bem! Vim saber se posso ajudar com o carvão de novo!
 Seu João: Poxa, Luiz! Eu não vou mais fazer carvão até vender o que tem aqui.
 Luiz: Tudo bem, Seu João! Obrigada mesmo assim!
 Seu João: De nada, fi! Sinto muito...
+~ RemoveQuest("Vá falar com Seu João")
 ~ ResumeTimeline()
 {Dona_Cicera_Day_02.Help_Make_Basket_02: -> Getting_Dark}
 -> DONE
@@ -83,6 +86,7 @@ Seu João: Não chore não, vai ficar tudo bem.
 Seu João: Já já a chuva vem e a gente sai desse aperto...
 Luiz: Que Deus lhe ouça...
 Seu João: Se precisar de alguma coisa, eu vou estar lá em casa.
+~ RemoveQuest("Vá falar com o Seu João")
 ~ ResumeTimeline()
 -> DONE
 

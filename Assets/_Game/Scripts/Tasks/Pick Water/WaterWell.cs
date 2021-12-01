@@ -18,6 +18,7 @@ public class WaterWell : MonoBehaviour
     private AnimationControl playerAnimationControl;
     private Animator myAnimator;
     private bool taskActive;
+    private static bool sawTutorial;
 
     private void Awake()
     {
@@ -75,6 +76,12 @@ public class WaterWell : MonoBehaviour
             {
                 yield return null;
             }
+        }
+        if(!sawTutorial)
+        {
+            Tutorials.Instance.ShowTutorial(TutorialType.Well); 
+            yield return new WaitWhile(() => Tutorials.Instance.showingTutorial);
+            sawTutorial = true;
         }
         playerMovement.canMove = false;
         playerAnimator.SetBool(bucket, false);

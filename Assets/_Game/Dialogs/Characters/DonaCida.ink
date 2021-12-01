@@ -31,6 +31,7 @@ Dona Cida: Eles vão passar uns dias lá... Ocê quer entrar toma um café?
     Luiz: Brigada, Dona Cida! Eu já vou indo! Fique com Deus.
     Dona Cida: Vá com Deus, Luiz!
     ~ ResumeTimeline()
+    ~ RemoveQuest("Vá falar com Dona Cida")
     {Seu_Joao_Day_01.Chopped_Wood: -> LUIZ}
     ->DONE
 *   [Melhor não]
@@ -38,6 +39,7 @@ Dona Cida: Eles vão passar uns dias lá... Ocê quer entrar toma um café?
     ~ PauseTimeline()
     Luiz: Não se incomode não, Dona Cida! Eu passo aqui outra hora!
     Dona Cida: Ta bom, Luizinho!
+    ~ RemoveQuest("Vá falar com Dona Cida")
     ~ ResumeTimeline()
     {Seu_Joao_Day_01.Chopped_Wood: -> LUIZ}
     ->DONE
@@ -122,6 +124,7 @@ Dona Cida: Oh, fi, eu fico aqui com eles! Não se preocupe com isso não!
 Luiz: Nossa, Dona Cida, que Deus lhe pague!
 Dona Cida: A senhora é um anjo! Vou ir ver se Seu Zé já voltou!
 Dona Cida: Vá lá, meu fi!
+~ RemoveQuest("Vá falar com a Dona Cida")
 ~ newQuest("Vá falar com Seu Zé")
 ~ SetCutscenePlayable("25")
 -> DONE
@@ -150,6 +153,7 @@ Luiz: Imagina, Dona Cida!
 Luiz: O Junior já me disse que cês vivem de vender os ovin delas...
 Dona Cida: Pois é, fi. Muito obrigada mesmo!
 Luiz: Disponha!
+~ RemoveQuest("Coloque as galinhas no galinheiro")
 -> DONE
 
 == Dona_Cida_Random_Dialog

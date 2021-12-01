@@ -25,6 +25,7 @@ CONST PLAYERMLIK = "Milk"
 // House 6 = Dona Helena / Seu José
 
 EXTERNAL newQuest(questName)
+EXTERNAL RemoveQuest(questName)
 EXTERNAL PauseTimeline()
 EXTERNAL ResumeTimeline()
 EXTERNAL SetCutscenePlayable(cutsceneNum)
@@ -80,11 +81,13 @@ Dona Maria: To não, meu fi. Vamo pa casa, vem.
 = Dona_Maria_Scene_04
 { not Day_01_Scene_04.Milk_Cow:
 Dona Maria: Ô, meu bem, faz favor. Vá tirar um poco de leite da Dondoca.
+~ RemoveQuest("Siga a mamãe")
 ~ newQuest("Ordenhe a Dondoca")
 -> DONE
 - else:
 Dona Maria: Pronto, meu fi, pode ir faze suas coisa. Só não vai longe, tá?
 Luiz: Sim, senhora!
+~ RemoveQuest("Ordenhe a Dondoca")
 ~ newQuest("Vá falar com Dona Cida")
 ~ newQuest("Vá falar com Seu João")
 ~ SetPlayerAnimatorBool(PLAYERBUCKET, false)
@@ -265,4 +268,7 @@ Luiz: Acho que não tenho mais como ajudar o Seu João...
 ~ return
 
 == function SetCutscenePlayable(cutsceneNum)
+~ return
+
+== function RemoveQuest(questName)
 ~ return

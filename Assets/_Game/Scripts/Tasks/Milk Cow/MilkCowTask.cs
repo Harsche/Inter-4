@@ -55,6 +55,8 @@ public class MilkCowTask : MonoBehaviour
         {
             transform.GetChild(i).gameObject.SetActive(true);
         }
+        if(DialogManager.GameDay == 1)
+            Tutorials.Instance.ShowTutorial(TutorialType.Milk);
     }
 
     public void EndTask()
