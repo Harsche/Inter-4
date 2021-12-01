@@ -45,7 +45,7 @@ public class ChickenFence : MonoBehaviour
 
     private void ToggleTask(bool toggle)
     {
-        if(!sawTutorial)
+        if(toggle && !sawTutorial)
         {
             Tutorials.Instance.ShowTutorial(TutorialType.Chicken);
             sawTutorial = true;

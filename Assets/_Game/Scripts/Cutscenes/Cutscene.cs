@@ -12,6 +12,7 @@ public class Cutscene : MonoBehaviour
     [SerializeField] private TimelineAsset[] possibleCutscenes;
     [SerializeField] private CharacterInformation[] characterInformation;
     [SerializeField] private string[] deleteCharactersWithName;
+    [SerializeField] private GameObject[] disableGameObjects;
     public PlayableDirector playableDirector { get; private set; }
     public bool isPlaying { get; private set; }
     private TrackAsset[] cutsceneTracks;
@@ -52,12 +53,24 @@ public class Cutscene : MonoBehaviour
         transform.SetParent(null);
         BindTimelineTracks();
         DeleteCharactersWithName();
+        DisableObjects();
     }
 
     private void OnDestroy() {
         CutsceneManager.OnCallTriggerCutscene -= PlayCutsceneIfTriggered;
 
     }
+
+    private void DisableObjects()
+    {
+        if(disableGameObjects.Length <= 0)
+            return;
+        foreach (GameObject obj in disableGameObjects)
+        {
+            obj.SetActive(false);
+        }
+    }
+    
 
     public void PlayCutsceneIfTriggered(float cutsceneNum)
     {
