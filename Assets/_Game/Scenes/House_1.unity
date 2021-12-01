@@ -9072,6 +9072,11 @@ MonoBehaviour:
   possibleCutscenes: []
   characterInformation: []
   deleteCharactersWithName: []
+  disableGameObjects:
+  - {fileID: 832474752}
+  - {fileID: 679520176}
+  - {fileID: 1200414792}
+  - {fileID: 1787241793}
 --- !u!114 &1711063829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11309,6 +11314,11 @@ MonoBehaviour:
   possibleCutscenes: []
   characterInformation: []
   deleteCharactersWithName: []
+  disableGameObjects:
+  - {fileID: 832474752}
+  - {fileID: 679520176}
+  - {fileID: 1200414792}
+  - {fileID: 1787241793}
 --- !u!95 &232934837883173789
 Animator:
   serializedVersion: 3
@@ -11530,6 +11540,11 @@ MonoBehaviour:
   possibleCutscenes: []
   characterInformation: []
   deleteCharactersWithName: []
+  disableGameObjects:
+  - {fileID: 832474752}
+  - {fileID: 679520176}
+  - {fileID: 1200414792}
+  - {fileID: 1787241793}
 --- !u!1 &1248580597365471573
 GameObject:
   m_ObjectHideFlags: 0
@@ -11753,6 +11768,11 @@ MonoBehaviour:
   possibleCutscenes: []
   characterInformation: []
   deleteCharactersWithName: []
+  disableGameObjects:
+  - {fileID: 832474752}
+  - {fileID: 679520176}
+  - {fileID: 1200414792}
+  - {fileID: 1787241793}
 --- !u!95 &1390699591072783569
 Animator:
   serializedVersion: 3
@@ -12326,6 +12346,11 @@ MonoBehaviour:
   characterInformation: []
   deleteCharactersWithName:
   - 
+  disableGameObjects:
+  - {fileID: 832474752}
+  - {fileID: 679520176}
+  - {fileID: 1200414792}
+  - {fileID: 1787241793}
 --- !u!1 &4919061806141223669
 GameObject:
   m_ObjectHideFlags: 0
@@ -12530,6 +12555,11 @@ MonoBehaviour:
   possibleCutscenes: []
   characterInformation: []
   deleteCharactersWithName: []
+  disableGameObjects:
+  - {fileID: 832474752}
+  - {fileID: 679520176}
+  - {fileID: 1200414792}
+  - {fileID: 1787241793}
 --- !u!4 &7432433184438795726
 Transform:
   m_ObjectHideFlags: 0
@@ -12755,6 +12785,11 @@ MonoBehaviour:
   possibleCutscenes: []
   characterInformation: []
   deleteCharactersWithName: []
+  disableGameObjects:
+  - {fileID: 832474752}
+  - {fileID: 679520176}
+  - {fileID: 1200414792}
+  - {fileID: 1787241793}
 --- !u!95 &7641841847119062797
 Animator:
   serializedVersion: 3
@@ -13188,6 +13223,11 @@ MonoBehaviour:
   possibleCutscenes: []
   characterInformation: []
   deleteCharactersWithName: []
+  disableGameObjects:
+  - {fileID: 832474752}
+  - {fileID: 679520176}
+  - {fileID: 1200414792}
+  - {fileID: 1787241793}
 --- !u!1001 &8708330611098574798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13282,6 +13322,11 @@ MonoBehaviour:
   possibleCutscenes: []
   characterInformation: []
   deleteCharactersWithName: []
+  disableGameObjects:
+  - {fileID: 832474752}
+  - {fileID: 679520176}
+  - {fileID: 1200414792}
+  - {fileID: 1787241793}
 --- !u!4 &8823676979719262946
 Transform:
   m_ObjectHideFlags: 0
@@ -13593,6 +13638,11 @@ MonoBehaviour:
   characterInformation: []
   deleteCharactersWithName:
   - Dona Maria
+  disableGameObjects:
+  - {fileID: 832474752}
+  - {fileID: 679520176}
+  - {fileID: 1200414792}
+  - {fileID: 1787241793}
 --- !u!95 &9117841015612689589
 Animator:
   serializedVersion: 3
