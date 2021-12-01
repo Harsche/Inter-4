@@ -50,6 +50,7 @@ Dona Cida: Eles vão passar uns dias lá... Ocê quer entrar toma um café?
 === Dona_Cida_Day_03 ===
 {Dona_Cida_Day_03:
 -   1:  -> D01
+-   2:  -> D02
 -   else:   -> Dona_Cida_Random_Dialog
 }
 
@@ -58,6 +59,10 @@ Dona Cida: Eles vão passar uns dias lá... Ocê quer entrar toma um café?
 Dona Cida: Boa noite, Luiz! O que que cê ta fazendo aqui fora uma hora dessa?
 Dona Cida: Entra, meu fi!
 Luiz: Boa noite, Dona Cida! Vou entrar sim!
+~ ResumeTimeline()
+-> DONE
+
+= D02
 Dona Cida: E então, Luizinho, como estão as coisas?
 Luiz: Ah, Dona Cida, a minha mãe anda meio adoentada...
 Luiz: Com dores, febre, cada dia algo novo aparece.
