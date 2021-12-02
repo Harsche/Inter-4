@@ -63,6 +63,8 @@ public class Cutscene : MonoBehaviour
 
     private void DisableObjects()
     {
+        if(disableGameObjects == null)
+            return;
         if(disableGameObjects.Length <= 0)
             return;
         foreach (GameObject obj in disableGameObjects)
@@ -160,6 +162,15 @@ public class Cutscene : MonoBehaviour
         playableDirector.playableAsset = possibleCutscenes[index];
         cutsceneTracks = (TrackAsset[])possibleCutscenes[index].GetOutputTracks();
         playableDirector.Play();
+    }
+
+    public void GoToCreditsScreen()
+    {
+        foreach (GameObject obj in Globals.Instance.dontDestroy)
+        {
+            Destroy(obj);
+        }
+        SceneManager.LoadScene("Credits");
     }
 
     public void StartDialog(string inkKnot)
