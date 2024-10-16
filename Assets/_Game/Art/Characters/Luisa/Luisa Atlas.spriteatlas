@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Luisa Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d4cb170133dcda841bc48575c583a04b, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 2970304617199172134, guid: e6465e520cf8a2d488cc4ce98b6272fa, type: 3}
+  - {fileID: -1328841195100216308, guid: e6465e520cf8a2d488cc4ce98b6272fa, type: 3}
+  - {fileID: -6189596219241895324, guid: e6465e520cf8a2d488cc4ce98b6272fa, type: 3}
+  - {fileID: -5162650228577857792, guid: e6465e520cf8a2d488cc4ce98b6272fa, type: 3}
+  - {fileID: 8293536594988258939, guid: 23018be2ab1e0e549b9ab08b6fac9b80, type: 3}
+  - {fileID: 4148664167193517292, guid: 23018be2ab1e0e549b9ab08b6fac9b80, type: 3}
+  - {fileID: -2092456709349699385, guid: 23018be2ab1e0e549b9ab08b6fac9b80, type: 3}
+  - {fileID: 3337747049139593336, guid: 23018be2ab1e0e549b9ab08b6fac9b80, type: 3}
+  - {fileID: -1415539717060846645, guid: 23018be2ab1e0e549b9ab08b6fac9b80, type: 3}
+  - {fileID: -3476340555312417340, guid: 23018be2ab1e0e549b9ab08b6fac9b80, type: 3}
+  - {fileID: 2608360284327299223, guid: 23018be2ab1e0e549b9ab08b6fac9b80, type: 3}
+  - {fileID: -5582297885969176730, guid: 23018be2ab1e0e549b9ab08b6fac9b80, type: 3}
+  - {fileID: -8616333534149574923, guid: 10a036269f5990c4e84c9c04dbe50cab, type: 3}
+  - {fileID: -6587298938530270249, guid: 10a036269f5990c4e84c9c04dbe50cab, type: 3}
+  - {fileID: -6259164888691677897, guid: 10a036269f5990c4e84c9c04dbe50cab, type: 3}
+  - {fileID: 1635628329600295401, guid: 10a036269f5990c4e84c9c04dbe50cab, type: 3}
+  - {fileID: 2772112581693200204, guid: bcd23fb64c4f8184c9bd05200a13d276, type: 3}
+  - {fileID: -6070324727294450015, guid: bcd23fb64c4f8184c9bd05200a13d276, type: 3}
+  - {fileID: 3884234294802180817, guid: bcd23fb64c4f8184c9bd05200a13d276, type: 3}
+  - {fileID: -6867428896219150486, guid: bcd23fb64c4f8184c9bd05200a13d276, type: 3}
+  - {fileID: -1379605958192379387, guid: bcd23fb64c4f8184c9bd05200a13d276, type: 3}
+  - {fileID: -4982142917268468990, guid: bcd23fb64c4f8184c9bd05200a13d276, type: 3}
+  - {fileID: -652246877630386916, guid: bcd23fb64c4f8184c9bd05200a13d276, type: 3}
+  - {fileID: 468386828211625428, guid: bcd23fb64c4f8184c9bd05200a13d276, type: 3}
+  - {fileID: -951345764378549004, guid: 21defdf7e4aed3f42ac75f3f04cf385b, type: 3}
+  - {fileID: 8138546274687424943, guid: 21defdf7e4aed3f42ac75f3f04cf385b, type: 3}
+  - {fileID: -6465830997757261272, guid: 21defdf7e4aed3f42ac75f3f04cf385b, type: 3}
+  - {fileID: -4769102568588362500, guid: 21defdf7e4aed3f42ac75f3f04cf385b, type: 3}
+  - {fileID: -6979950731966070666, guid: 21defdf7e4aed3f42ac75f3f04cf385b, type: 3}
+  - {fileID: 2846171147522131368, guid: 21defdf7e4aed3f42ac75f3f04cf385b, type: 3}
+  - {fileID: 2720794484920604339, guid: 21defdf7e4aed3f42ac75f3f04cf385b, type: 3}
+  - {fileID: 3613232452075228388, guid: 383b68886ad62b74886fcdafc0eaed52, type: 3}
+  - {fileID: -6302898668081426288, guid: 383b68886ad62b74886fcdafc0eaed52, type: 3}
+  - {fileID: -6899195621087898685, guid: 383b68886ad62b74886fcdafc0eaed52, type: 3}
+  - {fileID: 1915217824875938228, guid: 383b68886ad62b74886fcdafc0eaed52, type: 3}
+  - {fileID: 1293405308819316262, guid: 383b68886ad62b74886fcdafc0eaed52, type: 3}
+  - {fileID: 6240645720899181661, guid: 383b68886ad62b74886fcdafc0eaed52, type: 3}
+  - {fileID: 4109619830395999050, guid: 383b68886ad62b74886fcdafc0eaed52, type: 3}
+  - {fileID: -7759854029195453127, guid: 383b68886ad62b74886fcdafc0eaed52, type: 3}
+  - {fileID: 737621992098377764, guid: 7a6d5da85468dfd4995cc25d244d86ee, type: 3}
+  - {fileID: 3712326809550310231, guid: 7a6d5da85468dfd4995cc25d244d86ee, type: 3}
+  - {fileID: -7991035293800540015, guid: 7a6d5da85468dfd4995cc25d244d86ee, type: 3}
+  - {fileID: 5229056053624356056, guid: 7a6d5da85468dfd4995cc25d244d86ee, type: 3}
+  - {fileID: 4534778312054547196, guid: 7a6d5da85468dfd4995cc25d244d86ee, type: 3}
+  - {fileID: 1993528588368417281, guid: 7a6d5da85468dfd4995cc25d244d86ee, type: 3}
+  - {fileID: -3992716344765603202, guid: 6e1bd71b2383a16409ac00e9edf9eba6, type: 3}
+  - {fileID: -721631013464035697, guid: 6e1bd71b2383a16409ac00e9edf9eba6, type: 3}
+  - {fileID: 8407674594172047858, guid: 6e1bd71b2383a16409ac00e9edf9eba6, type: 3}
+  - {fileID: 7212066036594544025, guid: 6e1bd71b2383a16409ac00e9edf9eba6, type: 3}
+  - {fileID: -7650472768289432051, guid: d9e01f9edbfeeb94189d07b6263dc4be, type: 3}
+  - {fileID: -7864045398399197887, guid: d9e01f9edbfeeb94189d07b6263dc4be, type: 3}
+  - {fileID: 2137026860083008642, guid: c0bcc10f394ac69488326f562aa0cceb, type: 3}
+  - {fileID: 2525359577073764467, guid: c0bcc10f394ac69488326f562aa0cceb, type: 3}
+  - {fileID: 7922205025687032136, guid: 48d6399f3856c4b49addf3215332a0cb, type: 3}
+  - {fileID: 3854583012806645983, guid: 48d6399f3856c4b49addf3215332a0cb, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Luisa Walk Back_2
+  - Luisa Walk Back_3
+  - Luisa Walk Back_0
+  - Luisa Walk Back_1
+  - Luisa Comendo_7
+  - Luisa Comendo_6
+  - Luisa Comendo_5
+  - Luisa Comendo_4
+  - Luisa Comendo_3
+  - Luisa Comendo_2
+  - Luisa Comendo_1
+  - Luisa Comendo_0
+  - Luisa Walk Side_2
+  - Luisa Walk Side_3
+  - Luisa Walk Side_0
+  - Luisa Walk Side_1
+  - Luisa Comendo Legumes_1
+  - Luisa Comendo Legumes_0
+  - Luisa Comendo Legumes_3
+  - Luisa Comendo Legumes_2
+  - Luisa Comendo Legumes_5
+  - Luisa Comendo Legumes_4
+  - Luisa Comendo Legumes_7
+  - Luisa Comendo Legumes_6
+  - Luisa Com Mandioca_5
+  - Luisa Com Mandioca_4
+  - Luisa Com Mandioca_6
+  - Luisa Com Mandioca_1
+  - Luisa Com Mandioca_0
+  - Luisa Com Mandioca_3
+  - Luisa Com Mandioca_2
+  - Luisa Comendo Farinha_4
+  - Luisa Comendo Farinha_5
+  - Luisa Comendo Farinha_6
+  - Luisa Comendo Farinha_7
+  - Luisa Comendo Farinha_0
+  - Luisa Comendo Farinha_1
+  - Luisa Comendo Farinha_2
+  - Luisa Comendo Farinha_3
+  - Luisa Caramelo_2
+  - Luisa Caramelo_3
+  - Luisa Caramelo_0
+  - Luisa Caramelo_1
+  - Luisa Caramelo_4
+  - Luisa Caramelo_5
+  - Luisa Walk Front_2
+  - Luisa Walk Front_3
+  - Luisa Walk Front_0
+  - Luisa Walk Front_1
+  - Luisa Idle 3 Side_0
+  - Luisa Idle 3 Side_1
+  - Luisa Idle 3_1
+  - Luisa Idle 3_0
+  - Luisa Idle 3 Back_0
+  - Luisa Idle 3 Back_1
+  m_RenderDataMap: {}
+  m_Tag: Luisa Atlas
+  m_IsVariant: 0

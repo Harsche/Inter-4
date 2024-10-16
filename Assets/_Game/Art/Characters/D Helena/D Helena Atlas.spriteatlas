@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: D Helena Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 5a8307b89c5e11f48a29c42a16af7abb, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1820148104204222545, guid: 0a8f00997fff792439f1eb7f1091f575, type: 3}
+  - {fileID: -5544743905571347415, guid: 0a8f00997fff792439f1eb7f1091f575, type: 3}
+  - {fileID: -6075404829292775351, guid: 0a8f00997fff792439f1eb7f1091f575, type: 3}
+  - {fileID: -5118257658157133986, guid: 0a8f00997fff792439f1eb7f1091f575, type: 3}
+  - {fileID: 5559122193959320396, guid: daad9dba50ada6246867fa8bfe1f8eed, type: 3}
+  - {fileID: -3140557364846738441, guid: daad9dba50ada6246867fa8bfe1f8eed, type: 3}
+  - {fileID: 82746689339623614, guid: c0d0196bf5079614ab77a84c83e0d8a0, type: 3}
+  - {fileID: -6638657103151410942, guid: c0d0196bf5079614ab77a84c83e0d8a0, type: 3}
+  - {fileID: -2070191966707228685, guid: ea6ce6ad2f6d1c14691ca1828040a1b3, type: 3}
+  - {fileID: 639796539128304151, guid: ea6ce6ad2f6d1c14691ca1828040a1b3, type: 3}
+  - {fileID: 1951797932289220616, guid: ca1f4feed9dcc604fa6d13e807d5d42a, type: 3}
+  - {fileID: 8082227174121743040, guid: ca1f4feed9dcc604fa6d13e807d5d42a, type: 3}
+  - {fileID: -805827179280211850, guid: ca1f4feed9dcc604fa6d13e807d5d42a, type: 3}
+  - {fileID: 9062532354931861312, guid: ca1f4feed9dcc604fa6d13e807d5d42a, type: 3}
+  - {fileID: 4581760758455303700, guid: 6d48c77f70401c64eb2e2a16ce32dc5b, type: 3}
+  - {fileID: 643294536048170844, guid: 6d48c77f70401c64eb2e2a16ce32dc5b, type: 3}
+  - {fileID: 2153356252804673373, guid: 6d48c77f70401c64eb2e2a16ce32dc5b, type: 3}
+  - {fileID: 201880805217386540, guid: 6d48c77f70401c64eb2e2a16ce32dc5b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - D Helena Walk Side_1
+  - D Helena Walk Side_0
+  - D Helena Walk Side_3
+  - D Helena Walk Side_2
+  - D Helena Idle Back_0
+  - D Helena Idle Back_1
+  - D Helena Idle Side_0
+  - D Helena Idle Side_1
+  - D Helena Idle_1
+  - D Helena Idle_0
+  - D Helena Walk Front_3
+  - D Helena Walk Front_2
+  - D Helena Walk Front_1
+  - D Helena Walk Front_0
+  - D Helena Walk Back_1
+  - D Helena Walk Back_0
+  - D Helena Walk Back_3
+  - D Helena Walk Back_2
+  m_RenderDataMap: {}
+  m_Tag: D Helena Atlas
+  m_IsVariant: 0

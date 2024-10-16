@@ -10,9 +10,10 @@ public class SceneSetup : MonoBehaviour
     private static Color dayColor = Color.white;
     private static Color nightColor = new Color(0.3161267f, 0.442517f, 0.6037736f, 1f);
 
-    private void Awake()
-    {
-        currentTime = Player.playerData.dayTime;
+    private void Awake(){
+        PlayerData playerData = Player.playerData;
+        currentTime = playerData.dayTime;
+        playerData.isInside = false;
         SetupSceneLights();
     }
 

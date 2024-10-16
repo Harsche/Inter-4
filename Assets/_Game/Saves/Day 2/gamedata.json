@@ -1,0 +1,441 @@
+{
+  "$id": "1",
+  "data": {
+    "$id": "2",
+    "f0168136-d5f6-4b2b-8c80-4806d349345c": {
+      "$id": "3",
+      "$type": "CharacterData, Assembly-CSharp",
+      "characterInformation": [
+        {
+          "$id": "4",
+          "presentScene": "",
+          "characterPosition": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "$id": "5",
+          "presentScene": "House_5",
+          "characterPosition": {
+            "x": -9.44,
+            "y": -3.040001
+          }
+        },
+        {
+          "$id": "6",
+          "presentScene": "",
+          "characterPosition": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "$id": "7",
+          "presentScene": "",
+          "characterPosition": {
+            "x": 0.0,
+            "y": -3.03
+          }
+        },
+        {
+          "$id": "8",
+          "presentScene": "",
+          "characterPosition": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "$id": "9",
+          "presentScene": "",
+          "characterPosition": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "$id": "10",
+          "presentScene": "",
+          "characterPosition": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "$id": "11",
+          "presentScene": "",
+          "characterPosition": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "$id": "12",
+          "presentScene": "House_2",
+          "characterPosition": {
+            "x": -4.21,
+            "y": -3.03
+          }
+        },
+        {
+          "$id": "13",
+          "presentScene": "",
+          "characterPosition": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "$id": "14",
+          "presentScene": "",
+          "characterPosition": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "$id": "15",
+          "presentScene": "",
+          "characterPosition": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      ]
+    },
+    "6acccde2-c728-4061-b710-92898f2486ec": {
+      "$id": "16",
+      "$type": "CutsceneData, Assembly-CSharp",
+      "cutsceneSOData": {
+        "$id": "17",
+        "statuses": [
+          {
+            "$id": "18",
+            "cutsceneNumber": "00",
+            "state": "Played"
+          },
+          {
+            "$id": "19",
+            "cutsceneNumber": "01",
+            "state": "Played"
+          },
+          {
+            "$id": "20",
+            "cutsceneNumber": "02",
+            "state": "Played"
+          },
+          {
+            "$id": "21",
+            "cutsceneNumber": "03",
+            "state": "Played"
+          },
+          {
+            "$id": "22",
+            "cutsceneNumber": "04",
+            "state": "Played"
+          },
+          {
+            "$id": "23",
+            "cutsceneNumber": "05",
+            "state": "Played"
+          },
+          {
+            "$id": "24",
+            "cutsceneNumber": "06",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "25",
+            "cutsceneNumber": "07",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "26",
+            "cutsceneNumber": "07.5",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "27",
+            "cutsceneNumber": "08",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "28",
+            "cutsceneNumber": "09",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "29",
+            "cutsceneNumber": "10",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "30",
+            "cutsceneNumber": "11",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "31",
+            "cutsceneNumber": "12",
+            "state": "CanNotPlay"
+          },
+          {
+            "$id": "32",
+            "cutsceneNumber": "13",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "33",
+            "cutsceneNumber": "14",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "34",
+            "cutsceneNumber": "15",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "35",
+            "cutsceneNumber": "16",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "36",
+            "cutsceneNumber": "17",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "37",
+            "cutsceneNumber": "17.5",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "38",
+            "cutsceneNumber": "18",
+            "state": "CanNotPlay"
+          },
+          {
+            "$id": "39",
+            "cutsceneNumber": "19",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "40",
+            "cutsceneNumber": "20",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "41",
+            "cutsceneNumber": "21",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "42",
+            "cutsceneNumber": "22",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "43",
+            "cutsceneNumber": "23",
+            "state": "CanNotPlay"
+          },
+          {
+            "$id": "44",
+            "cutsceneNumber": "24",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "45",
+            "cutsceneNumber": "25",
+            "state": "CanNotPlay"
+          },
+          {
+            "$id": "46",
+            "cutsceneNumber": "26",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "47",
+            "cutsceneNumber": "27",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "48",
+            "cutsceneNumber": "28",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "49",
+            "cutsceneNumber": "29",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "50",
+            "cutsceneNumber": "30",
+            "state": "CanNotPlay"
+          },
+          {
+            "$id": "51",
+            "cutsceneNumber": "31",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "52",
+            "cutsceneNumber": "32",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "53",
+            "cutsceneNumber": "32.5",
+            "state": "CanPlay"
+          },
+          {
+            "$id": "54",
+            "cutsceneNumber": "33",
+            "state": "CanNotPlay"
+          },
+          {
+            "$id": "55",
+            "cutsceneNumber": "34",
+            "state": "CanNotPlay"
+          },
+          {
+            "$id": "56",
+            "cutsceneNumber": "34.5",
+            "state": "CanNotPlay"
+          },
+          {
+            "$id": "57",
+            "cutsceneNumber": "35",
+            "state": "CanNotPlay"
+          }
+        ],
+        "name": "Cutscene Data",
+        "hideFlags": "None"
+      }
+    },
+    "a33cc9ee-512c-4a6a-83ad-e19b5a5072e3": {
+      "$id": "58",
+      "$type": "PlayerData, Assembly-CSharp",
+      "scene": "House_1",
+      "position": {
+        "x": -5.61200047,
+        "y": 0.615
+      },
+      "dayTime": "Day"
+    },
+    "cb87ea56-3779-4b0e-b014-fd44f3b6649f": {
+      "$id": "59",
+      "$type": "StoryData, Assembly-CSharp",
+      "GameDay": 2,
+      "jsonStory": "{\"flows\":{\"DEFAULT_FLOW\":{\"callstack\":{\"threads\":[{\"callstack\":[{\"exp\":false,\"type\":0}],\"threadIndex\":0,\"previousContentObject\":\"Dona_Maria_Day_01.At_Night_02.33\"}],\"threadCounter\":2},\"outputStream\":[],\"currentChoices\":[]}},\"currentFlowName\":\"DEFAULT_FLOW\",\"variablesState\":{\"GameDay\":2,\"woodChopped\":3,\"changedDay\":true},\"evalStack\":[],\"visitCounts\":{\"\":14,\"Day_01_Scene_01\":1,\"Day_01_Scene_03\":1,\"Day_01_Scene_04.Dona_Maria_Scene_04\":2,\"Day_01_Scene_04\":3,\"Day_01_Scene_04.Milk_Cow\":1,\"Other_Dialogs.Need_Bucket\":1,\"Other_Dialogs\":1,\"House_05\":1,\"Dona_Cida\":1,\"DONA_CIDA\":1,\"Dona_Cida_Day_01\":1,\"Dona_Cida_Day_01.D01\":1,\"Dona_Cida_Day_01.D01.0.c-0\":1,\"House_02\":1,\"Seu_Joao\":2,\"SEU_JOAO\":2,\"Seu_Joao_Day_01\":2,\"Seu_Joao_Day_01.D01\":1,\"Seu_Joao_Day_01.Chopped_Wood\":1,\"Luiz\":1,\"LUIZ\":1,\"Luiz_Day_01\":1,\"Luiz_Day_01.D01\":1,\"Getting_Dark\":1,\"Dona_Maria\":2,\"DONA_MARIA\":2,\"Dona_Maria_Day_01\":2,\"Dona_Maria_Day_01.At_Night\":1,\"Dona_Maria_Day_01.At_Night_02\":1},\"turnIndices\":{},\"turnIdx\":13,\"storySeed\":92,\"previousRandom\":0,\"inkSaveVersion\":9,\"inkFormatVersion\":20}",
+      "variableStates": {
+        "$id": "60",
+        "chopTask": false,
+        "waterTask": false,
+        "chickenTask": false
+      }
+    },
+    "4b3dd5f7-2ded-4072-9055-a069465c400f": {
+      "$id": "61",
+      "$type": "QuestData, Assembly-CSharp",
+      "questList": {
+        "$id": "62",
+        "quests": [
+          {
+            "$id": "63",
+            "questName": "Siga a mamãe",
+            "currentStep": 0,
+            "questState": "Inactive",
+            "questSteps": [
+              {
+                "$id": "64",
+                "id": 0,
+                "goal": "",
+                "questType": "TalkTo",
+                "goalName": "",
+                "currentNum": 0,
+                "goalNum": 0
+              },
+              {
+                "$id": "65",
+                "id": 0,
+                "goal": "",
+                "questType": "TalkTo",
+                "goalName": "AAaaa",
+                "currentNum": 0,
+                "goalNum": 0
+              }
+            ],
+            "name": "Quest_M01",
+            "hideFlags": "None"
+          },
+          {
+            "$id": "66",
+            "questName": "Pegar Galinhas",
+            "currentStep": 0,
+            "questState": "Inactive",
+            "questSteps": [
+              {
+                "$id": "67",
+                "id": 0,
+                "goal": "",
+                "questType": "TalkTo",
+                "goalName": "Dona Cida",
+                "currentNum": 0,
+                "goalNum": 0
+              },
+              {
+                "$id": "68",
+                "id": 0,
+                "goal": "Coloque as galinhas de volta no cercado.",
+                "questType": "NumberedTask",
+                "goalName": "",
+                "currentNum": 0,
+                "goalNum": 5
+              }
+            ],
+            "name": "Quest_S01",
+            "hideFlags": "None"
+          }
+        ],
+        "name": "Quest List",
+        "hideFlags": "None"
+      },
+      "tasks": []
+    },
+    "6c5cfca9-b5fb-43d2-a33c-1808e3cf069b": {
+      "$id": "69",
+      "$type": "HouseData, Assembly-CSharp",
+      "opened": true
+    },
+    "3f8cea84-0a63-47ee-a6e7-bdff760d1cac": {
+      "$id": "70",
+      "$type": "HouseData, Assembly-CSharp",
+      "opened": false
+    },
+    "e39fa28e-c2b8-4bc8-b2bb-3f4174bbe526": {
+      "$id": "71",
+      "$type": "HouseData, Assembly-CSharp",
+      "opened": true
+    },
+    "b43c5189-5e99-4c2a-938e-708a930ce5d1": {
+      "$id": "72",
+      "$type": "HouseData, Assembly-CSharp",
+      "opened": false
+    },
+    "3e7761eb-f757-4157-9cc4-3068356907d3": {
+      "$id": "73",
+      "$type": "HouseData, Assembly-CSharp",
+      "opened": false
+    },
+    "e9694625-b8ea-4c2f-a6bd-8c21198ee5ba": {
+      "$id": "74",
+      "$type": "HouseData, Assembly-CSharp",
+      "opened": true
+    }
+  },
+  "dataKeys": [],
+  "dataValues": []
+}

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: S Joao Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d43c74e83ac357a4c872b71cc3d47977, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 4620369657361789700, guid: 70a10d24015a70d45b03aa616c12cd04, type: 3}
+  - {fileID: -5468765168122016828, guid: 70a10d24015a70d45b03aa616c12cd04, type: 3}
+  - {fileID: 8352997256269757015, guid: 70a10d24015a70d45b03aa616c12cd04, type: 3}
+  - {fileID: 383475194944684215, guid: 70a10d24015a70d45b03aa616c12cd04, type: 3}
+  - {fileID: 3587781139332605124, guid: 945f2085eb1bac34c9d64256eb1d8f8a, type: 3}
+  - {fileID: 5534810296908228498, guid: 945f2085eb1bac34c9d64256eb1d8f8a, type: 3}
+  - {fileID: 2372427390727886912, guid: 445542a5da915eb4bb319f55e42b66c1, type: 3}
+  - {fileID: -6979932747638504859, guid: 445542a5da915eb4bb319f55e42b66c1, type: 3}
+  - {fileID: 1130744572066606109, guid: 445542a5da915eb4bb319f55e42b66c1, type: 3}
+  - {fileID: -5160889884991400892, guid: 445542a5da915eb4bb319f55e42b66c1, type: 3}
+  - {fileID: 2038740265058429888, guid: 2fe0e6b8840fc2f4d9249a545b9244d0, type: 3}
+  - {fileID: 2402783065477128756, guid: 2fe0e6b8840fc2f4d9249a545b9244d0, type: 3}
+  - {fileID: -1829717046924175895, guid: d380dd2ae0afe7c45a57e7b183fc82bc, type: 3}
+  - {fileID: -5157554512108008070, guid: d380dd2ae0afe7c45a57e7b183fc82bc, type: 3}
+  - {fileID: -8893505970039190579, guid: d380dd2ae0afe7c45a57e7b183fc82bc, type: 3}
+  - {fileID: -4035231884702803971, guid: d380dd2ae0afe7c45a57e7b183fc82bc, type: 3}
+  - {fileID: -4505416871767519857, guid: f8cb93fd43f876445919ee37a0f31a93, type: 3}
+  - {fileID: 2360971830042261364, guid: f8cb93fd43f876445919ee37a0f31a93, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "S Jo\xE3o Walk Front_3"
+  - "S Jo\xE3o Walk Front_2"
+  - "S Jo\xE3o Walk Front_1"
+  - "S Jo\xE3o Walk Front_0"
+  - "S Jo\xE3o Idle_1"
+  - "S Jo\xE3o Idle_0"
+  - "S Jo\xE3o Walk Side_1"
+  - "S Jo\xE3o Walk Side_0"
+  - "S Jo\xE3o Walk Side_3"
+  - "S Jo\xE3o Walk Side_2"
+  - "S Jo\xE3o Idle Back_0"
+  - "S Jo\xE3o Idle Back_1"
+  - "S Jo\xE3o Walk Back_1"
+  - "S Jo\xE3o Walk Back_0"
+  - "S Jo\xE3o Walk Back_3"
+  - "S Jo\xE3o Walk Back_2"
+  - "S Jo\xE3o Idle Side_0"
+  - "S Jo\xE3o Idle Side_1"
+  m_RenderDataMap: {}
+  m_Tag: S Joao Atlas
+  m_IsVariant: 0

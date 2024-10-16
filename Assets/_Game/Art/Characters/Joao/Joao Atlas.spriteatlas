@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Joao Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 3211a35611c777c4a90e5f96875f667d, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -6371427460944637009, guid: 72a95300322b26e4f828c91964669b07, type: 3}
+  - {fileID: -2847571454082771036, guid: 72a95300322b26e4f828c91964669b07, type: 3}
+  - {fileID: -208724824431728491, guid: 72a95300322b26e4f828c91964669b07, type: 3}
+  - {fileID: -7842539371322151896, guid: 72a95300322b26e4f828c91964669b07, type: 3}
+  - {fileID: -2267160101887980599, guid: 72a95300322b26e4f828c91964669b07, type: 3}
+  - {fileID: 8311243131211222457, guid: 72a95300322b26e4f828c91964669b07, type: 3}
+  - {fileID: 1402668836010042129, guid: 72a95300322b26e4f828c91964669b07, type: 3}
+  - {fileID: -8493008317771903670, guid: 72a95300322b26e4f828c91964669b07, type: 3}
+  - {fileID: 7893084429604375188, guid: 76ed153036ab5dd45889310959ea22d1, type: 3}
+  - {fileID: -3295541676731677610, guid: 76ed153036ab5dd45889310959ea22d1, type: 3}
+  - {fileID: 5129838512440422091, guid: 76ed153036ab5dd45889310959ea22d1, type: 3}
+  - {fileID: 8292334889356604167, guid: 76ed153036ab5dd45889310959ea22d1, type: 3}
+  - {fileID: -2163542566234198985, guid: 358cf892ce71cae49a1cca4068e9abb6, type: 3}
+  - {fileID: 1117237007491518262, guid: 358cf892ce71cae49a1cca4068e9abb6, type: 3}
+  - {fileID: -763719303033927770, guid: 209b7ec32a845eb4ab3604d7d36549d7, type: 3}
+  - {fileID: -7507140985599551932, guid: 209b7ec32a845eb4ab3604d7d36549d7, type: 3}
+  - {fileID: 7171024132316544696, guid: 209b7ec32a845eb4ab3604d7d36549d7, type: 3}
+  - {fileID: -4361056930437191742, guid: 209b7ec32a845eb4ab3604d7d36549d7, type: 3}
+  - {fileID: 4778946611708785242, guid: 209b7ec32a845eb4ab3604d7d36549d7, type: 3}
+  - {fileID: -1219028115121566720, guid: 209b7ec32a845eb4ab3604d7d36549d7, type: 3}
+  - {fileID: -3499417693012589357, guid: 209b7ec32a845eb4ab3604d7d36549d7, type: 3}
+  - {fileID: 3827158696188558148, guid: 209b7ec32a845eb4ab3604d7d36549d7, type: 3}
+  - {fileID: -4352480801897496093, guid: 57c5eb755c263b442aff966396fc5cda, type: 3}
+  - {fileID: -4018922036741881195, guid: 57c5eb755c263b442aff966396fc5cda, type: 3}
+  - {fileID: 451608478918966541, guid: 57c5eb755c263b442aff966396fc5cda, type: 3}
+  - {fileID: -7978681181851370371, guid: 57c5eb755c263b442aff966396fc5cda, type: 3}
+  - {fileID: -941195308171158548, guid: 2f09d107f9dc5df428c7502ce7e5a979, type: 3}
+  - {fileID: -3396963796267841019, guid: 2f09d107f9dc5df428c7502ce7e5a979, type: 3}
+  - {fileID: 720283865261317403, guid: 2f09d107f9dc5df428c7502ce7e5a979, type: 3}
+  - {fileID: 4006314315652968197, guid: 2f09d107f9dc5df428c7502ce7e5a979, type: 3}
+  - {fileID: 5779250461235582164, guid: ebb32c578b6e7014db1993d75b3ffcb0, type: 3}
+  - {fileID: 3775490744467059444, guid: ebb32c578b6e7014db1993d75b3ffcb0, type: 3}
+  - {fileID: 1739918673549786974, guid: afcad84a8d7ffea4fb3fab96551a2833, type: 3}
+  - {fileID: -2723058607638194960, guid: afcad84a8d7ffea4fb3fab96551a2833, type: 3}
+  - {fileID: 8335764276216165754, guid: afcad84a8d7ffea4fb3fab96551a2833, type: 3}
+  - {fileID: -7683448288036736399, guid: afcad84a8d7ffea4fb3fab96551a2833, type: 3}
+  - {fileID: 2744424388211196841, guid: afcad84a8d7ffea4fb3fab96551a2833, type: 3}
+  - {fileID: 3626634929498648000, guid: afcad84a8d7ffea4fb3fab96551a2833, type: 3}
+  - {fileID: -8709628489887029856, guid: afcad84a8d7ffea4fb3fab96551a2833, type: 3}
+  - {fileID: 1445147634126083636, guid: afcad84a8d7ffea4fb3fab96551a2833, type: 3}
+  - {fileID: 4680524269206660584, guid: ff18784c4c7a36b46820899d5cc7c071, type: 3}
+  - {fileID: -587456465852856299, guid: ff18784c4c7a36b46820899d5cc7c071, type: 3}
+  - {fileID: -1354579072544203731, guid: 84bc5caf0f77fc34c8205190ddea1a7f, type: 3}
+  - {fileID: 7733744402544684948, guid: 84bc5caf0f77fc34c8205190ddea1a7f, type: 3}
+  - {fileID: 4875439434890492556, guid: 84bc5caf0f77fc34c8205190ddea1a7f, type: 3}
+  - {fileID: -6264394773366359803, guid: 84bc5caf0f77fc34c8205190ddea1a7f, type: 3}
+  - {fileID: 2568828310913243830, guid: 84bc5caf0f77fc34c8205190ddea1a7f, type: 3}
+  - {fileID: -5994358498363985889, guid: 84bc5caf0f77fc34c8205190ddea1a7f, type: 3}
+  - {fileID: -316888686363717358, guid: 84bc5caf0f77fc34c8205190ddea1a7f, type: 3}
+  - {fileID: 3472637815102456559, guid: 84bc5caf0f77fc34c8205190ddea1a7f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "Jo\xE3o Comendo Farinha_0"
+  - "Jo\xE3o Comendo Farinha_1"
+  - "Jo\xE3o Comendo Farinha_2"
+  - "Jo\xE3o Comendo Farinha_3"
+  - "Jo\xE3o Comendo Farinha_4"
+  - "Jo\xE3o Comendo Farinha_5"
+  - "Jo\xE3o Comendo Farinha_6"
+  - "Jo\xE3o Comendo Farinha_7"
+  - "Jo\xE3o Walk Side_2"
+  - "Jo\xE3o Walk Side_3"
+  - "Jo\xE3o Walk Side_0"
+  - "Jo\xE3o Walk Side_1"
+  - "Jo\xE3o _0"
+  - "Jo\xE3o _1"
+  - "Jo\xE3o Com P\xE3o_4"
+  - "Jo\xE3o Com P\xE3o_5"
+  - "Jo\xE3o Com P\xE3o_6"
+  - "Jo\xE3o Com P\xE3o_7"
+  - "Jo\xE3o Com P\xE3o_0"
+  - "Jo\xE3o Com P\xE3o_1"
+  - "Jo\xE3o Com P\xE3o_2"
+  - "Jo\xE3o Com P\xE3o_3"
+  - "Jo\xE3o Walk Front_2"
+  - "Jo\xE3o Walk Front_3"
+  - "Jo\xE3o Walk Front_0"
+  - "Jo\xE3o Walk Front_1"
+  - "Jo\xE3o Walk Back_2"
+  - "Jo\xE3o Walk Back_3"
+  - "Jo\xE3o Walk Back_0"
+  - "Jo\xE3o Walk Back_1"
+  - "Jo\xE3o Idle Back_1"
+  - "Jo\xE3o Idle Back_0"
+  - "Jo\xE3o Comendo Legumes_5"
+  - "Jo\xE3o Comendo Legumes_4"
+  - "Jo\xE3o Comendo Legumes_7"
+  - "Jo\xE3o Comendo Legumes_6"
+  - "Jo\xE3o Comendo Legumes_1"
+  - "Jo\xE3o Comendo Legumes_0"
+  - "Jo\xE3o Comendo Legumes_3"
+  - "Jo\xE3o Comendo Legumes_2"
+  - "Jo\xE3o Idle Side_1"
+  - "Jo\xE3o Idle Side_0"
+  - "Jo\xE3o Comendo_3"
+  - "Jo\xE3o Comendo_2"
+  - "Jo\xE3o Comendo_1"
+  - "Jo\xE3o Comendo_0"
+  - "Jo\xE3o Comendo_7"
+  - "Jo\xE3o Comendo_6"
+  - "Jo\xE3o Comendo_5"
+  - "Jo\xE3o Comendo_4"
+  m_RenderDataMap: {}
+  m_Tag: Joao Atlas
+  m_IsVariant: 0

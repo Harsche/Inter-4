@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: D Cicera Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 729129237d1c4b4418e75810d81d9978, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -3756820824887136830, guid: dc22c1a1111573844819b28c9dbe444b, type: 3}
+  - {fileID: 2341103569169343893, guid: dc22c1a1111573844819b28c9dbe444b, type: 3}
+  - {fileID: 706045235283286778, guid: dc22c1a1111573844819b28c9dbe444b, type: 3}
+  - {fileID: 3351360946184481391, guid: dc22c1a1111573844819b28c9dbe444b, type: 3}
+  - {fileID: -9100918754550788785, guid: 5e7e9eb275b841f40b3d2276d02caeb0, type: 3}
+  - {fileID: 8771887340782051898, guid: 5e7e9eb275b841f40b3d2276d02caeb0, type: 3}
+  - {fileID: 3845770907070560006, guid: 99f9f343fbb70c84cad1990b90ae2122, type: 3}
+  - {fileID: 2821042883908036977, guid: 99f9f343fbb70c84cad1990b90ae2122, type: 3}
+  - {fileID: -9213428306384833247, guid: 99f9f343fbb70c84cad1990b90ae2122, type: 3}
+  - {fileID: 7846129990389917487, guid: 99f9f343fbb70c84cad1990b90ae2122, type: 3}
+  - {fileID: 6145124750940577935, guid: 99f9f343fbb70c84cad1990b90ae2122, type: 3}
+  - {fileID: -3046260643517191703, guid: 99f9f343fbb70c84cad1990b90ae2122, type: 3}
+  - {fileID: -6577326100571271693, guid: 99f9f343fbb70c84cad1990b90ae2122, type: 3}
+  - {fileID: 3482796218222910384, guid: 327ba514b13baf34d9a4aaee86a44cc3, type: 3}
+  - {fileID: -3114672149313149625, guid: 327ba514b13baf34d9a4aaee86a44cc3, type: 3}
+  - {fileID: 3729525019501396644, guid: 327ba514b13baf34d9a4aaee86a44cc3, type: 3}
+  - {fileID: -3119624738652634218, guid: 327ba514b13baf34d9a4aaee86a44cc3, type: 3}
+  - {fileID: -4795333318025921576, guid: 9f8e2c55069ab144da21dbdbe603fe1d, type: 3}
+  - {fileID: -657419511495157832, guid: 9f8e2c55069ab144da21dbdbe603fe1d, type: 3}
+  - {fileID: -501029105879966810, guid: 502467c978447594ba02b7ec0691ab3b, type: 3}
+  - {fileID: 4558149284062249640, guid: 502467c978447594ba02b7ec0691ab3b, type: 3}
+  - {fileID: 461634896803888896, guid: 502467c978447594ba02b7ec0691ab3b, type: 3}
+  - {fileID: 8748722143733329669, guid: 502467c978447594ba02b7ec0691ab3b, type: 3}
+  - {fileID: -8653370010949935337, guid: fe02212c7ef71c741a705db81894cc79, type: 3}
+  - {fileID: -7511652900602439224, guid: fe02212c7ef71c741a705db81894cc79, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "D C\xEDcera Walk Front_0"
+  - "D C\xEDcera Walk Front_1"
+  - "D C\xEDcera Walk Front_2"
+  - "D C\xEDcera Walk Front_3"
+  - "D C\xEDcera Idle_0"
+  - "D C\xEDcera Idle_1"
+  - "D C\xEDcera Cesta_2"
+  - "D C\xEDcera Cesta_3"
+  - "D C\xEDcera Cesta_0"
+  - "D C\xEDcera Cesta_1"
+  - "D C\xEDcera Cesta_6"
+  - "D C\xEDcera Cesta_4"
+  - "D C\xEDcera Cesta_5"
+  - "D C\xEDcera Walk Back_0"
+  - "D C\xEDcera Walk Back_1"
+  - "D C\xEDcera Walk Back_2"
+  - "D C\xEDcera Walk Back_3"
+  - "D C\xEDcera Idle Side_1"
+  - "D C\xEDcera Idle Side_0"
+  - "D C\xEDcera Walk Side_0"
+  - "D C\xEDcera Walk Side_1"
+  - "D C\xEDcera Walk Side_2"
+  - "D C\xEDcera Walk Side_3"
+  - "D C\xEDcera Idle Back_1"
+  - "D C\xEDcera Idle Back_0"
+  m_RenderDataMap: {}
+  m_Tag: D Cicera Atlas
+  m_IsVariant: 0

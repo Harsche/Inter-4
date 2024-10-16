@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: D Maria
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 5a9f430c7de563a4cb9e91a9f55a9c31, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 7393619695334118163, guid: b6483220a051f564b8ef2713af964eef, type: 3}
+  - {fileID: -6114369646047940866, guid: b6483220a051f564b8ef2713af964eef, type: 3}
+  - {fileID: 8663120038284725893, guid: b6483220a051f564b8ef2713af964eef, type: 3}
+  - {fileID: -2105652873024137309, guid: b6483220a051f564b8ef2713af964eef, type: 3}
+  - {fileID: 5278749955431966565, guid: 79c409902beb9214a84a9505b98c24b1, type: 3}
+  - {fileID: 6921017039224570484, guid: 79c409902beb9214a84a9505b98c24b1, type: 3}
+  - {fileID: -1637610799002243989, guid: 1886e2b00bba5134e9f66827b6eeac1a, type: 3}
+  - {fileID: 8074014265267496274, guid: 1886e2b00bba5134e9f66827b6eeac1a, type: 3}
+  - {fileID: -6942472207096572266, guid: 1886e2b00bba5134e9f66827b6eeac1a, type: 3}
+  - {fileID: -4485927739991935640, guid: 1886e2b00bba5134e9f66827b6eeac1a, type: 3}
+  - {fileID: 7652088497934533855, guid: 1886e2b00bba5134e9f66827b6eeac1a, type: 3}
+  - {fileID: -1141275058215062510, guid: 1886e2b00bba5134e9f66827b6eeac1a, type: 3}
+  - {fileID: -5060844045731388616, guid: 1886e2b00bba5134e9f66827b6eeac1a, type: 3}
+  - {fileID: -8940055326696353642, guid: 1886e2b00bba5134e9f66827b6eeac1a, type: 3}
+  - {fileID: 3465462789322578826, guid: c7cc4352ec3014b43a5fc9702d92d473, type: 3}
+  - {fileID: -7820185041909422767, guid: c7cc4352ec3014b43a5fc9702d92d473, type: 3}
+  - {fileID: -806953437993457023, guid: c7cc4352ec3014b43a5fc9702d92d473, type: 3}
+  - {fileID: -6265789829670972115, guid: c7cc4352ec3014b43a5fc9702d92d473, type: 3}
+  - {fileID: 9091070086950795297, guid: 40b3f6d3ea5e57a43bcb46dcc6076b4c, type: 3}
+  - {fileID: -5774474608545413510, guid: 40b3f6d3ea5e57a43bcb46dcc6076b4c, type: 3}
+  - {fileID: 5811471115710296217, guid: 40b3f6d3ea5e57a43bcb46dcc6076b4c, type: 3}
+  - {fileID: -8278047194890950827, guid: 40b3f6d3ea5e57a43bcb46dcc6076b4c, type: 3}
+  - {fileID: -706717311104769125, guid: f7e65085569a03e48bd7906161dd15fe, type: 3}
+  - {fileID: 3653469151352558062, guid: f7e65085569a03e48bd7906161dd15fe, type: 3}
+  - {fileID: 3333525379425906208, guid: f7e65085569a03e48bd7906161dd15fe, type: 3}
+  - {fileID: 7556150048174784439, guid: f7e65085569a03e48bd7906161dd15fe, type: 3}
+  - {fileID: -6670119898418293861, guid: 09d1a126fb0d1a64c9d5a2f21982fef0, type: 3}
+  - {fileID: -4492713510473306263, guid: 09d1a126fb0d1a64c9d5a2f21982fef0, type: 3}
+  - {fileID: -7577961716524962099, guid: 09d1a126fb0d1a64c9d5a2f21982fef0, type: 3}
+  - {fileID: 8799811188518725621, guid: 09d1a126fb0d1a64c9d5a2f21982fef0, type: 3}
+  - {fileID: 7336454910823087633, guid: c8b2e126bf3fa7f47b1ea9e76a3be9e4, type: 3}
+  - {fileID: 3062329187702041874, guid: c8b2e126bf3fa7f47b1ea9e76a3be9e4, type: 3}
+  - {fileID: -3175119917295853780, guid: 6bf8d477fccd711439914a7057306144, type: 3}
+  - {fileID: 421522885742588384, guid: 6bf8d477fccd711439914a7057306144, type: 3}
+  - {fileID: 8544429106801237871, guid: 21576f7858b94ab4684fa3350f05c974, type: 3}
+  - {fileID: -4717106930958280030, guid: 21576f7858b94ab4684fa3350f05c974, type: 3}
+  - {fileID: 6111835242336962291, guid: a0087f9871bcbdf4a8453adfd5947f0d, type: 3}
+  - {fileID: 1986770000940176799, guid: a0087f9871bcbdf4a8453adfd5947f0d, type: 3}
+  - {fileID: 5659231070959101149, guid: a0087f9871bcbdf4a8453adfd5947f0d, type: 3}
+  - {fileID: -3756418504812436625, guid: a0087f9871bcbdf4a8453adfd5947f0d, type: 3}
+  - {fileID: -8825006505780400915, guid: a0087f9871bcbdf4a8453adfd5947f0d, type: 3}
+  - {fileID: 3536268154593818689, guid: a0087f9871bcbdf4a8453adfd5947f0d, type: 3}
+  - {fileID: -780732768358053430, guid: a0087f9871bcbdf4a8453adfd5947f0d, type: 3}
+  - {fileID: -6894051680849023658, guid: a0087f9871bcbdf4a8453adfd5947f0d, type: 3}
+  - {fileID: 6118057014332680923, guid: 3b8c5f699259e9649bb66aba4cb11a94, type: 3}
+  - {fileID: 5411085929799640343, guid: 3b8c5f699259e9649bb66aba4cb11a94, type: 3}
+  - {fileID: 6757756040133389254, guid: 3b8c5f699259e9649bb66aba4cb11a94, type: 3}
+  - {fileID: 1921996375173948835, guid: 3b8c5f699259e9649bb66aba4cb11a94, type: 3}
+  - {fileID: -6537827918547887678, guid: 3b8c5f699259e9649bb66aba4cb11a94, type: 3}
+  - {fileID: 4141654457570025552, guid: 3b8c5f699259e9649bb66aba4cb11a94, type: 3}
+  - {fileID: -1647561829203796683, guid: 3b8c5f699259e9649bb66aba4cb11a94, type: 3}
+  - {fileID: 998965471146656868, guid: 3b8c5f699259e9649bb66aba4cb11a94, type: 3}
+  - {fileID: 2098655617436835016, guid: 53194a4b6b0d0024095a97b0b5875796, type: 3}
+  - {fileID: -5786650572037998323, guid: 53194a4b6b0d0024095a97b0b5875796, type: 3}
+  - {fileID: -5718009952814198002, guid: 1403b17bb641e6547ac7a5071db23e60, type: 3}
+  - {fileID: -1877099688526120612, guid: 1403b17bb641e6547ac7a5071db23e60, type: 3}
+  - {fileID: 5277677645979220495, guid: 1403b17bb641e6547ac7a5071db23e60, type: 3}
+  - {fileID: -2547838357979807810, guid: 1403b17bb641e6547ac7a5071db23e60, type: 3}
+  - {fileID: -692925574647993059, guid: 1403b17bb641e6547ac7a5071db23e60, type: 3}
+  - {fileID: 1064348204833208885, guid: 1403b17bb641e6547ac7a5071db23e60, type: 3}
+  - {fileID: 8229713149445892751, guid: 1403b17bb641e6547ac7a5071db23e60, type: 3}
+  - {fileID: -4909014951665076975, guid: 1403b17bb641e6547ac7a5071db23e60, type: 3}
+  - {fileID: -206290983951638763, guid: 03a1fc3caa8a3ad4d828a431ecbc9eb1, type: 3}
+  - {fileID: -7380741624180153117, guid: 03a1fc3caa8a3ad4d828a431ecbc9eb1, type: 3}
+  - {fileID: 8027828452348532245, guid: 55209d6caf334bd44b3c66cb25e1799b, type: 3}
+  - {fileID: 3577707109307268198, guid: 55209d6caf334bd44b3c66cb25e1799b, type: 3}
+  - {fileID: -7735946954506974283, guid: 55209d6caf334bd44b3c66cb25e1799b, type: 3}
+  - {fileID: -8671687920689320860, guid: 55209d6caf334bd44b3c66cb25e1799b, type: 3}
+  - {fileID: 7781695279942580522, guid: 55209d6caf334bd44b3c66cb25e1799b, type: 3}
+  - {fileID: -3980181849030727619, guid: 55209d6caf334bd44b3c66cb25e1799b, type: 3}
+  - {fileID: 3784291487393944778, guid: 55209d6caf334bd44b3c66cb25e1799b, type: 3}
+  - {fileID: -8286358085712288909, guid: 55209d6caf334bd44b3c66cb25e1799b, type: 3}
+  - {fileID: 2233482386516253139, guid: 55209d6caf334bd44b3c66cb25e1799b, type: 3}
+  - {fileID: -8992966128720544415, guid: 55209d6caf334bd44b3c66cb25e1799b, type: 3}
+  - {fileID: -7671995175666648078, guid: 3cf0f76d4852976429541168fc44b379, type: 3}
+  - {fileID: -3269771277511266553, guid: 3cf0f76d4852976429541168fc44b379, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - D Maria Walk Pegando Agua 2_1
+  - D Maria Walk Pegando Agua 2_0
+  - D Maria Walk Pegando Agua 2_3
+  - D Maria Walk Pegando Agua 2_2
+  - D Maria Idle Pegando Agua 2_0
+  - D Maria Idle Pegando Agua 2_1
+  - D Maria Comendo_3
+  - D Maria Comendo_2
+  - D Maria Comendo_1
+  - D Maria Comendo_0
+  - D Maria Comendo_7
+  - D Maria Comendo_6
+  - D Maria Comendo_5
+  - D Maria Comendo_4
+  - D Maria Walk Back_2
+  - D Maria Walk Back_3
+  - D Maria Walk Back_0
+  - D Maria Walk Back_1
+  - D Maria Walk Side_2
+  - D Maria Walk Side_3
+  - D Maria Walk Side_0
+  - D Maria Walk Side_1
+  - D Maria Walk Pegando Side_0
+  - D Maria Walk Pegando Side_1
+  - D Maria Walk Pegando Side_2
+  - D Maria Walk Pegando Side_3
+  - D Maria Walk Front_2
+  - D Maria Walk Front_3
+  - D Maria Walk Front_0
+  - D Maria Walk Front_1
+  - D. Maria Dormindo Doente 3_0
+  - D. Maria Dormindo Doente 3_1
+  - D Maria Idle Side_1
+  - D Maria Idle Side_0
+  - D Maria Idle_0
+  - D Maria Idle_1
+  - D Maria Comendo Farinha_0
+  - D Maria Comendo Farinha_1
+  - D Maria Comendo Farinha_2
+  - D Maria Comendo Farinha_3
+  - D Maria Comendo Farinha_4
+  - D Maria Comendo Farinha_5
+  - D Maria Comendo Farinha_6
+  - D Maria Comendo Farinha_7
+  - D Maria Tossindo_3
+  - D Maria Tossindo_2
+  - D Maria Tossindo_1
+  - D Maria Tossindo_0
+  - D Maria Tossindo_7
+  - D Maria Tossindo_6
+  - D Maria Tossindo_5
+  - D Maria Tossindo_4
+  - D Maria Idle Pegando Agua_0
+  - D Maria Idle Pegando Agua_1
+  - D. Maria Comendo Doente 1_1
+  - D. Maria Comendo Doente 1_0
+  - D. Maria Comendo Doente 1_3
+  - D. Maria Comendo Doente 1_2
+  - D. Maria Comendo Doente 1_5
+  - D. Maria Comendo Doente 1_4
+  - D. Maria Comendo Doente 1_7
+  - D. Maria Comendo Doente 1_6
+  - D Maria Idle Back_1
+  - D Maria Idle Back_0
+  - D Maria Pegando Agua_0
+  - D Maria Pegando Agua_1
+  - D Maria Pegando Agua_2
+  - D Maria Pegando Agua_3
+  - D Maria Pegando Agua_4
+  - D Maria Pegando Agua_5
+  - D Maria Pegando Agua_6
+  - D Maria Pegando Agua_7
+  - D Maria Pegando Agua_8
+  - D Maria Pegando Agua_9
+  - D. Maria Dormindo Doente 1_0
+  - D. Maria Dormindo Doente 1_1
+  m_RenderDataMap: {}
+  m_Tag: D Maria
+  m_IsVariant: 0

@@ -11,6 +11,11 @@ public class Movement : MonoBehaviour
     [SerializeField] private GameObject circle;
 
     [SerializeField] private GameObject canvasJoystick;
+    [SerializeField] private AudioClip[] insideFootsteps;
+    [SerializeField, Range(0, 1)] private float insideFootstepsVolume = 1;
+    [SerializeField] private AudioClip[] outsideFootsteps;
+    [SerializeField, Range(0, 1)] private float outsideFootstepsVolume = 1;
+    
     private Transform myTransform;
     public bool canMove = true;
     public bool animateByTransform;
@@ -128,5 +133,13 @@ public class Movement : MonoBehaviour
                 canvasJoystick.SetActive(false);
             }
         }
+    }
+
+    public void PlayFootstep(){
+        var player = Player.Instance;
+        AudioClip[] footsteps = Player.playerData.isInside ? insideFootsteps : outsideFootsteps;
+        float volume = Player.playerData.isInside ? insideFootstepsVolume : outsideFootstepsVolume;
+        AudioClip clip = footsteps[Random.Range(0, footsteps.Length)];
+        player.AudioSource.PlayOneShot(clip, volume);
     }
 }

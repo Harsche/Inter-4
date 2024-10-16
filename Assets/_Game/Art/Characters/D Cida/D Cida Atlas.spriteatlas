@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: D Cida Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 109788756755b3c43b4ca904d309df80, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -4518313583821102858, guid: 2f07b1703a3195e40bdf701db8b5ae7e, type: 3}
+  - {fileID: -3527420892313605237, guid: 2f07b1703a3195e40bdf701db8b5ae7e, type: 3}
+  - {fileID: 9040899168348097754, guid: 2f07b1703a3195e40bdf701db8b5ae7e, type: 3}
+  - {fileID: -5784276205526704662, guid: 2f07b1703a3195e40bdf701db8b5ae7e, type: 3}
+  - {fileID: -1951673260272993315, guid: 38d56cf0a89d5794d9b34025b44675d0, type: 3}
+  - {fileID: -8918108223771699845, guid: 38d56cf0a89d5794d9b34025b44675d0, type: 3}
+  - {fileID: 5414258727571846350, guid: 38d56cf0a89d5794d9b34025b44675d0, type: 3}
+  - {fileID: 8076999037010624633, guid: 38d56cf0a89d5794d9b34025b44675d0, type: 3}
+  - {fileID: 1068939578119164751, guid: d1306331e26a11e49b2fa30fd1d3e09f, type: 3}
+  - {fileID: -5368185902242624012, guid: d1306331e26a11e49b2fa30fd1d3e09f, type: 3}
+  - {fileID: 8931465570726582860, guid: 227b87b65cce95a4ca566cc95e3394a8, type: 3}
+  - {fileID: -1911592816244896481, guid: 227b87b65cce95a4ca566cc95e3394a8, type: 3}
+  - {fileID: -906114778314727791, guid: 80eaf76b1c1c10d4f8f674e365b53a5d, type: 3}
+  - {fileID: 5667590725337298757, guid: 80eaf76b1c1c10d4f8f674e365b53a5d, type: 3}
+  - {fileID: -9145865411562781507, guid: 80eaf76b1c1c10d4f8f674e365b53a5d, type: 3}
+  - {fileID: 4161560760259208934, guid: 80eaf76b1c1c10d4f8f674e365b53a5d, type: 3}
+  - {fileID: 3216266080006613414, guid: 7c20a53c4f8b30c469d5c05d469b8b9b, type: 3}
+  - {fileID: 8887948569870938677, guid: 7c20a53c4f8b30c469d5c05d469b8b9b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - D Cida Walk Back_3
+  - D Cida Walk Back_2
+  - D Cida Walk Back_1
+  - D Cida Walk Back_0
+  - D Cida Walk Front_1
+  - D Cida Walk Front_0
+  - D Cida Walk Front_3
+  - D Cida Walk Front_2
+  - D Cida Idle Side_0
+  - D Cida Idle Side_1
+  - D Cida Idle_1
+  - D Cida Idle_0
+  - D Cida Walk Side_3
+  - D Cida Walk Side_2
+  - D Cida Walk Side_1
+  - D Cida Walk Side_0
+  - D Cida Idle Back_0
+  - D Cida Idle Back_1
+  m_RenderDataMap: {}
+  m_Tag: D Cida Atlas
+  m_IsVariant: 0

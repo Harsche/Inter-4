@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pedro Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c28b236e570893c499fe79359fdfa5ed, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -5245058060162412494, guid: 83aebe71e7744c141814157888639863, type: 3}
+  - {fileID: -2563484752294859835, guid: 83aebe71e7744c141814157888639863, type: 3}
+  - {fileID: 7424818615579697258, guid: 83aebe71e7744c141814157888639863, type: 3}
+  - {fileID: -3857648385595604123, guid: 83aebe71e7744c141814157888639863, type: 3}
+  - {fileID: 264034066079626051, guid: 8b892605e68081b4184d5b004e8c2d6a, type: 3}
+  - {fileID: -7102324261893813941, guid: 8b892605e68081b4184d5b004e8c2d6a, type: 3}
+  - {fileID: -6871907142783748262, guid: 79645a853444eb54098e5458e5805da3, type: 3}
+  - {fileID: 7969528095964975681, guid: 79645a853444eb54098e5458e5805da3, type: 3}
+  - {fileID: -1607727024910673099, guid: 6a4933e536a677943bc1d4f78cbf67be, type: 3}
+  - {fileID: 6116540297507987288, guid: 6a4933e536a677943bc1d4f78cbf67be, type: 3}
+  - {fileID: -1922463529095312364, guid: 6a4933e536a677943bc1d4f78cbf67be, type: 3}
+  - {fileID: 5273985455462186731, guid: 6a4933e536a677943bc1d4f78cbf67be, type: 3}
+  - {fileID: 3996786945693937209, guid: 6a4933e536a677943bc1d4f78cbf67be, type: 3}
+  - {fileID: -3929279956945619267, guid: 6a4933e536a677943bc1d4f78cbf67be, type: 3}
+  - {fileID: -3958342309013603652, guid: 6a4933e536a677943bc1d4f78cbf67be, type: 3}
+  - {fileID: 6146531611735828727, guid: 6a4933e536a677943bc1d4f78cbf67be, type: 3}
+  - {fileID: 6626062984151300329, guid: 696c1c57571e3db40a388495e158523b, type: 3}
+  - {fileID: 3448963888896825552, guid: 696c1c57571e3db40a388495e158523b, type: 3}
+  - {fileID: -5350119573666344534, guid: 696c1c57571e3db40a388495e158523b, type: 3}
+  - {fileID: -6463333343326382381, guid: 696c1c57571e3db40a388495e158523b, type: 3}
+  - {fileID: 450706742626084014, guid: 696c1c57571e3db40a388495e158523b, type: 3}
+  - {fileID: -2415629297299178377, guid: 696c1c57571e3db40a388495e158523b, type: 3}
+  - {fileID: -6242777195625261286, guid: 696c1c57571e3db40a388495e158523b, type: 3}
+  - {fileID: -733751199284197327, guid: 15cb27a71e0ff5741821990dae7ba237, type: 3}
+  - {fileID: -7933733648345710788, guid: 15cb27a71e0ff5741821990dae7ba237, type: 3}
+  - {fileID: 3847821581874502614, guid: 15b88b8836ba8384dac93165777b2713, type: 3}
+  - {fileID: -1631815921660031797, guid: 15b88b8836ba8384dac93165777b2713, type: 3}
+  - {fileID: -1489179117257827643, guid: 15b88b8836ba8384dac93165777b2713, type: 3}
+  - {fileID: 1481308196690527667, guid: 15b88b8836ba8384dac93165777b2713, type: 3}
+  - {fileID: 8521533613605816573, guid: 15b88b8836ba8384dac93165777b2713, type: 3}
+  - {fileID: -2924512992290783885, guid: 15b88b8836ba8384dac93165777b2713, type: 3}
+  - {fileID: -5797701270978527776, guid: 15b88b8836ba8384dac93165777b2713, type: 3}
+  - {fileID: 8270094754174474483, guid: 15b88b8836ba8384dac93165777b2713, type: 3}
+  - {fileID: -5595092999881633105, guid: 8c243e8b8135443439531811276e58ff, type: 3}
+  - {fileID: -3696494775764608983, guid: 8c243e8b8135443439531811276e58ff, type: 3}
+  - {fileID: -9144137047959727807, guid: 46f659aca02fed34fb7ad47e3801b84e, type: 3}
+  - {fileID: 7582338912944107593, guid: 46f659aca02fed34fb7ad47e3801b84e, type: 3}
+  - {fileID: -1088165894015229145, guid: 46f659aca02fed34fb7ad47e3801b84e, type: 3}
+  - {fileID: 4064637612333486439, guid: 46f659aca02fed34fb7ad47e3801b84e, type: 3}
+  - {fileID: -1486151696549655791, guid: 472ae92d50180884f835c76bb5eac392, type: 3}
+  - {fileID: 3074911005741162859, guid: 472ae92d50180884f835c76bb5eac392, type: 3}
+  - {fileID: 129607116870786616, guid: 472ae92d50180884f835c76bb5eac392, type: 3}
+  - {fileID: -8350583580461154947, guid: 472ae92d50180884f835c76bb5eac392, type: 3}
+  - {fileID: 751019700949125886, guid: 472ae92d50180884f835c76bb5eac392, type: 3}
+  - {fileID: 6690583499740560314, guid: 472ae92d50180884f835c76bb5eac392, type: 3}
+  - {fileID: -2950535933496543802, guid: 472ae92d50180884f835c76bb5eac392, type: 3}
+  - {fileID: 7591723750400347422, guid: 472ae92d50180884f835c76bb5eac392, type: 3}
+  - {fileID: 4568866941972884110, guid: 9458f45ecaa7cad4b94d655238009951, type: 3}
+  - {fileID: 4587096167295103260, guid: 9458f45ecaa7cad4b94d655238009951, type: 3}
+  - {fileID: -383895467482951836, guid: 9458f45ecaa7cad4b94d655238009951, type: 3}
+  - {fileID: 5934152358618130851, guid: 9458f45ecaa7cad4b94d655238009951, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Pedro Walk Back_2
+  - Pedro Walk Back_3
+  - Pedro Walk Back_0
+  - Pedro Walk Back_1
+  - Pedro Idle Side_1
+  - Pedro Idle Side_0
+  - Pedro Idle Back_1
+  - Pedro Idle Back_0
+  - Pedro Comendo_3
+  - Pedro Comendo_2
+  - Pedro Comendo_1
+  - Pedro Comendo_0
+  - Pedro Comendo_7
+  - Pedro Comendo_6
+  - Pedro Comendo_5
+  - Pedro Comendo_4
+  - "Pedro Com P\xE3o_4"
+  - "Pedro Com P\xE3o_5"
+  - "Pedro Com P\xE3o_6"
+  - "Pedro Com P\xE3o_0"
+  - "Pedro Com P\xE3o_1"
+  - "Pedro Com P\xE3o_2"
+  - "Pedro Com P\xE3o_3"
+  - Pedro Idle 3_1
+  - Pedro Idle 3_0
+  - Pedro Comendo Farinha_0
+  - Pedro Comendo Farinha_1
+  - Pedro Comendo Farinha_2
+  - Pedro Comendo Farinha_3
+  - Pedro Comendo Farinha_4
+  - Pedro Comendo Farinha_5
+  - Pedro Comendo Farinha_6
+  - Pedro Comendo Farinha_7
+  - Pedro + Luisa Dormindo_1
+  - Pedro + Luisa Dormindo_0
+  - Pedro Walk Side_2
+  - Pedro Walk Side_3
+  - Pedro Walk Side_0
+  - Pedro Walk Side_1
+  - Pedro Comendo Legumes_5
+  - Pedro Comendo Legumes_4
+  - Pedro Comendo Legumes_7
+  - Pedro Comendo Legumes_6
+  - Pedro Comendo Legumes_1
+  - Pedro Comendo Legumes_0
+  - Pedro Comendo Legumes_3
+  - Pedro Comendo Legumes_2
+  - Pedro Walk Front_2
+  - Pedro Walk Front_3
+  - Pedro Walk Front_0
+  - Pedro Walk Front_1
+  m_RenderDataMap: {}
+  m_Tag: Pedro Atlas
+  m_IsVariant: 0

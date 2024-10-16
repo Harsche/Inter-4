@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Voluntaria Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 96fb757f57c4c044ea15a5f640b0677d, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 2866380722910932612, guid: 2f4b3ab2da29b1a4f932c50364df7bf5, type: 3}
+  - {fileID: 6567138410712806469, guid: 2f4b3ab2da29b1a4f932c50364df7bf5, type: 3}
+  - {fileID: -486812264403108810, guid: 2f4b3ab2da29b1a4f932c50364df7bf5, type: 3}
+  - {fileID: 271299323805573779, guid: 2f4b3ab2da29b1a4f932c50364df7bf5, type: 3}
+  - {fileID: -929068386107468698, guid: e0667a235ac09c9469a64b7d0f95dc22, type: 3}
+  - {fileID: -3760838814597304451, guid: e0667a235ac09c9469a64b7d0f95dc22, type: 3}
+  - {fileID: 4747485812432181295, guid: e0667a235ac09c9469a64b7d0f95dc22, type: 3}
+  - {fileID: 3151209907488061126, guid: e0667a235ac09c9469a64b7d0f95dc22, type: 3}
+  - {fileID: -1329205343482149042, guid: 60a3e4f316507004292d2883e57d0699, type: 3}
+  - {fileID: -7357903232654018462, guid: 60a3e4f316507004292d2883e57d0699, type: 3}
+  - {fileID: -558865934204311501, guid: 60a3e4f316507004292d2883e57d0699, type: 3}
+  - {fileID: -938883035497980251, guid: 60a3e4f316507004292d2883e57d0699, type: 3}
+  - {fileID: -2285925607203214879, guid: 040782fa62d174f4cb0b037b7d1fb10d, type: 3}
+  - {fileID: -2587380897552970677, guid: 040782fa62d174f4cb0b037b7d1fb10d, type: 3}
+  - {fileID: -3682265249983038920, guid: e8d30e3edc0ca0d4b81cfc9d878ae508, type: 3}
+  - {fileID: -2275996782795874406, guid: e8d30e3edc0ca0d4b81cfc9d878ae508, type: 3}
+  - {fileID: 6973026539083200136, guid: 81fd4e8eb98aee54aa4f133ab0dc831a, type: 3}
+  - {fileID: 6484767710705089497, guid: 81fd4e8eb98aee54aa4f133ab0dc831a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Voluntaria Walk Back_3
+  - Voluntaria Walk Back_2
+  - Voluntaria Walk Back_1
+  - Voluntaria Walk Back_0
+  - Voluntaria Walk Side_3
+  - Voluntaria Walk Side_2
+  - Voluntaria Walk Side_1
+  - Voluntaria Walk Side_0
+  - Voluntaria Walk Front_1
+  - Voluntaria Walk Front_0
+  - Voluntaria Walk Front_3
+  - Voluntaria Walk Front_2
+  - Voluntaria Idle_1
+  - Voluntaria Idle_0
+  - Voluntaria Idle Side_0
+  - Voluntaria Idle Side_1
+  - Voluntaria Idle Back_0
+  - Voluntaria Idle Back_1
+  m_RenderDataMap: {}
+  m_Tag: Voluntaria Atlas
+  m_IsVariant: 0

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: S Miguel Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d5ccdf29514b87547bfd0fd0c67b8fb2, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1579706572575331670, guid: 965faab0614d0e44094355ad0441601f, type: 3}
+  - {fileID: 4056544462133127924, guid: 965faab0614d0e44094355ad0441601f, type: 3}
+  - {fileID: -6994710492516081189, guid: 1f395692b1eee7c47b0e265f15bb5364, type: 3}
+  - {fileID: -7504373999850512359, guid: 1f395692b1eee7c47b0e265f15bb5364, type: 3}
+  - {fileID: 981590376420698448, guid: 1f395692b1eee7c47b0e265f15bb5364, type: 3}
+  - {fileID: -5839175511317720011, guid: 1f395692b1eee7c47b0e265f15bb5364, type: 3}
+  - {fileID: -4613493180768285340, guid: 1f395692b1eee7c47b0e265f15bb5364, type: 3}
+  - {fileID: 8708030460653149757, guid: 1f395692b1eee7c47b0e265f15bb5364, type: 3}
+  - {fileID: -1206751723826330123, guid: af5301b3f8e521348a984eb2a908fb4b, type: 3}
+  - {fileID: 8681803325083464494, guid: af5301b3f8e521348a984eb2a908fb4b, type: 3}
+  - {fileID: -3020249462809259206, guid: 8115842afd4074b43a3c6488f80a3b8c, type: 3}
+  - {fileID: 8895037308559962542, guid: 8115842afd4074b43a3c6488f80a3b8c, type: 3}
+  - {fileID: 5530049525279423087, guid: 8115842afd4074b43a3c6488f80a3b8c, type: 3}
+  - {fileID: 538733736169150310, guid: 8115842afd4074b43a3c6488f80a3b8c, type: 3}
+  - {fileID: -7773250788280107360, guid: b7a94afa6f1c9d548baf6c99777edb1b, type: 3}
+  - {fileID: 107137121579692704, guid: b7a94afa6f1c9d548baf6c99777edb1b, type: 3}
+  - {fileID: 1663483666133798000, guid: d59dea4b1ea013a4c9cddc7771c29b38, type: 3}
+  - {fileID: 5707159831840075587, guid: d59dea4b1ea013a4c9cddc7771c29b38, type: 3}
+  - {fileID: 8313923823835004671, guid: d59dea4b1ea013a4c9cddc7771c29b38, type: 3}
+  - {fileID: 7333623523650063434, guid: d59dea4b1ea013a4c9cddc7771c29b38, type: 3}
+  - {fileID: -4820923968070495478, guid: 8a0d56ac651bb8f469ec276e2fd7023d, type: 3}
+  - {fileID: -5095073286393080120, guid: 8a0d56ac651bb8f469ec276e2fd7023d, type: 3}
+  - {fileID: -3201672697144393056, guid: 8a0d56ac651bb8f469ec276e2fd7023d, type: 3}
+  - {fileID: -8777537172015766935, guid: 8a0d56ac651bb8f469ec276e2fd7023d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - S Miguel Idle_0
+  - S Miguel Idle_1
+  - S Miguel Fazendo Cha_5
+  - S Miguel Fazendo Cha_4
+  - S Miguel Fazendo Cha_1
+  - S Miguel Fazendo Cha_0
+  - S Miguel Fazendo Cha_3
+  - S Miguel Fazendo Cha_2
+  - S Miguel Idle Back_1
+  - S Miguel Idle Back_0
+  - S Miguel Walk Front_2
+  - S Miguel Walk Front_3
+  - S Miguel Walk Front_0
+  - S Miguel Walk Front_1
+  - S Miguel Idle Side_1
+  - S Miguel Idle Side_0
+  - S Miguel Walk Back_2
+  - S Miguel Walk Back_3
+  - S Miguel Walk Back_0
+  - S Miguel Walk Back_1
+  - S Miguel Walk Side_2
+  - S Miguel Walk Side_3
+  - S Miguel Walk Side_0
+  - S Miguel Walk Side_1
+  m_RenderDataMap: {}
+  m_Tag: S Miguel Atlas
+  m_IsVariant: 0

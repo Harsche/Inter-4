@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Jegue Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: a3b82090b81545c41b80b3032df87e91, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -7875787517499673186, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: 1716658768025127920, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: 6855653661638149361, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: 8708657437073637019, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: 8975267323585333800, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -2780965622446587982, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: 4917131897280548988, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -2632415887822770002, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -4532852247245772790, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -5052484608677259703, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -4636485048329807503, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -4463492408827406551, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -3127519202436668413, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: 1523408109689203079, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: 2579767867656448294, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: 4506869025283974202, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -3014187176364477673, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -4603972593848363643, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -433117801011870932, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -9131747305115212476, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -6649952464541015547, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -2592634015422413699, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: 8458570828988383568, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -8829300827595638198, guid: ffa505a96da006e4ba0f6c6938827606, type: 3}
+  - {fileID: -6011743297867541411, guid: 7f79134c583b99f4f9bcbfda5259b77b, type: 3}
+  - {fileID: -249686438536794179, guid: 7f79134c583b99f4f9bcbfda5259b77b, type: 3}
+  - {fileID: -4070077552844705527, guid: 7f79134c583b99f4f9bcbfda5259b77b, type: 3}
+  - {fileID: 1427459854494086337, guid: 7f79134c583b99f4f9bcbfda5259b77b, type: 3}
+  - {fileID: 3880683773906212447, guid: 7f79134c583b99f4f9bcbfda5259b77b, type: 3}
+  - {fileID: -1501214847609097377, guid: 7f79134c583b99f4f9bcbfda5259b77b, type: 3}
+  - {fileID: -8000409034201496644, guid: 7f79134c583b99f4f9bcbfda5259b77b, type: 3}
+  - {fileID: -7297905705070593660, guid: 7f79134c583b99f4f9bcbfda5259b77b, type: 3}
+  - {fileID: -7655655082013326396, guid: 7f79134c583b99f4f9bcbfda5259b77b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - JegueIdle_9
+  - JegueIdle_20
+  - JegueIdle_6
+  - JegueIdle_21
+  - JegueIdle_7
+  - JegueIdle_22
+  - JegueIdle_4
+  - JegueIdle_23
+  - JegueIdle_5
+  - JegueIdle_2
+  - JegueIdle_3
+  - JegueIdle_0
+  - JegueIdle_1
+  - JegueIdle_19
+  - JegueIdle_18
+  - JegueIdle_15
+  - JegueIdle_14
+  - JegueIdle_17
+  - JegueIdle_16
+  - JegueIdle_11
+  - JegueIdle_10
+  - JegueIdle_13
+  - JegueIdle_12
+  - JegueIdle_8
+  - JegueWalk_7
+  - JegueWalk_6
+  - JegueWalk_5
+  - JegueWalk_4
+  - JegueWalk_3
+  - JegueWalk_2
+  - JegueWalk_1
+  - JegueWalk_0
+  - JegueWalk_8
+  m_RenderDataMap: {}
+  m_Tag: Jegue Atlas
+  m_IsVariant: 0

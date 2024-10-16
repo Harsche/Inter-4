@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: S Jose Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: bc63e851a38937648ad78586d5b23305, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -386183589300966945, guid: 4cf20bc08ab14584daf961fd7a28ba35, type: 3}
+  - {fileID: 142308661775352993, guid: 4cf20bc08ab14584daf961fd7a28ba35, type: 3}
+  - {fileID: -795897310644107343, guid: d5c42cf0bb09d1b4ab57602733a6acc9, type: 3}
+  - {fileID: -1255105987118947196, guid: d5c42cf0bb09d1b4ab57602733a6acc9, type: 3}
+  - {fileID: -5138205762334622693, guid: d5c42cf0bb09d1b4ab57602733a6acc9, type: 3}
+  - {fileID: 6114818614798849582, guid: d5c42cf0bb09d1b4ab57602733a6acc9, type: 3}
+  - {fileID: -7141939609653730046, guid: 9bd203143ad905a4187ba70891a98018, type: 3}
+  - {fileID: 667706433542900558, guid: 9bd203143ad905a4187ba70891a98018, type: 3}
+  - {fileID: -2532266874853489230, guid: 9d6fe0251a9ba374aaa51a05f8df534d, type: 3}
+  - {fileID: -7685617280543679048, guid: 9d6fe0251a9ba374aaa51a05f8df534d, type: 3}
+  - {fileID: -5360187345781628297, guid: 2d0b90c6fc6f531478122924234c8c08, type: 3}
+  - {fileID: 7227152606261465026, guid: 2d0b90c6fc6f531478122924234c8c08, type: 3}
+  - {fileID: 8195274714213483704, guid: 2d0b90c6fc6f531478122924234c8c08, type: 3}
+  - {fileID: -2065176444778826935, guid: 2d0b90c6fc6f531478122924234c8c08, type: 3}
+  - {fileID: -1042066589943674127, guid: ac8439890aba208488070d94a87554fb, type: 3}
+  - {fileID: -2459075900452400965, guid: ac8439890aba208488070d94a87554fb, type: 3}
+  - {fileID: 560696042047245570, guid: ac8439890aba208488070d94a87554fb, type: 3}
+  - {fileID: -3744679857921734429, guid: ac8439890aba208488070d94a87554fb, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "S Jos\xE9 Idle_1"
+  - "S Jos\xE9 Idle_0"
+  - "S Jos\xE9 Walk Side_3"
+  - "S Jos\xE9 Walk Side_2"
+  - "S Jos\xE9 Walk Side_1"
+  - "S Jos\xE9 Walk Side_0"
+  - "S Jos\xE9 Idle Back_0"
+  - "S Jos\xE9 Idle Back_1"
+  - "S Jos\xE9 Idle Side_0"
+  - "S Jos\xE9 Idle Side_1"
+  - "S Jos\xE9 Walk Front_1"
+  - "S Jos\xE9 Walk Front_0"
+  - "S Jos\xE9 Walk Front_3"
+  - "S Jos\xE9 Walk Front_2"
+  - "S Jos\xE9 Walk Back_3"
+  - "S Jos\xE9 Walk Back_2"
+  - "S Jos\xE9 Walk Back_1"
+  - "S Jos\xE9 Walk Back_0"
+  m_RenderDataMap: {}
+  m_Tag: S Jose Atlas
+  m_IsVariant: 0
